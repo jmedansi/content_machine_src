@@ -1,0 +1,29 @@
+{
+  "_comment": "Mapping post_id Facebook -> trigger_word + resource_content",
+  "_created": "2026-03-27",
+  "622428571466199_1005487391805904": {
+    "trigger_word": "IA",
+    "resource_content": "**Les 5 outils IA gratuits que j'utilise chaque semaine**\n\n1.  **Gamma (gamma.app)** - Crée présentations et sites web avec IA\n2.  **ElevenLabs (elevenlabs.io)** - Générateur de voix humaines\n3.  **Perplexity (perplexity.ai)** - Moteur de recherche conversationnel\n4.  **Notion AI** - Assistant rédaction intégré à Notion\n5.  **Canva AI** - Design assisté par IA\n\nCes 5 outils m'ont fait gagner 10h/semaine. Télécharge ma checklist complète en répondant \"IA\" à ce post.",
+    "created_at": "2026-03-28T01:23:15.213137"
+  },
+  "622428571466199_1005517298469580": {
+    "trigger_word": "OUTILS",
+    "resource_content": "**Les 5 outils IA gratuits que j'utilise chaque semaine**\n\n1.  **Gamma (gamma.app)** - Crée présentations et sites web avec IA\n2.  **ElevenLabs (elevenlabs.io)** - Générateur de voix humaines\n3.  **Perplexity (perplexity.ai)** - Moteur de recherche conversationnel\n4.  **Notion AI** - Assistant rédaction intégré à Notion\n5.  **Canva AI** - Design assisté par IA\n\nCes 5 outils m'ont fait gagner 10h/semaine. Je les utilise au quotidien pour mes clients.",
+    "created_at": "2026-03-28T02:20:14.000000"
+  },
+  "622428571466199_1005976535090323": {
+    "trigger_word": "CONFUS",
+    "resource_content": "**Checklist : 5 questions pour trouver le vrai problème que ton client paye pour résoudre**\n\n1. **La question du \"début\"**\n   Quel est le PREMIER geste, la PREMIERE recherche que fait ton client quand le problème se présente ?\n   (Ex: Il ne recherche pas \"meilleur CRM\", il tape \"comment retrouver le numéro du client de mardi dernier\")\n\n2. **La question du \"langage\"**\n   Quels sont les 3 mots EXACTS (argot, local) qu'il utilise pour en parler à un pote ?\n   (Ex: \"Mon *mec* m'a ghosté\" au lieu de \"Le lead n'a pas répondu\")\n\n3. **La question du \"coût caché\"**\n   À quoi a-t-il déjà renoncé (temps, argent, opportunité) en ne résolvant pas ce problème ?\n   (Ex: \"J'ai perdu 3 clients parce que je ne retrouvais pas leurs commandes dans mon téléphone\")\n\n4. **La question du \"délai\"**\n   Dans quel délai MAXIMUM doit-il avoir une solution pour que ça vaille le coup ?\n   (Ex: \"Il me faut les chiffres avant la réunion de 16h, sinon mon patron va m'engueuler\")\n\n5. **La question du \"premier soulagement\"**\n   Quelle est la toute première petite victoire qu'il veut ressentir après avoir utilisé ta solution ?\n   (Ex: \"Voir tous mes rendez-vous de la semaine sur un seul écran, sans scroller\")",
+    "created_at": "2026-03-28T15:02:24.714956"
+  },
+  "622428571466199_1013757570978886": {
+    "trigger_word": "LE",
+    "resource_content": "**CHECKLIST : 5 SIGNES QUE TA PRÉSENCE EN LIGNE FONCTIONNE (OU PAS)**\n\n1.  **Ton site convertit les visiteurs en prospects.**\n    *   Tu as au moins un formulaire de contact ou un appel à l'action clair (\"Réserve ton audit\", \"Télécharge le guide\", \"Demande un devis\").\n    *   Tu sais combien de visiteurs deviennent des leads chaque mois.\n\n2.  **Tes réseaux sociaux amènent du business.**\n    *   Tu peux citer au moins 2 clients concrets venus de LinkedIn ou Facebook ces 3 derniers mois.\n    *   Tes posts ne parlent pas seulement de toi, mais répondent à une question précise de ton client idéal.\n\n3.  **Ton temps est optimisé.**\n    *   Tu passes moins de 1h par jour à publier sur tous tes réseaux (grâce à un outil de planification).\n    *   Tu as un système pour répondre aux messages sans y passer ta journée.\n\n4.  **Tes clients te trouvent.**\n    *   Plus de 30% de tes nouveaux prospects viennent par recommandation ou après avoir vu ton contenu en ligne.\n    *   Tu ne cours plus après chaque opportunité.\n\n5.  **Tu mesures l'essentiel.**\n    *   Tu connais ton taux de conversion site web → contact.\n    *   Tu sais quel réseau social t'apporte le plus de prospects qualifiés.\n\n**TON SCORE :**\n*   **4-5 « OUI »** : Tu es sur la bonne voie. Concentre-toi sur l'amplification.\n*   **2-3 « OUI »** : Il y a des fuites dans le système. Identifie les points faibles et corrige-les en priorité.\n*   **0-1 « OUI »** : Tu es en mode \"présence décorative\". Il est temps de construire une machine à générer des leads.",
+    "created_at": "2026-04-07T08:12:35.355951"
+  },
+  "622428571466199_1076605831360726": {
+    "trigger_word": "TOOLS",
+    "resource_content": "Here are the 5 AI tools I use every week:\n\n1. Gamma (gamma.app) - Creates presentations and websites in minutes with AI.\n2. ElevenLabs (elevenlabs.io) - Generates realistic human voices for videos and podcasts.\n3. Perplexity (perplexity.ai) - Conversational search engine with precise answers and sources.\n4. Notion AI - Writes, summarizes, and organizes your notes automatically.\n5. Canva AI - AI-assisted design for professional visuals without being a graphic designer.\n\nStart with Perplexity and Gamma - you'll see the difference from day one.\n\nLearn more: https://www.incidenx.com/blog/ia/comment-reduire-couts-ia-guide-pme/",
+    "created_at": "2026-06-21T12:00:00.000000"
+  }
+}

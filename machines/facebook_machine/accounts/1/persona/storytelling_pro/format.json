@@ -1,0 +1,10 @@
+{
+  "format_name": "Storytelling Pro",
+  "variables_requises": [
+    "EVENEMENT_DECLENCHEUR",
+    "MA_REACTION",
+    "LA_LECON_APPRISE",
+    "VISION_GLOBALE"
+  ],
+  "user_prompt_template": "Rédige un post Facebook (Storytelling Pro) sur :\n\nL'événement déclencheur ou la conversation marquante : {EVENEMENT_DECLENCHEUR}\nMa réaction ou ma décision face à ça : {MA_REACTION}\nLa leçon que j'en tire aujourd'hui : {LA_LECON_APPRISE}\nMa vision globale pour l'avenir : {VISION_GLOBALE}\n\nTexte authentique, émotionnel, utilise des emojis. Signature de type leader à la fin."
+}

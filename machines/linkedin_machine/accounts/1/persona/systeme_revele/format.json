@@ -1,0 +1,11 @@
+{
+  "format_name": "Système Révélé",
+  "variables_requises": [
+    "NOM_SYSTEME",
+    "CE_QUIL_FAIT",
+    "ERREUR_DE_LA_MASSE",
+    "MA_COMPLEXITE",
+    "APPEL_A_LACTION_COMMENTAIRE"
+  ],
+  "user_prompt_template": "Rédige un post LinkedIn 'Système Révélé' sur :\n\nLe nom du système (ex: 8 agents IA) : {NOM_SYSTEME}\nCe qu'il accomplit pour moi (le bénéfice ultime) : {CE_QUIL_FAIT}\nCe que la majorité fait mal avec cet outil/cette approche : {ERREUR_DE_LA_MASSE}\nComment mon système est structuré différemment : {MA_COMPLEXITE}\nAppel à l'action pour le recevoir en DM (mot-clé) : {APPEL_A_LACTION_COMMENTAIRE}\n\nTexte brut publiable. Pas de markdown. Pas de hashtags."
+}

@@ -1,0 +1,10 @@
+{
+  "format_name": "Carousel Pro",
+  "variables_requises": [
+    "THEME_CAROUSEL",
+    "PROBLEME_INTRODUIT",
+    "EXEMPLES_ERREURS",
+    "ETAPES_SOLUTION"
+  ],
+  "user_prompt_template": "Rédige le script (texte des slides) pour un Carousel LinkedIn professionnel sur :\n\nThème du carousel : {THEME_CAROUSEL}\nProblème introduit (slide 2-3) : {PROBLEME_INTRODUIT}\nLes erreurs dénoncées (slides du milieu) : {EXEMPLES_ERREURS}\nLes étapes de la solution (dernières slides) : {ETAPES_SOLUTION}\n\nFormat : Chaque slide doit commencer par 'Slide X :'. Texte très court et percutant par slide. Ajoute un appel à l'action à la dernière slide."
+}

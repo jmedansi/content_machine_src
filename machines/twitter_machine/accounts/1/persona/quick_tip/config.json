@@ -1,0 +1,9 @@
+{
+  "name": "quick_tip",
+  "display_name": "QuickTip",
+  "description": "Tip rapide et concis en 280 caractères",
+  "max_chars": 280,
+  "tone": "direct",
+  "format": "tip",
+  "hashtags": 1
+}

@@ -1,0 +1,7 @@
+{
+  "name": "defaut_persona",
+  "display_name": "Defaut persona",
+  "generates_image": true,
+  "target_words": 150,
+  "tone": "professionnel"
+}

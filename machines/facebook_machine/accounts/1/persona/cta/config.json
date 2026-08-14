@@ -1,0 +1,16 @@
+{
+  "nom_persona": "CTA (JM)",
+  "slug_source": "cta",
+  "niche_source": "Post avec appel à l'action — ressource envoyée en DM contre un commentaire — signé Jean-Marc DANSI",
+  "usage": "Génère un post texte long (300-500 mots) + une ressource complète à envoyer en DM",
+  "ton": "Accroche forte, promesse claire, instruction simple — puis ressource concrète et utilisable",
+  "format_principal": "Post texte CTA (300-500 mots) + ressource complète séparée par balises",
+  "signature": "— Jean-Marc DANSI\n#JM #Ressource #Expertise",
+  "target_words": 400,
+  "min_words": 300,
+  "max_words": 500,
+  "retry_max": 3,
+  "humanize_pass": true,
+  "image": false,
+  "format": "cta"
+}

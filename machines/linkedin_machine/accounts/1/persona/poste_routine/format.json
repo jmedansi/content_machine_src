@@ -1,0 +1,5 @@
+{
+  "format_name": "Ébauche à rédiger",
+  "variables_requises": ["MATIERE_BRUTE"],
+  "user_prompt_template": "ÉBAUCHE À RÉDIGER :\n\n{MATIERE_BRUTE}"
+}

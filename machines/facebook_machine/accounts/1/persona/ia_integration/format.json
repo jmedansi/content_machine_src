@@ -1,0 +1,10 @@
+{
+  "format_name": "IA Intégration",
+  "variables_requises": [
+    "PROCESSUS_TRADITIONNEL",
+    "NOUVELLE_INTEGRATION_IA",
+    "DIFFICULTE_SURMONTEE",
+    "RESULTAT_FINAL"
+  ],
+  "user_prompt_template": "Rédige un post Facebook (Intégration IA) sur :\n\nComment le processus fonctionnait avant (pénible/lent) : {PROCESSUS_TRADITIONNEL}\nComment j'ai intégré l'IA dans l'entreprise/l'équipe : {NOUVELLE_INTEGRATION_IA}\nLe frein ou la difficulté surmontée : {DIFFICULTE_SURMONTEE}\nLe résultat final (KPI, vitesse, qualité) : {RESULTAT_FINAL}\n\nPost orienté process, transformation d'entreprise et concret."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "poste_routine",
+  "display_name": "Poste Routine",
+  "description": "Posts LinkedIn rédigés à partir d'ébauches brutes — ton direct, humain, professionnel",
+  "min_words": 150,
+  "max_words": 250,
+  "tone": "direct, humain, professionnel sans être corporate",
+  "format": "ebauche",
+  "target_audience": "TPE/PME françaises et belges",
+  "content_types": ["post"],
+  "call_to_action": "question"
+}

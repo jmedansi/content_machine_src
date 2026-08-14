@@ -1,0 +1,10 @@
+{
+  "name": "thread_maker",
+  "display_name": "Thread Maker",
+  "description": "Threads éducatifs et informatifs",
+  "max_tweets": 10,
+  "tone": "educatif",
+  "format": "thread",
+  "target_audience": "apprenant, developer",
+  "call_to_action": "follow"
+}

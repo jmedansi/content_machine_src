@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Nom du groupe",
+    "audience": "entrepreneurs",
+    "default_comment": ""
+  },
+  {
+    "name": "Autre groupe exemple",
+    "audience": "freelance",
+    "default_comment": "Partage utile pour cette communauté 👇"
+  }
+]

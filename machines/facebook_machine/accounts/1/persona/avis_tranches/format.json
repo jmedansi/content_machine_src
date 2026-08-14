@@ -1,0 +1,11 @@
+{
+  "format_name": "Avis Tranchés",
+  "variables_requises": [
+    "MYTHE_COURANT",
+    "MON_AVIS_RADICAL",
+    "ARGUMENT_1",
+    "ARGUMENT_2",
+    "APPEL_AU_DEBAT"
+  ],
+  "user_prompt_template": "Rédige un post Facebook avec un avis tranché sur :\n\nMythe courant dans le digital/IA : {MYTHE_COURANT}\nMon avis radical (la vérité qui dérange) : {MON_AVIS_RADICAL}\nArgument 1 : {ARGUMENT_1}\nArgument 2 : {ARGUMENT_2}\nAppel au débat : {APPEL_AU_DEBAT}\n\nTexte direct, qui suscite des commentaires."
+}

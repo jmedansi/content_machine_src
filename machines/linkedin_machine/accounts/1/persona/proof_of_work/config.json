@@ -1,0 +1,14 @@
+{
+  "nom_persona": "Proof of Work (JM)",
+  "display_name": "Proof of Work",
+  "description": "Post LinkedIn qui montre ce que tu as accompli avec l'IA sur un projet réel",
+  "min_words": 200,
+  "max_words": 300,
+  "target_words": 250,
+  "tone": "pratique, factuel, engageant",
+  "format": "long",
+  "target_audience": "pme, direction, entrepreneurs",
+  "content_types": ["post"],
+  "call_to_action": "question_engagement",
+  "image": true
+}

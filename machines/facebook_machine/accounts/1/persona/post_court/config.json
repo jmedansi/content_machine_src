@@ -1,0 +1,16 @@
+{
+  "nom_persona": "Post Court (JM)",
+  "slug_source": "post_court",
+  "niche_source": "Format de post court — micro-vérités et engagement rapide — signé Jean-Marc DANSI",
+  "usage": "Format minimal, tension maximale — pour maintenir la présence sans effort de lecture",
+  "ton": "Tranchant, direct, sans remplissage — une idée, une tension, une réaction",
+  "format_principal": "Micro-observation / question / stat / trigger — jamais plus de 100 mots",
+  "signature": "— Jean-Marc DANSI\n#JM #Punchline",
+  "target_words": 60,
+  "min_words": 20,
+  "max_words": 100,
+  "retry_max": 3,
+  "humanize_pass": false,
+  "image": false,
+  "format": "court"
+}

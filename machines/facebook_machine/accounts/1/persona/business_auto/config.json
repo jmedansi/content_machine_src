@@ -1,0 +1,22 @@
+{
+  "nom_persona": "Business Auto (JM)",
+  "slug_source": "business_auto",
+  "niche_source": "Agents IA, automatisation de leads, CRM intelligent — signé Jean-Marc DANSI",
+  "usage": "Automatisation orientée business : Systèmes et scalabilité",
+  "ton": "Technique mais accessible, visionnaire, orienté croissance",
+  "objectifs": [
+    "Démontrer la puissance des agents autonomes pour le business",
+    "Expliquer comment automatiser la prospection et la vente",
+    "Montrer des exemples de gains de productivité massifs",
+    "Positionner JM comme l'expert de la scalabilité par l'IA"
+  ],
+  "format_principal": "Vision -> Le Système -> Fonctionnement -> Impact Business -> CTA",
+  "signature": "— Jean-Marc DANSI\n#IA #Automation #Growth",
+  "target_words": 400,
+  "min_words": 200,
+  "max_words": 600,
+  "retry_max": 3,
+  "humanize_pass": true,
+  "image": true,
+  "format": "court"
+}

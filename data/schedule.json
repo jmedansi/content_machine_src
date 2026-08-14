@@ -1,0 +1,32 @@
+[
+  {
+    "time": "07:00",
+    "persona": "kebane_story",
+    "type": "post"
+  },
+  {
+    "time": "10:30",
+    "persona": "post_court",
+    "type": "post"
+  },
+  {
+    "time": "12:30",
+    "persona": "reel",
+    "type": "reel"
+  },
+  {
+    "time": "14:00",
+    "persona": "cerveau_niche_ia1",
+    "type": "post"
+  },
+  {
+    "time": "18:00",
+    "persona": "cerveau_kebane",
+    "type": "post"
+  },
+  {
+    "time": "20:30",
+    "persona": "cta",
+    "type": "post"
+  }
+]

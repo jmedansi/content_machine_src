@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "topics": [
+    {
+      "id": "ref-01",
+      "persona": "poste_routine",
+      "topic": "Les problèmes concrets d'un scraper Google Maps",
+      "context": "ANGLE : Partage technique, expérience terrain\n\nMATIÈRE BRUTE :\n\nEn construisant mon scraper Google Maps, j'ai rencontré 4 problèmes que personne ne mentionne :\n\nProblème 1 — Sélecteurs CSS fragiles :\nGoogle Maps change régulièrement sa structure HTML sans prévenir.\nMon scraper cassait silencieusement : il tournait sans erreur mais ne récupérait rien.\nUn scraper qui casse en silence est pire qu'un scraper qui plante — au moins quand ça plante, tu sais.\nFix : système de fallback sur plusieurs sélecteurs alternatifs + alerte quand les champs sont tous vides.\n\nProblème 2 — Champs vides :\nBeaucoup de fiches GMB n'affichent pas le site web.\nRésultat : des centaines de prospects sans URL, inutilisables pour mon module d'audit.\nFix : filtre automatique — si pas de site web détecté, le prospect est écarté ou mis dans une file séparée.\n\nProblème 3 — Doublons :\nLa même entreprise peut apparaître dans plusieurs catégories de recherche.\nFix : déduplication par numéro de téléphone normalisé (suppression espaces, indicatifs).\n\nProblème 4 — Formats de numéros hétérogènes :\n06 12 34 56 78 / +33612345678 / 0612345678 — c'est le même numéro, traité comme 3 entrées différentes.\nFix : normalisation systématique au format international avant insertion en base.\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa donnée brute sortie d'un scraper n'est pas utilisable. Le vrai travail, c'est le nettoyage.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ref-02",
+      "persona": "poste_routine",
+      "topic": "L'urgence Cloudflare — cas concret",
+      "context": "ANGLE : Tension narrative + leçon sur la maintenance préventive\n\nMATIÈRE BRUTE :\n\nSITUATION :\nUn client reçoit des alertes de ralentissement sur son site. Trafic anormalement élevé, hébergement saturé.\nIl pense à une attaque.\n\nDIAGNOSTIC VIA CLOUDFLARE ANALYTICS :\nPic de requêtes automatisées — bots non filtrés qui crawlent le site en boucle.\nLe Bot Fight Mode n'était pas activé. Pas de règles WAF en place.\nLes bots consommaient les ressources du serveur comme de vrais visiteurs.\n\nINTERVENTION :\nActivation du Bot Fight Mode → blocage immédiat du trafic bot connu.\nMise en place de règles WAF pour bloquer les patterns d'attaque identifiés.\nRésultat : trafic retombé à la normale en quelques heures.\n\nLEÇON :\nTout ça aurait pu être configuré en amont pour moins cher qu'une intervention d'urgence.\nUne configuration préventive prend 1 à 2 jours. Une intervention en urgence coûte plus — en argent et en stress.\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa maintenance préventive n'est pas un coût, c'est une assurance. L'urgence est toujours plus chère.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ref-03",
+      "persona": "poste_routine",
+      "topic": "Travailler depuis Cotonou pour des clients français",
+      "context": "ANGLE : Authenticité, sujet différenciant\n\nMATIÈRE BRUTE :\n\nLA RÉALITÉ CONCRÈTE :\n\nCe qui est simple :\n- La langue : français natif, communication sans friction avec les clients français et belges\n- Les outils : Malt gère la facturation, le contrat, la légitimité de la relation. Le client paie en euros, je facture en euros.\n- Le travail async : je forme mes clients via Loom (vidéos à regarder quand ils veulent), je réponds par écrit. Le décalage horaire est quasi inexistant avec la France (même fuseau ou +1h selon la période).\n- La stack technique : tout est dans le cloud. Ghost, Cloudflare, n8n, GitHub — la localisation ne change rien.\n\nCe qui demande plus d'effort :\n- Certains clients hésitent quand ils voient la localisation sur mon profil Malt. Leur réflexe : \"est-ce que ça va vraiment marcher à distance ?\"\n- La réponse est dans la façon de travailler : documentation systématique, communication écrite rigoureuse, Loom pour les explications complexes, réponses rapides.\n- Je ne peux pas compenser par une réunion physique — je compense par la rigueur et la clarté.\n\nCE QUE MALT A CHANGÉ :\nUne plateforme qui normalise le freelance à distance, qui porte la confiance initiale, qui valide le profil aux yeux du client.\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa géographie ne définit pas la qualité. La rigueur, si. Ce post est différenciant — peu de freelances africains racontent ça honnêtement.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "validated": false,
+      "used": false
+    }
+  ]
+}

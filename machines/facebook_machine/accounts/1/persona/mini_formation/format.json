@@ -1,0 +1,10 @@
+{
+  "format_name": "Mini Formation",
+  "variables_requises": [
+    "COMPETENCE_CIBLEE",
+    "ETAPE_1",
+    "ETAPE_2",
+    "ETAPE_3",
+    "RESULTAT_PROMIS"
+  ],
+  "user_prompt_template": "Rédige un post Facebook (Mini Formation) sur :\n\nLa compétence ou le problème à résoudre : {COMPETENCE_CIBLEE}\nÉtape 1 : {ETAPE_1}\nÉtape 2 : {ETAPE_2}\nÉtape 3 : {ETAPE_3}\nLe résultat promis à la fin : {RESULTAT_PROMIS}\n\nStructure du post :\n- Une accroche puissante et simple\n- Une mini-leçon qui explique un principe ou une mini-méthode\n- Deux ou trois mini-étapes à suivre\n- Un mini-exercice immédiat\n- Une phrase de résultat / ce que la personne saura faire\n- Un appel à commenter ou mot-clé pour DM\n\nNe fais pas un récapitulatif. Rends le texte très aéré, ajoute des emojis motivants, utilise des phrases courtes et donne un effet gamifié (objectif + action).\n\nUtilise des termes généraux pour l’IA : outil de génération de texte, outil de création d’images, assistant IA. Ne cite pas de marques obsolètes. Si le sujet parle de prompt, explique ce que c’est, pourquoi c’est utile et comment l’utiliser avec des cas d’usage concrets."}

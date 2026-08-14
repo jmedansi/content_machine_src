@@ -1,0 +1,322 @@
+{
+  "version": "1.0",
+  "topics": [
+    {
+      "id": "post-01",
+      "persona": "poste_routine",
+      "topic": "Prospection Machine — premier échec",
+      "context": "Humilité + compétence technique",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "J'ai construit de zéro un outil de prospection automatisée en Python/Flask.\nIl fait 4 choses en séquence :\n1. Il scrape Google Maps pour extraire des fiches d'entreprises (nom, téléphone, site web, adresse, secteur)\n2. Il audite automatiquement le site de chaque prospect (performance, HTTPS, indexation)\n3. Il génère un email personnalisé pour chaque prospect à partir des données d'audit\n4. Il envoie les emails automatiquement via SMTP\n\nPremière campagne lancée : 500 prospects ciblés, angle \"votre site est lent et ça vous coûte des clients\".\nRésultat : 0 réponse.\n\nCe qui s'est passé : l'outil fonctionnait parfaitement. C'est le message qui était faux.\nUn dirigeant de TPE/PME ne se lève pas le matin en pensant à la performance de son site.\nCe n'est pas une douleur qu'il ressent au quotidien.\n\nPivot : j'ai changé d'angle. Je cible maintenant les entreprises qui n'ont pas du tout de site web.\nLa douleur est plus claire : \"mes concurrents sont en ligne, pas moi.\"\nJe filtre ces entreprises directement via mon scraper Google Maps."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:40:01.785737"
+    },
+    {
+      "id": "post-02",
+      "persona": "poste_routine",
+      "topic": "Problèmes concrets d'un scraper Google Maps",
+      "context": "Partage technique, expérience terrain",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "En construisant mon scraper Google Maps, j'ai rencontré 4 problèmes que personne ne mentionne :\n\nProblème 1 — Sélecteurs CSS fragiles :\nGoogle Maps change régulièrement sa structure HTML sans prévenir.\nMon scraper cassait silencieusement : il tournait sans erreur mais ne récupérait rien.\nUn scraper qui casse en silence est pire qu'un scraper qui plante — au moins quand ça plante, tu sais.\nFix : système de fallback sur plusieurs sélecteurs alternatifs + alerte quand les champs sont tous vides.\n\nProblème 2 — Champs vides :\nBeaucoup de fiches GMB n'affichent pas le site web.\nRésultat : des centaines de prospects sans URL, inutilisables pour mon module d'audit.\nFix : filtre automatique — si pas de site web détecté, le prospect est écarté ou mis dans une file séparée.\n\nProblème 3 — Doublons :\nLa même entreprise peut apparaître dans plusieurs catégories de recherche.\nFix : déduplication par numéro de téléphone normalisé (suppression espaces, indicatifs).\n\nProblème 4 — Formats de numéros hétérogènes :\n06 12 34 56 78 / +33612345678 / 0612345678 — c'est le même numéro, traité comme 3 entrées différentes.\nFix : normalisation systématique au format international avant insertion en base."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:40:59.460963"
+    },
+    {
+      "id": "post-03",
+      "persona": "poste_routine",
+      "topic": "Ghost CMS vs WordPress — verdict terrain",
+      "context": "Prise de position assumée, expertise pratique",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "J'ai migré un blog de 35 articles depuis Blog4ever vers Ghost CMS pour un client.\nAvant ça, j'avais travaillé sur des projets WordPress (maintenance, optimisation, PrestaShop).\nVoilà mon verdict honnête après les deux.\n\nGHOST :\n- Léger, rapide, structure propre dès l'installation\n- Idéal pour un blog de contenu pur\n- Newsletter native intégrée (j'ai configuré Brevo en SMTP pour l'envoi)\n- Handlebars pour la personnalisation du thème — puissant si tu sais coder, inaccessible si tu ne sais pas\n- Écosystème de plugins très limité comparé à WordPress\n- Maintenance quasi-inexistante si le client publie uniquement du contenu\n\nWORDPRESS :\n- Écosystème immense, un plugin pour tout\n- Mais : mises à jour fréquentes qui cassent des choses, surface d'attaque large, performances variables selon la config\n- Incontournable pour l'e-commerce (WooCommerce) ou les sites qui ont besoin de beaucoup d'intégrations\n\nCE QUI DÉCIDE DU CHOIX :\n- Client qui publie du contenu uniquement → Ghost\n- Client qui a besoin de formulaires complexes, e-commerce, intégrations multiples → WordPress\n- Le bon CMS dépend du client, pas de mes préférences"
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:42:02.198302"
+    },
+    {
+      "id": "post-04",
+      "persona": "poste_routine",
+      "topic": "Ce que Cloudflare fait que l'hébergeur ne fait pas",
+      "context": "Éducation + légère provocation",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "J'ai configuré Cloudflare sur 6 domaines pour un client professionnel.\nCe que j'ai activé et paramétré :\n\nWAF (Web Application Firewall) :\nBloque les tentatives d'injection SQL, XSS, et autres attaques automatisées communes.\nÇa se passe devant le serveur — l'attaque n'atteint jamais l'hébergement.\n\nBot Fight Mode :\nDétecte et bloque les bots automatisés connus (scrapers malveillants, crawlers agressifs, attaques par force brute).\nRéduit la consommation inutile de ressources serveur.\n\nCache CDN :\nLes assets statiques (images, CSS, JS) sont servis depuis le data center Cloudflare le plus proche du visiteur.\nLe serveur d'origine est déchargé.\n\nSSL universel :\nHTTPS activé automatiquement, certificat géré par Cloudflare, sans coût supplémentaire.\n\nDNS Cloudflare :\nParmi les DNS les plus rapides au monde. Résolution plus rapide = connexion initiale plus rapide.\n\nCE QUE L'HÉBERGEUR MUTUALISÉ CLASSIQUE NE FAIT PAS :\nPas de WAF personnalisable, pas de protection bot réelle, pas de CDN mondial, SSL souvent payant ou en option.\n\nCONCLUSION :\nPlan gratuit Cloudflare + hébergement basique = meilleure protection qu'un hébergement \"premium\" sans Cloudflare."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:43:02.749982"
+    },
+    {
+      "id": "post-05",
+      "persona": "poste_routine",
+      "topic": "Livraison de la migration Ghost",
+      "context": "Preuve sociale sobre, fierté professionnelle",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "SITUATION DE DÉPART :\nUn client avait un blog sur Blog4ever — plateforme vieillissante, peu flexible, pas de newsletter correcte, SEO basique.\nIl voulait migrer vers Ghost pour avoir un blog plus rapide, maintenable, avec newsletter intégrée.\n\nCE QUI A ÉTÉ LIVRÉ :\n- 35 articles migrés depuis Blog4ever vers Ghost, mise en forme conservée\n- Meta descriptions SEO rédigées pour chacun des 35 articles\n- Système de date de mise à jour dynamique : Ghost n'affiche pas nativement la date de modification des articles. J'ai créé un tag interne (#mis-a-jour) qui, quand il est ajouté à un article, déclenche l'affichage de la date de mise à jour dans le template via Handlebars. Le client peut mettre à jour n'importe quel article et la date s'affiche automatiquement.\n- Intégration Brevo (anciennement Sendinblue) en SMTP pour l'envoi des newsletters\n- Corrections CSS pour l'affichage des images (certaines étaient mal cadrées ou mal redimensionnées dans le thème)\n- JSON-LD schema simplifié pour le référencement (type BlogPosting, champs essentiels uniquement)\n- Formation client via vidéo Loom — pas de call en temps réel, le client peut revoir à volonté\n\nAPRÈS LA LIVRAISON :\nLe client a souhaité réactiver sa newsletter — hors périmètre initial.\nJ'ai positionné ça comme une prestation séparée et proposé un devis distinct.\nRésultat : contrat de maintenance signé à 50€/mois + newsletter en option pour la suite."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:44:08.220806"
+    },
+    {
+      "id": "post-06",
+      "persona": "poste_routine",
+      "topic": "L'urgence Cloudflare — cas concret",
+      "context": "Tension narrative + leçon sur la maintenance préventive",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "SITUATION :\nUn client reçoit des alertes de ralentissement sur son site. Trafic anormalement élevé, hébergement saturé.\nIl pense à une attaque.\n\nDIAGNOSTIC VIA CLOUDFLARE ANALYTICS :\nPic de requêtes automatisées — bots non filtrés qui crawlent le site en boucle.\nLe Bot Fight Mode n'était pas activé. Pas de règles WAF en place.\nLes bots consommaient les ressources du serveur comme de vrais visiteurs.\n\nINTERVENTION :\nActivation du Bot Fight Mode → blocage immédiat du trafic bot connu.\nMise en place de règles WAF pour bloquer les patterns d'attaque identifiés.\nRésultat : trafic retombé à la normale en quelques heures.\n\nLEÇON :\nTout ça aurait pu être configuré en amont pour moins cher qu'une intervention d'urgence.\nUne configuration préventive prend 1 à 2 jours. Une intervention en urgence coûte plus — en argent et en stress."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:45:04.505315"
+    },
+    {
+      "id": "post-07",
+      "persona": "poste_routine",
+      "topic": "Facturer 500€ pour 2 jours de configuration",
+      "context": "Valeur vs temps, confiance dans ses tarifs",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "CONTEXTE :\nDeuxième mission Cloudflare pour un client qui avait déjà travaillé avec moi.\nPérimètre : configuration WAF + Bot Fight Mode + règles de cache + DNS sur 6 domaines.\nLe client a d'abord résisté sur le prix. Il pensait que \"c'est juste une configuration\".\n\nMA RÉPONSE :\nCe n'est pas du temps que tu paies. C'est la protection de 6 actifs numériques professionnels.\nUn WAF mal configuré, c'est soit trop strict (il bloque de vrais visiteurs), soit trop permissif (il laisse passer les attaques).\nUne configuration correcte demande de comprendre le trafic du site, d'ajuster les règles, de tester.\n\nRÉSULTAT :\nNegociation à 500€. Client satisfait à la livraison.\n\nLEÇON :\nUn freelance qui baisse ses prix à chaque objection finit par travailler pour rien et envoie un mauvais signal.\nL'objection sur le prix est souvent une demande de justification, pas un refus définitif."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:46:16.241454"
+    },
+    {
+      "id": "post-08",
+      "persona": "poste_routine",
+      "topic": "Vendre des résultats, pas des prestations",
+      "context": "Conseil pratique issu d'une vraie évolution personnelle",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "CE QUI A CHANGÉ DANS MA FAÇON DE PRÉSENTER MES OFFRES :\n\nAvant, je décrivais ce que je faisais :\n\"Configuration WAF, activation Bot Fight Mode, mise en place règles de cache\"\n\"Migration CMS, intégration SMTP, corrections CSS\"\n\nLe client ne comprend pas, hésite, négocie.\n\nMaintenant, je décris ce que le client obtient :\n\"Vos 6 domaines protégés contre les attaques automatisées et le trafic parasite\"\n\"Un blog rapide, maintenable, avec newsletter intégrée et formation incluse\"\n\nEXEMPLE CONCRET :\nLa mission Cloudflare à 500€ — quand je l'ai vendue comme \"protection de 6 domaines professionnels\", le client a compris la valeur immédiatement.\nQuand j'aurais dit \"activation Bot Fight Mode + WAF\", il aurait eu une conversation sur ce que c'est.\n\nPRINCIPE :\nLe client achète le résultat. Le processus, c'est mon problème.\nLe détail technique rassure après la vente, pas avant."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:47:19.343728"
+    },
+    {
+      "id": "post-09",
+      "persona": "poste_routine",
+      "topic": "Le vrai frein des TPE/PME : la peur de déléguer",
+      "context": "Observation terrain, empathie, positionnement expert",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "CE QUE J'OBSERVE EN TRAVAILLANT AVEC DES TPE/PME :\n\nLe budget est rarement le vrai problème.\nCe qui bloque vraiment, c'est le rapport au contrôle.\nCes dirigeants ont souvent tout construit seuls — ils savent exactement comment chaque chose fonctionne dans leur activité. Déléguer, c'est accepter de ne plus tout superviser.\n\nMANIFESTATIONS CONCRÈTES :\n- Client qui change d'avis sur le périmètre après la livraison\n- Client qui revient avec des demandes non prévues (\"et tant qu'on y est...\")\n- Client qui veut valider chaque étape intermédiaire au lieu de voir le résultat final\n- Négociation sur des tarifs pourtant justifiés, même quand le budget n'est pas le problème\n\nCE QUE J'AI MIS EN PLACE POUR Y RÉPONDRE :\n- Formation client systématique via Loom : le client comprend ce qu'il a acheté, il ne dépend pas de moi pour tout\n- Documentation de chaque décision technique : trace écrite qui évite les malentendus\n- Périmètre posé clairement dès le début, par écrit\n- Ne pas céder sur le scope sans facturation — mais expliquer pourquoi, sans agressivité"
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:48:25.590094"
+    },
+    {
+      "id": "post-10",
+      "persona": "poste_routine",
+      "topic": "500 emails, 0 réponse — ce que ça m'a appris",
+      "context": "Transparence totale, anti-bullshit, invite au débat",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "CE QUI S'EST PASSÉ :\nJ'ai lancé une campagne cold email entièrement automatisée.\n500 prospects ciblés — des TPE/PME françaises avec un site web dégradé ou lent.\nLes emails étaient personnalisés : l'outil auditait chaque site et adaptait le message selon les problèmes détectés.\nObjet, corps, signature — tout généré automatiquement.\nRésultat : 0 réponse.\n\nPOURQUOI ÇA N'A PAS MARCHÉ :\nPas un problème d'outil. Pas un problème de volume.\nUn problème d'angle.\n\"Votre site est lent\" n'est pas une douleur qu'un dirigeant de TPE ressent chaque matin.\nIl n'a pas de KPI lié à la vitesse de son site. Il ne sait pas ce que ça lui coûte concrètement.\nJe ciblais un problème réel, mais pas un problème perçu.\n\nLE PIVOT :\nJ'ai changé de cible : les entreprises sans site web du tout.\nLa douleur est plus évidente — \"mes concurrents sont en ligne, je ne le suis pas.\"\nMon scraper Google Maps me permet de filtrer exactement ces entreprises."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:49:41.930802"
+    },
+    {
+      "id": "post-13",
+      "persona": "poste_routine",
+      "topic": "Le JSON-LD que j'utilise sur mes projets Ghost",
+      "context": "Expertise pointue rendue accessible, généreux",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "SUR LE PROJET DE MIGRATION GHOST :\nJ'ai mis en place un JSON-LD schema pour le référencement.\nJ'ai volontairement écarté les schémas complexes qu'on trouve dans les guides SEO — WebPage imbriqué dans BreadcrumbList imbriqué dans Organization — au profit d'un schema BlogPosting simple et propre.\n\nPOURQUOI SIMPLE :\nPlus un schema est complexe, plus il y a de risques d'erreurs de validation.\nGoogle Search Console signale les erreurs de schema et ça peut pénaliser l'indexation.\nPour un blog de TPE/PME, le schema BlogPosting avec les bons champs couvre 95% des besoins.\n\nLES CHAMPS QUE J'INCLUS :\n- headline (titre de l'article)\n- datePublished (date de publication)\n- dateModified (date de mise à jour — alimentée dynamiquement par le système de tag #mis-a-jour)\n- author (nom + url)\n- description (meta description de l'article)\n- image (image principale de l'article)\n\nLE SYSTÈME DE TAG #MIS-A-JOUR :\nGhost ne gère pas nativement l'affichage de la date de modification.\nJ'ai créé un tag interne (#mis-a-jour) dans Ghost.\nQuand ce tag est ajouté à un article, le template Handlebars affiche la date de mise à jour.\nCe tag alimente aussi le champ dateModified dans le JSON-LD — automatiquement."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:50:49.108358"
+    },
+    {
+      "id": "post-15",
+      "persona": "poste_routine",
+      "topic": "Travailler depuis Cotonou pour des clients français",
+      "context": "Authenticité, sujet différenciant",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "LA RÉALITÉ CONCRÈTE :\n\nCe qui est simple :\n- La langue : français natif, communication sans friction avec les clients français et belges\n- Les outils : Malt gère la facturation, le contrat, la légitimité de la relation. Le client paie en euros, je facture en euros.\n- Le travail async : je forme mes clients via Loom (vidéos à regarder quand ils veulent), je réponds par écrit. Le décalage horaire est quasi inexistant avec la France (même fuseau ou +1h selon la période).\n- La stack technique : tout est dans le cloud. Ghost, Cloudflare, n8n, GitHub — la localisation ne change rien.\n\nCe qui demande plus d'effort :\n- Certains clients hésitent quand ils voient la localisation sur mon profil Malt. Leur réflexe : \"est-ce que ça va vraiment marcher à distance ?\"\n- La réponse est dans la façon de travailler : documentation systématique, communication écrite rigoureuse, Loom pour les explications complexes, réponses rapides.\n- Je ne peux pas compenser par une réunion physique — je compense par la rigueur et la clarté.\n\nCE QUE MALT A CHANGÉ :\nUne plateforme qui normalise le freelance à distance, qui porte la confiance initiale, qui valide le profil aux yeux du client."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:51:52.945381"
+    },
+    {
+      "id": "post-16",
+      "persona": "poste_routine",
+      "topic": "Solopreneur — ce que j'ai arrêté de faire moi-même",
+      "context": "Évolution personnelle, inspiration",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "CE QUE J'AI AUTOMATISÉ :\n\nProspection :\n500 prospects contactés sans intervention manuelle. Mon outil scrape, audite, rédige, envoie.\nJe n'ouvre pas un tableur, je ne copie pas d'emails, je ne rédige pas de messages un par un.\n\nPublication de contenu :\nJ'ai construit une plateforme d'automatisation de contenu pour les réseaux sociaux.\nElle génère du texte, des images, des vidéos (via Remotion), et publie sur plusieurs comptes selon des personas définis.\nCe système qui tourne pour moi, je le propose maintenant comme produit à des community managers et agences.\n\nSuivi opérationnel :\nWorkflows n8n pour les notifications, le suivi de missions, les rapports.\n\nCE QUE J'AI GARDÉ :\n- La relation client — c'est là que la valeur se crée et se maintient\n- Les décisions d'architecture technique — ce qui sera livré et comment\n- La réflexion sur le message et la stratégie — ce qu'aucun outil ne peut remplacer\n\nCE QUE ÇA A CHANGÉ :\nQuand l'exécution répétitive est automatisée, je pense mieux.\nJe peux coordonner plutôt qu'exécuter, ce qui me permet de prendre des missions plus complexes et mieux payées."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:52:54.477459"
+    },
+    {
+      "id": "post-17",
+      "persona": "poste_routine",
+      "topic": "Le projet le plus instructif — gestion de scope",
+      "context": "Vulnérabilité calculée, leçon business",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "LE PROJET :\nMigration Ghost + SEO + SMTP + corrections diverses. Techniquement faisable, bien délimité au départ.\n\nCE QUI S'EST PASSÉ APRÈS LA LIVRAISON :\nLe client a voulu réactiver sa newsletter.\nC'était hors périmètre. Ce n'était pas prévu dans le devis. Ce n'était pas inclus dans la mission.\n\nLE DILEMME :\nDire oui pour maintenir la relation → je travaille gratuitement et je crée un précédent.\nTenir la limite → risque de friction, client potentiellement déçu.\n\nCE QUE J'AI FAIT :\nJ'ai expliqué calmement que la réactivation newsletter est une prestation à part — elle demande de l'audit, de la configuration, des tests de délivrabilité.\nJ'ai proposé un devis séparé, sans agressivité.\nJ'ai aussi proposé un contrat de maintenance mensuel à 50€ pour couvrir les ajustements courants.\n\nRÉSULTAT :\nLe client a signé le contrat de maintenance. La newsletter est restée en option pour la suite.\nPas de friction. Périmètre respecté. Relation maintenue.\n\nLEÇON :\nLe scope creep est presque toujours involontaire de la part du client.\nC'est au prestataire de poser les limites — clairement, calmement, sans s'excuser.\nUn client qui comprend les règles du jeu les respecte."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:54:16.971028"
+    },
+    {
+      "id": "post-18",
+      "persona": "poste_routine",
+      "topic": "Ce que perdent les TPE/PME sans automatisation",
+      "context": "Douleur claire, solution directe, CTA non-agressif",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "3 SITUATIONS QUE JE VOIS RÉGULIÈREMENT :\n\nSituation 1 :\nUn prospect remplit un formulaire de contact.\nLe dirigeant est en déplacement, voit le mail 2 jours plus tard, répond.\nLe prospect a déjà signé avec quelqu'un d'autre.\nCe qu'un workflow simple aurait fait : réponse automatique immédiate + relance à J+2 si pas de réponse humaine.\n\nSituation 2 :\nUn devis est envoyé. Pas de réponse.\nLe dirigeant ne relance pas parce qu'il ne veut pas \"insister\".\nLe devis meurt faute de suivi.\nCe qu'un workflow simple aurait fait : rappel interne à J+5, relance email à J+7 si toujours rien.\n\nSituation 3 :\nLe dirigeant veut savoir où en sont ses prospects en cours.\nIl passe 45 minutes à ouvrir des fils d'emails, des tableaux, des messages WhatsApp.\nCe qu'un workflow simple aurait fait : rapport automatique chaque lundi avec l'état du pipe.\n\nCES PROBLÈMES NE SONT PAS DES PROBLÈMES DE TAILLE D'ENTREPRISE.\nUne TPE de 2 personnes les vit autant qu'une PME de 20.\nCe sont des problèmes d'outil, pas de budget — les 3 workflows ci-dessus représentent 2 à 3 jours de mise en place."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:55:25.043174"
+    },
+    {
+      "id": "post-20",
+      "persona": "poste_routine",
+      "topic": "3 questions à se poser avant de chercher un freelance",
+      "context": "Éducation du prospect, filtre naturel des mauvaises missions",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MATIERE_BRUTE": "CE QUI CRÉE DES MISSIONS DIFFICILES :\nPas le niveau technique du freelance. Pas le budget.\nSouvent : un brief flou, un budget décorrelé des attentes, un client non disponible.\n\nLES 3 QUESTIONS :\n\nQuestion 1 — \"Est-ce que je décris un résultat ou une tâche ?\"\nBon brief : \"Je veux un blog rapide, maintenable, avec newsletter intégrée, opérationnel en 3 semaines.\"\nMauvais brief : \"Je veux que tu installes Ghost et que tu configures Mailchimp et que tu migres mes articles.\"\nLe résultat, c'est le problème du client. La solution, c'est le problème du freelance.\nUn client qui décrit des tâches va changer d'avis en cours de route parce qu'il n'a pas défini ce qu'il voulait vraiment.\n\nQuestion 2 — \"Mon budget est-il à la hauteur de ce que j'attends ?\"\nMigrer 35 articles avec SEO, SMTP et formation : c'est plusieurs jours de travail.\nConfigurer Cloudflare sur 6 domaines correctement : c'est 2 jours de travail.\nUn budget de 200€ produit des résultats à 200€.\nCe n'est pas une critique — c'est de la clarté. Les deux parties doivent être alignées sur ce que le prix permet.\n\nQuestion 3 — \"Suis-je disponible pour donner des retours ?\"\nLes projets qui traînent ne traînent pas à cause du freelance.\nIls traînent parce que le client met 5 jours à valider une maquette, 3 jours à répondre à une question bloquante.\nLa rapidité d'une mission dépend des deux côtés."
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-12T13:56:27.505461"
+    },
+    {
+      "id": "proc-01",
+      "persona": "poste_routine",
+      "topic": "Études à l'étranger : les documents indispensables",
+      "context": "ANGLE : Informatif, rassurant, orienté préparation de dossier (Études)\n\nTEXTE DE LA PUBLICATION :\n\n🎓 Vous rêvez d'étudier en France ou au Canada ?\n\nAvant de vous lancer, voici les documents que l'on demande toujours en premier pour monter votre dossier 📋 :\n\n✅ Relevés de notes (tous niveaux confondus)\n✅ Diplômes obtenus\n✅ Justificatifs de votre parcours académique et/ou professionnel\n✅ Passeport en cours de validité\n\n💡 Le secret d'un dossier qui passe ? La PRÉPARATION. Un dossier bien monté dès le départ, c'est déjà la moitié du chemin vers votre admission !\n\nChez AYADG Consulting 🌍, on vous aide à rassembler, vérifier et structurer chaque pièce pour mettre toutes les chances de votre côté.\n\n📞 Une question sur votre dossier ? Écrivez-nous en commentaire ou contactez-nous directement !\n🔗 ayadg-consult.com\n\n#EtudesAlEtranger #France #Canada #AYADGConsulting #VisaEtudiant\n\nCE QUE LE POST DOIT TRANSMETTRE :\nAYADG simplifie une étape qui stresse beaucoup de candidats (la constitution du dossier) et donne une raison concrète de les contacter.",
+      "media": "Image conseillée : visuel infographie type checklist (passeport + diplôme + icônes documents), couleurs de la charte AYADG",
+      "date": "2026-06-19",
+      "time": "18:00",
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "proc-02",
+      "persona": "poste_routine",
+      "topic": "Tourisme : bien préparer son séjour en France",
+      "context": "ANGLE : Pratique, voyage/tourisme, ambiance week-end et évasion\n\nTEXTE DE LA PUBLICATION :\n\n🇫🇷 Direction la France... en pensée ! ✈️\n\nQue vous rêviez de flâner à Paris, de déguster un verre à Bordeaux ou de bronzer sur la Côte d'Azur 🌊, une bonne préparation fait toute la différence.\n\n5 essentiels à ne jamais oublier avant de partir :\n\n1️⃣ Vérifiez si vous avez besoin d'un visa et que votre passeport est valide pour toute la durée du séjour\n2️⃣ Planifiez votre itinéraire et réservez vos hébergements à l'avance\n3️⃣ Souscrivez une bonne assurance voyage (urgences médicales + annulation)\n4️⃣ Achetez vos billets de train en avance pour profiter des meilleurs tarifs\n5️⃣ Apprenez 2-3 phrases de base en français, ça ouvre toutes les portes 😊\n\n🧳 Envie de partir sans stress et sans rien oublier ? AYADG Consulting s'occupe de toute la procédure pour vous !\n\n👉 Contactez-nous dès maintenant : ayadg-consult.com\n\n#VoyageEnFrance #Tourisme #AYADGConsulting #PréparezVotreVoyage\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLe voyage est accessible et agréable quand il est bien préparé — et AYADG peut prendre en charge cette préparation.",
+      "media": "Image conseillée : photo inspirante (Tour Eiffel, vignobles de Bordeaux ou plage Côte d'Azur)",
+      "date": "2026-06-20",
+      "time": "10:00",
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "proc-03",
+      "persona": "poste_routine",
+      "topic": "Témoignage client : rêve d'études devenu réalité",
+      "context": "ANGLE : Émotionnel, preuve sociale, ton dimanche matin posé\n\nTEXTE DE LA PUBLICATION :\n\n💬 « Grâce à AYADG Consulting, j'ai pu réaliser mon rêve d'étudier en France. Un service irréprochable et un accompagnement exceptionnel. » — Roland K., Étudiant 🎓✨\n\nChaque mois, des hommes et des femmes comme vous concrétisent leur projet d'études, de visite ou de travail à l'international 🌍.\n\nEt si la prochaine belle histoire... c'était la vôtre ? 💭\n\nChez AYADG Consulting, on ne se contente pas de remplir des dossiers : on vous accompagne, on vous écoute, et on reste avec vous jusqu'à la réussite de votre projet 🤝.\n\n🙋‍♂️🙋‍♀️ Vous aussi vous avez un rêve d'ailleurs ? Dites-nous en commentaire votre destination de cœur !\n\n📩 ayadg-consult.com | 📘 facebook.com/ayadg.consulting\n\n#TémoignageClient #AYADGConsulting #RêveDevenuRéalité\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa réussite des clients passés inspire confiance et invite les prospects à se projeter dans leur propre projet.",
+      "media": "Image conseillée : portrait souriant générique (étudiant avec valise/diplôme) ou visuel citation stylisé",
+      "date": "2026-06-21",
+      "time": "11:00",
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "proc-04",
+      "persona": "poste_routine",
+      "topic": "Travailler au Canada : ce qu'il faut savoir",
+      "context": "ANGLE : Motivant, début de semaine, orienté Travail\n\nTEXTE DE LA PUBLICATION :\n\n💼 Nouvelle semaine, nouveaux projets ! Et si 2026 était l'année de votre départ pour travailler au Canada ? 🍁\n\nLe Canada reste l'une des destinations préférées des professionnels grâce à :\n✅ Un marché du travail dynamique et ouvert à l'international\n✅ Des procédures de visa de travail bien définies\n✅ Une qualité de vie reconnue\n\nMais entre les permis, les démarches administratives et les délais... on s'y perd vite 😵‍💫\n\nC'est exactement pour ça qu'AYADG Consulting existe : on prépare votre dossier, on vous accompagne dans la soumission, et on reste avec vous jusqu'à votre installation sur place 🏡.\n\n💪 Prêt(e) à passer à l'action cette semaine ? Réservez votre consultation dès aujourd'hui !\n🔗 ayadg-consult.com\n\n#TravailAuCanada #VisaTravail #AYADGConsulting #NouvelleSemaine\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLe travail à l'étranger est atteignable avec le bon accompagnement, du dossier jusqu'à l'installation.",
+      "media": "Image conseillée : visuel drapeau canadien + skyline (Toronto/Montréal) ou photo de professionnel souriant",
+      "date": "2026-06-22",
+      "time": "08:30",
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "proc-05",
+      "persona": "poste_routine",
+      "topic": "Vrai/Faux sur le refus de visa",
+      "context": "ANGLE : Format Vrai/Faux, déconstruction de mythe, rassurant\n\nTEXTE DE LA PUBLICATION :\n\n❓ VRAI ou FAUX : un dossier de visa refusé une fois = plus aucune chance ?\n\n🚫 FAUX !\n\nUn refus n'est jamais une fin en soi. Bien souvent, c'est juste un dossier incomplet, mal présenté ou avec des justificatifs insuffisants 📄.\n\nCe qu'on fait chez AYADG Consulting quand un client revient après un refus :\n🔍 On analyse les raisons exactes du refus\n🛠️ On corrige et on renforce les points faibles du dossier\n📅 On prépare une nouvelle soumission, plus solide et plus claire\n\nUn refus n'est jamais définitif : avec une bonne analyse et une meilleure préparation, une nouvelle demande a toutes ses chances 💪✨\n\n🙋 Vous avez déjà eu un refus ? Ne baissez pas les bras, parlons-en !\n📩 ayadg-consult.com\n\n#VisaRefusé #AYADGConsulting #OnNeLâcheRienAvecVous\n\nCE QUE LE POST DOIT TRANSMETTRE :\nUn refus de visa n'est pas une impasse — AYADG sait identifier les causes et reconstruire un dossier gagnant, sans promettre de résultat garanti.",
+      "media": "Image conseillée : visuel simple style quiz (VRAI/FAUX) avec icône passeport tamponné",
+      "date": "2026-06-23",
+      "time": "17:00",
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "proc-06",
+      "persona": "poste_routine",
+      "topic": "Notre méthode d'accompagnement en 4 étapes",
+      "context": "ANGLE : Pédagogique, transparence sur le processus, transversal (étude/visite/travail)\n\nTEXTE DE LA PUBLICATION :\n\n🛠️ Comment ça marche chez AYADG Consulting ? On vous explique tout en 4 étapes simples 👇\n\n1️⃣ Consultation initiale 🗣️ — On discute de votre projet (étude, visite, travail) et on vous conseille selon votre situation\n2️⃣ Préparation du dossier 📂 — On vous aide à réunir et organiser tous les documents nécessaires\n3️⃣ Soumission & suivi 📨 — On dépose votre dossier auprès des autorités compétentes et on suit son évolution jusqu'au résultat\n4️⃣ Installation & support 🏡 — Une fois sur place, on reste disponible pour vous aider à vous installer et résoudre les imprévus\n\nPas de zones d'ombre, pas de mauvaises surprises : juste un accompagnement clair, de A à Z 🙌\n\n🌍 Études, visite ou travail en Afrique, en Europe ou en Amérique : on vous accompagne où que vous alliez.\n\n👉 Démarrez votre projet dès aujourd'hui : ayadg-consult.com\n\n#AYADGConsulting #AccompagnementSurMesure #MobilitéInternationale\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa clarté du processus AYADG donne confiance : le client sait exactement à quoi s'attendre à chaque étape.",
+      "media": "Image conseillée : visuel infographie en 4 blocs numérotés avec icônes (discussion, dossier, soumission, maison)",
+      "date": "2026-06-24",
+      "time": "12:30",
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "proc-07",
+      "persona": "poste_routine",
+      "topic": "Jeu du jeudi : votre destination de rêve",
+      "context": "ANGLE : Engagement, ludique, génère des commentaires, transversal (voyage/étude/travail)\n\nTEXTE DE LA PUBLICATION :\n\n🌍✈️ Petit jeu du jeudi : si vous pouviez partir DEMAIN pour étudier, visiter ou travailler n'importe où dans le monde... ce serait où ?? 🤔\n\n🇫🇷 Paris pour ses études et sa culture ?\n🇨🇦 Le Canada pour sa qualité de vie ?\n🌍 Ou une toute autre destination qui vous fait rêver ?\n\nDites-nous tout en commentaire 👇 — on a hâte de découvrir vos rêves d'ailleurs !\n\nEt si on vous disait que ce rêve peut devenir un vrai projet, avec un accompagnement pas à pas ? 😉 C'est exactement ce qu'on fait chez AYADG Consulting depuis le premier jour.\n\n📩 Passez à l'action : ayadg-consult.com\n📘 Suivez-nous ici pour ne rien manquer : facebook.com/ayadg.consulting\n\n#JeuDuJeudi #AYADGConsulting #VotreProjetNotrePriorité\n\nCE QUE LE POST DOIT TRANSMETTRE :\nUn format léger et participatif qui booste l'engagement (commentaires, partages) tout en ramenant subtilement au service AYADG.",
+      "media": "Image conseillée : visuel carte du monde stylisée avec quelques drapeaux/épingles (France, Canada, etc.)",
+      "date": "2026-06-25",
+      "time": "19:00",
+      "validated": false,
+      "used": false
+    }
+  ]
+}

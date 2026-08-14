@@ -1,0 +1,12 @@
+{
+  "topic": "les meilleurs prompts",
+  "persona": "images_prompt",
+  "word_count": 448,
+  "status": "pending",
+  "published": false,
+  "created_at": "2026-05-05T02:56:42.124575",
+  "llm_provider": "groq",
+  "llm_model": "llama-3.3-70b-versatile",
+  "copywriter_stage": "success",
+  "has_pinned_comment": false
+}

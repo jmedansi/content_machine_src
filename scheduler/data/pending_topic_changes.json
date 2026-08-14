@@ -1,0 +1,2734 @@
+[
+  {
+    "action": "delete",
+    "topic_id": "9659252c-da1d-4e14-83f0-eee5b5c3f3af",
+    "platform": "linkedin",
+    "account_id": 1,
+    "timestamp": "2026-05-20T00:10:44.924011"
+  },
+  {
+    "action": "delete",
+    "topic_id": "12d3e1a7-70d5-4026-a4eb-c2f71bb2ca34",
+    "platform": "linkedin",
+    "account_id": 1,
+    "timestamp": "2026-05-20T00:11:12.695629"
+  },
+  {
+    "action": "delete",
+    "topic_id": "aab16cb9-98e4-4a6d-9968-12663d0909e7",
+    "platform": "linkedin",
+    "account_id": 1,
+    "timestamp": "2026-05-20T00:12:16.382847"
+  },
+  {
+    "action": "delete",
+    "topic_id": "f3810d15-63fb-4dfd-a77f-1335728f9222",
+    "platform": "linkedin",
+    "account_id": 1,
+    "timestamp": "2026-05-20T00:18:24.073021"
+  },
+  {
+    "action": "delete",
+    "topic_id": "ea40ac80-4584-4cd1-9d5e-d776f7bee5b3",
+    "platform": "linkedin",
+    "account_id": 1,
+    "timestamp": "2026-05-20T00:18:49.289037"
+  },
+  {
+    "action": "delete",
+    "topic_id": "727d47da-3038-47e7-a770-4c30aef66dfa",
+    "platform": "linkedin",
+    "account_id": 1,
+    "timestamp": "2026-05-20T00:19:25.191532"
+  },
+  {
+    "action": "delete",
+    "topic_id": "67dca66c-4262-4a3e-8322-a6e737e66f93",
+    "platform": "linkedin",
+    "account_id": 1,
+    "timestamp": "2026-05-20T00:20:02.389718"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "fcc15c35-7f6a-4f2e-8b24-1807680fa8da",
+      "persona": "b2b_expert",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "b2b_expert",
+        "topic": "Comment un entrepreneur ivoirien a augmenté ses ventes de 25% en 3 mois grâce à l'utilisation de WhatsApp Business",
+        "context": "De nombreux entrepreneurs en Afrique utilisent WhatsApp pour communiquer avec leurs clients, mais peu exploitent pleinement son potentiel commercial. C'est pourquoi il est important de partager des cas concrets d'utilisation efficace de WhatsApp Business pour booster les ventes.",
+        "objectif": "engagement",
+        "variables": {
+          "SITUATION_CLIENT": "Un entrepreneur ivoirien dans le domaine de la vente en ligne de produits alimentaires",
+          "ACTION_CONTRE_INTUITIVE": "Utiliser WhatsApp Business pour proposer des offres personnalisées et des promotions exclusives à ses clients",
+          "RESULTAT_CHIFFRE": "25% d'augmentation des ventes en 3 mois, avec un chiffre d'affaires supplémentaire de 1,5 million de FCFA",
+          "MORALE_B2B": "L'utilisation efficace de WhatsApp Business peut constituer un levier de croissance pour les entreprises, en leur permettant de renforcer leur lien avec les clients et de stimuler les ventes"
+        },
+        "validated": true,
+        "used": false,
+        "id": "fcc15c35-7f6a-4f2e-8b24-1807680fa8da"
+      }
+    },
+    "timestamp": "2026-05-20T02:22:14.001929"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "b579e692-f464-4602-9582-eb653085ce4d",
+      "persona": "carousel_pro",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "carousel_pro",
+        "topic": "5 Erreurs de Pricing qui Ruinent votre Entreprise",
+        "context": "De nombreuses entreprises, notamment les petites et moyennes entreprises (PME), rencontrent des difficultés à établir un prix adéquat pour leurs produits ou services. Cela peut conduire à des pertes financières significatives et nuire à la croissance de l'entreprise. Ce sujet est pertinent maintenant car il répond à un besoin immédiat des entrepreneurs et des dirigeants d'entreprise qui cherchent à améliorer leur stratégie de tarification.",
+        "objectif": "engagement",
+        "variables": {
+          "THEME_CAROUSEL": "Pricing et Tarification",
+          "PROBLEME_INTRODUIT": "Les erreurs de pricing peuvent entraîner des pertes financières et nuire à la croissance de l'entreprise",
+          "EXEMPLES_ERREURS": "Erreurs de fixation de prix sans considération de la valeur perçue, de la concurrence et des coûts",
+          "ETAPES_SOLUTION": "Établir une stratégie de tarification basée sur la valeur perçue, analyser la concurrence et ajuster les prix en fonction des coûts et de la demande"
+        },
+        "validated": false,
+        "used": false,
+        "id": "b579e692-f464-4602-9582-eb653085ce4d"
+      }
+    },
+    "timestamp": "2026-05-20T02:25:35.008293"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "77219f0e-40fe-4ed4-8c4f-95852aaff709",
+      "persona": "cta",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "cta",
+        "topic": "Comment augmenter ses ventes en ligne avec les bons outils de marketing automation",
+        "context": "De nombreux entrepreneurs en ligne peinent à gérer leur flux de clients et à augmenter leurs ventes. Les outils de marketing automation peuvent aider à résoudre ce problème.",
+        "objectif": "engagement",
+        "variables": {
+          "OFFRE_OU_RESSOURCE": "Une checklist de 7 points pour auditer ton automatisation actuelle de marketing",
+          "DOULEUR_CIBLE": "Perdre du temps et de l'argent en raison d'une mauvaise gestion des leads et des campagnes de marketing",
+          "PREUVE_SOCIALE": "J'ai aidé plus de 50 entreprises à augmenter leurs ventes de 25% en moyenne grâce à la mise en place d'outils de marketing automation",
+          "ACTION_REQUISE": "Commente AUTOMATISER et je t'envoie la checklist PDF directement"
+        },
+        "validated": true,
+        "used": false,
+        "id": "77219f0e-40fe-4ed4-8c4f-95852aaff709"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.434593"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "289053f4-df91-4132-9345-fec6e830a6af",
+      "persona": "cta",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "cta",
+        "topic": "5 Astuces pour Augmenter la Conversion de Votre Site Web en 30 Minutes",
+        "context": "De nombreux entrepreneurs ont des sites web mais ne génèrent pas suffisamment de leads. Ces astuces aideront à améliorer la conversion.",
+        "objectif": "engagement",
+        "variables": {
+          "OFFRE_OU_RESSOURCE": "Un guide de 5 étapes pour améliorer la conversion de votre site web",
+          "DOULEUR_CIBLE": "Manque de leads et de ventes malgré un trafic web important",
+          "PREUVE_SOCIALE": "Plus de 50 entreprises ont déjà vu leur conversion augmenter grâce à ces astuces",
+          "ACTION_REQUISE": "Commenter 'CONVERTIR' pour recevoir le guide en message privé"
+        },
+        "validated": true,
+        "used": false,
+        "id": "289053f4-df91-4132-9345-fec6e830a6af"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.485276"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "c7d1256e-18ca-4f52-a63f-0b7db591071d",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "c7d1256e-18ca-4f52-a63f-0b7db591071d",
+        "topic": "Un défi pour encourager vos amis à partager leurs propres expériences",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.539986"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "fb8259c6-1027-4594-9e82-d6f0ce709a08",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "fb8259c6-1027-4594-9e82-d6f0ce709a08",
+        "topic": "Une petite anecdote personnelle pour vous rapprocher de vos amis",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.598626"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "1dc13bb8-146f-40fc-89b9-4f1cb36ad168",
+      "persona": "cta",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "cta",
+        "topic": "5 Astuces pour Augmenter la Conversion de ton Site Web en 1 Semaine",
+        "context": "De nombreux entrepreneurs ont des sites web qui ne génèrent pas suffisamment de conversions. Cela peut être dû à des problèmes de conception, de contenu ou de stratégie de marketing. Ce post propose des astuces concrètes pour améliorer la conversion de son site web en une semaine.",
+        "objectif": "engagement",
+        "variables": {
+          "OFFRE_OU_RESSOURCE": "Un guide PDF de 5 pages détaillant les étapes pour améliorer la conversion de son site web",
+          "DOULEUR_CIBLE": "Les entrepreneurs qui ont des sites web qui ne génèrent pas suffisamment de conversions et qui veulent améliorer leur stratégie de marketing",
+          "PREUVE_SOCIALE": "Un cas d'étude d'un entrepreneur qui a augmenté ses conversions de 25% en 1 semaine en utilisant ces astuces",
+          "ACTION_REQUISE": "Commenter 'CONVERSION' pour recevoir le guide PDF en message privé"
+        },
+        "validated": true,
+        "used": false,
+        "id": "1dc13bb8-146f-40fc-89b9-4f1cb36ad168"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.634912"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "c1f3c7e6-d75b-4baa-b285-d1272dcbd0c9",
+      "persona": "cta",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "cta",
+        "topic": "5 Erreurs à Éviter pour un Lancement de Produit Réussi sur les Réseaux Sociaux",
+        "context": "Les entrepreneurs locaux ont souvent du mal à lancer leurs produits sur les réseaux sociaux sans commettre des erreurs coûteuses. Ce sujet répond à ce besoin.",
+        "objectif": "engagement",
+        "variables": {
+          "OFFRE_OU_RESSOURCE": "Un guide gratuit de 5 étapes pour un lancement de produit réussi sur les réseaux sociaux",
+          "DOULEUR_CIBLE": "Les entrepreneurs perdent beaucoup d'argent et de temps en raison d'une mauvaise stratégie de lancement",
+          "PREUVE_SOCIALE": "Plus de 80% des entrepreneurs ont rapporté une augmentation significative de leurs ventes après avoir corrigé leurs stratégies de lancement",
+          "ACTION_REQUISE": "Commente LANCER et reçois le guide en message privé"
+        },
+        "validated": true,
+        "used": false,
+        "id": "c1f3c7e6-d75b-4baa-b285-d1272dcbd0c9"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.676641"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "ba418847-dfee-46f6-9784-f9c09eb83b4c",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "ba418847-dfee-46f6-9784-f9c09eb83b4c",
+        "topic": "L'importance de la suivie des clients après la vente",
+        "context": "De nombreuses PME en Afrique ont du mal à maintenir une relation avec leurs clients après une vente, ce qui peut entraîner une perte de chiffre d'affaires. Ce sujet est pertinent maintenant car il permet aux entreprises de réfléchir à leur stratégie de fidélisation des clients.",
+        "used": false,
+        "objectif": "autorite",
+        "variables": {
+          "PENSEE_DU_JOUR": "8 PME sur 10 en Afrique n'ont aucun système pour suivre leurs clients après la vente",
+          "EXPLICATION_RAPIDE": "Cela peut entraîner une perte de chiffre d'affaires et une diminution de la satisfaction client",
+          "QUESTION_SIMPLE": "Quel est le système que vous utilisez pour suivre vos clients après une vente ?"
+        },
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.709435"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "b4b3ba9c-7594-4955-8d7f-ae7d1075aad9",
+      "persona": "ia_design",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "ia_design",
+        "topic": "5 Minutes pour Créer un Logo Professionnel avec l'IA",
+        "context": "De nombreux entrepreneurs et créateurs de contenu ont besoin de logos de qualité pour leur marque, mais ne disposent pas du temps ou des compétences pour les créer. L'utilisation de l'IA peut être une solution rapide et efficace.",
+        "objectif": "engagement",
+        "variables": {
+          "OUTIL_DESIGN": "Midjourney",
+          "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour obtenir des résultats personnalisés",
+          "AVANT_APRES": "Avant : Logo générique et peu personnalisé, Après : Logo professionnel et adapté à la marque",
+          "IMPACT_VISUEL": "Un logo qui reflète l'identité de la marque et attire l'attention du public cible"
+        },
+        "validated": true,
+        "used": false,
+        "id": "b4b3ba9c-7594-4955-8d7f-ae7d1075aad9"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.747605"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "651c82ae-5b86-4b64-ba92-536b8dba7ef6",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "651c82ae-5b86-4b64-ba92-536b8dba7ef6",
+        "topic": "Un fait intéressant sur l'histoire du monde",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.788352"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "ab3a5ed5-2337-4de7-9769-2505a243ec1e",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "post_court",
+        "topic": "La perte d'argent due au manque de suivi des clients",
+        "context": "De nombreuses PME en Afrique ont du mal à suivre leurs clients après une vente, ce qui peut entraîner une perte de revenus significative.",
+        "objectif": "engagement",
+        "variables": {
+          "PENSEE_DU_JOUR": "8 PME sur 10 en Afrique n'ont aucun système pour suivre leurs clients après la vente",
+          "EXPLICATION_RAPIDE": "Cela peut entraîner une perte de revenus significative, car les clients ne reviennent pas",
+          "QUESTION_SIMPLE": "Quel est le coût réel de ne pas suivre vos clients après une vente ?"
+        },
+        "validated": true,
+        "used": false,
+        "id": "ab3a5ed5-2337-4de7-9769-2505a243ec1e"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.820682"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "6d020d20-18cf-4861-8caa-b6559ecca55d",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "6d020d20-18cf-4861-8caa-b6559ecca55d",
+        "topic": "Une question pour lancer une discussion avec vos followers",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.858619"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "97fafc4a-9d89-4d93-9cd1-38beabfe4044",
+      "persona": "cta",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "cta",
+        "topic": "5 erreurs coûteuses dans la création d'un funnel de vente pour les PME locales",
+        "context": "De nombreuses PME locales au Sénégal et au Cameroun investissent dans la création de funnels de vente sans comprendre les principes de base, ce qui peut entraîner des pertes financières importantes. Ce poste vise à éclairer les entrepreneurs sur les erreurs à éviter pour maximiser leur retour sur investissement.",
+        "objectif": "engagement",
+        "variables": {
+          "OFFRE_OU_RESSOURCE": "Un guide gratuit de 10 pages sur les meilleures pratiques pour créer un funnel de vente efficace pour les PME locales",
+          "DOULEUR_CIBLE": "Pertes financières dues à des funnels de vente mal conçus",
+          "PREUVE_SOCIALE": "Témoignage d'un entrepreneur local qui a augmenté ses ventes de 30% après avoir appliqué les principes du guide",
+          "ACTION_REQUISE": "Commenter 'FUNNEL' pour recevoir le guide en message privé"
+        },
+        "validated": true,
+        "used": false,
+        "id": "97fafc4a-9d89-4d93-9cd1-38beabfe4044"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.890609"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "97e0ba18-ed72-4854-86b7-8139983fd4af",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "97e0ba18-ed72-4854-86b7-8139983fd4af",
+        "topic": "Une blague pour faire sourire vos amis",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.927738"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "02f7c5e4-e0a5-4cbc-9a94-87b2f6eb312d",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "post_court",
+        "topic": "5 erreurs courantes qui tuent les startups en Afrique",
+        "context": "De nombreuses startups en Afrique échouent en raison de mauvaises décisions. Ce sujet vise à identifier les erreurs les plus courantes pour aider les entrepreneurs à les éviter.",
+        "objectif": "autorite",
+        "variables": {
+          "PENSEE_DU_JOUR": "L'ignorance du marché cible est souvent fatale",
+          "EXPLICATION_RAPIDE": "Une startup doit comprendre son marché pour offrir des produits ou services pertinents",
+          "QUESTION_SIMPLE": "Quelle est la principale erreur que les startups africaines doivent éviter pour réussir ?"
+        },
+        "validated": true,
+        "used": false,
+        "id": "02f7c5e4-e0a5-4cbc-9a94-87b2f6eb312d"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:39.963657"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "ca04f7c0-d392-4f3a-875a-2fe1b0622d36",
+      "persona": "ia_integration",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "ia_integration",
+        "topic": "Comment réduire les coûts de gestion de catalogue avec l'IA",
+        "context": "De nombreux entrepreneurs et PME locales ont des difficultés à gérer efficacement leurs catalogues de produits, ce qui peut entraîner des pertes de temps et d'argent. L'IA peut aider à automatiser ces processus.",
+        "objectif": "engagement",
+        "variables": {
+          "PROCESSUS_TRADITIONNEL": "Gestion manuelle de catalogue avec Excel ou autres outils de tableur",
+          "NOUVELLE_INTEGRATION_IA": "Utilisation d'un système d'IA pour automatiser la création et la mise à jour des catalogues",
+          "DIFFICULTE_SURMONTEE": "Réduction du temps et des erreurs liés à la gestion manuelle",
+          "RESULTAT_FINAL": "Gain de temps de 90% et amélioration de la qualité des catalogues"
+        },
+        "validated": true,
+        "used": false,
+        "id": "ca04f7c0-d392-4f3a-875a-2fe1b0622d36"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.008338"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "2dbd80d1-45dd-45f8-bee2-772916cb0566",
+      "persona": "cta",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "cta",
+        "topic": "Booste ton SEO",
+        "context": "Améliorer son référencement pour gagner en visibilité",
+        "objectif": "engagement",
+        "variables": {
+          "OFFRE_OU_RESSOURCE": "5 astuces SEO pour améliorer ton référencement",
+          "DOULEUR_CIBLE": "Perdre des clients potentiels à cause d'un mauvais référencement",
+          "PREUVE_SOCIALE": "J'ai aidé X entreprises à améliorer leur référencement",
+          "ACTION_REQUISE": "Commente SEO pour recevoir les 5 astuces"
+        },
+        "validated": true,
+        "used": false,
+        "id": "2dbd80d1-45dd-45f8-bee2-772916cb0566"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.045433"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "9d1fbebf-5f8a-41f9-970f-5810692aaf56",
+      "persona": "business_auto",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "business_auto",
+        "topic": "5 Astuces pour Automatiser Votre Prospection avec des Agents IA",
+        "context": "De nombreuses entreprises ont du mal à gérer leur prospection de manière efficace, ce qui peut entraîner une perte de temps et de ressources. L'utilisation d'agents IA peut aider à automatiser ce processus et améliorer les résultats.",
+        "objectif": "engagement",
+        "variables": {
+          "TÂCHE_CHRONOPHAGE": "Recherche manuelle de leads potentiels",
+          "OUTIL_UTILISE": "Agents IA de prospection",
+          "TEMPS_GAGNE": "2 heures par jour",
+          "CONSEIL_POUR_DEMARRER": "Commencez par identifier vos besoins spécifiques en matière de prospection et explorez les différentes solutions d'agents IA disponibles"
+        },
+        "validated": true,
+        "used": false,
+        "id": "9d1fbebf-5f8a-41f9-970f-5810692aaf56"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.083033"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "80b86e55-2754-4438-a754-b0efb0f02448",
+      "persona": "storytelling_pro",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "storytelling_pro",
+        "topic": "Comment éviter de perdre des clients en raison d'un site web lent",
+        "context": "Beaucoup d'entrepreneurs en Afrique sous-estiment l'importance de la vitesse de chargement de leur site web, ce qui peut entraîner une perte de clients potentiels. Ce sujet est pertinent maintenant car de plus en plus de consommateurs utilisent leur téléphone mobile pour accéder à Internet.",
+        "objectif": "engagement",
+        "variables": {
+          "EVENEMENT_DECLENCHEUR": "J'ai récemment visité un site web d'une entreprise locale qui mettait plus de 10 secondes à charger, et j'ai décidé de quitter le site.",
+          "MA_REACTION": "J'ai réalisé que la lenteur du site web pouvait être un facteur décisif dans la perte de clients potentiels, et j'ai décidé de partager mes connaissances pour aider les entrepreneurs à améliorer la vitesse de leur site web.",
+          "LA_LECON_APPRISE": "Il est essentiel de optimiser la vitesse de chargement de son site web pour offrir une expérience utilisateur fluide et convaincante.",
+          "VISION_GLOBALE": "En améliorant la vitesse de chargement de leurs sites web, les entrepreneurs peuvent augmenter leur chiffre d'affaires et renforcer leur présence en ligne."
+        },
+        "validated": true,
+        "used": false,
+        "id": "80b86e55-2754-4438-a754-b0efb0f02448"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.122249"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "eafdf59e-4e8c-4ca2-b429-10f6e416fa6a",
+      "persona": "defaut_persona",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "defaut_persona",
+        "topic": "Boostez votre SEO",
+        "context": " Comment améliorer votre référencement en 5 étapes simples",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "id": "eafdf59e-4e8c-4ca2-b429-10f6e416fa6a"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.156566"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "ff9b5fd0-776c-445b-885b-905aba9c3d0b",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "mini_formation",
+        "topic": "Créer des visuels qui vendent avec ChatGPT Images 2.0",
+        "context": "De nombreux entrepreneurs ont du mal à créer des visuels attrayants pour leurs produits ou services, ce qui peut nuire à leur stratégie marketing. ChatGPT Images 2.0 offre une solution innovante pour générer des visuels de haute qualité de manière rapide et efficace.",
+        "objectif": "engagement",
+        "variables": {
+          "COMPETENCE_CIBLEE": "Création de visuels avec ChatGPT Images 2.0",
+          "ETAPE_1": "Comprendre les capacités de ChatGPT Images 2.0",
+          "ETAPE_2": "Définir les objectifs de marketing pour les visuels",
+          "ETAPE_3": "Apprendre à utiliser les prompts pour générer des visuels personnalisés",
+          "RESULTAT_PROMIS": "Des visuels qui augmentent les conversions et améliorent la stratégie marketing"
+        },
+        "validated": true,
+        "used": false,
+        "id": "ff9b5fd0-776c-445b-885b-905aba9c3d0b"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.193272"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "c8f9de93-c061-4d29-9f0f-e1553f11c611",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "mini_formation",
+        "topic": "5 erreurs courantes en SEO qui tuent votre trafic",
+        "context": "De nombreuses entreprises locales africaines créent des sites web sans optimisation pour les moteurs de recherche, perdant ainsi des clients potentiels. Il est essentiel de comprendre les erreurs courantes en SEO pour améliorer la visibilité en ligne.",
+        "objectif": "engagement",
+        "variables": {
+          "COMPETENCE_CIBLEE": "Optimisation pour les moteurs de recherche (SEO)",
+          "ETAPE_1": " Identifier les mots-clés pertinents pour votre entreprise",
+          "ETAPE_2": "Optimiser les métadonnées de votre site web (titre, description, etc.)",
+          "ETAPE_3": "Créer du contenu de qualité et régulièrement mis à jour",
+          "RESULTAT_PROMIS": "Augmentation significative du trafic organique vers votre site web"
+        },
+        "validated": true,
+        "used": false,
+        "id": "c8f9de93-c061-4d29-9f0f-e1553f11c611"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.228776"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "7d23c13d-f5aa-413e-b823-417174d51995",
+      "persona": "avis_tranches",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "avis_tranches",
+        "topic": "L'importance de l'automatisation dans les PME locales",
+        "context": "De nombreux propriétaires de petites et moyennes entreprises (PME) locales croient que l'automatisation est uniquement réservée aux grandes entreprises. Cependant, avec l'avance de la technologie, les outils d'automatisation sont désormais accessibles et abordables pour tous.",
+        "objectif": "engagement",
+        "variables": {
+          "MYTHE_COURANT": "L'automatisation est réservée aux grandes entreprises",
+          "MON_AVIS_RADICAL": "Toutes les entreprises, quelle que soit leur taille, doivent automatiser certaines tâches pour rester compétitives",
+          "ARGUMENT_1": "L'automatisation peut aider à réduire les coûts et à augmenter la productivité",
+          "ARGUMENT_2": "Les outils d'automatisation sont désormais accessibles et abordables pour les PME locales",
+          "APPEL_AU_DEBAT": "D'accord ou pas ? L'automatisation est-elle vraiment nécessaire pour les PME locales ? On en débat en commentaire."
+        },
+        "validated": true,
+        "used": false,
+        "id": "7d23c13d-f5aa-413e-b823-417174d51995"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.266292"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "52618bb4-2b03-46b9-9cbe-eecc62933293",
+      "persona": "avis_tranches",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "avis_tranches",
+        "topic": "L'obsession de la perfection dans les startups",
+        "context": "De nombreux entrepreneurs passent trop de temps à perfectionner leur produit ou service, ce qui peut les empêcher de lancer et de tester leur marché",
+        "objectif": "engagement",
+        "variables": {
+          "MYTHE_COURANT": "Il faut avoir un produit parfait pour lancer son entreprise",
+          "MON_AVIS_RADICAL": "La perfection est l'ennemi du bon, il est préférable de lancer rapidement et d'itérer en fonction des retours des clients",
+          "ARGUMENT_1": "Les clients ne s'attendent pas à la perfection, mais à une solution qui réponde à leurs besoins",
+          "ARGUMENT_2": "Lancer rapidement permet de tester le marché et de collecter des données pour améliorer le produit ou service",
+          "APPEL_AU_DEBAT": "D'accord ou pas ? On en débat en commentaire. As-tu déjà lancé un produit ou service en étant parfait ou en itérant en fonction des retours des clients ?"
+        },
+        "validated": true,
+        "used": false,
+        "id": "52618bb4-2b03-46b9-9cbe-eecc62933293"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.300659"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "8c444c3f-696f-4091-acc0-9505f266c859",
+      "persona": "defaut_persona",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "defaut_persona",
+        "topic": "Comment augmenter les ventes en ligne grâce à l'optimisation du site web pour les PME locales",
+        "context": "De nombreuses PME locales ont du mal à développer leur présence en ligne et à augmenter leurs ventes. L'optimisation du site web est un élément clé pour améliorer la visibilité et la conversion.",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "id": "8c444c3f-696f-4091-acc0-9505f266c859"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.343354"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "ccc3b89f-1988-4a3e-9d7f-bbff1e30eb3a",
+      "persona": "storytelling_pro",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "storytelling_pro",
+        "topic": "Comment éviter les erreurs courantes dans la création d'un site web pour les PME locales",
+        "context": "De nombreuses PME locales au Bénin investissent dans la création de sites web sans considérer les facteurs clés pour leur succès, tels que la navigation intuitive, la rapidité de chargement et l'optimisation pour les moteurs de recherche.",
+        "objectif": "engagement",
+        "variables": {
+          "EVENEMENT_DECLENCHEUR": "Un client m'a appelé récemment pour me dire que son site web, créé il y a quelques mois, n'attirait toujours pas de clients",
+          "MA_REACTION": "J'ai réalisé que le site n'était pas optimisé pour les moteurs de recherche et que la navigation était trop complexe",
+          "LA_LECON_APPRISE": "L'importance de considérer les facteurs clés pour le succès d'un site web, tels que la navigation intuitive, la rapidité de chargement et l'optimisation pour les moteurs de recherche",
+          "VISION_GLOBALE": "Les PME locales doivent investir dans la création de sites web qui répondent aux besoins de leurs clients et qui sont optimisés pour les moteurs de recherche pour augmenter leur visibilité et leur chiffre d'affaires"
+        },
+        "validated": true,
+        "used": false,
+        "id": "ccc3b89f-1988-4a3e-9d7f-bbff1e30eb3a"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.381046"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "6b9aa411-8327-4a2f-a2f3-3d960d060a83",
+      "persona": "ia_integration",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "ia_integration",
+        "topic": "Optimisation du processus de facturation avec l'IA",
+        "context": "De nombreux entrepreneurs africains rencontrent des difficultés avec la facturation, ce qui peut entraîner des pertes financières. L'intégration de l'IA peut aider à automatiser et optimiser ce processus.",
+        "objectif": "engagement",
+        "variables": {
+          "PROCESSUS_TRADITIONNEL": "Les entreprises passaient en moyenne 5 heures par semaine à gérer les factures manuellement, avec un taux d'erreur de 10%.",
+          "NOUVELLE_INTEGRATION_IA": "Mise en place d'un système d'IA pour automatiser la génération et l'envoi des factures, ainsi que la gestion des paiements.",
+          "DIFFICULTE_SURMONTEE": "Réduction du temps consacré à la facturation de 80% et diminution des erreurs à moins de 1%.",
+          "RESULTAT_FINAL": "Les entreprises ont pu réaffecter le temps gagné à d'autres tâches stratégiques, ce qui a conduit à une augmentation de leur chiffre d'affaires de 15%."
+        },
+        "validated": true,
+        "used": false,
+        "id": "6b9aa411-8327-4a2f-a2f3-3d960d060a83"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.415604"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "a8cfea31-35e5-4731-a3be-d7fb1002bd7d",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "a8cfea31-35e5-4731-a3be-d7fb1002bd7d",
+        "topic": "Une citation inspirante pour commencer la journée",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.453856"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "e6337f78-6263-42c2-a905-546821921efe",
+      "persona": "ia_design",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "ia_design",
+        "topic": "Comment booster votre identité visuelle avec l'IA pour les entrepreneurs africains",
+        "context": "De nombreux entrepreneurs africains ont du mal à créer une identité visuelle forte pour leur marque. L'utilisation de l'IA peut être un atout pour créer des designs de haute qualité rapidement.",
+        "objectif": "engagement",
+        "variables": {
+          "OUTIL_DESIGN": "Midjourney",
+          "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour obtenir des résultats personnalisés",
+          "AVANT_APRES": "Avant : identité visuelle faible, Après : identité visuelle forte et professionnelle",
+          "IMPACT_VISUEL": "Augmentation de la reconnaissance de la marque et de la confiance des clients"
+        },
+        "validated": true,
+        "used": false,
+        "id": "e6337f78-6263-42c2-a905-546821921efe"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.486249"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "2f66ed6f-a161-4ddf-8c0e-1de349a50b9b",
+      "persona": "storytelling_pro",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "storytelling_pro",
+        "topic": "L'importance de l'exécution rapide dans les projets numériques",
+        "context": "De nombreux entrepreneurs au Bénin et en Afrique passent trop de temps à planifier sans jamais exécuter, ce qui les empêche d'atteindre leurs objectifs",
+        "objectif": "engagement",
+        "variables": {
+          "EVENEMENT_DECLENCHEUR": "J'ai rencontré un entrepreneur qui avait passé 6 mois à planifier son site web sans jamais le lancer",
+          "MA_REACTION": "J'ai été surpris de voir qu'il avait perdu des clients potentiels à cause de son manque d'exécution",
+          "LA_LECON_APPRISE": "L'exécution rapide est clé pour réussir dans les projets numériques, car elle permet de tester et d'itérer rapidement",
+          "VISION_GLOBALE": "Je vois un avenir où les entrepreneurs africains sont capables de lancer et de développer des projets numériques réussis en un laps de temps record, grâce à une exécution rapide et efficace"
+        },
+        "validated": true,
+        "used": false,
+        "id": "2f66ed6f-a161-4ddf-8c0e-1de349a50b9b"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.523305"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "f87356fb-5b9f-4080-818e-9f5f86b79327",
+      "persona": "avis_tranches",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "avis_tranches",
+        "topic": "L'obsession de la perfection dans les startups",
+        "context": "De nombreuses startups locales perdent du temps et de l'argent en cherchant à créer un produit ou un service parfait avant de lancer, oubliant que le marché et la concurrence évoluent rapidement",
+        "objectif": "engagement",
+        "variables": {
+          "MYTHE_COURANT": "Il est nécessaire d'avoir un produit ou un service parfait avant de lancer sur le marché",
+          "MON_AVIS_RADICAL": "La perfection est l'ennemi du bon dans les startups, il est préférable de lancer rapidement et d'itérer en fonction des retours des clients",
+          "ARGUMENT_1": "Les startups qui lancent rapidement peuvent tester leur hypothèse de valeur et collecter des données pour améliorer leur offre",
+          "ARGUMENT_2": "L'obsession de la perfection peut conduire à une analyse paralyse et faire perdre des parts de marché à la startup",
+          "APPEL_AU_DEBAT": "D'accord ou pas ? On en débat en commentaire. Quelle a été votre expérience avec la perfection et le lancement de votre startup ?"
+        },
+        "validated": true,
+        "used": false,
+        "id": "f87356fb-5b9f-4080-818e-9f5f86b79327"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.560714"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "79d12fce-fbd4-48ce-82f9-3609a735ec8d",
+      "persona": "ia_design",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "ia_design",
+        "topic": "Design IA pour les entrepreneurs",
+        "context": "Utiliser l'IA pour améliorer la créativité et la productivité dans le design",
+        "objectif": "engagement",
+        "variables": {
+          "OUTIL_DESIGN": "Midjourney",
+          "TECHNIQUE_SECRETE": "Prompting avancé pour des résultats personnalisés",
+          "AVANT_APRES": "Transformation d'une idée en un design professionnel en quelques minutes",
+          "IMPACT_VISUEL": "Création de visuels époustouflants qui attirent l'attention et augmentent les ventes"
+        },
+        "validated": true,
+        "used": false,
+        "id": "79d12fce-fbd4-48ce-82f9-3609a735ec8d"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.597726"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "2cb34c3b-2017-44cb-a87c-5267e4b7d0f5",
+      "persona": "storytelling_pro",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "storytelling_pro",
+        "topic": "L'importance de l'exécution rapide dans le lancement d'un site web",
+        "context": "De nombreux entrepreneurs passent trop de temps à perfectionner leur site web, perdant ainsi des opportunités de générer des revenus",
+        "objectif": "engagement",
+        "variables": {
+          "EVENEMENT_DECLENCHEUR": "J'ai récemment rencontré un entrepreneur qui a passé 6 mois à créer son site web, pour finalement constater que son concurrent avait déjà lancé un site similaire avec moins de fonctionnalités, mais qui génère déjà des revenus",
+          "MA_REACTION": "J'ai été surpris de voir à quel point l'exécution rapide peut être cruciale dans le lancement d'un site web, même si cela signifie avoir un site moins parfait",
+          "LA_LECON_APPRISE": "L'exécution rapide et la capacité à adapter son site web en fonction des retours des utilisateurs sont souvent plus importantes que la perfection",
+          "VISION_GLOBALE": "Les entrepreneurs devraient se concentrer sur la création d'un produit minimum viable (MVP) et ajuster en fonction des besoins et des retours des clients, plutôt que de passer trop de temps à créer un produit parfait"
+        },
+        "validated": true,
+        "used": false,
+        "id": "2cb34c3b-2017-44cb-a87c-5267e4b7d0f5"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.631837"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "8d8373ec-c999-4432-a6dd-c99383146782",
+      "persona": "ia_integration",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "ia_integration",
+        "topic": "Comment l'IA peut-elle augmenter la productivité des PME africaines en automatisant les tâches administratives",
+        "context": "De nombreuses PME africaines consacrent beaucoup de temps et de ressources aux tâches administratives, ce qui peut les empêcher de se concentrer sur leur cœur de métier. L'intégration de l'IA peut aider à automatiser ces tâches, libérant ainsi du temps pour se concentrer sur la croissance et le développement de l'entreprise.",
+        "objectif": "engagement",
+        "variables": {
+          "PROCESSUS_TRADITIONNEL": "Les PME africaines consacrent en moyenne 20 heures par semaine à des tâches administratives manuelles",
+          "NOUVELLE_INTEGRATION_IA": "L'intégration d'outils d'IA pour l'automatisation des tâches administratives, tels que la gestion des factures et des commandes",
+          "DIFFICULTE_SURMONTEE": "La difficulté de gérer manuellement de grands volumes de données et de documents, ce qui peut entraîner des erreurs et des retards",
+          "RESULTAT_FINAL": "Une augmentation de la productivité de 30% et une réduction des coûts administratifs de 25% grâce à l'automatisation des tâches"
+        },
+        "validated": true,
+        "used": false,
+        "id": "8d8373ec-c999-4432-a6dd-c99383146782"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.668915"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "70883a1c-59ab-4fbf-b53b-22b5347e4623",
+      "persona": "storytelling_pro",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "storytelling_pro",
+        "topic": "L'importance de la vitesse d'exécution dans les projets numériques",
+        "context": "De nombreux entrepreneurs au Bénin et en Afrique passent beaucoup de temps à planifier et perfectionner leurs projets, mais oublient l'importance de la vitesse d'exécution pour rester compétitifs",
+        "objectif": "engagement",
+        "variables": {
+          "EVENEMENT_DECLENCHEUR": "Un client m'a partagé son histoire de succès après avoir lancé son projet numérique en un temps record",
+          "MA_REACTION": "J'ai réalisé que la vitesse d'exécution est souvent plus importante que la perfection pour rester compétitif dans le marché numérique",
+          "LA_LECON_APPRISE": "La clé du succès dans les projets numériques est de trouver un équilibre entre la qualité et la vitesse d'exécution",
+          "VISION_GLOBALE": "En encourageant les entrepreneurs à adopter une approche plus agile et rapide dans leurs projets numériques, nous pouvons stimuler l'innovation et la croissance économique en Afrique"
+        },
+        "validated": true,
+        "used": false,
+        "id": "70883a1c-59ab-4fbf-b53b-22b5347e4623"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.713039"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "8eece71b-07c9-4777-ad4b-c701f8b6a77f",
+      "persona": "ia_design",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "ia_design",
+        "topic": "Optimisation de l'expérience utilisateur avec l'IA",
+        "context": "Les utilisateurs attendent désormais des expériences personnalisées et intuitives sur les sites web et les applications mobiles. L'optimisation de l'expérience utilisateur est devenue un facteur clé pour différencier son entreprise et augmenter la fidélité client.",
+        "objectif": "engagement",
+        "variables": {
+          "OUTIL_DESIGN": "Adobe XD avec intégration d'IA pour la conception d'interfaces utilisateur",
+          "TECHNIQUE_SECRETE": "Utilisation de l'apprentissage automatique pour analyser les comportements des utilisateurs et améliorer l'expérience utilisateur",
+          "AVANT_APRES": "Avant : Sites web statiques et génériques. Après : Expériences personnalisées et dynamiques basées sur les préférences et le comportement de l'utilisateur",
+          "IMPACT_VISUEL": "Augmentation de 30% de la durée de session et de 25% du taux de conversion grâce à des designs plus engageants et plus intuitifs"
+        },
+        "validated": true,
+        "used": false,
+        "id": "8eece71b-07c9-4777-ad4b-c701f8b6a77f"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.747887"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "e847b4e6-a579-4feb-9642-ff3cf8f32f4d",
+      "persona": "storytelling_pro",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "storytelling_pro",
+        "topic": "L'importance de l'exécution rapide dans le lancement d'un business",
+        "context": "De nombreux entrepreneurs passent trop de temps à préparer leur lancement, ce qui peut les faire perdre leur avance sur la concurrence. Il est crucial de trouver un équilibre entre préparation et exécution pour réussir.",
+        "objectif": "engagement",
+        "variables": {
+          "EVENEMENT_DECLENCHEUR": "J'ai vu des entrepreneurs passer des mois à préparer leur lancement, pour finalement voir leur concurrence réussir avant eux",
+          "MA_REACTION": "Cela m'a fait réfléchir à l'importance de l'exécution rapide dans le lancement d'un business",
+          "LA_LECON_APPRISE": "Il est essentiel de trouver un équilibre entre préparation et exécution pour réussir dans le monde des affaires",
+          "VISION_GLOBALE": "Les entrepreneurs doivent être capables de s'adapter rapidement et de prendre des décisions éclairées pour rester en tête de la concurrence"
+        },
+        "validated": true,
+        "used": false,
+        "id": "e847b4e6-a579-4feb-9642-ff3cf8f32f4d"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.787103"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "120fba67-2006-458b-9b83-655e44885fbc",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "120fba67-2006-458b-9b83-655e44885fbc",
+        "topic": "Un conseil pour améliorer votre productivité quotidienne",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.823427"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "f2167cff-3023-4d26-8352-fca8da52438b",
+      "persona": "defaut_persona",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "defaut_persona",
+        "topic": "5 erreurs courantes qui tuent les ventes en ligne des PME locales et comment les éviter",
+        "context": "De nombreuses PME locales lancent des sites e-commerce sans succès. Il est temps de comprendre où se situent les erreurs et comment les rectifier pour une meilleure conversion.",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "id": "f2167cff-3023-4d26-8352-fca8da52438b"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.863466"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "318ac84b-8c93-40fd-9a7b-adaf5a3e5569",
+      "persona": "test_persona",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "test_persona",
+        "topic": "Sujet test depuis script",
+        "id": "318ac84b-8c93-40fd-9a7b-adaf5a3e5569",
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.899159"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "d28fc514-a1dc-46bc-afc3-d101c25cd452",
+      "persona": "business_auto",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "business_auto",
+        "topic": "Automatisation de leads",
+        "context": "Utiliser l'IA pour gagner du temps et augmenter les ventes",
+        "objectif": "engagement",
+        "variables": {
+          "TÂCHE_CHRONOPHAGE": "Recherche de prospects potentiels",
+          "OUTIL_UTILISE": "Agent de prospection automatique",
+          "TEMPS_GAGNE": "2 heures par jour",
+          "CONSEIL_POUR_DEMARRER": "Commencer par identifier les critères de sélection des prospects"
+        },
+        "validated": true,
+        "used": false,
+        "id": "d28fc514-a1dc-46bc-afc3-d101c25cd452"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.936112"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "df7e4163-d2d7-40a0-841d-f81c8a4f045f",
+      "persona": "ia_design",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "ia_design",
+        "topic": "Création d'une Identité Visuelle avec l'IA",
+        "context": "De nombreux entrepreneurs locaux ont du mal à créer une identité visuelle qui reflète leur marque. L'IA peut aider à générer des logos, des couleurs et des typographies qui répondent aux besoins spécifiques de leur entreprise.",
+        "objectif": "engagement",
+        "variables": {
+          "OUTIL_DESIGN": "Midjourney",
+          "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour générer des designs uniques",
+          "AVANT_APRES": "Avant : logos génériques, Après : identité visuelle personnalisée",
+          "IMPACT_VISUEL": "Gain de professionnalisme et de reconnaissance de la marque"
+        },
+        "validated": true,
+        "used": false,
+        "id": "df7e4163-d2d7-40a0-841d-f81c8a4f045f"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:40.972710"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "f79897f7-75f5-4b3f-aea6-8e055c1effaa",
+      "persona": "avis_tranches",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "avis_tranches",
+        "topic": "L'IA et l'Employabilité",
+        "context": "L'impact de l'intelligence artificielle sur les emplois",
+        "objectif": "engagement",
+        "variables": {
+          "MYTHE_COURANT": "L'IA remplacera la majorité des emplois",
+          "MON_AVIS_RADICAL": "L'IA ne remplacera que les tâches répétitives et non les emplois qui nécessitent de la créativité et de l'empathie",
+          "ARGUMENT_1": "Les compétences telles que la communication, la résolution de problèmes et la pensée critique seront toujours nécessaires",
+          "ARGUMENT_2": "L'automatisation peut créer de nouveaux emplois et augmenter la productivité, ce qui peut conduire à une croissance économique",
+          "APPEL_AU_DEBAT": "Pensez-vous que l'IA améliorera ou détériorera les perspectives d'emploi à long terme ?"
+        },
+        "validated": true,
+        "used": false,
+        "id": "f79897f7-75f5-4b3f-aea6-8e055c1effaa"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:41.013655"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "494502d7-df63-41fc-8f04-9973f25769ef",
+      "persona": "avis_tranches",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "avis_tranches",
+        "topic": "L'importance de l'automatisation dans les PME locales",
+        "context": "De nombreuses PME locales ici peinent à atteindre leur plein potentiel en raison de processus manuels inefficaces. L'automatisation peut être un facteur clé pour améliorer la productivité et réduire les coûts.",
+        "objectif": "engagement",
+        "variables": {
+          "MYTHE_COURANT": "Les PME locales ne peuvent pas se permettre d'investir dans l'automatisation",
+          "MON_AVIS_RADICAL": "Toute PME locale qui ne s'automatise pas dans les 6 prochains mois sera en retard par rapport à la concurrence",
+          "ARGUMENT_1": "L'automatisation peut réduire les coûts opérationnels de jusqu'à 30% et améliorer la productivité de 25%",
+          "ARGUMENT_2": "Des outils d'automatisation accessibles et abordables sont désormais disponibles pour les PME locales, tels que des solutions de gestion de projet en ligne et des outils de marketing automation",
+          "APPEL_AU_DEBAT": "D'accord ou pas ? Partagez vos expériences avec l'automatisation dans vos propres entreprises en commentaire"
+        },
+        "validated": true,
+        "used": false,
+        "id": "494502d7-df63-41fc-8f04-9973f25769ef"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:41.050939"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "dd668e85-0862-4b3c-b5b3-35a404c420ef",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "post_court",
+        "topic": "Les 3 erreurs de marketing qui tuent les PME africaines",
+        "context": "De nombreuses PME africaines ont du mal à atteindre leurs objectifs de vente en raison de stratégies de marketing inefficaces. Il est essentiel de comprendre les erreurs courantes pour les éviter.",
+        "objectif": "autorite",
+        "variables": {
+          "PENSEE_DU_JOUR": "La plupart des PME africaines pensent que le marketing est un luxe, mais c'est une erreur qui peut coûter cher",
+          "EXPLICATION_RAPIDE": "Les PME africaines doivent comprendre que le marketing est essentiel pour atteindre de nouveaux clients et augmenter les ventes",
+          "QUESTION_SIMPLE": "Quelle est la première erreur de marketing que les PME africaines doivent éviter pour réussir ?"
+        },
+        "validated": true,
+        "used": false,
+        "id": "dd668e85-0862-4b3c-b5b3-35a404c420ef"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:41.087885"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "52e71007-d977-4eda-97dc-5439c479c765",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "post_court",
+        "topic": "L'importance de suivre les clients après la vente",
+        "context": "De nombreuses PME en Afrique ont du mal à fidéliser leurs clients en raison d'un suivi inadéquat après la vente",
+        "objectif": "engagement",
+        "variables": {
+          "PENSEE_DU_JOUR": "8 PME sur 10 en Afrique n'ont aucun système pour suivre leurs clients après la vente",
+          "EXPLICATION_RAPIDE": "Cela entraîne une perte de revenus potentiels et une diminution de la satisfaction client",
+          "QUESTION_SIMPLE": "Quel est le coût pour votre entreprise si vous ne suivez pas vos clients après la vente ?"
+        },
+        "validated": true,
+        "used": false,
+        "id": "52e71007-d977-4eda-97dc-5439c479c765"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:41.124112"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "91d6fe35-4bca-4fd5-8361-2253ec3e44bd",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "91d6fe35-4bca-4fd5-8361-2253ec3e44bd",
+        "topic": "Un GIF amusant pour alléger l'atmosphère",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:41.158414"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "898c610d-19a4-481b-8b57-92c3809f3324",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "post_court",
+        "topic": "La perte d'argent due à l'absence de système de suivi des clients",
+        "context": "Beaucoup d'entreprises africaines perdent des clients et des revenus en raison de leur incapacité à suivre et à fidéliser leurs clients. Ce sujet est pertinent maintenant car il touche à la question de la rentabilité et de la croissance des entreprises.",
+        "objectif": "engagement",
+        "variables": {
+          "PENSEE_DU_JOUR": "8 PME sur 10 en Afrique n'ont aucun système pour suivre leurs clients après la vente",
+          "EXPLICATION_RAPIDE": "Cela signifie que ces entreprises laissent échapper des opportunités de vente et de croissance en raison de leur incapacité à maintenir une relation avec leurs clients",
+          "QUESTION_SIMPLE": "Que faites-vous pour suivre vos clients après la vente ?"
+        },
+        "validated": true,
+        "used": false,
+        "id": "898c610d-19a4-481b-8b57-92c3809f3324"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:41.200304"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "c7200327-80ad-4fc6-a047-f955e1e6c4fc",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "post_court",
+        "topic": "Les 3 erreurs les plus coûteuses que les entrepreneurs font en lançant leur site web",
+        "context": "De nombreux entrepreneurs lancent des sites web sans considérer les facteurs clés qui peuvent les faire échouer. Ces erreurs peuvent coûter cher et affecter la crédibilité de l'entreprise.",
+        "objectif": "engagement",
+        "variables": {
+          "PENSEE_DU_JOUR": "La plupart des sites web échouent à cause d'une mauvaise planification et d'une exécution hasardeuse",
+          "EXPLICATION_RAPIDE": "Il est essentiel de bien planifier et de tester soigneusement un site web avant son lancement pour éviter les erreurs coûteuses",
+          "QUESTION_SIMPLE": "Quelle est la première étape que vous prendriez pour lancer un site web réussi ?"
+        },
+        "validated": true,
+        "used": false,
+        "id": "c7200327-80ad-4fc6-a047-f955e1e6c4fc"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:41.232006"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "25c2275b-9559-475e-950e-ec40b297d4f3",
+      "persona": "avis_tranches",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "avis_tranches",
+        "topic": "L'importance de l'automatisation dans les entreprises locales",
+        "context": "De nombreuses PME locales peinent à gérer leur temps et leurs ressources efficacement, ce qui peut les rendre moins compétitives sur le marché. L'automatisation peut être un outil puissant pour améliorer l'efficacité et la productivité.",
+        "objectif": "engagement",
+        "variables": {
+          "MYTHE_COURANT": "Les petites entreprises n'ont pas besoin d'automatisation car elles sont suffisamment flexibles",
+          "MON_AVIS_RADICAL": "Toute entreprise, quelle que soit sa taille, peut bénéficier de l'automatisation pour améliorer son efficacité et réduire les coûts",
+          "ARGUMENT_1": "L'automatisation permet de réduire les tâches répétitives et fastidieuses, libérant ainsi du temps pour se concentrer sur les activités à haute valeur ajoutée",
+          "ARGUMENT_2": "Les outils d'automatisation sont de plus en plus accessibles et abordables, même pour les petites entreprises",
+          "APPEL_AU_DEBAT": "D'accord ou pas ? L'automatisation est-elle vraiment nécessaire pour les petites entreprises ? On en débat en commentaire."
+        },
+        "validated": true,
+        "used": false,
+        "id": "25c2275b-9559-475e-950e-ec40b297d4f3"
+      }
+    },
+    "timestamp": "2026-05-20T08:26:41.269010"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "01795d55-3c37-43fa-89e7-eaeadaa5fb99",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "01795d55-3c37-43fa-89e7-eaeadaa5fb99",
+        "topic": "Un lien vers un article intéressant avec un résumé court",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T08:26:41.307328"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "eef675cd-2bf5-4fe6-b1a9-8b82fb2b3a51",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "mini_formation",
+        "topic": "Créer des Reels viraux",
+        "context": "Utiliser l'IA pour créer des contenus de Reels qui captent l'attention sans passer trop de temps",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-20T12:00:00",
+        "id": "eef675cd-2bf5-4fe6-b1a9-8b82fb2b3a51"
+      }
+    },
+    "timestamp": "2026-05-20T20:06:30.585355"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "6ffd964a-469b-4e96-bf36-cd88bf99c617",
+      "persona": "photo_restoration_upscaling",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "photo_restoration_upscaling",
+        "topic": "Restauration photo",
+        "context": "Comment améliorer la qualité d'une photo floue en utilisant des outils de restauration",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-20T12:00:00",
+        "id": "6ffd964a-469b-4e96-bf36-cd88bf99c617"
+      }
+    },
+    "timestamp": "2026-05-20T20:06:48.219559"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "473e3609-faf9-4403-928b-fc757597ee4f",
+      "persona": "poster_banner_designs",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "poster_banner_designs",
+        "topic": "Bannière Publicitaire",
+        "context": "Comment créer une bannière publicitaire efficace pour augmenter les ventes en ligne",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-20T12:00:00",
+        "id": "473e3609-faf9-4403-928b-fc757597ee4f"
+      }
+    },
+    "timestamp": "2026-05-20T20:06:53.358198"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "9c8913aa-0243-4a04-91ae-2536008d542d",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "post_court",
+        "topic": "Perte de clients",
+        "context": "Les entreprises africaines perdent des clients en raison de leur incapacité à suivre les ventes après la transaction",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-20T12:00:00",
+        "id": "9c8913aa-0243-4a04-91ae-2536008d542d"
+      }
+    },
+    "timestamp": "2026-05-20T20:06:56.744995"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "138bf914-e946-4970-a454-481e5406d989",
+      "persona": "product_photography",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "product_photography",
+        "topic": "Photographie de produits",
+        "context": "Présenter des astuces pour améliorer la qualité des photos de produits pour les entrepreneurs",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-20T12:00:00",
+        "id": "138bf914-e946-4970-a454-481e5406d989"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:00.783560"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "dfb642d5-74ab-4ff3-9387-78222bf2413e",
+      "persona": "photorealistic_people_portraits",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "photorealistic_people_portraits",
+        "topic": "Peinture photoréaliste",
+        "context": "Conseils pour améliorer la technique de peinture photoréaliste",
+        "objectif": "autorite",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-21T12:00:00",
+        "id": "dfb642d5-74ab-4ff3-9387-78222bf2413e"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:15.640692"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "e3a66a3d-d9c1-4064-9c68-d526d790afda",
+      "persona": "photo_restoration_upscaling",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "photo_restoration_upscaling",
+        "topic": "Améliorer la restauration photo",
+        "context": "Utiliser l'intelligence artificielle pour améliorer la qualité des photos anciennes",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-21T12:00:00",
+        "id": "e3a66a3d-d9c1-4064-9c68-d526d790afda"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:18.362238"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "ce162cdc-ae4f-41e7-b502-faca87871d7d",
+      "persona": "multiple_view_angles_photoshoots",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "multiple_view_angles_photoshoots",
+        "topic": "Angles multiples en photo",
+        "context": "Les photographes utilisent souvent plusieurs angles pour capturer des moments uniques",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-21T12:00:00",
+        "id": "ce162cdc-ae4f-41e7-b502-faca87871d7d"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:21.382291"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "1ff9e028-ec89-4546-9d6a-b482fc263201",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "mini_formation",
+        "topic": "Booste ta visibilité",
+        "context": "Comment utiliser les outils d'IA pour améliorer la présence en ligne de son entreprise",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-21T12:00:00",
+        "id": "1ff9e028-ec89-4546-9d6a-b482fc263201"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:26.977013"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "d7e0dd83-bc09-42d5-bfac-1f35cf5855ee",
+      "persona": "marketing_advertising_images",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "marketing_advertising_images",
+        "topic": "SEO pour entrepreneurs",
+        "context": "Utiliser des mots-clés pour améliorer la visibilité en ligne",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-21T12:00:00",
+        "id": "d7e0dd83-bc09-42d5-bfac-1f35cf5855ee"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:28.656584"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "b11bc887-44fe-415d-850d-0559fa502775",
+      "persona": "ia_integration",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "ia_integration",
+        "topic": "Intégration IA dans les PME",
+        "context": "L'IA peut aider les petites et moyennes entreprises à améliorer leur efficacité opérationnelle et leur compétitivité sur le marché",
+        "objectif": "autorite",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-21T12:00:00",
+        "id": "b11bc887-44fe-415d-850d-0559fa502775"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:35.571545"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "266a3a89-9084-4741-be0b-49e15569a130",
+      "persona": "ia_design",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "ia_design",
+        "topic": "Design IA pour Entrepreneurs",
+        "context": "Utiliser l'IA pour créer des visuels de haute qualité pour les entrepreneurs africains",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-21T12:00:00",
+        "id": "266a3a89-9084-4741-be0b-49e15569a130"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:39.178562"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "c63bd7f5-bfff-4006-a92a-fec2597477ce",
+      "persona": "fashion_clothing_on_people",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "fashion_clothing_on_people",
+        "topic": "Fashion pour les entrepreneurs",
+        "context": "L'utilisation de la mode pour inspirer et motiver les entrepreneurs à succès",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-21T12:00:00",
+        "id": "c63bd7f5-bfff-4006-a92a-fec2597477ce"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:41.923197"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "7f9c10c7-4a81-41b6-9445-dc9db587b590",
+      "persona": "cta",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "7f9c10c7-4a81-41b6-9445-dc9db587b590",
+        "topic": "Comment créer un plan d'entraînement personnalisé pour atteindre vos objectifs",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T20:07:48.376300"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "34b0cd94-bb90-4a9f-b47d-2953c5454f87",
+      "persona": "couples_and_families",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "couples_and_families",
+        "topic": "Famille et argent",
+        "context": "Gérer les finances en tant que couple pour éviter les tensions",
+        "objectif": "engagement",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-21T12:00:00",
+        "id": "34b0cd94-bb90-4a9f-b47d-2953c5454f87"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:51.330231"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "850dff87-5813-4768-8d98-9029006ac047",
+      "persona": "business_auto",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "850dff87-5813-4768-8d98-9029006ac047",
+        "topic": "Comment créer un contenu engageant pour votre page Facebook d'entreprise",
+        "context": "G?n?r? par IA",
+        "used": false,
+        "validated": true
+      }
+    },
+    "timestamp": "2026-05-20T20:07:53.775478"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "124bf448-db7d-4a89-9f68-a4710a88e386",
+      "persona": "storytelling_pro",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "persona": "storytelling_pro",
+        "topic": "Expertise Digitale",
+        "context": "Partager une expérience personnelle d'utilisation de l'IA pour améliorer les compétences professionnelles",
+        "objectif": "autorite",
+        "variables": {},
+        "validated": true,
+        "used": false,
+        "date_prevue": "2026-05-20T12:00:00",
+        "id": "124bf448-db7d-4a89-9f68-a4710a88e386"
+      }
+    },
+    "timestamp": "2026-05-20T20:07:59.093336"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "3d12ef5d-6e28-4718-9672-1d90d9288e83",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "3d12ef5d-6e28-4718-9672-1d90d9288e83",
+        "persona": "mini_formation",
+        "topic": "Séance 3/120 — Les données, carburant de l'IA",
+        "context": "Donnée=info (texte,image,son). Plus d'exemples=plus précis. Qualité>quantité. Analogie: ingrédients pourris=plat pourri. Interdit: big data, data mining, JSON, CSV.",
+        "audience": "débutant absolu",
+        "objectif": "formation",
+        "format": "formation",
+        "used": false,
+        "validated": true,
+        "date_prevue": null,
+        "variables": {}
+      }
+    },
+    "timestamp": "2026-05-26T13:40:28.924724"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "e24321f6-461f-4798-8a31-ad3669119618",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "e24321f6-461f-4798-8a31-ad3669119618",
+        "persona": "mini_formation",
+        "topic": "Séance 4/120 — Comment l'IA apprend",
+        "context": "3 phases: montrer des exemples → tester → utiliser. Analogie: apprendre à conduire (moniteur→examen→solo). Interdit: backpropagation, gradient descent, loss function.",
+        "audience": "débutant absolu",
+        "objectif": "formation",
+        "format": "formation",
+        "used": false,
+        "validated": true,
+        "date_prevue": null,
+        "variables": {}
+      }
+    },
+    "timestamp": "2026-05-26T13:40:33.114565"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "01375add-cea1-490f-8557-c518e73bb6fd",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "01375add-cea1-490f-8557-c518e73bb6fd",
+        "persona": "mini_formation",
+        "topic": "Séance 2/120 — IA vs Machine Learning vs Deep Learning",
+        "context": "3 boîtes concentriques. IA=grand concept. ML=apprend par exemples. DL=trouve des motifs invisibles. Analogie: cuisine → recette → créer sa recette. Interdit: poids, couches, backpropagation.",
+        "audience": "débutant absolu",
+        "objectif": "formation",
+        "format": "formation",
+        "used": false,
+        "validated": true,
+        "date_prevue": null,
+        "variables": {}
+      }
+    },
+    "timestamp": "2026-05-26T13:40:37.971745"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "86614194-18b8-4957-b43a-8e989ed66a2d",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "86614194-18b8-4957-b43a-8e989ed66a2d",
+        "persona": "mini_formation",
+        "topic": "Séance 1/120 — C'est quoi l'IA ?",
+        "context": "Analogie enfant/chat/chien, reconnaissance de motifs, pas de magie ni conscience. Exemples 2026: YouTube, déverrouillage visage, Maps, tags Facebook. Interdit: algorithme, réseau de neurones, deep learning.",
+        "audience": "débutant absolu",
+        "objectif": "formation",
+        "format": "formation",
+        "used": false,
+        "validated": true,
+        "date_prevue": null,
+        "variables": {}
+      }
+    },
+    "timestamp": "2026-05-26T13:40:40.421885"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "86614194-18b8-4957-b43a-8e989ed66a2d",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "86614194-18b8-4957-b43a-8e989ed66a2d",
+        "persona": "mini_formation",
+        "topic": "Séance 1/120 — C'est quoi l'IA ?",
+        "context": "Analogie enfant/chat/chien, reconnaissance de motifs, pas de magie ni conscience. Exemples 2026: YouTube, déverrouillage visage, Maps, tags Facebook. Interdit: algorithme, réseau de neurones, deep learning.",
+        "audience": "débutant absolu",
+        "objectif": "formation",
+        "format": "formation",
+        "used": false,
+        "validated": true,
+        "date_prevue": null,
+        "variables": {}
+      }
+    },
+    "timestamp": "2026-05-26T13:40:42.421356"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "ff9b5fd0-776c-445b-885b-905aba9c3d0b",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "persona": "mini_formation",
+        "topic": "Créer des visuels qui vendent avec ChatGPT Images 2.0",
+        "context": "De nombreux entrepreneurs ont du mal à créer des visuels attrayants pour leurs produits ou services, ce qui peut nuire à leur stratégie marketing. ChatGPT Images 2.0 offre une solution innovante pour générer des visuels de haute qualité de manière rapide et efficace.",
+        "objectif": "engagement",
+        "variables": {
+          "COMPETENCE_CIBLEE": "Création de visuels avec ChatGPT Images 2.0",
+          "ETAPE_1": "Comprendre les capacités de ChatGPT Images 2.0",
+          "ETAPE_2": "Définir les objectifs de marketing pour les visuels",
+          "ETAPE_3": "Apprendre à utiliser les prompts pour générer des visuels personnalisés",
+          "RESULTAT_PROMIS": "Des visuels qui augmentent les conversions et améliorent la stratégie marketing"
+        },
+        "validated": true,
+        "used": false,
+        "id": "ff9b5fd0-776c-445b-885b-905aba9c3d0b"
+      }
+    },
+    "timestamp": "2026-06-08T10:44:30.349037"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "f47a8b77-05b7-4131-a899-6b87ac87de9f",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "f47a8b77-05b7-4131-a899-6b87ac87de9f",
+        "persona": "mini_formation",
+        "topic": "Séance 12/46 — Créer la structure d'un carrousel Facebook complet",
+        "context": "• Outil Gratuit : ChatGPT Free + Gamma.app (Plan gratuit)\n• Ce qu'on apprend : Générer l'architecture textuelle logique d'un carrousel à fort taux de clic.\n• Le Tuto : Utiliser ChatGPT pour concevoir la trame narrative courte, puis la coller dans l'outil d'IA de design Gamma pour générer les slides.\n• Le Prompt :\n\"Rédige le contenu d'un carrousel Facebook de 5 pages sur le thème [Sujet]. Respecte cette structure : Page 1 : Titre accrocheur et mystérieux (Hook). Page 2 à 4 : Un problème précis + sa solution rapide par page (maximum 20 mots par slide). Page 5 : Appel à l'action clair et fort (CTA). Ne fais pas de phrases de transition.\"",
+        "audience": "débutant absolu",
+        "objectif": "formation",
+        "format": "formation",
+        "used": false,
+        "validated": true,
+        "date_prevue": null,
+        "variables": {}
+      }
+    },
+    "timestamp": "2026-06-08T10:46:30.657904"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "d5cfc0b3-8c80-41e7-832e-3a3906b38c1c",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "d5cfc0b3-8c80-41e7-832e-3a3906b38c1c",
+        "persona": "mini_formation",
+        "topic": "Séance 13/46 — Extraire les pépites d'une vidéo YouTube de 2 heures",
+        "context": "• Outil Gratuit : Extension Chrome \"YouTube Transcript\" + ChatGPT Free\n• Ce qu'on apprend : Consommer, comprendre et synthétiser un long contenu technique ou une conférence en moins de 3 minutes.\n• Le Tuto : Ouvrir la vidéo YouTube, copier la transcription textuelle via l'extension gratuite, puis l'envoyer dans ChatGPT.\n• Le Prompt :\n\"Extrais les 5 points techniques majeurs et immédiatement applicables de cette transcription de conférence sous forme de liste à puces. Pour chaque point, donne l'explication vulgarisée en une phrase simple et cite l'outil ou la méthode mentionnée. Voici le texte : [Coller la transcription]\"",
+        "audience": "débutant absolu",
+        "objectif": "formation",
+        "format": "formation",
+        "used": false,
+        "validated": true,
+        "date_prevue": null,
+        "variables": {}
+      }
+    },
+    "timestamp": "2026-06-08T10:46:38.206772"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "41f72f09-2d17-43bb-bc52-040f3201196c",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "41f72f09-2d17-43bb-bc52-040f3201196c",
+        "persona": "mini_formation",
+        "topic": "Séance 14/46 — Définir ses \"Personas\" clients ultra-sceptiques",
+        "context": "• Outil Gratuit : ChatGPT Free\n• Ce qu'on apprend : Arrêter de cibler \"tout le monde\" et comprendre les vrais blocages psychologiques de ses prospects.\n• Le Tuto : Forcer l'IA à jouer le rôle d'un acheteur pointilleux et méfiant pour tester vos arguments.\n• Le Prompt :\n\"Incarne un [Métier ou Profil de la cible] qui est actuellement totalement débordé, frustré par [Problème précis] et extrêmement méfiant envers les solutions miracles du web. Quels sont les 3 seuls arguments factuels et précis qui te feraient cliquer sur une publicité pour mon offre ? Sois critique, direct et sans filtre.\"",
+        "audience": "débutant absolu",
+        "objectif": "formation",
+        "format": "formation",
+        "used": false,
+        "validated": true,
+        "date_prevue": null,
+        "variables": {}
+      }
+    },
+    "timestamp": "2026-06-08T10:46:44.445990"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "695d9173-1cd2-4bb1-9cbb-890b6e2041cc",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "695d9173-1cd2-4bb1-9cbb-890b6e2041cc",
+        "persona": "mini_formation",
+        "topic": "Séance 15/46 — Étudiants : Résumer un cours magistral de 50 pages",
+        "context": "• Outil Gratuit : NotebookLM (Google - 100% Gratuit)\n• Ce qu'on apprend : Générer des fiches de révision instantanées et interactives sans omettre les concepts clés.\n• Le Tuto : Créer un bloc-notes gratuit sur NotebookLM, y importer le PDF ou le scan du cours. L'IA génère automatiquement un guide d'étude complet, un index des notions clés, et propose même une discussion audio (podcast) synthétisant le cours.",
+        "audience": "débutant absolu",
+        "objectif": "formation",
+        "format": "formation",
+        "used": false,
+        "validated": true,
+        "date_prevue": null,
+        "variables": {}
+      }
+    },
+    "timestamp": "2026-06-08T10:46:50.270267"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "e1ed80b4-ed1e-4d0d-826e-99882630eb72",
+      "persona": "mini_formation",
+      "platform": "facebook",
+      "account_id": 2,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\2\\planned_topics.json",
+      "raw": {
+        "id": "e1ed80b4-ed1e-4d0d-826e-99882630eb72",
+        "persona": "mini_formation",
+        "topic": "Séance 16/46 — Étudiants : Préparer et simuler son examen de \"Filière\"",
+        "context": "• Outil Gratuit : ChatGPT Free ou Claude (Version gratuite)\n• Ce qu'on apprend : Se tester en conditions réelles d'examen avec un correcteur intraitable avant le jour J.\n• Le Tuto : Configurer l'IA en mode examinateur académique strict et répondre étape par étape.\n• Le Prompt :\n\"Tu es professeur agrégé en [Nom de la filière/Matière]. Tu vas me poser 3 questions d'examen complexes issues du programme, une par une. Attends ma réponse à la première question avant de générer la suite. Après chaque réponse, évalue-moi rigoureusement sur 20 et corrige mes erreurs de logique ou mes approximations de vocabulaire technique.\"",
+        "audience": "débutant absolu",
+        "objectif": "formation",
+        "format": "formation",
+        "used": false,
+        "validated": true,
+        "date_prevue": null,
+        "variables": {}
+      }
+    },
+    "timestamp": "2026-06-08T10:46:54.964470"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-01",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-01",
+        "persona": "poste_routine",
+        "topic": "Prospection Machine — premier échec",
+        "context": "Humilité + compétence technique",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "J'ai construit de zéro un outil de prospection automatisée en Python/Flask.\nIl fait 4 choses en séquence :\n1. Il scrape Google Maps pour extraire des fiches d'entreprises (nom, téléphone, site web, adresse, secteur)\n2. Il audite automatiquement le site de chaque prospect (performance, HTTPS, indexation)\n3. Il génère un email personnalisé pour chaque prospect à partir des données d'audit\n4. Il envoie les emails automatiquement via SMTP\n\nPremière campagne lancée : 500 prospects ciblés, angle \"votre site est lent et ça vous coûte des clients\".\nRésultat : 0 réponse.\n\nCe qui s'est passé : l'outil fonctionnait parfaitement. C'est le message qui était faux.\nUn dirigeant de TPE/PME ne se lève pas le matin en pensant à la performance de son site.\nCe n'est pas une douleur qu'il ressent au quotidien.\n\nPivot : j'ai changé d'angle. Je cible maintenant les entreprises qui n'ont pas du tout de site web.\nLa douleur est plus claire : \"mes concurrents sont en ligne, pas moi.\"\nJe filtre ces entreprises directement via mon scraper Google Maps."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.152062"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-02",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-02",
+        "persona": "poste_routine",
+        "topic": "Problèmes concrets d'un scraper Google Maps",
+        "context": "Partage technique, expérience terrain",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "En construisant mon scraper Google Maps, j'ai rencontré 4 problèmes que personne ne mentionne :\n\nProblème 1 — Sélecteurs CSS fragiles :\nGoogle Maps change régulièrement sa structure HTML sans prévenir.\nMon scraper cassait silencieusement : il tournait sans erreur mais ne récupérait rien.\nUn scraper qui casse en silence est pire qu'un scraper qui plante — au moins quand ça plante, tu sais.\nFix : système de fallback sur plusieurs sélecteurs alternatifs + alerte quand les champs sont tous vides.\n\nProblème 2 — Champs vides :\nBeaucoup de fiches GMB n'affichent pas le site web.\nRésultat : des centaines de prospects sans URL, inutilisables pour mon module d'audit.\nFix : filtre automatique — si pas de site web détecté, le prospect est écarté ou mis dans une file séparée.\n\nProblème 3 — Doublons :\nLa même entreprise peut apparaître dans plusieurs catégories de recherche.\nFix : déduplication par numéro de téléphone normalisé (suppression espaces, indicatifs).\n\nProblème 4 — Formats de numéros hétérogènes :\n06 12 34 56 78 / +33612345678 / 0612345678 — c'est le même numéro, traité comme 3 entrées différentes.\nFix : normalisation systématique au format international avant insertion en base."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.189671"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-03",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-03",
+        "persona": "poste_routine",
+        "topic": "Ghost CMS vs WordPress — verdict terrain",
+        "context": "Prise de position assumée, expertise pratique",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "J'ai migré un blog de 35 articles depuis Blog4ever vers Ghost CMS pour un client.\nAvant ça, j'avais travaillé sur des projets WordPress (maintenance, optimisation, PrestaShop).\nVoilà mon verdict honnête après les deux.\n\nGHOST :\n- Léger, rapide, structure propre dès l'installation\n- Idéal pour un blog de contenu pur\n- Newsletter native intégrée (j'ai configuré Brevo en SMTP pour l'envoi)\n- Handlebars pour la personnalisation du thème — puissant si tu sais coder, inaccessible si tu ne sais pas\n- Écosystème de plugins très limité comparé à WordPress\n- Maintenance quasi-inexistante si le client publie uniquement du contenu\n\nWORDPRESS :\n- Écosystème immense, un plugin pour tout\n- Mais : mises à jour fréquentes qui cassent des choses, surface d'attaque large, performances variables selon la config\n- Incontournable pour l'e-commerce (WooCommerce) ou les sites qui ont besoin de beaucoup d'intégrations\n\nCE QUI DÉCIDE DU CHOIX :\n- Client qui publie du contenu uniquement → Ghost\n- Client qui a besoin de formulaires complexes, e-commerce, intégrations multiples → WordPress\n- Le bon CMS dépend du client, pas de mes préférences"
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.231381"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-07",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-07",
+        "persona": "poste_routine",
+        "topic": "Facturer 500€ pour 2 jours de configuration",
+        "context": "Valeur vs temps, confiance dans ses tarifs",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "CONTEXTE :\nDeuxième mission Cloudflare pour un client qui avait déjà travaillé avec moi.\nPérimètre : configuration WAF + Bot Fight Mode + règles de cache + DNS sur 6 domaines.\nLe client a d'abord résisté sur le prix. Il pensait que \"c'est juste une configuration\".\n\nMA RÉPONSE :\nCe n'est pas du temps que tu paies. C'est la protection de 6 actifs numériques professionnels.\nUn WAF mal configuré, c'est soit trop strict (il bloque de vrais visiteurs), soit trop permissif (il laisse passer les attaques).\nUne configuration correcte demande de comprendre le trafic du site, d'ajuster les règles, de tester.\n\nRÉSULTAT :\nNegociation à 500€. Client satisfait à la livraison.\n\nLEÇON :\nUn freelance qui baisse ses prix à chaque objection finit par travailler pour rien et envoie un mauvais signal.\nL'objection sur le prix est souvent une demande de justification, pas un refus définitif."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.272420"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-04",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-04",
+        "persona": "poste_routine",
+        "topic": "Ce que Cloudflare fait que l'hébergeur ne fait pas",
+        "context": "Éducation + légère provocation",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "J'ai configuré Cloudflare sur 6 domaines pour un client professionnel.\nCe que j'ai activé et paramétré :\n\nWAF (Web Application Firewall) :\nBloque les tentatives d'injection SQL, XSS, et autres attaques automatisées communes.\nÇa se passe devant le serveur — l'attaque n'atteint jamais l'hébergement.\n\nBot Fight Mode :\nDétecte et bloque les bots automatisés connus (scrapers malveillants, crawlers agressifs, attaques par force brute).\nRéduit la consommation inutile de ressources serveur.\n\nCache CDN :\nLes assets statiques (images, CSS, JS) sont servis depuis le data center Cloudflare le plus proche du visiteur.\nLe serveur d'origine est déchargé.\n\nSSL universel :\nHTTPS activé automatiquement, certificat géré par Cloudflare, sans coût supplémentaire.\n\nDNS Cloudflare :\nParmi les DNS les plus rapides au monde. Résolution plus rapide = connexion initiale plus rapide.\n\nCE QUE L'HÉBERGEUR MUTUALISÉ CLASSIQUE NE FAIT PAS :\nPas de WAF personnalisable, pas de protection bot réelle, pas de CDN mondial, SSL souvent payant ou en option.\n\nCONCLUSION :\nPlan gratuit Cloudflare + hébergement basique = meilleure protection qu'un hébergement \"premium\" sans Cloudflare."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.317387"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-05",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-05",
+        "persona": "poste_routine",
+        "topic": "Livraison de la migration Ghost",
+        "context": "Preuve sociale sobre, fierté professionnelle",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "SITUATION DE DÉPART :\nUn client avait un blog sur Blog4ever — plateforme vieillissante, peu flexible, pas de newsletter correcte, SEO basique.\nIl voulait migrer vers Ghost pour avoir un blog plus rapide, maintenable, avec newsletter intégrée.\n\nCE QUI A ÉTÉ LIVRÉ :\n- 35 articles migrés depuis Blog4ever vers Ghost, mise en forme conservée\n- Meta descriptions SEO rédigées pour chacun des 35 articles\n- Système de date de mise à jour dynamique : Ghost n'affiche pas nativement la date de modification des articles. J'ai créé un tag interne (#mis-a-jour) qui, quand il est ajouté à un article, déclenche l'affichage de la date de mise à jour dans le template via Handlebars. Le client peut mettre à jour n'importe quel article et la date s'affiche automatiquement.\n- Intégration Brevo (anciennement Sendinblue) en SMTP pour l'envoi des newsletters\n- Corrections CSS pour l'affichage des images (certaines étaient mal cadrées ou mal redimensionnées dans le thème)\n- JSON-LD schema simplifié pour le référencement (type BlogPosting, champs essentiels uniquement)\n- Formation client via vidéo Loom — pas de call en temps réel, le client peut revoir à volonté\n\nAPRÈS LA LIVRAISON :\nLe client a souhaité réactiver sa newsletter — hors périmètre initial.\nJ'ai positionné ça comme une prestation séparée et proposé un devis distinct.\nRésultat : contrat de maintenance signé à 50€/mois + newsletter en option pour la suite."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.360478"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-08",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-08",
+        "persona": "poste_routine",
+        "topic": "Vendre des résultats, pas des prestations",
+        "context": "Conseil pratique issu d'une vraie évolution personnelle",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "CE QUI A CHANGÉ DANS MA FAÇON DE PRÉSENTER MES OFFRES :\n\nAvant, je décrivais ce que je faisais :\n\"Configuration WAF, activation Bot Fight Mode, mise en place règles de cache\"\n\"Migration CMS, intégration SMTP, corrections CSS\"\n\nLe client ne comprend pas, hésite, négocie.\n\nMaintenant, je décris ce que le client obtient :\n\"Vos 6 domaines protégés contre les attaques automatisées et le trafic parasite\"\n\"Un blog rapide, maintenable, avec newsletter intégrée et formation incluse\"\n\nEXEMPLE CONCRET :\nLa mission Cloudflare à 500€ — quand je l'ai vendue comme \"protection de 6 domaines professionnels\", le client a compris la valeur immédiatement.\nQuand j'aurais dit \"activation Bot Fight Mode + WAF\", il aurait eu une conversation sur ce que c'est.\n\nPRINCIPE :\nLe client achète le résultat. Le processus, c'est mon problème.\nLe détail technique rassure après la vente, pas avant."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.408568"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-06",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-06",
+        "persona": "poste_routine",
+        "topic": "L'urgence Cloudflare — cas concret",
+        "context": "Tension narrative + leçon sur la maintenance préventive",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "SITUATION :\nUn client reçoit des alertes de ralentissement sur son site. Trafic anormalement élevé, hébergement saturé.\nIl pense à une attaque.\n\nDIAGNOSTIC VIA CLOUDFLARE ANALYTICS :\nPic de requêtes automatisées — bots non filtrés qui crawlent le site en boucle.\nLe Bot Fight Mode n'était pas activé. Pas de règles WAF en place.\nLes bots consommaient les ressources du serveur comme de vrais visiteurs.\n\nINTERVENTION :\nActivation du Bot Fight Mode → blocage immédiat du trafic bot connu.\nMise en place de règles WAF pour bloquer les patterns d'attaque identifiés.\nRésultat : trafic retombé à la normale en quelques heures.\n\nLEÇON :\nTout ça aurait pu être configuré en amont pour moins cher qu'une intervention d'urgence.\nUne configuration préventive prend 1 à 2 jours. Une intervention en urgence coûte plus — en argent et en stress."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.450784"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-09",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-09",
+        "persona": "poste_routine",
+        "topic": "Le vrai frein des TPE/PME : la peur de déléguer",
+        "context": "Observation terrain, empathie, positionnement expert",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "CE QUE J'OBSERVE EN TRAVAILLANT AVEC DES TPE/PME :\n\nLe budget est rarement le vrai problème.\nCe qui bloque vraiment, c'est le rapport au contrôle.\nCes dirigeants ont souvent tout construit seuls — ils savent exactement comment chaque chose fonctionne dans leur activité. Déléguer, c'est accepter de ne plus tout superviser.\n\nMANIFESTATIONS CONCRÈTES :\n- Client qui change d'avis sur le périmètre après la livraison\n- Client qui revient avec des demandes non prévues (\"et tant qu'on y est...\")\n- Client qui veut valider chaque étape intermédiaire au lieu de voir le résultat final\n- Négociation sur des tarifs pourtant justifiés, même quand le budget n'est pas le problème\n\nCE QUE J'AI MIS EN PLACE POUR Y RÉPONDRE :\n- Formation client systématique via Loom : le client comprend ce qu'il a acheté, il ne dépend pas de moi pour tout\n- Documentation de chaque décision technique : trace écrite qui évite les malentendus\n- Périmètre posé clairement dès le début, par écrit\n- Ne pas céder sur le scope sans facturation — mais expliquer pourquoi, sans agressivité"
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.493549"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-10",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-10",
+        "persona": "poste_routine",
+        "topic": "500 emails, 0 réponse — ce que ça m'a appris",
+        "context": "Transparence totale, anti-bullshit, invite au débat",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "CE QUI S'EST PASSÉ :\nJ'ai lancé une campagne cold email entièrement automatisée.\n500 prospects ciblés — des TPE/PME françaises avec un site web dégradé ou lent.\nLes emails étaient personnalisés : l'outil auditait chaque site et adaptait le message selon les problèmes détectés.\nObjet, corps, signature — tout généré automatiquement.\nRésultat : 0 réponse.\n\nPOURQUOI ÇA N'A PAS MARCHÉ :\nPas un problème d'outil. Pas un problème de volume.\nUn problème d'angle.\n\"Votre site est lent\" n'est pas une douleur qu'un dirigeant de TPE ressent chaque matin.\nIl n'a pas de KPI lié à la vitesse de son site. Il ne sait pas ce que ça lui coûte concrètement.\nJe ciblais un problème réel, mais pas un problème perçu.\n\nLE PIVOT :\nJ'ai changé de cible : les entreprises sans site web du tout.\nLa douleur est plus évidente — \"mes concurrents sont en ligne, je ne le suis pas.\"\nMon scraper Google Maps me permet de filtrer exactement ces entreprises."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.536124"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-13",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-13",
+        "persona": "poste_routine",
+        "topic": "Le JSON-LD que j'utilise sur mes projets Ghost",
+        "context": "Expertise pointue rendue accessible, généreux",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "SUR LE PROJET DE MIGRATION GHOST :\nJ'ai mis en place un JSON-LD schema pour le référencement.\nJ'ai volontairement écarté les schémas complexes qu'on trouve dans les guides SEO — WebPage imbriqué dans BreadcrumbList imbriqué dans Organization — au profit d'un schema BlogPosting simple et propre.\n\nPOURQUOI SIMPLE :\nPlus un schema est complexe, plus il y a de risques d'erreurs de validation.\nGoogle Search Console signale les erreurs de schema et ça peut pénaliser l'indexation.\nPour un blog de TPE/PME, le schema BlogPosting avec les bons champs couvre 95% des besoins.\n\nLES CHAMPS QUE J'INCLUS :\n- headline (titre de l'article)\n- datePublished (date de publication)\n- dateModified (date de mise à jour — alimentée dynamiquement par le système de tag #mis-a-jour)\n- author (nom + url)\n- description (meta description de l'article)\n- image (image principale de l'article)\n\nLE SYSTÈME DE TAG #MIS-A-JOUR :\nGhost ne gère pas nativement l'affichage de la date de modification.\nJ'ai créé un tag interne (#mis-a-jour) dans Ghost.\nQuand ce tag est ajouté à un article, le template Handlebars affiche la date de mise à jour.\nCe tag alimente aussi le champ dateModified dans le JSON-LD — automatiquement."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.574205"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-15",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-15",
+        "persona": "poste_routine",
+        "topic": "Travailler depuis Cotonou pour des clients français",
+        "context": "Authenticité, sujet différenciant",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "LA RÉALITÉ CONCRÈTE :\n\nCe qui est simple :\n- La langue : français natif, communication sans friction avec les clients français et belges\n- Les outils : Malt gère la facturation, le contrat, la légitimité de la relation. Le client paie en euros, je facture en euros.\n- Le travail async : je forme mes clients via Loom (vidéos à regarder quand ils veulent), je réponds par écrit. Le décalage horaire est quasi inexistant avec la France (même fuseau ou +1h selon la période).\n- La stack technique : tout est dans le cloud. Ghost, Cloudflare, n8n, GitHub — la localisation ne change rien.\n\nCe qui demande plus d'effort :\n- Certains clients hésitent quand ils voient la localisation sur mon profil Malt. Leur réflexe : \"est-ce que ça va vraiment marcher à distance ?\"\n- La réponse est dans la façon de travailler : documentation systématique, communication écrite rigoureuse, Loom pour les explications complexes, réponses rapides.\n- Je ne peux pas compenser par une réunion physique — je compense par la rigueur et la clarté.\n\nCE QUE MALT A CHANGÉ :\nUne plateforme qui normalise le freelance à distance, qui porte la confiance initiale, qui valide le profil aux yeux du client."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.614717"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-16",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-16",
+        "persona": "poste_routine",
+        "topic": "Solopreneur — ce que j'ai arrêté de faire moi-même",
+        "context": "Évolution personnelle, inspiration",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "CE QUE J'AI AUTOMATISÉ :\n\nProspection :\n500 prospects contactés sans intervention manuelle. Mon outil scrape, audite, rédige, envoie.\nJe n'ouvre pas un tableur, je ne copie pas d'emails, je ne rédige pas de messages un par un.\n\nPublication de contenu :\nJ'ai construit une plateforme d'automatisation de contenu pour les réseaux sociaux.\nElle génère du texte, des images, des vidéos (via Remotion), et publie sur plusieurs comptes selon des personas définis.\nCe système qui tourne pour moi, je le propose maintenant comme produit à des community managers et agences.\n\nSuivi opérationnel :\nWorkflows n8n pour les notifications, le suivi de missions, les rapports.\n\nCE QUE J'AI GARDÉ :\n- La relation client — c'est là que la valeur se crée et se maintient\n- Les décisions d'architecture technique — ce qui sera livré et comment\n- La réflexion sur le message et la stratégie — ce qu'aucun outil ne peut remplacer\n\nCE QUE ÇA A CHANGÉ :\nQuand l'exécution répétitive est automatisée, je pense mieux.\nJe peux coordonner plutôt qu'exécuter, ce qui me permet de prendre des missions plus complexes et mieux payées."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.660251"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-17",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-17",
+        "persona": "poste_routine",
+        "topic": "Le projet le plus instructif — gestion de scope",
+        "context": "Vulnérabilité calculée, leçon business",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "LE PROJET :\nMigration Ghost + SEO + SMTP + corrections diverses. Techniquement faisable, bien délimité au départ.\n\nCE QUI S'EST PASSÉ APRÈS LA LIVRAISON :\nLe client a voulu réactiver sa newsletter.\nC'était hors périmètre. Ce n'était pas prévu dans le devis. Ce n'était pas inclus dans la mission.\n\nLE DILEMME :\nDire oui pour maintenir la relation → je travaille gratuitement et je crée un précédent.\nTenir la limite → risque de friction, client potentiellement déçu.\n\nCE QUE J'AI FAIT :\nJ'ai expliqué calmement que la réactivation newsletter est une prestation à part — elle demande de l'audit, de la configuration, des tests de délivrabilité.\nJ'ai proposé un devis séparé, sans agressivité.\nJ'ai aussi proposé un contrat de maintenance mensuel à 50€ pour couvrir les ajustements courants.\n\nRÉSULTAT :\nLe client a signé le contrat de maintenance. La newsletter est restée en option pour la suite.\nPas de friction. Périmètre respecté. Relation maintenue.\n\nLEÇON :\nLe scope creep est presque toujours involontaire de la part du client.\nC'est au prestataire de poser les limites — clairement, calmement, sans s'excuser.\nUn client qui comprend les règles du jeu les respecte."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.694481"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-18",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-18",
+        "persona": "poste_routine",
+        "topic": "Ce que perdent les TPE/PME sans automatisation",
+        "context": "Douleur claire, solution directe, CTA non-agressif",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "3 SITUATIONS QUE JE VOIS RÉGULIÈREMENT :\n\nSituation 1 :\nUn prospect remplit un formulaire de contact.\nLe dirigeant est en déplacement, voit le mail 2 jours plus tard, répond.\nLe prospect a déjà signé avec quelqu'un d'autre.\nCe qu'un workflow simple aurait fait : réponse automatique immédiate + relance à J+2 si pas de réponse humaine.\n\nSituation 2 :\nUn devis est envoyé. Pas de réponse.\nLe dirigeant ne relance pas parce qu'il ne veut pas \"insister\".\nLe devis meurt faute de suivi.\nCe qu'un workflow simple aurait fait : rappel interne à J+5, relance email à J+7 si toujours rien.\n\nSituation 3 :\nLe dirigeant veut savoir où en sont ses prospects en cours.\nIl passe 45 minutes à ouvrir des fils d'emails, des tableaux, des messages WhatsApp.\nCe qu'un workflow simple aurait fait : rapport automatique chaque lundi avec l'état du pipe.\n\nCES PROBLÈMES NE SONT PAS DES PROBLÈMES DE TAILLE D'ENTREPRISE.\nUne TPE de 2 personnes les vit autant qu'une PME de 20.\nCe sont des problèmes d'outil, pas de budget — les 3 workflows ci-dessus représentent 2 à 3 jours de mise en place."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.733310"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "post-20",
+      "persona": "poste_routine",
+      "platform": "linkedin",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\linkedin_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "post-20",
+        "persona": "poste_routine",
+        "topic": "3 questions à se poser avant de chercher un freelance",
+        "context": "Éducation du prospect, filtre naturel des mauvaises missions",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "MATIERE_BRUTE": "CE QUI CRÉE DES MISSIONS DIFFICILES :\nPas le niveau technique du freelance. Pas le budget.\nSouvent : un brief flou, un budget décorrelé des attentes, un client non disponible.\n\nLES 3 QUESTIONS :\n\nQuestion 1 — \"Est-ce que je décris un résultat ou une tâche ?\"\nBon brief : \"Je veux un blog rapide, maintenable, avec newsletter intégrée, opérationnel en 3 semaines.\"\nMauvais brief : \"Je veux que tu installes Ghost et que tu configures Mailchimp et que tu migres mes articles.\"\nLe résultat, c'est le problème du client. La solution, c'est le problème du freelance.\nUn client qui décrit des tâches va changer d'avis en cours de route parce qu'il n'a pas défini ce qu'il voulait vraiment.\n\nQuestion 2 — \"Mon budget est-il à la hauteur de ce que j'attends ?\"\nMigrer 35 articles avec SEO, SMTP et formation : c'est plusieurs jours de travail.\nConfigurer Cloudflare sur 6 domaines correctement : c'est 2 jours de travail.\nUn budget de 200€ produit des résultats à 200€.\nCe n'est pas une critique — c'est de la clarté. Les deux parties doivent être alignées sur ce que le prix permet.\n\nQuestion 3 — \"Suis-je disponible pour donner des retours ?\"\nLes projets qui traînent ne traînent pas à cause du freelance.\nIls traînent parce que le client met 5 jours à valider une maquette, 3 jours à répondre à une question bloquante.\nLa rapidité d'une mission dépend des deux côtés."
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-12T09:43:14.773992"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-01",
+      "persona": "poste_routine",
+      "topic": "Études à l'étranger : les documents indispensables",
+      "context": "ANGLE : Informatif, rassurant, orienté préparation de dossier (Études)\n\nTEXTE DE LA PUBLICATION :\n\n🎓 Vous rêvez d'étudier en France ou au Canada ?\n\nAvant de vous lancer, voici les documents que l'on demande toujours en premier pour monter votre dossier 📋 :\n\n✅ Relevés de notes (tous niveaux confondus)\n✅ Diplômes obtenus\n✅ Justificatifs de votre parcours académique et/ou professionnel\n✅ Passeport en cours de validité\n\n💡 Le secret d'un dossier qui passe ? La PRÉPARATION. Un dossier bien monté dès le départ, c'est déjà la moitié du chemin vers votre admission !\n\nChez AYADG Consulting 🌍, on vous aide à rassembler, vérifier et structurer chaque pièce pour mettre toutes les chances de votre côté.\n\n📞 Une question sur votre dossier ? Écrivez-nous en commentaire ou contactez-nous directement !\n🔗 ayadg-consult.com\n\n#EtudesAlEtranger #France #Canada #AYADGConsulting #VisaEtudiant\n\nCE QUE LE POST DOIT TRANSMETTRE :\nAYADG simplifie une étape qui stresse beaucoup de candidats (la constitution du dossier) et donne une raison concrète de les contacter.",
+      "media": "Image conseillée : visuel infographie type checklist (passeport + diplôme + icônes documents), couleurs de la charte AYADG",
+      "date": "2026-06-19",
+      "time": "18:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T21:34:37.085190"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-02",
+      "persona": "poste_routine",
+      "topic": "Tourisme : bien préparer son séjour en France",
+      "context": "ANGLE : Pratique, voyage/tourisme, ambiance week-end et évasion\n\nTEXTE DE LA PUBLICATION :\n\n🇫🇷 Direction la France... en pensée ! ✈️\n\nQue vous rêviez de flâner à Paris, de déguster un verre à Bordeaux ou de bronzer sur la Côte d'Azur 🌊, une bonne préparation fait toute la différence.\n\n5 essentiels à ne jamais oublier avant de partir :\n\n1️⃣ Vérifiez si vous avez besoin d'un visa et que votre passeport est valide pour toute la durée du séjour\n2️⃣ Planifiez votre itinéraire et réservez vos hébergements à l'avance\n3️⃣ Souscrivez une bonne assurance voyage (urgences médicales + annulation)\n4️⃣ Achetez vos billets de train en avance pour profiter des meilleurs tarifs\n5️⃣ Apprenez 2-3 phrases de base en français, ça ouvre toutes les portes 😊\n\n🧳 Envie de partir sans stress et sans rien oublier ? AYADG Consulting s'occupe de toute la procédure pour vous !\n\n👉 Contactez-nous dès maintenant : ayadg-consult.com\n\n#VoyageEnFrance #Tourisme #AYADGConsulting #PréparezVotreVoyage\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLe voyage est accessible et agréable quand il est bien préparé — et AYADG peut prendre en charge cette préparation.",
+      "media": "Image conseillée : photo inspirante (Tour Eiffel, vignobles de Bordeaux ou plage Côte d'Azur)",
+      "date": "2026-06-20",
+      "time": "10:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T21:34:37.109677"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-03",
+      "persona": "poste_routine",
+      "topic": "Témoignage client : rêve d'études devenu réalité",
+      "context": "ANGLE : Émotionnel, preuve sociale, ton dimanche matin posé\n\nTEXTE DE LA PUBLICATION :\n\n💬 « Grâce à AYADG Consulting, j'ai pu réaliser mon rêve d'étudier en France. Un service irréprochable et un accompagnement exceptionnel. » — Roland K., Étudiant 🎓✨\n\nChaque mois, des hommes et des femmes comme vous concrétisent leur projet d'études, de visite ou de travail à l'international 🌍.\n\nEt si la prochaine belle histoire... c'était la vôtre ? 💭\n\nChez AYADG Consulting, on ne se contente pas de remplir des dossiers : on vous accompagne, on vous écoute, et on reste avec vous jusqu'à la réussite de votre projet 🤝.\n\n🙋‍♂️🙋‍♀️ Vous aussi vous avez un rêve d'ailleurs ? Dites-nous en commentaire votre destination de cœur !\n\n📩 ayadg-consult.com | 📘 facebook.com/ayadg.consulting\n\n#TémoignageClient #AYADGConsulting #RêveDevenuRéalité\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa réussite des clients passés inspire confiance et invite les prospects à se projeter dans leur propre projet.",
+      "media": "Image conseillée : portrait souriant générique (étudiant avec valise/diplôme) ou visuel citation stylisé",
+      "date": "2026-06-21",
+      "time": "11:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T21:34:37.129640"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-04",
+      "persona": "poste_routine",
+      "topic": "Travailler au Canada : ce qu'il faut savoir",
+      "context": "ANGLE : Motivant, début de semaine, orienté Travail\n\nTEXTE DE LA PUBLICATION :\n\n💼 Nouvelle semaine, nouveaux projets ! Et si 2026 était l'année de votre départ pour travailler au Canada ? 🍁\n\nLe Canada reste l'une des destinations préférées des professionnels grâce à :\n✅ Un marché du travail dynamique et ouvert à l'international\n✅ Des procédures de visa de travail bien définies\n✅ Une qualité de vie reconnue\n\nMais entre les permis, les démarches administratives et les délais... on s'y perd vite 😵‍💫\n\nC'est exactement pour ça qu'AYADG Consulting existe : on prépare votre dossier, on vous accompagne dans la soumission, et on reste avec vous jusqu'à votre installation sur place 🏡.\n\n💪 Prêt(e) à passer à l'action cette semaine ? Réservez votre consultation dès aujourd'hui !\n🔗 ayadg-consult.com\n\n#TravailAuCanada #VisaTravail #AYADGConsulting #NouvelleSemaine\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLe travail à l'étranger est atteignable avec le bon accompagnement, du dossier jusqu'à l'installation.",
+      "media": "Image conseillée : visuel drapeau canadien + skyline (Toronto/Montréal) ou photo de professionnel souriant",
+      "date": "2026-06-22",
+      "time": "08:30",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T21:34:37.149475"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-05",
+      "persona": "poste_routine",
+      "topic": "Vrai/Faux sur le refus de visa",
+      "context": "ANGLE : Format Vrai/Faux, déconstruction de mythe, rassurant\n\nTEXTE DE LA PUBLICATION :\n\n❓ VRAI ou FAUX : un dossier de visa refusé une fois = plus aucune chance ?\n\n🚫 FAUX !\n\nUn refus n'est jamais une fin en soi. Bien souvent, c'est juste un dossier incomplet, mal présenté ou avec des justificatifs insuffisants 📄.\n\nCe qu'on fait chez AYADG Consulting quand un client revient après un refus :\n🔍 On analyse les raisons exactes du refus\n🛠️ On corrige et on renforce les points faibles du dossier\n📅 On prépare une nouvelle soumission, plus solide et plus claire\n\nUn refus n'est jamais définitif : avec une bonne analyse et une meilleure préparation, une nouvelle demande a toutes ses chances 💪✨\n\n🙋 Vous avez déjà eu un refus ? Ne baissez pas les bras, parlons-en !\n📩 ayadg-consult.com\n\n#VisaRefusé #AYADGConsulting #OnNeLâcheRienAvecVous\n\nCE QUE LE POST DOIT TRANSMETTRE :\nUn refus de visa n'est pas une impasse — AYADG sait identifier les causes et reconstruire un dossier gagnant, sans promettre de résultat garanti.",
+      "media": "Image conseillée : visuel simple style quiz (VRAI/FAUX) avec icône passeport tamponné",
+      "date": "2026-06-23",
+      "time": "17:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T21:34:37.172301"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-06",
+      "persona": "poste_routine",
+      "topic": "Notre méthode d'accompagnement en 4 étapes",
+      "context": "ANGLE : Pédagogique, transparence sur le processus, transversal (étude/visite/travail)\n\nTEXTE DE LA PUBLICATION :\n\n🛠️ Comment ça marche chez AYADG Consulting ? On vous explique tout en 4 étapes simples 👇\n\n1️⃣ Consultation initiale 🗣️ — On discute de votre projet (étude, visite, travail) et on vous conseille selon votre situation\n2️⃣ Préparation du dossier 📂 — On vous aide à réunir et organiser tous les documents nécessaires\n3️⃣ Soumission & suivi 📨 — On dépose votre dossier auprès des autorités compétentes et on suit son évolution jusqu'au résultat\n4️⃣ Installation & support 🏡 — Une fois sur place, on reste disponible pour vous aider à vous installer et résoudre les imprévus\n\nPas de zones d'ombre, pas de mauvaises surprises : juste un accompagnement clair, de A à Z 🙌\n\n🌍 Études, visite ou travail en Afrique, en Europe ou en Amérique : on vous accompagne où que vous alliez.\n\n👉 Démarrez votre projet dès aujourd'hui : ayadg-consult.com\n\n#AYADGConsulting #AccompagnementSurMesure #MobilitéInternationale\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa clarté du processus AYADG donne confiance : le client sait exactement à quoi s'attendre à chaque étape.",
+      "media": "Image conseillée : visuel infographie en 4 blocs numérotés avec icônes (discussion, dossier, soumission, maison)",
+      "date": "2026-06-24",
+      "time": "12:30",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T21:34:37.193254"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-07",
+      "persona": "poste_routine",
+      "topic": "Jeu du jeudi : votre destination de rêve",
+      "context": "ANGLE : Engagement, ludique, génère des commentaires, transversal (voyage/étude/travail)\n\nTEXTE DE LA PUBLICATION :\n\n🌍✈️ Petit jeu du jeudi : si vous pouviez partir DEMAIN pour étudier, visiter ou travailler n'importe où dans le monde... ce serait où ?? 🤔\n\n🇫🇷 Paris pour ses études et sa culture ?\n🇨🇦 Le Canada pour sa qualité de vie ?\n🌍 Ou une toute autre destination qui vous fait rêver ?\n\nDites-nous tout en commentaire 👇 — on a hâte de découvrir vos rêves d'ailleurs !\n\nEt si on vous disait que ce rêve peut devenir un vrai projet, avec un accompagnement pas à pas ? 😉 C'est exactement ce qu'on fait chez AYADG Consulting depuis le premier jour.\n\n📩 Passez à l'action : ayadg-consult.com\n📘 Suivez-nous ici pour ne rien manquer : facebook.com/ayadg.consulting\n\n#JeuDuJeudi #AYADGConsulting #VotreProjetNotrePriorité\n\nCE QUE LE POST DOIT TRANSMETTRE :\nUn format léger et participatif qui booste l'engagement (commentaires, partages) tout en ramenant subtilement au service AYADG.",
+      "media": "Image conseillée : visuel carte du monde stylisée avec quelques drapeaux/épingles (France, Canada, etc.)",
+      "date": "2026-06-25",
+      "time": "19:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T21:34:37.215768"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-01",
+      "persona": "poste_routine",
+      "topic": "Études à l'étranger : les documents indispensables",
+      "context": "ANGLE : Informatif, rassurant, orienté préparation de dossier (Études)\n\nTEXTE DE LA PUBLICATION :\n\n🎓 Vous rêvez d'étudier en France ou au Canada ?\n\nAvant de vous lancer, voici les documents que l'on demande toujours en premier pour monter votre dossier 📋 :\n\n✅ Relevés de notes (tous niveaux confondus)\n✅ Diplômes obtenus\n✅ Justificatifs de votre parcours académique et/ou professionnel\n✅ Passeport en cours de validité\n\n💡 Le secret d'un dossier qui passe ? La PRÉPARATION. Un dossier bien monté dès le départ, c'est déjà la moitié du chemin vers votre admission !\n\nChez AYADG Consulting 🌍, on vous aide à rassembler, vérifier et structurer chaque pièce pour mettre toutes les chances de votre côté.\n\n📞 Une question sur votre dossier ? Écrivez-nous en commentaire ou contactez-nous directement !\n🔗 ayadg-consult.com\n\n#EtudesAlEtranger #France #Canada #AYADGConsulting #VisaEtudiant\n\nCE QUE LE POST DOIT TRANSMETTRE :\nAYADG simplifie une étape qui stresse beaucoup de candidats (la constitution du dossier) et donne une raison concrète de les contacter.",
+      "media": "Image conseillée : visuel infographie type checklist (passeport + diplôme + icônes documents), couleurs de la charte AYADG",
+      "date": "2026-06-19",
+      "time": "18:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:00:48.363753"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-02",
+      "persona": "poste_routine",
+      "topic": "Tourisme : bien préparer son séjour en France",
+      "context": "ANGLE : Pratique, voyage/tourisme, ambiance week-end et évasion\n\nTEXTE DE LA PUBLICATION :\n\n🇫🇷 Direction la France... en pensée ! ✈️\n\nQue vous rêviez de flâner à Paris, de déguster un verre à Bordeaux ou de bronzer sur la Côte d'Azur 🌊, une bonne préparation fait toute la différence.\n\n5 essentiels à ne jamais oublier avant de partir :\n\n1️⃣ Vérifiez si vous avez besoin d'un visa et que votre passeport est valide pour toute la durée du séjour\n2️⃣ Planifiez votre itinéraire et réservez vos hébergements à l'avance\n3️⃣ Souscrivez une bonne assurance voyage (urgences médicales + annulation)\n4️⃣ Achetez vos billets de train en avance pour profiter des meilleurs tarifs\n5️⃣ Apprenez 2-3 phrases de base en français, ça ouvre toutes les portes 😊\n\n🧳 Envie de partir sans stress et sans rien oublier ? AYADG Consulting s'occupe de toute la procédure pour vous !\n\n👉 Contactez-nous dès maintenant : ayadg-consult.com\n\n#VoyageEnFrance #Tourisme #AYADGConsulting #PréparezVotreVoyage\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLe voyage est accessible et agréable quand il est bien préparé — et AYADG peut prendre en charge cette préparation.",
+      "media": "Image conseillée : photo inspirante (Tour Eiffel, vignobles de Bordeaux ou plage Côte d'Azur)",
+      "date": "2026-06-20",
+      "time": "10:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:00:48.384353"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-03",
+      "persona": "poste_routine",
+      "topic": "Témoignage client : rêve d'études devenu réalité",
+      "context": "ANGLE : Émotionnel, preuve sociale, ton dimanche matin posé\n\nTEXTE DE LA PUBLICATION :\n\n💬 « Grâce à AYADG Consulting, j'ai pu réaliser mon rêve d'étudier en France. Un service irréprochable et un accompagnement exceptionnel. » — Roland K., Étudiant 🎓✨\n\nChaque mois, des hommes et des femmes comme vous concrétisent leur projet d'études, de visite ou de travail à l'international 🌍.\n\nEt si la prochaine belle histoire... c'était la vôtre ? 💭\n\nChez AYADG Consulting, on ne se contente pas de remplir des dossiers : on vous accompagne, on vous écoute, et on reste avec vous jusqu'à la réussite de votre projet 🤝.\n\n🙋‍♂️🙋‍♀️ Vous aussi vous avez un rêve d'ailleurs ? Dites-nous en commentaire votre destination de cœur !\n\n📩 ayadg-consult.com | 📘 facebook.com/ayadg.consulting\n\n#TémoignageClient #AYADGConsulting #RêveDevenuRéalité\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa réussite des clients passés inspire confiance et invite les prospects à se projeter dans leur propre projet.",
+      "media": "Image conseillée : portrait souriant générique (étudiant avec valise/diplôme) ou visuel citation stylisé",
+      "date": "2026-06-21",
+      "time": "11:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:00:48.409871"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-04",
+      "persona": "poste_routine",
+      "topic": "Travailler au Canada : ce qu'il faut savoir",
+      "context": "ANGLE : Motivant, début de semaine, orienté Travail\n\nTEXTE DE LA PUBLICATION :\n\n💼 Nouvelle semaine, nouveaux projets ! Et si 2026 était l'année de votre départ pour travailler au Canada ? 🍁\n\nLe Canada reste l'une des destinations préférées des professionnels grâce à :\n✅ Un marché du travail dynamique et ouvert à l'international\n✅ Des procédures de visa de travail bien définies\n✅ Une qualité de vie reconnue\n\nMais entre les permis, les démarches administratives et les délais... on s'y perd vite 😵‍💫\n\nC'est exactement pour ça qu'AYADG Consulting existe : on prépare votre dossier, on vous accompagne dans la soumission, et on reste avec vous jusqu'à votre installation sur place 🏡.\n\n💪 Prêt(e) à passer à l'action cette semaine ? Réservez votre consultation dès aujourd'hui !\n🔗 ayadg-consult.com\n\n#TravailAuCanada #VisaTravail #AYADGConsulting #NouvelleSemaine\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLe travail à l'étranger est atteignable avec le bon accompagnement, du dossier jusqu'à l'installation.",
+      "media": "Image conseillée : visuel drapeau canadien + skyline (Toronto/Montréal) ou photo de professionnel souriant",
+      "date": "2026-06-22",
+      "time": "08:30",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:00:48.432264"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-05",
+      "persona": "poste_routine",
+      "topic": "Vrai/Faux sur le refus de visa",
+      "context": "ANGLE : Format Vrai/Faux, déconstruction de mythe, rassurant\n\nTEXTE DE LA PUBLICATION :\n\n❓ VRAI ou FAUX : un dossier de visa refusé une fois = plus aucune chance ?\n\n🚫 FAUX !\n\nUn refus n'est jamais une fin en soi. Bien souvent, c'est juste un dossier incomplet, mal présenté ou avec des justificatifs insuffisants 📄.\n\nCe qu'on fait chez AYADG Consulting quand un client revient après un refus :\n🔍 On analyse les raisons exactes du refus\n🛠️ On corrige et on renforce les points faibles du dossier\n📅 On prépare une nouvelle soumission, plus solide et plus claire\n\nUn refus n'est jamais définitif : avec une bonne analyse et une meilleure préparation, une nouvelle demande a toutes ses chances 💪✨\n\n🙋 Vous avez déjà eu un refus ? Ne baissez pas les bras, parlons-en !\n📩 ayadg-consult.com\n\n#VisaRefusé #AYADGConsulting #OnNeLâcheRienAvecVous\n\nCE QUE LE POST DOIT TRANSMETTRE :\nUn refus de visa n'est pas une impasse — AYADG sait identifier les causes et reconstruire un dossier gagnant, sans promettre de résultat garanti.",
+      "media": "Image conseillée : visuel simple style quiz (VRAI/FAUX) avec icône passeport tamponné",
+      "date": "2026-06-23",
+      "time": "17:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:00:48.462908"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-06",
+      "persona": "poste_routine",
+      "topic": "Notre méthode d'accompagnement en 4 étapes",
+      "context": "ANGLE : Pédagogique, transparence sur le processus, transversal (étude/visite/travail)\n\nTEXTE DE LA PUBLICATION :\n\n🛠️ Comment ça marche chez AYADG Consulting ? On vous explique tout en 4 étapes simples 👇\n\n1️⃣ Consultation initiale 🗣️ — On discute de votre projet (étude, visite, travail) et on vous conseille selon votre situation\n2️⃣ Préparation du dossier 📂 — On vous aide à réunir et organiser tous les documents nécessaires\n3️⃣ Soumission & suivi 📨 — On dépose votre dossier auprès des autorités compétentes et on suit son évolution jusqu'au résultat\n4️⃣ Installation & support 🏡 — Une fois sur place, on reste disponible pour vous aider à vous installer et résoudre les imprévus\n\nPas de zones d'ombre, pas de mauvaises surprises : juste un accompagnement clair, de A à Z 🙌\n\n🌍 Études, visite ou travail en Afrique, en Europe ou en Amérique : on vous accompagne où que vous alliez.\n\n👉 Démarrez votre projet dès aujourd'hui : ayadg-consult.com\n\n#AYADGConsulting #AccompagnementSurMesure #MobilitéInternationale\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa clarté du processus AYADG donne confiance : le client sait exactement à quoi s'attendre à chaque étape.",
+      "media": "Image conseillée : visuel infographie en 4 blocs numérotés avec icônes (discussion, dossier, soumission, maison)",
+      "date": "2026-06-24",
+      "time": "12:30",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:00:48.480475"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-07",
+      "persona": "poste_routine",
+      "topic": "Jeu du jeudi : votre destination de rêve",
+      "context": "ANGLE : Engagement, ludique, génère des commentaires, transversal (voyage/étude/travail)\n\nTEXTE DE LA PUBLICATION :\n\n🌍✈️ Petit jeu du jeudi : si vous pouviez partir DEMAIN pour étudier, visiter ou travailler n'importe où dans le monde... ce serait où ?? 🤔\n\n🇫🇷 Paris pour ses études et sa culture ?\n🇨🇦 Le Canada pour sa qualité de vie ?\n🌍 Ou une toute autre destination qui vous fait rêver ?\n\nDites-nous tout en commentaire 👇 — on a hâte de découvrir vos rêves d'ailleurs !\n\nEt si on vous disait que ce rêve peut devenir un vrai projet, avec un accompagnement pas à pas ? 😉 C'est exactement ce qu'on fait chez AYADG Consulting depuis le premier jour.\n\n📩 Passez à l'action : ayadg-consult.com\n📘 Suivez-nous ici pour ne rien manquer : facebook.com/ayadg.consulting\n\n#JeuDuJeudi #AYADGConsulting #VotreProjetNotrePriorité\n\nCE QUE LE POST DOIT TRANSMETTRE :\nUn format léger et participatif qui booste l'engagement (commentaires, partages) tout en ramenant subtilement au service AYADG.",
+      "media": "Image conseillée : visuel carte du monde stylisée avec quelques drapeaux/épingles (France, Canada, etc.)",
+      "date": "2026-06-25",
+      "time": "19:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:00:48.500472"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-01",
+      "persona": "poste_routine",
+      "topic": "Études à l'étranger : les documents indispensables",
+      "context": "ANGLE : Informatif, rassurant, orienté préparation de dossier (Études)\n\nTEXTE DE LA PUBLICATION :\n\n🎓 Vous rêvez d'étudier en France ou au Canada ?\n\nAvant de vous lancer, voici les documents que l'on demande toujours en premier pour monter votre dossier 📋 :\n\n✅ Relevés de notes (tous niveaux confondus)\n✅ Diplômes obtenus\n✅ Justificatifs de votre parcours académique et/ou professionnel\n✅ Passeport en cours de validité\n\n💡 Le secret d'un dossier qui passe ? La PRÉPARATION. Un dossier bien monté dès le départ, c'est déjà la moitié du chemin vers votre admission !\n\nChez AYADG Consulting 🌍, on vous aide à rassembler, vérifier et structurer chaque pièce pour mettre toutes les chances de votre côté.\n\n📞 Une question sur votre dossier ? Écrivez-nous en commentaire ou contactez-nous directement !\n🔗 ayadg-consult.com\n\n#EtudesAlEtranger #France #Canada #AYADGConsulting #VisaEtudiant\n\nCE QUE LE POST DOIT TRANSMETTRE :\nAYADG simplifie une étape qui stresse beaucoup de candidats (la constitution du dossier) et donne une raison concrète de les contacter.",
+      "media": "Image conseillée : visuel infographie type checklist (passeport + diplôme + icônes documents), couleurs de la charte AYADG",
+      "date": "2026-06-19",
+      "time": "18:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:19:55.801958"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-02",
+      "persona": "poste_routine",
+      "topic": "Tourisme : bien préparer son séjour en France",
+      "context": "ANGLE : Pratique, voyage/tourisme, ambiance week-end et évasion\n\nTEXTE DE LA PUBLICATION :\n\n🇫🇷 Direction la France... en pensée ! ✈️\n\nQue vous rêviez de flâner à Paris, de déguster un verre à Bordeaux ou de bronzer sur la Côte d'Azur 🌊, une bonne préparation fait toute la différence.\n\n5 essentiels à ne jamais oublier avant de partir :\n\n1️⃣ Vérifiez si vous avez besoin d'un visa et que votre passeport est valide pour toute la durée du séjour\n2️⃣ Planifiez votre itinéraire et réservez vos hébergements à l'avance\n3️⃣ Souscrivez une bonne assurance voyage (urgences médicales + annulation)\n4️⃣ Achetez vos billets de train en avance pour profiter des meilleurs tarifs\n5️⃣ Apprenez 2-3 phrases de base en français, ça ouvre toutes les portes 😊\n\n🧳 Envie de partir sans stress et sans rien oublier ? AYADG Consulting s'occupe de toute la procédure pour vous !\n\n👉 Contactez-nous dès maintenant : ayadg-consult.com\n\n#VoyageEnFrance #Tourisme #AYADGConsulting #PréparezVotreVoyage\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLe voyage est accessible et agréable quand il est bien préparé — et AYADG peut prendre en charge cette préparation.",
+      "media": "Image conseillée : photo inspirante (Tour Eiffel, vignobles de Bordeaux ou plage Côte d'Azur)",
+      "date": "2026-06-20",
+      "time": "10:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:19:55.879573"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-03",
+      "persona": "poste_routine",
+      "topic": "Témoignage client : rêve d'études devenu réalité",
+      "context": "ANGLE : Émotionnel, preuve sociale, ton dimanche matin posé\n\nTEXTE DE LA PUBLICATION :\n\n💬 « Grâce à AYADG Consulting, j'ai pu réaliser mon rêve d'étudier en France. Un service irréprochable et un accompagnement exceptionnel. » — Roland K., Étudiant 🎓✨\n\nChaque mois, des hommes et des femmes comme vous concrétisent leur projet d'études, de visite ou de travail à l'international 🌍.\n\nEt si la prochaine belle histoire... c'était la vôtre ? 💭\n\nChez AYADG Consulting, on ne se contente pas de remplir des dossiers : on vous accompagne, on vous écoute, et on reste avec vous jusqu'à la réussite de votre projet 🤝.\n\n🙋‍♂️🙋‍♀️ Vous aussi vous avez un rêve d'ailleurs ? Dites-nous en commentaire votre destination de cœur !\n\n📩 ayadg-consult.com | 📘 facebook.com/ayadg.consulting\n\n#TémoignageClient #AYADGConsulting #RêveDevenuRéalité\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa réussite des clients passés inspire confiance et invite les prospects à se projeter dans leur propre projet.",
+      "media": "Image conseillée : portrait souriant générique (étudiant avec valise/diplôme) ou visuel citation stylisé",
+      "date": "2026-06-21",
+      "time": "11:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:19:55.922760"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-04",
+      "persona": "poste_routine",
+      "topic": "Travailler au Canada : ce qu'il faut savoir",
+      "context": "ANGLE : Motivant, début de semaine, orienté Travail\n\nTEXTE DE LA PUBLICATION :\n\n💼 Nouvelle semaine, nouveaux projets ! Et si 2026 était l'année de votre départ pour travailler au Canada ? 🍁\n\nLe Canada reste l'une des destinations préférées des professionnels grâce à :\n✅ Un marché du travail dynamique et ouvert à l'international\n✅ Des procédures de visa de travail bien définies\n✅ Une qualité de vie reconnue\n\nMais entre les permis, les démarches administratives et les délais... on s'y perd vite 😵‍💫\n\nC'est exactement pour ça qu'AYADG Consulting existe : on prépare votre dossier, on vous accompagne dans la soumission, et on reste avec vous jusqu'à votre installation sur place 🏡.\n\n💪 Prêt(e) à passer à l'action cette semaine ? Réservez votre consultation dès aujourd'hui !\n🔗 ayadg-consult.com\n\n#TravailAuCanada #VisaTravail #AYADGConsulting #NouvelleSemaine\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLe travail à l'étranger est atteignable avec le bon accompagnement, du dossier jusqu'à l'installation.",
+      "media": "Image conseillée : visuel drapeau canadien + skyline (Toronto/Montréal) ou photo de professionnel souriant",
+      "date": "2026-06-22",
+      "time": "08:30",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:19:55.964229"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-05",
+      "persona": "poste_routine",
+      "topic": "Vrai/Faux sur le refus de visa",
+      "context": "ANGLE : Format Vrai/Faux, déconstruction de mythe, rassurant\n\nTEXTE DE LA PUBLICATION :\n\n❓ VRAI ou FAUX : un dossier de visa refusé une fois = plus aucune chance ?\n\n🚫 FAUX !\n\nUn refus n'est jamais une fin en soi. Bien souvent, c'est juste un dossier incomplet, mal présenté ou avec des justificatifs insuffisants 📄.\n\nCe qu'on fait chez AYADG Consulting quand un client revient après un refus :\n🔍 On analyse les raisons exactes du refus\n🛠️ On corrige et on renforce les points faibles du dossier\n📅 On prépare une nouvelle soumission, plus solide et plus claire\n\nUn refus n'est jamais définitif : avec une bonne analyse et une meilleure préparation, une nouvelle demande a toutes ses chances 💪✨\n\n🙋 Vous avez déjà eu un refus ? Ne baissez pas les bras, parlons-en !\n📩 ayadg-consult.com\n\n#VisaRefusé #AYADGConsulting #OnNeLâcheRienAvecVous\n\nCE QUE LE POST DOIT TRANSMETTRE :\nUn refus de visa n'est pas une impasse — AYADG sait identifier les causes et reconstruire un dossier gagnant, sans promettre de résultat garanti.",
+      "media": "Image conseillée : visuel simple style quiz (VRAI/FAUX) avec icône passeport tamponné",
+      "date": "2026-06-23",
+      "time": "17:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:19:56.010363"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-06",
+      "persona": "poste_routine",
+      "topic": "Notre méthode d'accompagnement en 4 étapes",
+      "context": "ANGLE : Pédagogique, transparence sur le processus, transversal (étude/visite/travail)\n\nTEXTE DE LA PUBLICATION :\n\n🛠️ Comment ça marche chez AYADG Consulting ? On vous explique tout en 4 étapes simples 👇\n\n1️⃣ Consultation initiale 🗣️ — On discute de votre projet (étude, visite, travail) et on vous conseille selon votre situation\n2️⃣ Préparation du dossier 📂 — On vous aide à réunir et organiser tous les documents nécessaires\n3️⃣ Soumission & suivi 📨 — On dépose votre dossier auprès des autorités compétentes et on suit son évolution jusqu'au résultat\n4️⃣ Installation & support 🏡 — Une fois sur place, on reste disponible pour vous aider à vous installer et résoudre les imprévus\n\nPas de zones d'ombre, pas de mauvaises surprises : juste un accompagnement clair, de A à Z 🙌\n\n🌍 Études, visite ou travail en Afrique, en Europe ou en Amérique : on vous accompagne où que vous alliez.\n\n👉 Démarrez votre projet dès aujourd'hui : ayadg-consult.com\n\n#AYADGConsulting #AccompagnementSurMesure #MobilitéInternationale\n\nCE QUE LE POST DOIT TRANSMETTRE :\nLa clarté du processus AYADG donne confiance : le client sait exactement à quoi s'attendre à chaque étape.",
+      "media": "Image conseillée : visuel infographie en 4 blocs numérotés avec icônes (discussion, dossier, soumission, maison)",
+      "date": "2026-06-24",
+      "time": "12:30",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:19:56.054535"
+  },
+  {
+    "action": "create",
+    "topic": {
+      "id": "proc-07",
+      "persona": "poste_routine",
+      "topic": "Jeu du jeudi : votre destination de rêve",
+      "context": "ANGLE : Engagement, ludique, génère des commentaires, transversal (voyage/étude/travail)\n\nTEXTE DE LA PUBLICATION :\n\n🌍✈️ Petit jeu du jeudi : si vous pouviez partir DEMAIN pour étudier, visiter ou travailler n'importe où dans le monde... ce serait où ?? 🤔\n\n🇫🇷 Paris pour ses études et sa culture ?\n🇨🇦 Le Canada pour sa qualité de vie ?\n🌍 Ou une toute autre destination qui vous fait rêver ?\n\nDites-nous tout en commentaire 👇 — on a hâte de découvrir vos rêves d'ailleurs !\n\nEt si on vous disait que ce rêve peut devenir un vrai projet, avec un accompagnement pas à pas ? 😉 C'est exactement ce qu'on fait chez AYADG Consulting depuis le premier jour.\n\n📩 Passez à l'action : ayadg-consult.com\n📘 Suivez-nous ici pour ne rien manquer : facebook.com/ayadg.consulting\n\n#JeuDuJeudi #AYADGConsulting #VotreProjetNotrePriorité\n\nCE QUE LE POST DOIT TRANSMETTRE :\nUn format léger et participatif qui booste l'engagement (commentaires, partages) tout en ramenant subtilement au service AYADG.",
+      "media": "Image conseillée : visuel carte du monde stylisée avec quelques drapeaux/épingles (France, Canada, etc.)",
+      "date": "2026-06-25",
+      "time": "19:00",
+      "validated": false,
+      "used": false
+    },
+    "timestamp": "2026-06-18T23:19:56.092522"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "2f66ed6f-a161-4ddf-8c0e-1de349a50b9b",
+      "persona": "storytelling_pro",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "2f66ed6f-a161-4ddf-8c0e-1de349a50b9b",
+        "persona": "storytelling_pro",
+        "topic": "L'importance de l'exécution rapide dans les projets numériques",
+        "context": "De nombreux entrepreneurs au Bénin et en Afrique passent trop de temps à planifier sans jamais exécuter, ce qui les empêche d'atteindre leurs objectifs",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "EVENEMENT_DECLENCHEUR": "J'ai rencontré un entrepreneur qui avait passé 6 mois à planifier son site web sans jamais le lancer",
+          "MA_REACTION": "J'ai été surpris de voir qu'il avait perdu des clients potentiels à cause de son manque d'exécution",
+          "LA_LECON_APPRISE": "L'exécution rapide est clé pour réussir dans les projets numériques, car elle permet de tester et d'itérer rapidement",
+          "VISION_GLOBALE": "Je vois un avenir où les entrepreneurs africains sont capables de lancer et de développer des projets numériques réussis en un laps de temps record, grâce à une exécution rapide et efficace"
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-06-22T11:33:26.158872"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "651c82ae-5b86-4b64-ba92-536b8dba7ef6",
+      "persona": "post_court",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "651c82ae-5b86-4b64-ba92-536b8dba7ef6",
+        "persona": "post_court",
+        "topic": "Un fait intéressant sur l'histoire du monde",
+        "context": "G?n?r? par IA",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {},
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-08-06T09:27:25.851514"
+  },
+  {
+    "action": "update",
+    "topic": {
+      "id": "df7e4163-d2d7-40a0-841d-f81c8a4f045f",
+      "persona": "ia_design",
+      "platform": "facebook",
+      "account_id": 1,
+      "source": "D:\\Content_Machine\\machines\\facebook_machine\\accounts\\1\\planned_topics.json",
+      "raw": {
+        "id": "df7e4163-d2d7-40a0-841d-f81c8a4f045f",
+        "persona": "ia_design",
+        "topic": "Création d'une Identité Visuelle avec l'IA",
+        "context": "De nombreux entrepreneurs locaux ont du mal à créer une identité visuelle qui reflète leur marque. L'IA peut aider à générer des logos, des couleurs et des typographies qui répondent aux besoins spécifiques de leur entreprise.",
+        "media": "none",
+        "date": "",
+        "time": "",
+        "variables": {
+          "OUTIL_DESIGN": "Midjourney",
+          "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour générer des designs uniques",
+          "AVANT_APRES": "Avant : logos génériques, Après : identité visuelle personnalisée",
+          "IMPACT_VISUEL": "Gain de professionnalisme et de reconnaissance de la marque"
+        },
+        "validated": true,
+        "used": false
+      }
+    },
+    "timestamp": "2026-08-06T09:27:51.982396"
+  }
+]

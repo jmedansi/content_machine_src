@@ -1,0 +1,9 @@
+{
+  "name": "hot_take",
+  "display_name": "HotTake",
+  "description": "Opinion forte et tranchante sur un sujet tech",
+  "max_chars": 280,
+  "tone": "tranchant",
+  "format": "opinion",
+  "hashtags": 2
+}

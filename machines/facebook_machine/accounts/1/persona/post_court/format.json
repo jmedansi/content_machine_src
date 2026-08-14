@@ -1,0 +1,9 @@
+{
+  "format_name": "Pensée Courte",
+  "variables_requises": [
+    "PENSEE_DU_JOUR",
+    "EXPLICATION_RAPIDE",
+    "QUESTION_SIMPLE"
+  ],
+  "user_prompt_template": "Rédige un post Facebook ultra-court (Pensée du Jour) sur :\n\nLa pensée choc ou l'insight : {PENSEE_DU_JOUR}\nUne phrase d'explication ou de contexte : {EXPLICATION_RAPIDE}\nQuestion très facile à répondre : {QUESTION_SIMPLE}\n\nFormat: 3-4 lignes maximum, très percutant."
+}

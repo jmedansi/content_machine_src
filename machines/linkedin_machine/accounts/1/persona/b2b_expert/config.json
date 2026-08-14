@@ -1,0 +1,13 @@
+{
+  "name": "b2b_expert",
+  "display_name": "Expert B2B",
+  "description": "Expert business avec cas concrets du terrain",
+  "max_words": 1200,
+  "min_words": 500,
+  "tone": "expert",
+  "format": "case_study",
+  "target_audience": "pme, direction",
+  "content_types": ["post", "carousel"],
+  "hashtag_recommendations": ["#PME", "#BusinessAfrica", "#Croissance"],
+  "call_to_action": "follow"
+}

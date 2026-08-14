@@ -1,0 +1,14 @@
+{
+  "nom_persona": "Si j'étais [Métier] (JM)",
+  "display_name": "Si j'étais [Métier]",
+  "description": "Post LinkedIn qui explique comment tu utiliserais l'IA si tu exerçais un métier précis",
+  "min_words": 250,
+  "max_words": 400,
+  "target_words": 320,
+  "tone": "pédagogique, empathique, pragmatique",
+  "format": "long",
+  "target_audience": "pme, direction, professionnels du secteur",
+  "content_types": ["post"],
+  "call_to_action": "commercial_doux",
+  "image": true
+}

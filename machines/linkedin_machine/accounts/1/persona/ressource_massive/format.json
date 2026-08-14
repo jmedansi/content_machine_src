@@ -1,0 +1,10 @@
+{
+  "format_name": "Ressource Massive",
+  "variables_requises": [
+    "NOM_RESSOURCE",
+    "CONTENU",
+    "DIFFERENCIATION",
+    "MOT_CLE_COMMENTAIRE"
+  ],
+  "user_prompt_template": "Rédige un post LinkedIn offrant une Ressource Massive sur :\n\nNom de la ressource : {NOM_RESSOURCE}\nContenu (ce qu'il y a dedans) : {CONTENU}\nEn quoi c'est différent des autres : {DIFFERENCIATION}\nMot-clé pour commenter : {MOT_CLE_COMMENTAIRE}\n\nTexte brut publiable. Pas de markdown. Pas de hashtags."
+}

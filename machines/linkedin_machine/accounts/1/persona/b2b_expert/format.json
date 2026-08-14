@@ -1,0 +1,10 @@
+{
+  "format_name": "B2B Expert",
+  "variables_requises": [
+    "SITUATION_CLIENT",
+    "ACTION_CONTRE_INTUITIVE",
+    "RESULTAT_CHIFFRE",
+    "MORALE_B2B"
+  ],
+  "user_prompt_template": "Rédige un post LinkedIn orienté B2B Expert sur :\n\nSituation de départ du client ou de l'entreprise : {SITUATION_CLIENT}\nL'action surprenante/contre-intuitive mise en place : {ACTION_CONTRE_INTUITIVE}\nLe résultat chiffré obtenu : {RESULTAT_CHIFFRE}\nLa morale à retenir pour les autres dirigeants : {MORALE_B2B}\n\nTexte brut publiable. Pas de markdown. Pas de hashtags."
+}

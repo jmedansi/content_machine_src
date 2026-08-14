@@ -1,0 +1,10 @@
+{
+  "format_name": "Défi Challenge",
+  "variables_requises": [
+    "SUJET_DEFI",
+    "ETAPES",
+    "CE_QU_ILS_GAGNENT",
+    "RECOMPENSE"
+  ],
+  "user_prompt_template": "Rédige un post LinkedIn Défi sur :\n\nSujet : {SUJET_DEFI}\nÉtapes : {ETAPES}\nCe qu'ils gagnent : {CE_QU_ILS_GAGNENT}\nRécompense : {RECOMPENSE}\n\nTexte brut publiable. Pas de markdown. Pas de hashtags."
+}

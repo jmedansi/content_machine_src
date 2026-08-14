@@ -1,0 +1,10 @@
+{
+  "format_name": "Business Auto",
+  "variables_requises": [
+    "TÂCHE_CHRONOPHAGE",
+    "OUTIL_UTILISE",
+    "TEMPS_GAGNE",
+    "CONSEIL_POUR_DEMARRER"
+  ],
+  "user_prompt_template": "Rédige un post Facebook (Business Automatisé) sur :\n\nTâche qui prenait trop de temps : {TÂCHE_CHRONOPHAGE}\nL'outil ou l'agent IA utilisé pour l'automatiser : {OUTIL_UTILISE}\nLe gain de temps/argent mesurable : {TEMPS_GAGNE}\nUn conseil simple pour ceux qui veulent essayer : {CONSEIL_POUR_DEMARRER}\n\nPost orienté productivité et liberté, emojis pertinents."
+}

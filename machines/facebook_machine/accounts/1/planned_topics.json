@@ -1,0 +1,3195 @@
+{
+  "version": "1.0",
+  "topics": [
+    {
+      "id": "77219f0e-40fe-4ed4-8c4f-95852aaff709",
+      "persona": "cta",
+      "topic": "Comment augmenter ses ventes en ligne avec les bons outils de marketing automation",
+      "context": "De nombreux entrepreneurs en ligne peinent à gérer leur flux de clients et à augmenter leurs ventes. Les outils de marketing automation peuvent aider à résoudre ce problème.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "Une checklist de 7 points pour auditer ton automatisation actuelle de marketing",
+        "DOULEUR_CIBLE": "Perdre du temps et de l'argent en raison d'une mauvaise gestion des leads et des campagnes de marketing",
+        "PREUVE_SOCIALE": "J'ai aidé plus de 50 entreprises à augmenter leurs ventes de 25% en moyenne grâce à la mise en place d'outils de marketing automation",
+        "ACTION_REQUISE": "Commente AUTOMATISER et je t'envoie la checklist PDF directement"
+      },
+      "validated": true,
+      "used": true
+    },
+    {
+      "id": "289053f4-df91-4132-9345-fec6e830a6af",
+      "persona": "cta",
+      "topic": "5 Astuces pour Augmenter la Conversion de Votre Site Web en 30 Minutes",
+      "context": "De nombreux entrepreneurs ont des sites web mais ne génèrent pas suffisamment de leads. Ces astuces aideront à améliorer la conversion.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "Un guide de 5 étapes pour améliorer la conversion de votre site web",
+        "DOULEUR_CIBLE": "Manque de leads et de ventes malgré un trafic web important",
+        "PREUVE_SOCIALE": "Plus de 50 entreprises ont déjà vu leur conversion augmenter grâce à ces astuces",
+        "ACTION_REQUISE": "Commenter 'CONVERTIR' pour recevoir le guide en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "1dc13bb8-146f-40fc-89b9-4f1cb36ad168",
+      "persona": "cta",
+      "topic": "5 Astuces pour Augmenter la Conversion de ton Site Web en 1 Semaine",
+      "context": "De nombreux entrepreneurs ont des sites web qui ne génèrent pas suffisamment de conversions. Cela peut être dû à des problèmes de conception, de contenu ou de stratégie de marketing. Ce post propose des astuces concrètes pour améliorer la conversion de son site web en une semaine.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "Un guide PDF de 5 pages détaillant les étapes pour améliorer la conversion de son site web",
+        "DOULEUR_CIBLE": "Les entrepreneurs qui ont des sites web qui ne génèrent pas suffisamment de conversions et qui veulent améliorer leur stratégie de marketing",
+        "PREUVE_SOCIALE": "Un cas d'étude d'un entrepreneur qui a augmenté ses conversions de 25% en 1 semaine en utilisant ces astuces",
+        "ACTION_REQUISE": "Commenter 'CONVERSION' pour recevoir le guide PDF en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "97fafc4a-9d89-4d93-9cd1-38beabfe4044",
+      "persona": "cta",
+      "topic": "5 erreurs coûteuses dans la création d'un funnel de vente pour les PME locales",
+      "context": "De nombreuses PME locales au Sénégal et au Cameroun investissent dans la création de funnels de vente sans comprendre les principes de base, ce qui peut entraîner des pertes financières importantes. Ce poste vise à éclairer les entrepreneurs sur les erreurs à éviter pour maximiser leur retour sur investissement.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "Un guide gratuit de 10 pages sur les meilleures pratiques pour créer un funnel de vente efficace pour les PME locales",
+        "DOULEUR_CIBLE": "Pertes financières dues à des funnels de vente mal conçus",
+        "PREUVE_SOCIALE": "Témoignage d'un entrepreneur local qui a augmenté ses ventes de 30% après avoir appliqué les principes du guide",
+        "ACTION_REQUISE": "Commenter 'FUNNEL' pour recevoir le guide en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c1f3c7e6-d75b-4baa-b285-d1272dcbd0c9",
+      "persona": "cta",
+      "topic": "5 Erreurs à Éviter pour un Lancement de Produit Réussi sur les Réseaux Sociaux",
+      "context": "Les entrepreneurs locaux ont souvent du mal à lancer leurs produits sur les réseaux sociaux sans commettre des erreurs coûteuses. Ce sujet répond à ce besoin.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "Un guide gratuit de 5 étapes pour un lancement de produit réussi sur les réseaux sociaux",
+        "DOULEUR_CIBLE": "Les entrepreneurs perdent beaucoup d'argent et de temps en raison d'une mauvaise stratégie de lancement",
+        "PREUVE_SOCIALE": "Plus de 80% des entrepreneurs ont rapporté une augmentation significative de leurs ventes après avoir corrigé leurs stratégies de lancement",
+        "ACTION_REQUISE": "Commente LANCER et reçois le guide en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "2dbd80d1-45dd-45f8-bee2-772916cb0566",
+      "persona": "cta",
+      "topic": "Booste ton SEO",
+      "context": "Améliorer son référencement pour gagner en visibilité",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces SEO pour améliorer ton référencement",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels à cause d'un mauvais référencement",
+        "PREUVE_SOCIALE": "J'ai aidé X entreprises à améliorer leur référencement",
+        "ACTION_REQUISE": "Commente SEO pour recevoir les 5 astuces"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ba418847-dfee-46f6-9784-f9c09eb83b4c",
+      "persona": "post_court",
+      "topic": "Peur de rater",
+      "context": "Les entrepreneurs qui ne suivent pas leurs clients après la vente peuvent perdre des opportunités",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "8 entreprises sur 10 en Afrique n'ont aucun système de suivi",
+        "EXPLICATION_RAPIDE": "Cela peut entraîner une perte de clients et de revenus",
+        "QUESTION_SIMPLE": "Combien de clients as-tu perdu à cause d'un manque de suivi ?"
+      },
+      "validated": false,
+      "used": true
+    },
+    {
+      "id": "a8cfea31-35e5-4731-a3be-d7fb1002bd7d",
+      "persona": "post_court",
+      "topic": "Une citation inspirante pour commencer la journée",
+      "context": "G?n?r? par IA",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "651c82ae-5b86-4b64-ba92-536b8dba7ef6",
+      "persona": "post_court",
+      "topic": "Un fait intéressant sur l'histoire du monde",
+      "context": "G?n?r? par IA",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": true,
+      "used": true,
+      "used_at": "2026-08-06T10:34:44.311500"
+    },
+    {
+      "id": "97e0ba18-ed72-4854-86b7-8139983fd4af",
+      "persona": "post_court",
+      "topic": "Une blague pour faire sourire vos amis",
+      "context": "G?n?r? par IA",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "120fba67-2006-458b-9b83-655e44885fbc",
+      "persona": "post_court",
+      "topic": "Un conseil pour améliorer votre productivité quotidienne",
+      "context": "G?n?r? par IA",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "6d020d20-18cf-4861-8caa-b6559ecca55d",
+      "persona": "post_court",
+      "topic": "Une question pour lancer une discussion avec vos followers",
+      "context": "G?n?r? par IA",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "91d6fe35-4bca-4fd5-8361-2253ec3e44bd",
+      "persona": "post_court",
+      "topic": "Un GIF amusant pour alléger l'atmosphère",
+      "context": "G?n?r? par IA",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "fb8259c6-1027-4594-9e82-d6f0ce709a08",
+      "persona": "post_court",
+      "topic": "Une petite anecdote personnelle pour vous rapprocher de vos amis",
+      "context": "G?n?r? par IA",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "01795d55-3c37-43fa-89e7-eaeadaa5fb99",
+      "persona": "post_court",
+      "topic": "Un lien vers un article intéressant avec un résumé court",
+      "context": "G?n?r? par IA",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c7d1256e-18ca-4f52-a63f-0b7db591071d",
+      "persona": "post_court",
+      "topic": "Un défi pour encourager vos amis à partager leurs propres expériences",
+      "context": "G?n?r? par IA",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "52e71007-d977-4eda-97dc-5439c479c765",
+      "persona": "post_court",
+      "topic": "L'importance de suivre les clients après la vente",
+      "context": "De nombreuses PME en Afrique ont du mal à fidéliser leurs clients en raison d'un suivi inadéquat après la vente",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "8 PME sur 10 en Afrique n'ont aucun système pour suivre leurs clients après la vente",
+        "EXPLICATION_RAPIDE": "Cela entraîne une perte de revenus potentiels et une diminution de la satisfaction client",
+        "QUESTION_SIMPLE": "Quel est le coût pour votre entreprise si vous ne suivez pas vos clients après la vente ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "898c610d-19a4-481b-8b57-92c3809f3324",
+      "persona": "post_court",
+      "topic": "La perte d'argent due à l'absence de système de suivi des clients",
+      "context": "Beaucoup d'entreprises africaines perdent des clients et des revenus en raison de leur incapacité à suivre et à fidéliser leurs clients. Ce sujet est pertinent maintenant car il touche à la question de la rentabilité et de la croissance des entreprises.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "8 PME sur 10 en Afrique n'ont aucun système pour suivre leurs clients après la vente",
+        "EXPLICATION_RAPIDE": "Cela signifie que ces entreprises laissent échapper des opportunités de vente et de croissance en raison de leur incapacité à maintenir une relation avec leurs clients",
+        "QUESTION_SIMPLE": "Que faites-vous pour suivre vos clients après la vente ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c7200327-80ad-4fc6-a047-f955e1e6c4fc",
+      "persona": "post_court",
+      "topic": "Les 3 erreurs les plus coûteuses que les entrepreneurs font en lançant leur site web",
+      "context": "De nombreux entrepreneurs lancent des sites web sans considérer les facteurs clés qui peuvent les faire échouer. Ces erreurs peuvent coûter cher et affecter la crédibilité de l'entreprise.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "La plupart des sites web échouent à cause d'une mauvaise planification et d'une exécution hasardeuse",
+        "EXPLICATION_RAPIDE": "Il est essentiel de bien planifier et de tester soigneusement un site web avant son lancement pour éviter les erreurs coûteuses",
+        "QUESTION_SIMPLE": "Quelle est la première étape que vous prendriez pour lancer un site web réussi ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ab3a5ed5-2337-4de7-9769-2505a243ec1e",
+      "persona": "post_court",
+      "topic": "La perte d'argent due au manque de suivi des clients",
+      "context": "De nombreuses PME en Afrique ont du mal à suivre leurs clients après une vente, ce qui peut entraîner une perte de revenus significative.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "8 PME sur 10 en Afrique n'ont aucun système pour suivre leurs clients après la vente",
+        "EXPLICATION_RAPIDE": "Cela peut entraîner une perte de revenus significative, car les clients ne reviennent pas",
+        "QUESTION_SIMPLE": "Quel est le coût réel de ne pas suivre vos clients après une vente ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "02f7c5e4-e0a5-4cbc-9a94-87b2f6eb312d",
+      "persona": "post_court",
+      "topic": "5 erreurs courantes qui tuent les startups en Afrique",
+      "context": "De nombreuses startups en Afrique échouent en raison de mauvaises décisions. Ce sujet vise à identifier les erreurs les plus courantes pour aider les entrepreneurs à les éviter.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "L'ignorance du marché cible est souvent fatale",
+        "EXPLICATION_RAPIDE": "Une startup doit comprendre son marché pour offrir des produits ou services pertinents",
+        "QUESTION_SIMPLE": "Quelle est la principale erreur que les startups africaines doivent éviter pour réussir ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "dd668e85-0862-4b3c-b5b3-35a404c420ef",
+      "persona": "post_court",
+      "topic": "Les 3 erreurs de marketing qui tuent les PME africaines",
+      "context": "De nombreuses PME africaines ont du mal à atteindre leurs objectifs de vente en raison de stratégies de marketing inefficaces. Il est essentiel de comprendre les erreurs courantes pour les éviter.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "La plupart des PME africaines pensent que le marketing est un luxe, mais c'est une erreur qui peut coûter cher",
+        "EXPLICATION_RAPIDE": "Les PME africaines doivent comprendre que le marketing est essentiel pour atteindre de nouveaux clients et augmenter les ventes",
+        "QUESTION_SIMPLE": "Quelle est la première erreur de marketing que les PME africaines doivent éviter pour réussir ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "318ac84b-8c93-40fd-9a7b-adaf5a3e5569",
+      "persona": "test_persona",
+      "topic": "Sujet test depuis script",
+      "context": "",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "7d23c13d-f5aa-413e-b823-417174d51995",
+      "persona": "avis_tranches",
+      "topic": "L'importance de l'automatisation dans les PME locales",
+      "context": "De nombreux propriétaires de petites et moyennes entreprises (PME) locales croient que l'automatisation est uniquement réservée aux grandes entreprises. Cependant, avec l'avance de la technologie, les outils d'automatisation sont désormais accessibles et abordables pour tous.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MYTHE_COURANT": "L'automatisation est réservée aux grandes entreprises",
+        "MON_AVIS_RADICAL": "Toutes les entreprises, quelle que soit leur taille, doivent automatiser certaines tâches pour rester compétitives",
+        "ARGUMENT_1": "L'automatisation peut aider à réduire les coûts et à augmenter la productivité",
+        "ARGUMENT_2": "Les outils d'automatisation sont désormais accessibles et abordables pour les PME locales",
+        "APPEL_AU_DEBAT": "D'accord ou pas ? L'automatisation est-elle vraiment nécessaire pour les PME locales ? On en débat en commentaire."
+      },
+      "validated": true,
+      "used": true
+    },
+    {
+      "id": "52618bb4-2b03-46b9-9cbe-eecc62933293",
+      "persona": "avis_tranches",
+      "topic": "L'obsession de la perfection dans les startups",
+      "context": "De nombreux entrepreneurs passent trop de temps à perfectionner leur produit ou service, ce qui peut les empêcher de lancer et de tester leur marché",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MYTHE_COURANT": "Il faut avoir un produit parfait pour lancer son entreprise",
+        "MON_AVIS_RADICAL": "La perfection est l'ennemi du bon, il est préférable de lancer rapidement et d'itérer en fonction des retours des clients",
+        "ARGUMENT_1": "Les clients ne s'attendent pas à la perfection, mais à une solution qui réponde à leurs besoins",
+        "ARGUMENT_2": "Lancer rapidement permet de tester le marché et de collecter des données pour améliorer le produit ou service",
+        "APPEL_AU_DEBAT": "D'accord ou pas ? On en débat en commentaire. As-tu déjà lancé un produit ou service en étant parfait ou en itérant en fonction des retours des clients ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "25c2275b-9559-475e-950e-ec40b297d4f3",
+      "persona": "avis_tranches",
+      "topic": "L'importance de l'automatisation dans les entreprises locales",
+      "context": "De nombreuses PME locales peinent à gérer leur temps et leurs ressources efficacement, ce qui peut les rendre moins compétitives sur le marché. L'automatisation peut être un outil puissant pour améliorer l'efficacité et la productivité.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MYTHE_COURANT": "Les petites entreprises n'ont pas besoin d'automatisation car elles sont suffisamment flexibles",
+        "MON_AVIS_RADICAL": "Toute entreprise, quelle que soit sa taille, peut bénéficier de l'automatisation pour améliorer son efficacité et réduire les coûts",
+        "ARGUMENT_1": "L'automatisation permet de réduire les tâches répétitives et fastidieuses, libérant ainsi du temps pour se concentrer sur les activités à haute valeur ajoutée",
+        "ARGUMENT_2": "Les outils d'automatisation sont de plus en plus accessibles et abordables, même pour les petites entreprises",
+        "APPEL_AU_DEBAT": "D'accord ou pas ? L'automatisation est-elle vraiment nécessaire pour les petites entreprises ? On en débat en commentaire."
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "494502d7-df63-41fc-8f04-9973f25769ef",
+      "persona": "avis_tranches",
+      "topic": "L'importance de l'automatisation dans les PME locales",
+      "context": "De nombreuses PME locales ici peinent à atteindre leur plein potentiel en raison de processus manuels inefficaces. L'automatisation peut être un facteur clé pour améliorer la productivité et réduire les coûts.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MYTHE_COURANT": "Les PME locales ne peuvent pas se permettre d'investir dans l'automatisation",
+        "MON_AVIS_RADICAL": "Toute PME locale qui ne s'automatise pas dans les 6 prochains mois sera en retard par rapport à la concurrence",
+        "ARGUMENT_1": "L'automatisation peut réduire les coûts opérationnels de jusqu'à 30% et améliorer la productivité de 25%",
+        "ARGUMENT_2": "Des outils d'automatisation accessibles et abordables sont désormais disponibles pour les PME locales, tels que des solutions de gestion de projet en ligne et des outils de marketing automation",
+        "APPEL_AU_DEBAT": "D'accord ou pas ? Partagez vos expériences avec l'automatisation dans vos propres entreprises en commentaire"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "f87356fb-5b9f-4080-818e-9f5f86b79327",
+      "persona": "avis_tranches",
+      "topic": "L'obsession de la perfection dans les startups",
+      "context": "De nombreuses startups locales perdent du temps et de l'argent en cherchant à créer un produit ou un service parfait avant de lancer, oubliant que le marché et la concurrence évoluent rapidement",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MYTHE_COURANT": "Il est nécessaire d'avoir un produit ou un service parfait avant de lancer sur le marché",
+        "MON_AVIS_RADICAL": "La perfection est l'ennemi du bon dans les startups, il est préférable de lancer rapidement et d'itérer en fonction des retours des clients",
+        "ARGUMENT_1": "Les startups qui lancent rapidement peuvent tester leur hypothèse de valeur et collecter des données pour améliorer leur offre",
+        "ARGUMENT_2": "L'obsession de la perfection peut conduire à une analyse paralyse et faire perdre des parts de marché à la startup",
+        "APPEL_AU_DEBAT": "D'accord ou pas ? On en débat en commentaire. Quelle a été votre expérience avec la perfection et le lancement de votre startup ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "f79897f7-75f5-4b3f-aea6-8e055c1effaa",
+      "persona": "avis_tranches",
+      "topic": "L'IA et l'Employabilité",
+      "context": "L'impact de l'intelligence artificielle sur les emplois",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "MYTHE_COURANT": "L'IA remplacera la majorité des emplois",
+        "MON_AVIS_RADICAL": "L'IA ne remplacera que les tâches répétitives et non les emplois qui nécessitent de la créativité et de l'empathie",
+        "ARGUMENT_1": "Les compétences telles que la communication, la résolution de problèmes et la pensée critique seront toujours nécessaires",
+        "ARGUMENT_2": "L'automatisation peut créer de nouveaux emplois et augmenter la productivité, ce qui peut conduire à une croissance économique",
+        "APPEL_AU_DEBAT": "Pensez-vous que l'IA améliorera ou détériorera les perspectives d'emploi à long terme ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "9d1fbebf-5f8a-41f9-970f-5810692aaf56",
+      "persona": "business_auto",
+      "topic": "5 Astuces pour Automatiser Votre Prospection avec des Agents IA",
+      "context": "De nombreuses entreprises ont du mal à gérer leur prospection de manière efficace, ce qui peut entraîner une perte de temps et de ressources. L'utilisation d'agents IA peut aider à automatiser ce processus et améliorer les résultats.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Recherche manuelle de leads potentiels",
+        "OUTIL_UTILISE": "Agents IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencez par identifier vos besoins spécifiques en matière de prospection et explorez les différentes solutions d'agents IA disponibles"
+      },
+      "validated": true,
+      "used": true
+    },
+    {
+      "id": "d28fc514-a1dc-46bc-afc3-d101c25cd452",
+      "persona": "business_auto",
+      "topic": "Automatisation de leads",
+      "context": "Utiliser l'IA pour gagner du temps et augmenter les ventes",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Recherche de prospects potentiels",
+        "OUTIL_UTILISE": "Agent de prospection automatique",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencer par identifier les critères de sélection des prospects"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "f2167cff-3023-4d26-8352-fca8da52438b",
+      "persona": "defaut_persona",
+      "topic": "5 erreurs courantes qui tuent les ventes en ligne des PME locales et comment les éviter",
+      "context": "De nombreuses PME locales lancent des sites e-commerce sans succès. Il est temps de comprendre où se situent les erreurs et comment les rectifier pour une meilleure conversion.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": true,
+      "used": true
+    },
+    {
+      "id": "8c444c3f-696f-4091-acc0-9505f266c859",
+      "persona": "defaut_persona",
+      "topic": "Comment augmenter les ventes en ligne grâce à l'optimisation du site web pour les PME locales",
+      "context": "De nombreuses PME locales ont du mal à développer leur présence en ligne et à augmenter leurs ventes. L'optimisation du site web est un élément clé pour améliorer la visibilité et la conversion.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "eafdf59e-4e8c-4ca2-b429-10f6e416fa6a",
+      "persona": "defaut_persona",
+      "topic": "Boostez votre SEO",
+      "context": " Comment améliorer votre référencement en 5 étapes simples",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {},
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "b4b3ba9c-7594-4955-8d7f-ae7d1075aad9",
+      "persona": "ia_design",
+      "topic": "5 Minutes pour Créer un Logo Professionnel avec l'IA",
+      "context": "De nombreux entrepreneurs et créateurs de contenu ont besoin de logos de qualité pour leur marque, mais ne disposent pas du temps ou des compétences pour les créer. L'utilisation de l'IA peut être une solution rapide et efficace.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour obtenir des résultats personnalisés",
+        "AVANT_APRES": "Avant : Logo générique et peu personnalisé, Après : Logo professionnel et adapté à la marque",
+        "IMPACT_VISUEL": "Un logo qui reflète l'identité de la marque et attire l'attention du public cible"
+      },
+      "validated": true,
+      "used": true
+    },
+    {
+      "id": "79d12fce-fbd4-48ce-82f9-3609a735ec8d",
+      "persona": "ia_design",
+      "topic": "Design IA pour les entrepreneurs",
+      "context": "Utiliser l'IA pour améliorer la créativité et la productivité dans le design",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Prompting avancé pour des résultats personnalisés",
+        "AVANT_APRES": "Transformation d'une idée en un design professionnel en quelques minutes",
+        "IMPACT_VISUEL": "Création de visuels époustouflants qui attirent l'attention et augmentent les ventes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "df7e4163-d2d7-40a0-841d-f81c8a4f045f",
+      "persona": "ia_design",
+      "topic": "Création d'une Identité Visuelle avec l'IA",
+      "context": "De nombreux entrepreneurs locaux ont du mal à créer une identité visuelle qui reflète leur marque. L'IA peut aider à générer des logos, des couleurs et des typographies qui répondent aux besoins spécifiques de leur entreprise.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour générer des designs uniques",
+        "AVANT_APRES": "Avant : logos génériques, Après : identité visuelle personnalisée",
+        "IMPACT_VISUEL": "Gain de professionnalisme et de reconnaissance de la marque"
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-08-06T10:35:39.035764"
+    },
+    {
+      "id": "8eece71b-07c9-4777-ad4b-c701f8b6a77f",
+      "persona": "ia_design",
+      "topic": "Optimisation de l'expérience utilisateur avec l'IA",
+      "context": "Les utilisateurs attendent désormais des expériences personnalisées et intuitives sur les sites web et les applications mobiles. L'optimisation de l'expérience utilisateur est devenue un facteur clé pour différencier son entreprise et augmenter la fidélité client.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Adobe XD avec intégration d'IA pour la conception d'interfaces utilisateur",
+        "TECHNIQUE_SECRETE": "Utilisation de l'apprentissage automatique pour analyser les comportements des utilisateurs et améliorer l'expérience utilisateur",
+        "AVANT_APRES": "Avant : Sites web statiques et génériques. Après : Expériences personnalisées et dynamiques basées sur les préférences et le comportement de l'utilisateur",
+        "IMPACT_VISUEL": "Augmentation de 30% de la durée de session et de 25% du taux de conversion grâce à des designs plus engageants et plus intuitifs"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "e6337f78-6263-42c2-a905-546821921efe",
+      "persona": "ia_design",
+      "topic": "Comment booster votre identité visuelle avec l'IA pour les entrepreneurs africains",
+      "context": "De nombreux entrepreneurs africains ont du mal à créer une identité visuelle forte pour leur marque. L'utilisation de l'IA peut être un atout pour créer des designs de haute qualité rapidement.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour obtenir des résultats personnalisés",
+        "AVANT_APRES": "Avant : identité visuelle faible, Après : identité visuelle forte et professionnelle",
+        "IMPACT_VISUEL": "Augmentation de la reconnaissance de la marque et de la confiance des clients"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "8d8373ec-c999-4432-a6dd-c99383146782",
+      "persona": "ia_integration",
+      "topic": "Comment l'IA peut-elle augmenter la productivité des PME africaines en automatisant les tâches administratives",
+      "context": "De nombreuses PME africaines consacrent beaucoup de temps et de ressources aux tâches administratives, ce qui peut les empêcher de se concentrer sur leur cœur de métier. L'intégration de l'IA peut aider à automatiser ces tâches, libérant ainsi du temps pour se concentrer sur la croissance et le développement de l'entreprise.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Les PME africaines consacrent en moyenne 20 heures par semaine à des tâches administratives manuelles",
+        "NOUVELLE_INTEGRATION_IA": "L'intégration d'outils d'IA pour l'automatisation des tâches administratives, tels que la gestion des factures et des commandes",
+        "DIFFICULTE_SURMONTEE": "La difficulté de gérer manuellement de grands volumes de données et de documents, ce qui peut entraîner des erreurs et des retards",
+        "RESULTAT_FINAL": "Une augmentation de la productivité de 30% et une réduction des coûts administratifs de 25% grâce à l'automatisation des tâches"
+      },
+      "validated": true,
+      "used": true
+    },
+    {
+      "id": "ca04f7c0-d392-4f3a-875a-2fe1b0622d36",
+      "persona": "ia_integration",
+      "topic": "Comment réduire les coûts de gestion de catalogue avec l'IA",
+      "context": "De nombreux entrepreneurs et PME locales ont des difficultés à gérer efficacement leurs catalogues de produits, ce qui peut entraîner des pertes de temps et d'argent. L'IA peut aider à automatiser ces processus.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle de catalogue avec Excel ou autres outils de tableur",
+        "NOUVELLE_INTEGRATION_IA": "Utilisation d'un système d'IA pour automatiser la création et la mise à jour des catalogues",
+        "DIFFICULTE_SURMONTEE": "Réduction du temps et des erreurs liés à la gestion manuelle",
+        "RESULTAT_FINAL": "Gain de temps de 90% et amélioration de la qualité des catalogues"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "6b9aa411-8327-4a2f-a2f3-3d960d060a83",
+      "persona": "ia_integration",
+      "topic": "Optimisation du processus de facturation avec l'IA",
+      "context": "De nombreux entrepreneurs africains rencontrent des difficultés avec la facturation, ce qui peut entraîner des pertes financières. L'intégration de l'IA peut aider à automatiser et optimiser ce processus.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Les entreprises passaient en moyenne 5 heures par semaine à gérer les factures manuellement, avec un taux d'erreur de 10%.",
+        "NOUVELLE_INTEGRATION_IA": "Mise en place d'un système d'IA pour automatiser la génération et l'envoi des factures, ainsi que la gestion des paiements.",
+        "DIFFICULTE_SURMONTEE": "Réduction du temps consacré à la facturation de 80% et diminution des erreurs à moins de 1%.",
+        "RESULTAT_FINAL": "Les entreprises ont pu réaffecter le temps gagné à d'autres tâches stratégiques, ce qui a conduit à une augmentation de leur chiffre d'affaires de 15%."
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "2cb34c3b-2017-44cb-a87c-5267e4b7d0f5",
+      "persona": "storytelling_pro",
+      "topic": "L'importance de l'exécution rapide dans le lancement d'un site web",
+      "context": "De nombreux entrepreneurs passent trop de temps à perfectionner leur site web, perdant ainsi des opportunités de générer des revenus",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "J'ai récemment rencontré un entrepreneur qui a passé 6 mois à créer son site web, pour finalement constater que son concurrent avait déjà lancé un site similaire avec moins de fonctionnalités, mais qui génère déjà des revenus",
+        "MA_REACTION": "J'ai été surpris de voir à quel point l'exécution rapide peut être cruciale dans le lancement d'un site web, même si cela signifie avoir un site moins parfait",
+        "LA_LECON_APPRISE": "L'exécution rapide et la capacité à adapter son site web en fonction des retours des utilisateurs sont souvent plus importantes que la perfection",
+        "VISION_GLOBALE": "Les entrepreneurs devraient se concentrer sur la création d'un produit minimum viable (MVP) et ajuster en fonction des besoins et des retours des clients, plutôt que de passer trop de temps à créer un produit parfait"
+      },
+      "validated": true,
+      "used": true
+    },
+    {
+      "id": "70883a1c-59ab-4fbf-b53b-22b5347e4623",
+      "persona": "storytelling_pro",
+      "topic": "L'importance de la vitesse d'exécution dans les projets numériques",
+      "context": "De nombreux entrepreneurs au Bénin et en Afrique passent beaucoup de temps à planifier et perfectionner leurs projets, mais oublient l'importance de la vitesse d'exécution pour rester compétitifs",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un client m'a partagé son histoire de succès après avoir lancé son projet numérique en un temps record",
+        "MA_REACTION": "J'ai réalisé que la vitesse d'exécution est souvent plus importante que la perfection pour rester compétitif dans le marché numérique",
+        "LA_LECON_APPRISE": "La clé du succès dans les projets numériques est de trouver un équilibre entre la qualité et la vitesse d'exécution",
+        "VISION_GLOBALE": "En encourageant les entrepreneurs à adopter une approche plus agile et rapide dans leurs projets numériques, nous pouvons stimuler l'innovation et la croissance économique en Afrique"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "80b86e55-2754-4438-a754-b0efb0f02448",
+      "persona": "storytelling_pro",
+      "topic": "Comment éviter de perdre des clients en raison d'un site web lent",
+      "context": "Beaucoup d'entrepreneurs en Afrique sous-estiment l'importance de la vitesse de chargement de leur site web, ce qui peut entraîner une perte de clients potentiels. Ce sujet est pertinent maintenant car de plus en plus de consommateurs utilisent leur téléphone mobile pour accéder à Internet.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "J'ai récemment visité un site web d'une entreprise locale qui mettait plus de 10 secondes à charger, et j'ai décidé de quitter le site.",
+        "MA_REACTION": "J'ai réalisé que la lenteur du site web pouvait être un facteur décisif dans la perte de clients potentiels, et j'ai décidé de partager mes connaissances pour aider les entrepreneurs à améliorer la vitesse de leur site web.",
+        "LA_LECON_APPRISE": "Il est essentiel de optimiser la vitesse de chargement de son site web pour offrir une expérience utilisateur fluide et convaincante.",
+        "VISION_GLOBALE": "En améliorant la vitesse de chargement de leurs sites web, les entrepreneurs peuvent augmenter leur chiffre d'affaires et renforcer leur présence en ligne."
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "2f66ed6f-a161-4ddf-8c0e-1de349a50b9b",
+      "persona": "storytelling_pro",
+      "topic": "L'importance de l'exécution rapide dans les projets numériques",
+      "context": "De nombreux entrepreneurs au Bénin et en Afrique passent trop de temps à planifier sans jamais exécuter, ce qui les empêche d'atteindre leurs objectifs",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "J'ai rencontré un entrepreneur qui avait passé 6 mois à planifier son site web sans jamais le lancer",
+        "MA_REACTION": "J'ai été surpris de voir qu'il avait perdu des clients potentiels à cause de son manque d'exécution",
+        "LA_LECON_APPRISE": "L'exécution rapide est clé pour réussir dans les projets numériques, car elle permet de tester et d'itérer rapidement",
+        "VISION_GLOBALE": "Je vois un avenir où les entrepreneurs africains sont capables de lancer et de développer des projets numériques réussis en un laps de temps record, grâce à une exécution rapide et efficace"
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-22T12:35:06.781796"
+    },
+    {
+      "id": "e847b4e6-a579-4feb-9642-ff3cf8f32f4d",
+      "persona": "storytelling_pro",
+      "topic": "L'importance de l'exécution rapide dans le lancement d'un business",
+      "context": "De nombreux entrepreneurs passent trop de temps à préparer leur lancement, ce qui peut les faire perdre leur avance sur la concurrence. Il est crucial de trouver un équilibre entre préparation et exécution pour réussir.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "J'ai vu des entrepreneurs passer des mois à préparer leur lancement, pour finalement voir leur concurrence réussir avant eux",
+        "MA_REACTION": "Cela m'a fait réfléchir à l'importance de l'exécution rapide dans le lancement d'un business",
+        "LA_LECON_APPRISE": "Il est essentiel de trouver un équilibre entre préparation et exécution pour réussir dans le monde des affaires",
+        "VISION_GLOBALE": "Les entrepreneurs doivent être capables de s'adapter rapidement et de prendre des décisions éclairées pour rester en tête de la concurrence"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ccc3b89f-1988-4a3e-9d7f-bbff1e30eb3a",
+      "persona": "storytelling_pro",
+      "topic": "Comment éviter les erreurs courantes dans la création d'un site web pour les PME locales",
+      "context": "De nombreuses PME locales au Bénin investissent dans la création de sites web sans considérer les facteurs clés pour leur succès, tels que la navigation intuitive, la rapidité de chargement et l'optimisation pour les moteurs de recherche.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un client m'a appelé récemment pour me dire que son site web, créé il y a quelques mois, n'attirait toujours pas de clients",
+        "MA_REACTION": "J'ai réalisé que le site n'était pas optimisé pour les moteurs de recherche et que la navigation était trop complexe",
+        "LA_LECON_APPRISE": "L'importance de considérer les facteurs clés pour le succès d'un site web, tels que la navigation intuitive, la rapidité de chargement et l'optimisation pour les moteurs de recherche",
+        "VISION_GLOBALE": "Les PME locales doivent investir dans la création de sites web qui répondent aux besoins de leurs clients et qui sont optimisés pour les moteurs de recherche pour augmenter leur visibilité et leur chiffre d'affaires"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c8f9de93-c061-4d29-9f0f-e1553f11c611",
+      "persona": "mini_formation",
+      "topic": "5 erreurs courantes en SEO qui tuent votre trafic",
+      "context": "De nombreuses entreprises locales africaines créent des sites web sans optimisation pour les moteurs de recherche, perdant ainsi des clients potentiels. Il est essentiel de comprendre les erreurs courantes en SEO pour améliorer la visibilité en ligne.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Optimisation pour les moteurs de recherche (SEO)",
+        "ETAPE_1": " Identifier les mots-clés pertinents pour votre entreprise",
+        "ETAPE_2": "Optimiser les métadonnées de votre site web (titre, description, etc.)",
+        "ETAPE_3": "Créer du contenu de qualité et régulièrement mis à jour",
+        "RESULTAT_PROMIS": "Augmentation significative du trafic organique vers votre site web"
+      },
+      "validated": true,
+      "used": true
+    },
+    {
+      "id": "ff9b5fd0-776c-445b-885b-905aba9c3d0b",
+      "persona": "mini_formation",
+      "topic": "Créer des visuels qui vendent avec ChatGPT Images 2.0",
+      "context": "De nombreux entrepreneurs ont du mal à créer des visuels attrayants pour leurs produits ou services, ce qui peut nuire à leur stratégie marketing. ChatGPT Images 2.0 offre une solution innovante pour générer des visuels de haute qualité de manière rapide et efficace.",
+      "media": "none",
+      "date": "",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Création de visuels avec ChatGPT Images 2.0",
+        "ETAPE_1": "Comprendre les capacités de ChatGPT Images 2.0",
+        "ETAPE_2": "Définir les objectifs de marketing pour les visuels",
+        "ETAPE_3": "Apprendre à utiliser les prompts pour générer des visuels personnalisés",
+        "RESULTAT_PROMIS": "Des visuels qui augmentent les conversions et améliorent la stratégie marketing"
+      },
+      "validated": true,
+      "used": true,
+      "used_at": "2026-06-22T12:37:50.126124"
+    },
+    {
+      "id": "998457f9-f947-4ea1-8e63-1734e82f12aa",
+      "persona": "mini_formation",
+      "topic": "Optimiser contenu",
+      "context": "Améliorer la visibilité des publications avec des mots-clés pertinents",
+      "media": "none",
+      "date": "2026-08-05",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Utiliser des mots-clés pour améliorer la visibilité",
+        "ETAPE_1": "Identifier les mots-clés les plus pertinents pour son contenu",
+        "ETAPE_2": "Intégrer ces mots-clés de manière naturelle dans les publications",
+        "ETAPE_3": "Analyser les performances des publications pour ajuster les mots-clés",
+        "RESULTAT_PROMIS": "Augmenter la visibilité et l'engagement sur les publications"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "5b51c5ec-c82e-46b0-bc6a-c1580730e534",
+      "persona": "ia_design",
+      "topic": "IA Design Logo",
+      "context": "Créer un logo de marque africaine moderne avec l'IA",
+      "media": "none",
+      "date": "2026-08-06",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de mots-clés spécifiques pour les lignes épurées et les couleurs locales",
+        "AVANT_APRES": "Comparaison entre un logo généré automatiquement et un logo conçu manuellement par un artiste",
+        "IMPACT_VISUEL": "Un logo qui reflète l'identité africaine avec des lignes modernes et des couleurs vibrantes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "cb320c4e-7fea-4021-8a27-e8ca2bc5951c",
+      "persona": "post_court",
+      "topic": "Perte de clients",
+      "context": "Les entreprises africaines perdent des clients en raison d'un suivi inadéquat",
+      "media": "none",
+      "date": "2026-08-06",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "9 entreprises sur 10 en Afrique ne suivent pas leurs clients après la vente",
+        "EXPLICATION_RAPIDE": "Un système de suivi des clients peut augmenter les ventes de 20%",
+        "QUESTION_SIMPLE": "Combien de clients as-tu perdu cette année en raison d'un suivi inadéquat ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "629f774c-ab2c-4d87-a98a-c520ec9d0d49",
+      "persona": "mini_formation",
+      "topic": "Créer un contenu viral",
+      "context": "Utiliser l'IA pour créer des contenus attrayants",
+      "media": "none",
+      "date": "2026-08-06",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer des titres accrocheurs",
+        "ETAPE_1": "Identifier le public cible",
+        "ETAPE_2": "Utiliser des mots-clés tendance",
+        "ETAPE_3": "Créer un contenu visuel impactant",
+        "RESULTAT_PROMIS": "Augmenter les partages et les commentaires"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "dd4ec572-3ea9-45b4-b965-e69218560d60",
+      "persona": "storytelling_pro",
+      "topic": "La Peur de Rater",
+      "context": "Un entrepreneur tech au Bénin partage son expérience de la peur de rater dans son projet digital",
+      "media": "none",
+      "date": "2026-08-06",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Lancement d'un nouveau projet digital avec un délai serré",
+        "MA_REACTION": "J'ai dû gérer mon stress et mes doutes pour trouver des solutions innovantes",
+        "LA_LECON_APPRISE": "La peur de rater peut être un moteur pour l'innovation et la créativité",
+        "VISION_GLOBALE": "Les entrepreneurs doivent apprendre à gérer leur peur de rater pour atteindre le succès"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "5029b74b-5b37-4df0-adb5-9723824bb8d8",
+      "persona": "ia_integration",
+      "topic": "Automatisation facturation",
+      "context": "Un entrepreneur africain cherchant à améliorer son processus de facturation",
+      "media": "none",
+      "date": "2026-08-06",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Émission manuelle de factures",
+        "NOUVELLE_INTEGRATION_IA": "Intégration d'un système de facturation automatisé basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Réduction des erreurs de facturation et gain de temps",
+        "RESULTAT_FINAL": "Augmentation de la productivité et réduction des coûts"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "fd167969-6366-40da-99c5-87332859ad17",
+      "persona": "business_auto",
+      "topic": "Automatisation de leads",
+      "context": "Utiliser l'IA pour gagner du temps dans la prospection",
+      "media": "none",
+      "date": "2026-08-06",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Recherche manuelle de prospects",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Définir des critères de ciblage précis pour l'agent IA"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "f82b0ea4-a166-40c9-9f8d-752c57555cbf",
+      "persona": "cta",
+      "topic": "Optimisation SEO",
+      "context": "Améliorer la visibilité sur les moteurs de recherche",
+      "media": "none",
+      "date": "2026-08-06",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces pour améliorer son référencement",
+        "DOULEUR_CIBLE": "Manque de visibilité sur Google",
+        "PREUVE_SOCIALE": "90% des internautes utilisent les moteurs de recherche pour trouver des produits ou services",
+        "ACTION_REQUISE": "Commente SEO pour recevoir les 5 astuces"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "097f2b1c-9e34-41fd-a93d-e2d695d57ac2",
+      "persona": "ia_design",
+      "topic": "Design IA Éclatant",
+      "context": "Utiliser l'IA pour créer des designs visuels éclatants pour les entreprises",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Prompting avancé avec des mots-clés spécifiques",
+        "AVANT_APRES": "Avant : designs génériques, Après : designs uniques et personnalisés",
+        "IMPACT_VISUEL": "Augmentation de 30% de l'engagement sur les réseaux sociaux grâce à des designs accrocheurs"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "8648c188-1382-448c-ae48-36fc219f797b",
+      "persona": "post_court",
+      "topic": "FOMO en marketing",
+      "context": "L'importance de réagir quickly pour ne pas perdre des opportunités",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "La peur de manquer une occasion",
+        "EXPLICATION_RAPIDE": "Une entreprise qui ne réagit pas rapidement peut perdre des clients",
+        "QUESTION_SIMPLE": "Qu'est-ce que vous faites pour éviter de rater des opportunités?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "8ff86738-365b-421b-9520-223607e5e687",
+      "persona": "mini_formation",
+      "topic": "Créer contenu avec IA",
+      "context": "Utiliser l'intelligence artificielle pour générer du contenu de qualité",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Générer des idées de contenu avec l'IA",
+        "ETAPE_1": "Définir le sujet du contenu",
+        "ETAPE_2": "Utiliser un outil d'IA pour générer des idées",
+        "ETAPE_3": "Sélectionner et affiner les idées les plus prometteuses",
+        "RESULTAT_PROMIS": "Créer un contenu de qualité en quelques minutes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "54efa4a4-b282-4fcd-a139-950ac0913f05",
+      "persona": "storytelling_pro",
+      "topic": "Gestion du temps",
+      "context": "Un entrepreneur tech doit gérer son temps efficacement pour atteindre ses objectifs",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un projet urgent avec un délai serré",
+        "MA_REACTION": "Utiliser des outils de gestion de temps pour prioriser les tâches",
+        "LA_LECON_APPRISE": "L'importance de la planification et de la gestion du temps pour atteindre les objectifs",
+        "VISION_GLOBALE": "Un entrepreneur tech efficace est capable de gérer son temps de manière à atteindre ses objectifs et à innover"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "4c98dc88-d37f-4300-929e-a5beddb05db7",
+      "persona": "ia_integration",
+      "topic": "Automatisation Facturation",
+      "context": "Réduire les erreurs et gagner du temps dans la facturation des entreprises",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Saisie manuelle des factures",
+        "NOUVELLE_INTEGRATION_IA": "Utilisation d'un système d'intelligence artificielle pour la reconnaissance de caractères et la génération automatique de factures",
+        "DIFFICULTE_SURMONTEE": "Erreurs de saisie et perte de temps due à la saisie manuelle",
+        "RESULTAT_FINAL": "Réduction de 90% des erreurs et gain de 75% de temps"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "cd4b5503-367e-4e32-ae1e-04efc2b760b0",
+      "persona": "business_auto",
+      "topic": "Automatisation de leads",
+      "context": "Comment gagner du temps avec l'automatisation des leads",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Recherche manuelle de prospects",
+        "OUTIL_UTILISE": "Outil d'automatisation de leads basé sur l'IA",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencez par identifier vos sources de leads les plus rentables"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ca6fb603-59c2-4481-af52-cdebc60348cc",
+      "persona": "cta",
+      "topic": "Booste ton engagement",
+      "context": "Améliorer l'engagement sur les publications Facebook",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces pour augmenter les interactions",
+        "DOULEUR_CIBLE": "Faible taux d'engagement sur les publications",
+        "PREUVE_SOCIALE": "Etude de cas d'une entreprise qui a doublé son engagement",
+        "ACTION_REQUISE": "Commenter ENGAGE pour recevoir les astuces"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "de4e5cc4-9c07-46f6-97e3-4b0c4a644af1",
+      "persona": "ia_design",
+      "topic": "Design IA Dynamique",
+      "context": "Améliorer la création de designs avec l'IA pour les entrepreneurs",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour des résultats personnalisés",
+        "AVANT_APRES": "Avant : Designs génériques, Après : Designs personnalisés et attractifs",
+        "IMPACT_VISUEL": "Augmentation de l'engagement de 30% grâce à des designs plus attractifs"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c56029a7-707d-4322-a41a-063be1847c80",
+      "persona": "post_court",
+      "topic": "Perte de clients",
+      "context": "Les entreprises africaines perdent des clients en raison de leur incapacité à suivre leurs ventes après la transaction",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "8 entreprises sur 10 en Afrique n'ont pas de système de suivi des clients",
+        "EXPLICATION_RAPIDE": "Cela entraîne une perte de revenus potentiels et de fidélisation",
+        "QUESTION_SIMPLE": "Quel est le coût pour ton entreprise si tu perdais 20% de tes clients cette année?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "d4983f71-67d3-4dc4-8c6b-058dc981a12e",
+      "persona": "mini_formation",
+      "topic": "Créer du contenu IA",
+      "context": "Utiliser l'IA pour générer du contenu de qualité",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Générer des idées de contenu avec l'IA",
+        "ETAPE_1": "Définir le sujet du contenu",
+        "ETAPE_2": "Utiliser un outil d'IA pour générer des idées",
+        "ETAPE_3": "Sélectionner et affiner les idées",
+        "RESULTAT_PROMIS": "Créer un contenu de qualité en quelques minutes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "e6233bfa-3344-49d9-891f-2d0922f92ceb",
+      "persona": "storytelling_pro",
+      "topic": "Erreur et apprentissage",
+      "context": "Partager une erreur commune pour éviter les pertes",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Une erreur coûteuse due à une mauvaise stratégie de contenu",
+        "MA_REACTION": "Réaction initiale de surprise et de frustration, suivie d'une analyse approfondie",
+        "LA_LECON_APPRISE": "L'importance de tester et d'ajuster constamment les stratégies de contenu pour éviter les pertes",
+        "VISION_GLOBALE": "Adopter une approche agile et itérative pour améliorer continuellement les résultats"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "955d490b-3b3e-4350-8534-a71c4b035753",
+      "persona": "ia_integration",
+      "topic": "Automatisation facturation",
+      "context": "Réduction du temps de facturation pour les PME",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Facturation manuelle à la main",
+        "NOUVELLE_INTEGRATION_IA": "Système de facturation automatisé basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Erreurs humaines et retards dans les factures",
+        "RESULTAT_FINAL": "Gain de 80% du temps de facturation et réduction des erreurs à 0%"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c7f17930-9f80-4089-b141-ea310d862d9e",
+      "persona": "business_auto",
+      "topic": "Automatisation de leads",
+      "context": " Comment gagner du temps avec l'automatisation des leads pour les entreprises automobiles",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Gestion manuelle des leads",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Identifier les sources de leads les plus rentables"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "f48249fb-1e5f-4785-8f09-58b9e605bb75",
+      "persona": "cta",
+      "topic": "Booste tes ventes",
+      "context": "Comment augmenter les ventes en ligne grâce à des stratégies de contenu ciblées",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces pour améliorer les taux de conversion",
+        "DOULEUR_CIBLE": "Les ventes en ligne stagnantes",
+        "PREUVE_SOCIALE": "Etude de cas de succès de entreprises similaires",
+        "ACTION_REQUISE": "Commenter 'VENTES' pour recevoir les astuces"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "19bdd86e-fed8-48aa-826d-fbf8d6eb397b",
+      "persona": "ia_design",
+      "topic": "Design IA pour Packaging",
+      "context": "Créer des visuels de packaging attractifs pour des produits locaux",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de mots-clés comme 'bokeh' et 'vibrant colors'",
+        "AVANT_APRES": "Avant : photos de stock génériques, Après : visuels personnalisés et attractifs",
+        "IMPACT_VISUEL": "Augmentation de 30% des ventes en ligne grâce à des visuels de produits de haute qualité"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "a8d7b8e7-ef74-4eb5-8b38-58c8ac7a73f5",
+      "persona": "post_court",
+      "topic": "Perte de clients",
+      "context": "Les entreprises africaines perdent des clients en raison d'un suivi inadéquat",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "9 clients sur 10 partent à cause d'un mauvais service",
+        "EXPLICATION_RAPIDE": "Un système de suivi efficace peut réduire les pertes de clients",
+        "QUESTION_SIMPLE": "Perds-tu des clients sans savoir pourquoi ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "f7043906-1207-4e89-a848-40727c5428c2",
+      "persona": "mini_formation",
+      "topic": "Créer un contenu viral",
+      "context": "Utiliser l'IA pour créer du contenu attrayant",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer un contenu viral avec l'IA",
+        "ETAPE_1": "Définir son public cible",
+        "ETAPE_2": "Utiliser des outils d'IA pour générer des idées de contenu",
+        "ETAPE_3": "Créer un contenu visuel attractif avec l'IA",
+        "RESULTAT_PROMIS": "Augmenter l'engagement sur les réseaux sociaux"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "9087087a-f6c3-4d5d-b3e2-83e75af4de3c",
+      "persona": "storytelling_pro",
+      "topic": "L'Erreur comme apprentissage",
+      "context": "Partager une expérience personnelle de erreur dans un projet et comment elle a conduit à une amélioration",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un bug dans un script de machine learning qui a causé une perte de données importantes",
+        "MA_REACTION": "Réaction initiale de frustration, suivie d'une analyse approfondie pour identifier la cause racine",
+        "LA_LECON_APPRISE": "L'importance de la mise en place de sauvegardes régulières et de tests exhaustifs avant la mise en production",
+        "VISION_GLOBALE": "Intégrer l'apprentissage par les erreurs dans la culture de l'entreprise pour améliorer la résilience et l'innovation"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "f6e70d0c-a86b-43c8-bf4e-1a90fcab28f4",
+      "persona": "ia_integration",
+      "topic": "Automatisation de la facturation",
+      "context": "Réduction du temps de facturation grâce à l'IA",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Facturation manuelle avec excel",
+        "NOUVELLE_INTEGRATION_IA": "Intégration d'un système de facturation automatique basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Réduction des erreurs de facturation et gain de temps",
+        "RESULTAT_FINAL": "Gain de 80% de temps et réduction de 90% des erreurs de facturation"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "272953f0-4b4f-4aed-83b9-22340b5799de",
+      "persona": "business_auto",
+      "topic": "Automatisation des leads",
+      "context": "Présenter une solution pour gagner du temps avec l'automatisation des leads",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "génération manuelle de leads",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "configurer les paramètres de ciblage de l'agent IA"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "055250ae-9a8e-4203-8584-3f7726e006c4",
+      "persona": "cta",
+      "topic": "Optimisation SEO",
+      "context": "Améliorer la visibilité en ligne pour les entrepreneurs",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces pour améliorer son référencement naturel",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels en raison d'une mauvaise visibilité en ligne",
+        "PREUVE_SOCIALE": "Une étude récente montre que 75% des utilisateurs de recherche n'iront pas au-delà de la première page",
+        "ACTION_REQUISE": "Commente OPTIMISE pour recevoir les 5 astuces"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "fc09feea-229b-4e2b-a21d-7607498099e9",
+      "persona": "ia_design",
+      "topic": "Design IA Rapide",
+      "context": "Créer un visuel d'entreprise en quelques minutes",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Prompting avancé",
+        "AVANT_APRES": "Avant : design générique, Après : design personnalisé",
+        "IMPACT_VISUEL": "Image de haute qualité avec effet de lumière cinématique"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "5a5221d4-3021-454a-98e6-75999b90e1d8",
+      "persona": "post_court",
+      "topic": "Gestion du temps",
+      "context": "Les entrepreneurs africains ont souvent du mal à gérer leur temps de manière efficace",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "3 heures par jour sont perdues en tâches non essentielles",
+        "EXPLICATION_RAPIDE": "En raison de la multiplication des réunions et des tâches administratives",
+        "QUESTION_SIMPLE": "Quelle est la première chose que vous devriez arrêter de faire pour gagner du temps?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "a5d97cb3-462b-4ad1-ab20-a55acc55fa89",
+      "persona": "mini_formation",
+      "topic": "Créer un contenu viral",
+      "context": "Utiliser l'IA pour créer du contenu attractif",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer un titre accrocheur",
+        "ETAPE_1": "Identifier les mots-clés tendance",
+        "ETAPE_2": "Utiliser l'IA pour générer des idées de contenu",
+        "ETAPE_3": "Créer un contenu visuel attractif",
+        "RESULTAT_PROMIS": "Augmenter les likes et les partages de 20%"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "1e26d61b-658c-43c1-9905-34ff6cfd686c",
+      "persona": "storytelling_pro",
+      "topic": "Développer une équipe solide",
+      "context": "L'importance de former et d'élever ses collaborateurs pour un impact durable",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un collaborateur qui a grandi grâce à ma formation et est devenu un expert",
+        "MA_REACTION": "Fierté et réalisation que mon rôle est de développer les compétences de mon équipe",
+        "LA_LECON_APPRISE": "Que former les autres est un facteur clé de réussite pour un leader",
+        "VISION_GLOBALE": "Un environnement de travail où chacun est encouragé à grandir et à atteindre son plein potentiel"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "cd3f5145-bedc-4367-85a2-d5b500a29639",
+      "persona": "ia_integration",
+      "topic": "Automatisation de la facturation",
+      "context": "Un entrepreneur rencontre des difficultés pour gérer les factures de ses clients de manière efficace",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle des factures en utilisant des feuilles de calcul",
+        "NOUVELLE_INTEGRATION_IA": "Déploiement d'un système d'IA pour automatiser la génération et l'envoi des factures",
+        "DIFFICULTE_SURMONTEE": "Problèmes de retards de paiement et d'erreurs de calcul dus à la gestion manuelle",
+        "RESULTAT_FINAL": "Réduction de 80% du temps consacré à la gestion des factures et diminution de 90% des erreurs de facturation"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "e4765645-7a44-448f-8472-91db2c76ca3f",
+      "persona": "business_auto",
+      "topic": "Automatisation de Prospection",
+      "context": "Comment gagner du temps avec l'automatisation de la prospection",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Recherche manuelle de leads potentiels",
+        "OUTIL_UTILISE": "Agent d'automatisation de prospection basé sur l'IA",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencer par identifier les canaux de prospection les plus efficaces"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c55b65fa-8426-4991-8ba1-fe090b75821c",
+      "persona": "cta",
+      "topic": "Booste ta visibilité",
+      "context": "Améliorer la visibilité de son contenu sur les réseaux sociaux",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces de SEO pour améliorer la visibilité de ton contenu",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels en raison d'une faible visibilité en ligne",
+        "PREUVE_SOCIALE": "Un exemple concret de entreprise qui a augmenté sa visibilité de 30% en utilisant ces astuces",
+        "ACTION_REQUISE": "Commenter VISIBILITE pour recevoir les 5 astuces en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "62d057ab-fee8-42b6-8e0d-39f889f30750",
+      "persona": "ia_design",
+      "topic": "Design de Packaging",
+      "context": "Création de visuels pour lancer une marque de produits locaux",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de filtres de lumière pour un effet premium",
+        "AVANT_APRES": "Photos de stock vs visuels générés par IA",
+        "IMPACT_VISUEL": "Augmentation de 30% des ventes grâce à des visuels attrayants"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "9db38f7f-ebfa-4aed-9441-0ea206f33d79",
+      "persona": "post_court",
+      "topic": "Gain de temps",
+      "context": "L'importance de gérer son temps efficacement pour les entrepreneurs",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "3 heures de travail automatisées",
+        "EXPLICATION_RAPIDE": "Utilisation d'outils gratuits pour automatiser des tâches répétitives",
+        "QUESTION_SIMPLE": "Quelles tâches automatiseriez-vous en premier lieu pour gagner du temps ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "00e9fec4-ae86-44dc-b411-37207b77499f",
+      "persona": "mini_formation",
+      "topic": "Créer un contenu viral",
+      "context": "Utiliser l'IA pour créer du contenu attractif",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer un contenu qui génère des interactions",
+        "ETAPE_1": "Définir un objectif de viralité pour le contenu",
+        "ETAPE_2": "Utiliser des outils d'IA pour analyser les tendances actuelles",
+        "ETAPE_3": "Créer un contenu qui surprend et qui est partageable",
+        "RESULTAT_PROMIS": "Augmenter les interactions sur les réseaux sociaux de 20% en une semaine"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "aa0d9e5d-f25d-4536-9280-90c2e0313870",
+      "persona": "storytelling_pro",
+      "topic": "Crise de confiance",
+      "context": "Un entrepreneur africain face à une crise de confiance dans son projet digital",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un client clé annule son contrat suite à une erreur technique",
+        "MA_REACTION": "Je me sens démotivé et je remets en question mes compétences",
+        "LA_LECON_APPRISE": "La confiance en soi est cruciale pour surmonter les échecs et continuer à innover",
+        "VISION_GLOBALE": "L'entrepreneuriat nécessite de la résilience et une capacité à apprendre des erreurs pour grandir"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "39ff18e2-379f-48d2-9f18-a78eaef51115",
+      "persona": "business_auto",
+      "topic": "Automatisation de Lead",
+      "context": "Utilisation d'agents IA pour générer des leads sans intervention humaine",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Générer 50 nouveaux leads qualifiés par jour",
+        "OUTIL_UTILISE": "Agent IA de prospection automatique",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Configurer l'agent IA pour cibler les bons prospects"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "4a1c3d8c-c950-49ba-8569-2c67ad42b3d7",
+      "persona": "cta",
+      "topic": "Booste ton SEO",
+      "context": "Améliorer la visibilité de son site web sur les moteurs de recherche",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces SEO pour améliorer ton référencement en 10 minutes",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels à cause d'un mauvais référencement",
+        "PREUVE_SOCIALE": "Plus de 80% des internautes utilisent les moteurs de recherche pour trouver des produits ou services",
+        "ACTION_REQUISE": "Commente OPTIMISE et recevez les 5 astuces en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ced0421f-35df-4371-a1de-eb523c89a2a6",
+      "persona": "ia_design",
+      "topic": "Design IA Minimaliste",
+      "context": "Créer des designs d'interface utilisateur modernes et minimalistes avec l'IA",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour obtenir des résultats personnalisés",
+        "AVANT_APRES": "Transformation d'un design basique en un design élégant et moderne",
+        "IMPACT_VISUEL": "Ajout de textures et de couleurs pastel pour un effet visuel unique"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "1803aabb-5852-458a-a52d-303b775fbac6",
+      "persona": "post_court",
+      "topic": "FOMO en marketing",
+      "context": "Comment les entreprises africaines perdent des clients en raison d'une stratégie marketing inefficace",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "La peur de manquer une opportunité peut motiver les entreprises à améliorer leur stratégie marketing",
+        "EXPLICATION_RAPIDE": "8 entreprises sur 10 en Afrique ne suivent pas leurs clients après la vente, ce qui entraîne une perte de revenus",
+        "QUESTION_SIMPLE": "Préférez-vous investir dans une stratégie marketing efficace ou risquer de perdre des clients à cause d'une approche inefficace ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "28601612-2257-4f76-8d9f-1a764a57b7a0",
+      "persona": "mini_formation",
+      "topic": "Créer du Contenu Utile",
+      "context": "Utiliser l'IA pour générer des idées de contenu",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Générer des idées de contenu avec l'IA",
+        "ETAPE_1": "Écrire 3 mots clés liés à son entreprise",
+        "ETAPE_2": "Demander à l'IA de suggérer des titres de posts",
+        "ETAPE_3": "Sélectionner le titre le plus pertinent et écrire un court résumé",
+        "RESULTAT_PROMIS": "Créer un post utile et engageant en 10 minutes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "42ec0def-6ea6-45df-8c90-1f6c0d8b1fc4",
+      "persona": "storytelling_pro",
+      "topic": "Faire grandir son équipe",
+      "context": "L'importance de former et de faire évoluer son équipe pour un leader",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un collaborateur manifeste son envie d'apprendre et de grandir",
+        "MA_REACTION": "Je décide de l'accompagner et de lui donner les outils pour devenir plus compétent",
+        "LA_LECON_APPRISE": "Un leader qui aide son équipe à grandir ne perd pas son pouvoir, il le renforce",
+        "VISION_GLOBALE": "Un environnement de travail où chacun est encouragé à apprendre et à progresser"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "673260cc-a440-4c52-bf63-540d1e6640a4",
+      "persona": "ia_integration",
+      "topic": "Automatisation Facturation",
+      "context": "Réduction des coûts et gain de temps pour les PME",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle des factures",
+        "NOUVELLE_INTEGRATION_IA": "Système d'automatisation de facturation basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Erreur humaine et temps de traitement long",
+        "RESULTAT_FINAL": "Réduction de 80% du temps de traitement et élimination des erreurs"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "1e53ca27-77f1-490d-adf3-1dbd5e00833c",
+      "persona": "business_auto",
+      "topic": "Automatisation de Leads",
+      "context": "Utiliser l'IA pour gagner du temps et booster les ventes",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Gestion manuelle des leads",
+        "OUTIL_UTILISE": "Logiciel d'automatisation de leads basé sur l'IA",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencer par identifier les tâches répétitives dans votre processus de vente"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "e9a62891-494a-4a3f-bc7c-27f871bcd8fe",
+      "persona": "cta",
+      "topic": "Optimiser Votre Site Web",
+      "context": "Améliorer la visibilité et le référencement de votre site web pour augmenter votre trafic et votre chiffre d'affaires",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "Un guide de 5 étapes pour améliorer votre référencement naturel",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels en raison d'un mauvais référencement",
+        "PREUVE_SOCIALE": "Une étude de cas qui montre comment une entreprise a augmenté son trafic de 30% en suivant ces étapes",
+        "ACTION_REQUISE": "Commenter \"SEO\" pour recevoir le guide"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "60245036-700b-4379-9204-921db8cef92e",
+      "persona": "ia_design",
+      "topic": "Design IA pour Packaging",
+      "context": "Création de visuels de packaging pour une marque de produits locaux",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Style High-end product photography",
+        "AVANT_APRES": "Avant : photos de stock génériques, Après : visuels personnalisés et attractifs",
+        "IMPACT_VISUEL": "Bokeh pour faire ressortir le produit"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c9027247-eaa9-4fbd-ad4a-4a1e68fe6ff1",
+      "persona": "post_court",
+      "topic": "Faire du SEO",
+      "context": "Optimiser son site web pour les moteurs de recherche",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "Utiliser des mots-clés pertinents dans son contenu",
+        "EXPLICATION_RAPIDE": "Cela améliore la visibilité du site web dans les résultats de recherche",
+        "QUESTION_SIMPLE": "Quels mots-clés utilisez-vous pour votre site web ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "a4d38bba-a53f-4a46-bd68-9e3696bde740",
+      "persona": "mini_formation",
+      "topic": "Créer un contenu IA",
+      "context": "Utiliser l'IA pour générer du contenu de qualité",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer un contenu attractif avec l'IA",
+        "ETAPE_1": "Définir le sujet et le ton du contenu",
+        "ETAPE_2": "Utiliser un outil d'IA pour générer le contenu",
+        "ETAPE_3": "Réviser et optimiser le contenu généré",
+        "RESULTAT_PROMIS": "Créer un contenu de qualité en moins de 10 minutes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "1eb3d29f-6172-4535-bffe-88dfcbce1bf7",
+      "persona": "ia_integration",
+      "topic": "Automatisation Facturation",
+      "context": "Un exemple concret d'intégration de l'IA pour améliorer la gestion de la facturation dans les PME",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle des factures avec Excel",
+        "NOUVELLE_INTEGRATION_IA": "Utilisation d'un logiciel d'automatisation de facturation basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Erreurs de saisie et retards de paiement dus à la gestion manuelle",
+        "RESULTAT_FINAL": "Réduction de 80% des erreurs de facturation et gain de 2 jours par semaine"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "2a60f60a-c7a9-49c2-9ea7-4a2903d2ed8f",
+      "persona": "business_auto",
+      "topic": "Automatisation de Lead",
+      "context": "Comment gagner du temps en automatisant la génération de leads",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Recherche manuelle de prospects",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Définir les critères de qualification des leads"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "d6db0b43-9b15-4b03-b2ea-013a178ff90c",
+      "persona": "cta",
+      "topic": "Booste ton SEO",
+      "context": "Améliorer son référencement naturel pour attirer plus de clients",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "10 astuces SEO pour améliorer ton référencement",
+        "DOULEUR_CIBLE": "Ne pas arriver dans les premiers résultats de recherche",
+        "PREUVE_SOCIALE": "Un exemple de réussite avec une augmentation de 30% du trafic",
+        "ACTION_REQUISE": "Commente SEO et je t'envoie les 10 astuces en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "62cde0d0-d40d-4cc2-b159-f3941c2d6509",
+      "persona": "post_court",
+      "topic": "Réactivité client",
+      "context": "L'importance de répondre rapidement aux clients pour éviter la perte de vente",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "1 minute de retard dans la réponse peut coûter une vente",
+        "EXPLICATION_RAPIDE": "Les clients ont besoin de réponses rapides pour prendre des décisions d'achat",
+        "QUESTION_SIMPLE": "Combien de ventes as-tu perdues à cause de réponses trop lentes ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "3b75bd88-8ddb-4443-9179-07c34bb337b4",
+      "persona": "mini_formation",
+      "topic": "Optimisation SEO",
+      "context": "Améliorer le référencement de son site web",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Mettre en place des mots-clés efficaces",
+        "ETAPE_1": "Identifier les mots-clés les plus pertinents pour son contenu",
+        "ETAPE_2": "Intégrer ces mots-clés dans les métadonnées de son site",
+        "ETAPE_3": "Optimiser les titres et les descriptions de ses pages",
+        "RESULTAT_PROMIS": "Augmenter la visibilité de son site web sur les moteurs de recherche"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "500a6c3d-b2ba-46b9-a334-a692caf00a8d",
+      "persona": "storytelling_pro",
+      "topic": "Apprendre de l'échec",
+      "context": "Partager une expérience personnelle d'échec pour montrer l'importance de l'apprentissage continu",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un projet numérique qui a échoué en raison d'une mauvaise planification",
+        "MA_REACTION": "Analyse de mes erreurs et recherche de solutions pour améliorer mes compétences",
+        "LA_LECON_APPRISE": "L'importance de la planification et de la gestion des risques dans les projets numériques",
+        "VISION_GLOBALE": "Utiliser les échecs comme opportunités pour grandir et améliorer son expertise"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "44e2fd83-3eb6-420b-a788-1c88cdf6fa44",
+      "persona": "ia_integration",
+      "topic": "Automatisation de facturation",
+      "context": "Un exemple concret d'intégration de l'IA pour améliorer la gestion de la facturation dans les PME",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle de la facturation avec des feuilles de calcul",
+        "NOUVELLE_INTEGRATION_IA": "Utilisation d'un système d'IA pour générer automatiquement les factures",
+        "DIFFICULTE_SURMONTEE": "Réduction des erreurs de saisie et gain de temps pour les équipes de comptabilité",
+        "RESULTAT_FINAL": "Augmentation de la productivité de 30% et réduction des coûts de 20%"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "647e5fcc-e91e-4ad0-9e4e-010c248418c4",
+      "persona": "cta",
+      "topic": "Booste ta visibilité",
+      "context": "Améliorer la visibilité de son contenu sur les réseaux sociaux",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces pour augmenter les vues de tes vidéos",
+        "DOULEUR_CIBLE": "Manque de visibilité et d'engagement sur les publications",
+        "PREUVE_SOCIALE": "Plus de 1000 likes et partages sur les publications optimisées",
+        "ACTION_REQUISE": "Commente VISIBLE et je t'envoie les 5 astuces en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "14d42cbf-09a8-40c1-8e3d-2663b9558c17",
+      "persona": "ia_design",
+      "topic": "Design IA pour logos",
+      "context": "Créer des logos professionnels avec l'IA en peu de temps",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Prompt de style Neo-African Minimalism",
+        "AVANT_APRES": "Logo basique vs Logo professionnel",
+        "IMPACT_VISUEL": "Lignes épurées, couleur ocre terreuse, lumière cinématique"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "2aa29350-4af2-4ada-b8a8-5dbc848f4f76",
+      "persona": "post_court",
+      "topic": "Gagner du temps",
+      "context": "Les entrepreneurs africains ont souvent du mal à gérer leur temps efficacement",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "3 heures par jour peuvent être gagnées avec de bonnes méthodes de gestion du temps",
+        "EXPLICATION_RAPIDE": "En utilisant des outils de productivité et en déléguant certaines tâches",
+        "QUESTION_SIMPLE": "Combien d'heures par jour penses-tu gaspiller à cause d'une mauvaise gestion du temps ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "27d525d8-59a4-4ad7-a52d-68c22e581bef",
+      "persona": "mini_formation",
+      "topic": "Créer un contenu viral",
+      "context": "Utiliser l'IA pour booster son contenu sur les réseaux sociaux",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer un contenu attractif avec l'IA",
+        "ETAPE_1": "Définir un objectif de contenu viral",
+        "ETAPE_2": "Utiliser des outils d'IA pour analyser les tendances",
+        "ETAPE_3": "Créer un contenu personnalisé avec des éléments d'IA",
+        "RESULTAT_PROMIS": "Augmenter l'engagement sur les réseaux sociaux de 20%"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "6f1a4df6-ac2d-48fa-87aa-33f1df1d5022",
+      "persona": "ia_integration",
+      "topic": "Automatisation de Facturation",
+      "context": "Un entrepreneur africain gère manuellement ses factures",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle des factures en Excel",
+        "NOUVELLE_INTEGRATION_IA": "Système d'automatisation de facturation basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Erreurs humaines et perte de temps due à des tâches répétitives",
+        "RESULTAT_FINAL": "Réduction de 80% du temps de facturation et augmentation de la précision"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "a55776c6-acc6-4cee-833f-5ec0a23369db",
+      "persona": "ia_design",
+      "topic": "Design IA pour Packaging",
+      "context": "Créer des visuels de packaging de produits locaux qui attirent l'attention",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de mots-clés spécifiques pour un style 'High-end product photography'",
+        "AVANT_APRES": "Du packaging basique au packaging premium",
+        "IMPACT_VISUEL": "Une bouteille de jus de fruits avec un effet 'bokeh' et des gouttes d'eau pour un look frais et professionnel"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "d3b78967-d7c1-4e7f-bcc1-bd13b1dae7f6",
+      "persona": "mini_formation",
+      "topic": "Créer un contenu attractif",
+      "context": "Utiliser l'IA pour générer des idées de contenu",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Générer des idées de contenu avec l'IA",
+        "ETAPE_1": "Définir le thème du contenu",
+        "ETAPE_2": "Utiliser l'IA pour générer des idées",
+        "ETAPE_3": "Sélectionner les idées les plus pertinentes",
+        "RESULTAT_PROMIS": "Créer un contenu attractif en 10 minutes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "bf27a4e4-c3b4-468d-830f-3b4c2c43e110",
+      "persona": "storytelling_pro",
+      "topic": "Réussite entrepreneuriale",
+      "context": "Comment gérer le stress dans les projets numériques",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un projet de développement web sous pression",
+        "MA_REACTION": "Gestion du stress par la priorisation des tâches",
+        "LA_LECON_APPRISE": "L'importance de la planification pour éviter les blocages",
+        "VISION_GLOBALE": "La nécessité de trouver un équilibre entre travail et vie personnelle pour maintenir la motivation"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "eeee8622-8e1a-485f-b30a-76141c0ea6d2",
+      "persona": "ia_integration",
+      "topic": "Automatisation Facturation",
+      "context": "Un entrepreneur africain passe trop de temps à gérer les factures de ses clients",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle des factures avec Excel",
+        "NOUVELLE_INTEGRATION_IA": "Utilisation d'un logiciel d'automatisation de facturation basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Erreurs de saisie et délais de paiement",
+        "RESULTAT_FINAL": "Gain de 80% de temps et réduction de 90% des erreurs de facturation"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "4ac83615-23ef-46ea-8e16-8009e1784abe",
+      "persona": "cta",
+      "topic": "Booste ton SEO",
+      "context": "Amélioration du référencement naturel pour les entreprises africaines",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "Les 5 meilleurs outils de SEO pour les PME",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels à cause d'un mauvais référencement",
+        "PREUVE_SOCIALE": "90% des internautes cliquent sur les premiers résultats de recherche",
+        "ACTION_REQUISE": "Commente OPTIMIZE pour recevoir la liste des outils"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c395d595-97b5-49f1-a31e-e44df9863b86",
+      "persona": "ia_design",
+      "topic": "Design IA Minimaliste",
+      "context": "Créer un design d'interface utilisateur minimaliste pour une application mobile",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour obtenir des résultats personnalisés",
+        "AVANT_APRES": "Avant : design générique, Après : design personnalisé et engageant",
+        "IMPACT_VISUEL": "Amélioration de l'expérience utilisateur grâce à une interface plus intuitive et esthétique"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "65b7d0e4-b4d5-43e8-af8d-39171e04d7dc",
+      "persona": "post_court",
+      "topic": "Vente en ligne",
+      "context": "Les entreprises africaines peinent à développer une stratégie de vente en ligne efficace",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "8 entreprises sur 10 en Afrique n'ont pas de site web pour vendre leurs produits",
+        "EXPLICATION_RAPIDE": "La vente en ligne peut augmenter les ventes de 20% en 3 mois",
+        "QUESTION_SIMPLE": "Quel est le principal obstacle qui empêche votre entreprise de développer une stratégie de vente en ligne efficace ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "360e7809-c072-4e9b-8192-da80c41b0908",
+      "persona": "mini_formation",
+      "topic": "Créer du Contenu",
+      "context": "Utiliser l'IA pour créer du contenu de qualité",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer du contenu attractif avec l'IA",
+        "ETAPE_1": "Définir le sujet du contenu",
+        "ETAPE_2": "Utiliser des outils d'IA pour générer des idées",
+        "ETAPE_3": "Optimiser le contenu pour les réseaux sociaux",
+        "RESULTAT_PROMIS": "Augmenter l'engagement sur les publications"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "a9c7a821-8f65-46c7-bc5e-71f6b5415de7",
+      "persona": "ia_integration",
+      "topic": "Automatisation de facturation",
+      "context": "Réduction du temps de facturation pour les PME",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Facturation manuelle avec Excel",
+        "NOUVELLE_INTEGRATION_IA": "Système d'IA pour génération automatique de factures",
+        "DIFFICULTE_SURMONTEE": "Erreurs de calcul et temps de traitement long",
+        "RESULTAT_FINAL": "Gain de 80% de temps et réduction des erreurs à moins de 1%"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "1eda48cb-cb3e-421c-994b-45af61e9c121",
+      "persona": "business_auto",
+      "topic": "Automatisation de Prospection",
+      "context": "Présenter une solution d'automatisation pour gagner du temps dans la prospection",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Recherche manuelle de leads",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencer par identifier les sources de leads les plus rentables"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "f27f8bca-7052-4466-9023-d2f5cf169696",
+      "persona": "ia_design",
+      "topic": "Design IA pour Packaging",
+      "context": "Créer des visuels de produits attirants pour une marque de jus de fruits",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de mots-clés comme 'bokeh' et 'soft morning sunlight'",
+        "AVANT_APRES": "Avant : Photos de stock génériques, Après : Visuels personnalisés et attrayants",
+        "IMPACT_VISUEL": "Un packaging qui ressort et augmente les ventes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "2b2539a9-dc01-4696-80e9-cdad6e55de62",
+      "persona": "post_court",
+      "topic": "Gain de temps",
+      "context": "Les entrepreneurs africains perdent beaucoup de temps en tâches répétitives",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "L'automatisation des tâches répétitives",
+        "EXPLICATION_RAPIDE": "En utilisant des outils gratuits pour gagner 2 heures par jour",
+        "QUESTION_SIMPLE": "Quelle tâche répétitive vas-tu automatiser demain ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "22acbdd5-869a-4cb0-a6a8-436feef4a4cb",
+      "persona": "mini_formation",
+      "topic": "Optimisation SEO",
+      "context": "Améliorer la visibilité des publications sur Facebook",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Comprendre les bases de l'optimisation SEO pour les publications",
+        "ETAPE_1": "Identifier les mots-clés pertinents pour la publication",
+        "ETAPE_2": "Utiliser ces mots-clés dans le titre et la description de la publication",
+        "ETAPE_3": "Optimiser les images avec des balises alt incluant les mots-clés",
+        "RESULTAT_PROMIS": "Augmentation de la visibilité et du trafic vers la page"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "d74eb1bc-e975-46e6-ad6e-76922539179f",
+      "persona": "storytelling_pro",
+      "topic": "Crise et Résilience",
+      "context": "Gérer les échecs dans les projets numériques",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Projet digital en échec critique",
+        "MA_REACTION": "Réaction face à l'échec, analyse des erreurs",
+        "LA_LECON_APPRISE": "Importance de l'apprentissage continu et de la résilience",
+        "VISION_GLOBALE": "Vision pour la reprise et la réussite future"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c7cf2f84-90c9-47ab-8edd-485a572eabc8",
+      "persona": "ia_integration",
+      "topic": "Automatisation Facturation",
+      "context": "Améliorer l'efficacité de la facturation pour les PME",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Facturation manuelle à la main",
+        "NOUVELLE_INTEGRATION_IA": "Intégration d'un système de facturation automatisé basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Réduction des erreurs de facturation et gain de temps",
+        "RESULTAT_FINAL": "Augmentation de 30% de la productivité et réduction de 25% des coûts administratifs"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "8dda27f3-d734-4f1d-9b5a-2744b526e2f0",
+      "persona": "business_auto",
+      "topic": "Automatisation de Prospection",
+      "context": "Utiliser l'IA pour gagner du temps et augmenter les leads",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Recherche manuelle de prospects",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Configurer les paramètres de l'agent IA pour cibler les prospects pertinents"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "04da3c87-0937-447e-a0f7-7a689f0954f7",
+      "persona": "cta",
+      "topic": "Booste ton SEO",
+      "context": "Améliorer son référencement sur les moteurs de recherche",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces pour améliorer son référencement",
+        "DOULEUR_CIBLE": "Les entreprises qui ne sont pas visibles sur les moteurs de recherche",
+        "PREUVE_SOCIALE": "Un exemple de entreprise qui a augmenté son trafic de 30% grâce à ces astuces",
+        "ACTION_REQUISE": "Commente BOOSTSEO pour recevoir les 5 astuces"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "7c06322e-445e-4c64-85bf-e835813bf04f",
+      "persona": "ia_design",
+      "topic": "Design IA Packaging",
+      "context": "Créer des emballages de produits attractifs avec l'IA",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de mots-clés spécifiques pour les textures et les couleurs",
+        "AVANT_APRES": "Comparaison entre une photo de stock standard et un visuel généré par l'IA avec des détails réalistes",
+        "IMPACT_VISUEL": "Un packaging de produit qui ressemble à une photo de produits de luxe avec une lumière douce et des ombres réalistes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "b9a03a93-400d-43a1-a849-4d8d5fb2415f",
+      "persona": "post_court",
+      "topic": "Perte de clients",
+      "context": "Les entreprises africaines perdent des clients en raison du manque de suivi après la vente",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "8 entreprises sur 10 en Afrique n'ont aucun système de suivi des clients",
+        "EXPLICATION_RAPIDE": "Cela entraîne une perte de revenus et une diminution de la fidélité des clients",
+        "QUESTION_SIMPLE": "Quel est le coût pour votre entreprise de ne pas suivre vos clients après la vente ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "1e6b33a4-544a-4d6b-bcbb-ad48a41cbc29",
+      "persona": "mini_formation",
+      "topic": "Optimiser SEO",
+      "context": "Améliorer la visibilité des contenus en ligne",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Utiliser les mots-clés pour améliorer le référencement",
+        "ETAPE_1": "Identifier les mots-clés pertinents pour son contenu",
+        "ETAPE_2": "Intégrer ces mots-clés dans le titre et la description du contenu",
+        "ETAPE_3": "Utiliser les outils d'analyse pour évaluer l'efficacité des mots-clés",
+        "RESULTAT_PROMIS": "Augmenter la visibilité et le trafic sur son site web"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "dba0267c-f684-415f-b103-1d41b6bcdf73",
+      "persona": "storytelling_pro",
+      "topic": "La Peur de Rater",
+      "context": "Un entrepreneur qui ne fait rien pour améliorer son site web",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un client potentiel qui quitte le site web en raison d'une expérience utilisateur désagréable",
+        "MA_REACTION": "Réflexion sur l'importance d'une expérience utilisateur fluide pour éviter la perte de clients",
+        "LA_LECON_APPRISE": "L'optimisation de l'expérience utilisateur est cruciale pour éviter la perte de clients et améliorer la conversion",
+        "VISION_GLOBALE": "Créer des expériences utilisateur exceptionnelles pour aider les entrepreneurs à réussir dans leur business"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "0ff49b6d-4269-4d69-b4c0-215787d084bb",
+      "persona": "ia_integration",
+      "topic": "IA dans la facturation",
+      "context": "Un entrepreneur africain cherche à améliorer son processus de facturation",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Création manuelle de factures en Excel",
+        "NOUVELLE_INTEGRATION_IA": "Système de facturation automatisé basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Erreurs de saisie et retards de paiement",
+        "RESULTAT_FINAL": "Réduction de 30% du temps de facturation et diminution de 25% des erreurs"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "7bfa12c0-b576-422c-99f1-e3a545f24eb8",
+      "persona": "business_auto",
+      "topic": "Automatisation de Leads",
+      "context": "Utiliser l'IA pour générer des leads de qualité sans intervention humaine",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Génération manuelle de leads",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Définir des critères de qualification de leads clairs pour l'agent IA"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "b8968507-3f45-4ff2-a41a-bed09c755230",
+      "persona": "cta",
+      "topic": "Optimiser Vitesse Site",
+      "context": "Améliorer la vitesse de chargement d'un site web pour augmenter les conversions",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "10 astuces pour accélérer votre site web en moins de 10 minutes",
+        "DOULEUR_CIBLE": "Perte de clients en raison de temps de chargement trop long",
+        "PREUVE_SOCIALE": "Un site web chargant en moins de 3 secondes augmente de 20% les conversions",
+        "ACTION_REQUISE": "Commente OPTIMISE pour recevoir les 10 astuces"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "bdc99c59-12e7-43ac-adce-2cf94a7d620e",
+      "persona": "ia_design",
+      "topic": "IA Design Éclatant",
+      "context": "Utiliser l'IA pour créer des designs éclatants en quelques minutes",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Prompt de style 'Neo-African Futurism'",
+        "AVANT_APRES": "Un design terne contre un design éclatant",
+        "IMPACT_VISUEL": "Un design qui fait ressortir les couleurs vives et les lignes géométriques"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "7e21bb87-10a9-4cd8-8bca-fd977071c242",
+      "persona": "post_court",
+      "topic": "Gestion du temps",
+      "context": "Les entrepreneurs africains gaspillent souvent leur temps en raison d'une mauvaise gestion",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "3 heures de travail par jour peuvent être automatisées",
+        "EXPLICATION_RAPIDE": "Utilisation d'outils gratuits pour optimiser les tâches",
+        "QUESTION_SIMPLE": "Quelle tâche prend le plus de temps dans votre journée de travail ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "79559c8c-8bb6-4f0a-825d-a7c36be6608e",
+      "persona": "mini_formation",
+      "topic": "Optimiser Facebook",
+      "context": "Utiliser l'IA pour améliorer la visibilité sur Facebook",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer des contenus attractifs avec l'IA",
+        "ETAPE_1": "Définir son public cible",
+        "ETAPE_2": "Utiliser des mots-clés pertinents",
+        "ETAPE_3": "Créer des images engageantes avec l'IA",
+        "RESULTAT_PROMIS": "Augmenter la visibilité et l'engagement sur Facebook"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "7a5dff31-197e-4026-9d50-a3b76bddaeda",
+      "persona": "storytelling_pro",
+      "topic": "Rater un projet",
+      "context": "L'importance de l'apprentissage par les erreurs dans les projets numériques",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un projet numérique qui a échoué en raison d'une mauvaise planification",
+        "MA_REACTION": "Réflexion sur les erreurs commises et les leçons apprises",
+        "LA_LECON_APPRISE": "L'importance de la planification et de la flexibilité dans les projets numériques",
+        "VISION_GLOBALE": "Utiliser les erreurs pour améliorer les compétences et la résilience dans le domaine numérique"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ef6cd971-224a-4971-b483-40fe8066e6ee",
+      "persona": "ia_integration",
+      "topic": "Automatisation Facturation",
+      "context": "L'automatisation de la facturation pour les PME",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle des factures",
+        "NOUVELLE_INTEGRATION_IA": "Utilisation d'un système d'IA pour la génération automatique de factures",
+        "DIFFICULTE_SURMONTEE": "Réduction des erreurs de facturation et gain de temps",
+        "RESULTAT_FINAL": "Augmentation de la productivité et réduction des coûts"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "0d500308-b436-4ae6-be37-8b095f41dd52",
+      "persona": "business_auto",
+      "topic": "Automatisation de Prospection",
+      "context": "Présenter un système d'automatisation pour la prospection commerciale",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Recherche manuelle de prospects",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencer par identifier les sources de prospects les plus rentables"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "dc3536c7-5158-4959-abc2-4299970c7d23",
+      "persona": "cta",
+      "topic": "Optimisation SEO",
+      "context": "Améliorer la visibilité de son site web sur les moteurs de recherche",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces pour améliorer son référencement naturel",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels à cause d'un mauvais référencement",
+        "PREUVE_SOCIALE": "80% des internautes utilisent les moteurs de recherche pour trouver des produits ou services",
+        "ACTION_REQUISE": "Commente SEO pour recevoir les 5 astuces"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "4c8315f7-aeef-434f-aacd-d34db76d36d2",
+      "persona": "ia_design",
+      "topic": "Design IA pour logos",
+      "context": "Créer un logo attrayant pour une entreprise locale en utilisant l'IA",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Style Neo-African Minimalism",
+        "AVANT_APRES": "Un logo basique contre un logo professionnel",
+        "IMPACT_VISUEL": "Lignes épurées, couleur ocre terreuse et lumière cinématique"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "df9f10a0-9148-4c31-b91d-b30bd753e0dc",
+      "persona": "post_court",
+      "topic": "Gain de temps",
+      "context": "L'importance de gérer son temps efficacement pour les entrepreneurs",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "3 heures de travail automatisées par jour",
+        "EXPLICATION_RAPIDE": "Utilisation d'outils gratuits pour optimiser les tâches quotidiennes",
+        "QUESTION_SIMPLE": "Quelle tâche prend le plus de temps dans votre journée et comment pourriez-vous l'automatiser ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "8fc4b78a-1c63-4365-b3fa-a0565a2b5f9b",
+      "persona": "mini_formation",
+      "topic": "Créer Contenu Utile",
+      "context": "Utiliser l'IA pour créer du contenu de qualité en peu de temps",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Rédaction de contenu avec l'IA",
+        "ETAPE_1": "Identifier le sujet principal",
+        "ETAPE_2": "Générer des idées avec l'IA",
+        "ETAPE_3": "Optimiser le contenu pour le référencement",
+        "RESULTAT_PROMIS": "Créer un post de qualité en 10 minutes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "bcb6bab1-5b26-4c89-a7c0-4e362dfcca44",
+      "persona": "storytelling_pro",
+      "topic": "L'Erreur Salvatrice",
+      "context": "Partager une erreur coûteuse pour illustrer l'importance de la résilience et de l'apprentissage",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un projet numérique qui a échoué à cause d'une erreur de ma part",
+        "MA_REACTION": "Comment j'ai géré l'échec et ce que j'ai ressenti",
+        "LA_LECON_APPRISE": "L'importance de tester et valider les idées avant de les lancer",
+        "VISION_GLOBALE": "Comment cette expérience m'a aidé à devenir un meilleur entrepreneur et à aider mes clients à éviter les mêmes erreurs"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "8053f769-7840-46d4-875d-bb2264ab4a12",
+      "persona": "business_auto",
+      "topic": "Automatisation de Leads",
+      "context": "Utiliser des agents IA pour gagner du temps",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Gestion manuelle des leads",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencer par automatiser les réponses aux emails de prospection"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ce618cd6-e5dc-4be3-84d2-fa8ee8a86bed",
+      "persona": "cta",
+      "topic": "SEO Rapide",
+      "context": "Améliorer son référencement sur Google en quelques étapes",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces SEO pour améliorer son référencement en moins de 10 minutes",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels à cause d'un référencement mauvais",
+        "PREUVE_SOCIALE": "Un exemple de entreprise qui a augmenté son trafic de 30% en un mois grâce à ces astuces",
+        "ACTION_REQUISE": "Commenter SEO pour recevoir les 5 astuces en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "421a4bd1-d89e-453e-9e6a-c6b1068eafa4",
+      "persona": "post_court",
+      "topic": "Gain de temps",
+      "context": "L'importance de la gestion du temps pour les entrepreneurs",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "2 heures de travail quotidien peuvent être automatisées",
+        "EXPLICATION_RAPIDE": "En utilisant des outils gratuits en ligne",
+        "QUESTION_SIMPLE": "Quelles tâches automatises-tu pour gagner du temps ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "e45644ad-4fd3-4464-b76a-df3e091855b0",
+      "persona": "mini_formation",
+      "topic": "Créer contenu avec IA",
+      "context": "Utiliser l'IA pour générer des idées de posts",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Générer des idées de contenu",
+        "ETAPE_1": "Identifier le public cible",
+        "ETAPE_2": "Définir le ton et le style de contenu",
+        "ETAPE_3": "Utiliser un outil d'IA pour générer des idées",
+        "RESULTAT_PROMIS": "Créer un post engageant en 10 minutes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "39bb79dd-1e4a-4f1f-8377-8093c530667c",
+      "persona": "storytelling_pro",
+      "topic": "L'Erreur Salvatrice",
+      "context": "Partager une erreur coûteuse mais enrichissante dans ma carrière d'entrepreneur",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "J'ai perdu un contrat important à cause d'une mauvaise interprétation des données",
+        "MA_REACTION": "J'ai d'abord paniqué, puis j'ai analysé mes erreurs et corrigé ma méthode",
+        "LA_LECON_APPRISE": "L'importance de vérifier et de valider les données avant de prendre des décisions",
+        "VISION_GLOBALE": "L'erreur est une étape vers la réussite, il faut apprendre de ses erreurs pour grandir"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ef2da12e-2ff3-4aeb-86ff-f74014687d71",
+      "persona": "ia_integration",
+      "topic": "Automatisation Facturation",
+      "context": "Un exemple concret d'intégration de l'IA pour améliorer la facturation dans les entreprises africaines",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle des factures avec des feuilles de calcul",
+        "NOUVELLE_INTEGRATION_IA": "Système d'IA pour la génération automatique de factures",
+        "DIFFICULTE_SURMONTEE": "Erreurs humaines et retards dans la facturation",
+        "RESULTAT_FINAL": "Réduction des errores à 0% et gain de temps de 80%"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ee7d01de-ba64-460b-90bf-3f2e3f89d841",
+      "persona": "cta",
+      "topic": "Optimisation SEO",
+      "context": "Améliorer la visibilité de son site web sur les moteurs de recherche",
+      "media": "none",
+      "date": "2026-08-11",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces SEO pour améliorer son référencement naturel",
+        "DOULEUR_CIBLE": "Perte de clients potentiels due à une mauvaise visibilité sur les moteurs de recherche",
+        "PREUVE_SOCIALE": "Un exemple de site web ayant augmenté son trafic de 30% grâce à ces astuces",
+        "ACTION_REQUISE": "Commenter avec le mot-clé SEO"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "c97efe22-8c45-4d08-8fc0-0a5e23a00cd0",
+      "persona": "ia_design",
+      "topic": "Design IA rapide",
+      "context": "Créer un design attractif en quelques minutes",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour des résultats rapides",
+        "AVANT_APRES": "Transformation d'une idée en un design visuellement attractif",
+        "IMPACT_VISUEL": "Génération d'images de haute qualité avec une ambiance visuelle engageante"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "cd044456-76e2-4675-a7a7-3f8911595d1c",
+      "persona": "post_court",
+      "topic": "Erreur coûteuse",
+      "context": "Les entreprises africaines perdent de l'argent en raison d'une mauvaise gestion de leurs stocks",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "8 entreprises sur 10 ont des pertes dues à une gestion inefficace",
+        "EXPLICATION_RAPIDE": "Une bonne gestion des stocks peut réduire les pertes de 20% en moyenne",
+        "QUESTION_SIMPLE": "Pouvez-vous vous permettre de perdre 20% de vos bénéfices en raison d'une mauvaise gestion de vos stocks ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "f22ca570-d66b-48f2-983e-6fe6d9294004",
+      "persona": "mini_formation",
+      "topic": "Créer contenu avec IA",
+      "context": "Utiliser l'IA pour générer des idées de contenu",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Générer des idées de contenu avec l'IA",
+        "ETAPE_1": "Définir un sujet ou un thème pour le contenu",
+        "ETAPE_2": "Utiliser un outil d'IA pour générer des idées",
+        "ETAPE_3": "Sélectionner et affiner les idées générées",
+        "RESULTAT_PROMIS": "Générer 3 idées de contenu utiles en 10 minutes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "133ec6cd-ef89-4f5d-bc8a-9e91ce1c6231",
+      "persona": "storytelling_pro",
+      "topic": "L'IA pour les Petits",
+      "context": "Comment utiliser l'IA pour booster son entreprise locale",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un client m'a demandé comment utiliser l'IA pour améliorer sa petite entreprise",
+        "MA_REACTION": "J'ai partagé avec lui mes connaissances sur les outils d'IA accessibles aux PME",
+        "LA_LECON_APPRISE": "L'IA peut être une arme redoutable pour les petites entreprises pour augmenter leur productivité",
+        "VISION_GLOBALE": "Demain, les entreprises qui ne seront pas intégrées à l'IA seront en retard sur la concurrence"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "5c76df15-0eba-43fb-9148-d2234cc933c2",
+      "persona": "business_auto",
+      "topic": "Automatisation de la prospection",
+      "context": "Utiliser l'IA pour gagner du temps",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Gestion manuelle des leads",
+        "OUTIL_UTILISE": "Agent de prospection automatique",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencer par automatiser les tâches de qualification des leads"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ca615a61-22b8-4df8-b3de-d74944bf92e6",
+      "persona": "cta",
+      "topic": "Optimisation SEO",
+      "context": "Améliorer le référencement naturel des sites web",
+      "media": "none",
+      "date": "2026-08-12",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 astuces SEO pour améliorer son référencement en moins de 30 minutes",
+        "DOULEUR_CIBLE": "Les entreprises qui ne maîtrisent pas leur référencement naturel perdent des clients potentiels",
+        "PREUVE_SOCIALE": "Un exemple concret d'une entreprise qui a augmenté son trafic de 25% grâce à l'optimisation SEO",
+        "ACTION_REQUISE": "Commenter avec le mot-clé SEO pour recevoir les 5 astuces"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "032ecdbd-833c-4a17-bab4-c52e04384e98",
+      "persona": "ia_design",
+      "topic": "Design IA Luxe",
+      "context": "Créer des designs de luxe avec l'IA pour les entreprises",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de mots-clés spécifiques pour obtenir des résultats luxueux",
+        "AVANT_APRES": "Avant : designs génériques, Après : designs luxueux et personnalisés",
+        "IMPACT_VISUEL": "Affichage de designs de haute qualité avec textures et éclairages réalistes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "1128d39d-c38d-445b-83b6-18ffac1dd383",
+      "persona": "post_court",
+      "topic": "Gestion du temps",
+      "context": "Les entrepreneurs africains ont souvent du mal à gérer leur temps efficacement",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "La perte de temps est une perte d'argent",
+        "EXPLICATION_RAPIDE": "Chaque minute perdue équivaut à un manque à gagner potentiel",
+        "QUESTION_SIMPLE": "Combien de minutes perds-tu par jour à des tâches non productives ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "5e143b8e-d3cf-4c99-95ea-e404beaf5749",
+      "persona": "mini_formation",
+      "topic": "Créer Contenu Utile",
+      "context": "Apprendre à créer du contenu utile avec l'IA",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer du contenu engageant",
+        "ETAPE_1": "Identifier son public cible",
+        "ETAPE_2": "Définir l'objectif du contenu",
+        "ETAPE_3": "Utiliser l'IA pour générer des idées",
+        "RESULTAT_PROMIS": "Créer un contenu utile en 10 minutes"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "4bd58e86-3a2e-4b2f-8616-15434d09b85e",
+      "persona": "storytelling_pro",
+      "topic": "L'importance de la persévérance",
+      "context": "Partager une expérience personnelle de persévérance dans un projet difficile",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un projet de développement d'IA qui a pris plus de temps que prévu pour aboutir",
+        "MA_REACTION": "Je me sentais frustré et démotivé, mais j'ai décidé de continuer à travailler dessus",
+        "LA_LECON_APPRISE": "La persévérance et la détermination sont essentielles pour réussir dans les projets complexes",
+        "VISION_GLOBALE": "Les entrepreneurs doivent être prêts à affronter des défis et à apprendre de leurs expériences pour grandir et réussir"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "751437b8-6eb7-4fbf-96ab-7484ffcd13ca",
+      "persona": "ia_integration",
+      "topic": "Automatisation de facturation",
+      "context": "Réduction des coûts et gain de temps pour les PME",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle des factures",
+        "NOUVELLE_INTEGRATION_IA": "Système d'automatisation de facturation basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Erreurs humaines et retards de paiement",
+        "RESULTAT_FINAL": "Réduction de 80% du temps de traitement des factures"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "116020ed-49de-4e08-929e-6955843f84f8",
+      "persona": "business_auto",
+      "topic": "Automatisation Lead",
+      "context": "Utiliser l'IA pour gagner du temps",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Gestion manuelle des leads",
+        "OUTIL_UTILISE": "Agent d'automatisation de leads",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencer par automatiser les réponses aux emails"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "134ea6db-f569-433f-b44e-10ab84190849",
+      "persona": "cta",
+      "topic": "Optimiser Votre Site Web",
+      "context": "Améliorer la visibilité et le référencement de votre site web pour attirer plus de clients",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "Un guide de 5 étapes pour améliorer votre SEO",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels en raison d'un mauvais référencement",
+        "PREUVE_SOCIALE": "Plus de 70% des entrepreneurs ont déjà amélioré leur visibilité en ligne grâce à notre méthode",
+        "ACTION_REQUISE": "Commente SEO et reçois le guide en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "b5d5752a-2f4e-4c4f-8a95-044c4a570b9b",
+      "persona": "ia_design",
+      "topic": "Logo Africain Minimaliste",
+      "context": "Créer un logo africain minimaliste avec Midjourney",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de lignes géométriques et de couleurs terracotta",
+        "AVANT_APRES": "Un logo basique contre un logo premium",
+        "IMPACT_VISUEL": "Un design qui reflète l'identité africaine de manière moderne et élégante"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "bcfa1e11-a2ca-4811-b490-4eacec00f6ef",
+      "persona": "post_court",
+      "topic": "Faire face à la perte",
+      "context": "L'entreprise qui ne prend pas de décision pour améliorer son processus de vente en ligne peut perdre des clients potentiels",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "La perte de clients potentiels due à l'absence de stratégie de vente en ligne",
+        "EXPLICATION_RAPIDE": "8 entreprises sur 10 en Afrique n'ont pas de système de vente en ligne efficace",
+        "QUESTION_SIMPLE": "Combien de clients potentiels votre entreprise perd-elle chaque mois en raison de son manque de stratégie de vente en ligne ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "4436157c-1700-4b67-bc72-f6241a7d3389",
+      "persona": "mini_formation",
+      "topic": "Optimiser contenu",
+      "context": "Utiliser l'IA pour améliorer la qualité et l'efficacité du contenu",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer du contenu de qualité avec l'IA",
+        "ETAPE_1": "Identifier les thèmes populaires avec l'analyse de données",
+        "ETAPE_2": "Utiliser des outils d'écriture assistée par IA pour générer des idées",
+        "ETAPE_3": "Optimiser les titres et les métadonnées pour un meilleur référencement",
+        "RESULTAT_PROMIS": "Augmenter la visibilité et l'engagement sur les publications en ligne"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "9e78c800-8b53-4d54-80a7-cb51e9a7f6ea",
+      "persona": "storytelling_pro",
+      "topic": "L'IA au service des PME",
+      "context": "Utilisation de l'intelligence artificielle pour booster les petites et moyennes entreprises",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Rencontre avec un entrepreneur PME qui a réussi à augmenter ses ventes grâce à l'IA",
+        "MA_REACTION": "Réflexion sur les avantages de l'IA pour les PME et les défis à surmonter",
+        "LA_LECON_APPRISE": "Importance de former les équipes aux outils d'IA pour maximiser leur potentiel",
+        "VISION_GLOBALE": "Vision d'un futur où les PME utilisent l'IA pour améliorer leur compétitivité et leur efficacité"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "abacd6ff-ed4d-4458-8cf9-749dfb705368",
+      "persona": "ia_integration",
+      "topic": "Automatisation de facturation",
+      "context": "Un entrepreneur africain passe trop de temps à gérer ses factures manuellement",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Gestion manuelle des factures avec Excel",
+        "NOUVELLE_INTEGRATION_IA": "Utilisation d'un système d'IA pour automatiser la facturation",
+        "DIFFICULTE_SURMONTEE": "Erreurs de saisie et retards de paiement",
+        "RESULTAT_FINAL": "Gain de 80% de temps et réduction de 90% des erreurs de facturation"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "200509a1-6c26-4d51-bebb-1c44c5acb032",
+      "persona": "business_auto",
+      "topic": "Automatisation de leads",
+      "context": "L'automatisation de leads pour les entreprises africaines",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Gestion manuelle des leads",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Commencer par identifier les sources de leads les plus rentables"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "0fb851fa-8369-4c71-9c74-730f7d87177d",
+      "persona": "cta",
+      "topic": "Augmenter Engagement",
+      "context": "Améliorer l'interaction avec les followers sur Facebook",
+      "media": "none",
+      "date": "2026-08-08",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "5 prompts de posts éprouvés pour booster l'engagement",
+        "DOULEUR_CIBLE": "Difficulté à générer des interactions significatives avec les publications",
+        "PREUVE_SOCIALE": "Plus de 200 likes et commentaires sur les derniers posts utilisant ces prompts",
+        "ACTION_REQUISE": "Commenter PROMPTS pour recevoir la liste complète"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "34b52030-70c8-4e0d-bf0f-b1b1792426ef",
+      "persona": "ia_design",
+      "topic": "Design IA Révolution",
+      "context": "Utiliser l'IA pour créer des designs innovants",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de prompts spécifiques pour obtenir des résultats personnalisés",
+        "AVANT_APRES": "Avant : designs génériques, Après : designs uniques et personnalisés",
+        "IMPACT_VISUEL": "Visuels réalistes et attractifs qui augmentent l'engagement"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "60e68d31-ecd5-4c67-b534-dc43ab00c04f",
+      "persona": "post_court",
+      "topic": "FOMO en marketing",
+      "context": "Les entreprises africaines perdent des clients en raison d'une stratégie marketing inadéquate",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "80% des PME en Afrique perdent des clients sans savoir pourquoi",
+        "EXPLICATION_RAPIDE": "Manque de stratégie de fidélisation et de suivi",
+        "QUESTION_SIMPLE": "Pouvez-vous vous permettre de perdre 80% de vos clients potentiels ?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "14ab48a9-ef3d-48d6-ad71-2928fc48ff1b",
+      "persona": "mini_formation",
+      "topic": "Créer un contenu viral",
+      "context": "Utiliser l'IA pour créer du contenu viral sur Facebook",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Création de contenu viral avec l'IA",
+        "ETAPE_1": "Définir l'objectif du contenu",
+        "ETAPE_2": "Utiliser des outils d'IA pour générer des idées",
+        "ETAPE_3": "Créer un contenu attractif et interactif",
+        "RESULTAT_PROMIS": "Augmenter l'engagement et la visibilité sur Facebook"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "a816b018-643c-438b-ab14-43d2856ef342",
+      "persona": "storytelling_pro",
+      "topic": "Crise de confiance",
+      "context": "Gérer la confiance dans les projets digitaux",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un projet numérique a échoué due à un manque de confiance entre l'équipe et le client",
+        "MA_REACTION": "Analyse des causes profondes de l'échec et recherche de solutions pour améliorer la communication",
+        "LA_LECON_APPRISE": "L'importance de la transparence et de la confiance dans la gestion de projet",
+        "VISION_GLOBALE": "Développer des stratégies pour renforcer la confiance et améliorer les résultats des projets numériques"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "a65b706e-01d3-4b89-9c11-e4df789d9924",
+      "persona": "ia_integration",
+      "topic": "Automatisation Facturation",
+      "context": "Optimiser les processus de facturation pour les PME africaines",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Saisie manuelle des factures",
+        "NOUVELLE_INTEGRATION_IA": "Intégration d'un système d'IA pour la génération automatique de factures",
+        "DIFFICULTE_SURMONTEE": "Réduction des erreurs de saisie et gain de temps",
+        "RESULTAT_FINAL": "Augmentation de 30% de la productivité et réduction de 25% des coûts administratifs"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "d880e7bb-cc3c-4e2b-b8cf-f6825e66e3de",
+      "persona": "business_auto",
+      "topic": "Automatisation de la prospection",
+      "context": "Comment gagner du temps avec l'automatisation de la prospection",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Recherche manuelle de leads",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Définir des critères de leads ciblés"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "000af05b-2852-4588-8fd6-6b1b5848dad8",
+      "persona": "cta",
+      "topic": "Optimisation SEO",
+      "context": "Améliorer la visibilité du site web grâce à des techniques SEO efficaces",
+      "media": "none",
+      "date": "2026-08-09",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "10 astuces SEO pour améliorer le référencement de votre site web",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels en raison d'un mauvais référencement",
+        "PREUVE_SOCIALE": "Plus de 80% des internautes utilisent les moteurs de recherche pour trouver des produits ou des services",
+        "ACTION_REQUISE": "Commenter avec le mot-clé SEO pour recevoir les 10 astuces en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "d14ec6ec-d76f-47ce-9c62-1575d7e170b2",
+      "persona": "ia_design",
+      "topic": "Design IA Minimaliste",
+      "context": "Créer un design visuellement attrayant pour une marque en utilisant l'IA",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "OUTIL_DESIGN": "Midjourney",
+        "TECHNIQUE_SECRETE": "Utilisation de mots-clés spécifiques pour un style 'Neo-African Minimalism'",
+        "AVANT_APRES": "Un logo faiblement dessiné contre un logo professionnel créé en 4 minutes",
+        "IMPACT_VISUEL": "Un design épuré avec des lignes géométriques, des couleurs terreuses et une lumière cinématique"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "dc04baf8-dd7a-4ad8-b4bf-4d692e114204",
+      "persona": "post_court",
+      "topic": "Perte de clients",
+      "context": "Les entreprises africaines perdent des clients à cause d'une mauvaise gestion de la relation client",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "PENSEE_DU_JOUR": "9 entreprises sur 10 en Afrique ne savent pas gérer leurs relations avec les clients",
+        "EXPLICATION_RAPIDE": "La perte de clients est souvent due à une absence de suivi et de communication après la vente",
+        "QUESTION_SIMPLE": "Qu'est-ce que tu fais pour retenir tes clients après une vente?"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "ef7ffb33-bb74-4422-b3f6-85c56c9ebf53",
+      "persona": "mini_formation",
+      "topic": "Optimiser SEO",
+      "context": "Améliorer la visibilité de son site web",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Comprendre les bases du SEO",
+        "ETAPE_1": "Identifier les mots-clés pertinents",
+        "ETAPE_2": "Optimiser les métadonnées de la page",
+        "ETAPE_3": "Créer du contenu de qualité",
+        "RESULTAT_PROMIS": "Augmenter la visibilité de son site web sur les moteurs de recherche"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "7df75830-f6ae-4bfa-8237-65e12578c77a",
+      "persona": "storytelling_pro",
+      "topic": "L'échec en tant que catalyseur",
+      "context": "Utiliser les expériences d'échec pour motiver les entrepreneurs",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "EVENEMENT_DECLENCHEUR": "Un projet entrepreneurial qui a échoué",
+        "MA_REACTION": "Réflexion sur les leçons tirées de l'échec",
+        "LA_LECON_APPRISE": "Importance de la résilience et de l'apprentissage continu",
+        "VISION_GLOBALE": "Utiliser les échecs pour innover et améliorer les stratégies d'entreprise"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "9af3a79c-4563-4316-a9fa-dde6061c6165",
+      "persona": "ia_integration",
+      "topic": "Automatisation de factures",
+      "context": "Réduction du temps de traitement des factures pour les PME",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "PROCESSUS_TRADITIONNEL": "Traitement manuel des factures",
+        "NOUVELLE_INTEGRATION_IA": "Système d'automatisation de factures basé sur l'IA",
+        "DIFFICULTE_SURMONTEE": "Erreurs humaines et temps de traitement long",
+        "RESULTAT_FINAL": "Gain de temps de 80% et réduction des erreurs à 0%"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "0d492ebb-8351-47ed-b448-b95560267920",
+      "persona": "business_auto",
+      "topic": "Automatisation de Prospection",
+      "context": "Présenter un système d'automatisation de prospection pour les entrepreneurs",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "TÂCHE_CHRONOPHAGE": "Gestion manuelle des leads",
+        "OUTIL_UTILISE": "Agent IA de prospection",
+        "TEMPS_GAGNE": "2 heures par jour",
+        "CONSEIL_POUR_DEMARRER": "Définir les critères de qualification des leads"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "1c43de36-b25a-4ac3-8ec2-2a9c79e5e9ab",
+      "persona": "cta",
+      "topic": "Booste ton SEO",
+      "context": "Améliorer la visibilité de son site web",
+      "media": "none",
+      "date": "2026-08-10",
+      "time": "",
+      "variables": {
+        "OFFRE_OU_RESSOURCE": "10 astuces pour améliorer ton référencement naturel",
+        "DOULEUR_CIBLE": "Perdre des clients potentiels à cause d'un référencement mauvais",
+        "PREUVE_SOCIALE": "Un exemple concret de réussite après optimisation de son site",
+        "ACTION_REQUISE": "Commenter 'SEO' pour recevoir les 10 astuces en message privé"
+      },
+      "validated": false,
+      "used": false
+    },
+    {
+      "id": "637b45b6-7336-4487-b448-f3cd1082432b",
+      "persona": "mini_formation",
+      "topic": "Créer un contenu viral",
+      "context": "Utiliser l'IA pour booster la créativité",
+      "media": "none",
+      "date": "2026-08-07",
+      "time": "",
+      "variables": {
+        "COMPETENCE_CIBLEE": "Créer un contenu attractif",
+        "ETAPE_1": "Définir son public cible",
+        "ETAPE_2": "Utiliser des mots-clés pertinents",
+        "ETAPE_3": "Créer un titre accrocheur",
+        "RESULTAT_PROMIS": "Augmenter les interactions sur les publications"
+      },
+      "validated": false,
+      "used": false
+    }
+  ]
+}

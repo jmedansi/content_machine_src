@@ -1,0 +1,12 @@
+{
+  "name": "coulisses",
+  "display_name": "Coulisses",
+  "description": "Partage les coulisses de ton activité - behind the scenes",
+  "min_words": 120,
+  "max_words": 180,
+  "tone": "authentique",
+  "format": "coulisses",
+  "target_audience": "pme, entrepreneurs",
+  "hashtag_recommendations": ["#Coulisses", "#ViePro", "#Startup"],
+  "call_to_action": "engagement"
+}

@@ -1,0 +1,79 @@
+# Topics Jean-Marc DANSI — Le Taximan du Digital
+# Format : AUDIENCE | OBJECTIF | SUJET
+# AUDIENCE : freelance | pme | apprenant | tous
+# OBJECTIF : notoriete | engagement | autorite
+# Commenter avec # pour désactiver
+
+# ═══════════════════════════════════════════
+# NOTORIÉTÉ — posts qui font partager et abonner
+# ═══════════════════════════════════════════
+
+tous | notoriete | pourquoi les africains travaillent deux fois plus pour gagner deux fois moins
+tous | notoriete | la vraie raison pour laquelle ton business ne décolle pas
+tous | notoriete | ce que j'ai appris en construisant des systèmes pour des entreprises africaines
+tous | notoriete | l'erreur que font 9 entrepreneurs sur 10 quand ils lancent leur page Facebook
+freelance | notoriete | j'ai refusé un client cette semaine et c'était la meilleure décision
+pme | notoriete | pourquoi ton concurrent moins compétent que toi a plus de clients
+apprenant | notoriete | la vérité que personne ne te dit sur l'IA en Afrique
+tous | notoriete | ce que les grandes entreprises font en secret que les petites ignorent
+
+# ═══════════════════════════════════════════
+# ENGAGEMENT — posts qui font commenter et débattre
+# ═══════════════════════════════════════════
+
+freelance | engagement | tu travailles depuis combien de temps sans avoir doublé ton tarif
+freelance | engagement | comment attirer des clients qui paient sans négocier le prix
+freelance | engagement | livrer un projet en 2 heures au lieu de 2 jours grâce à l'IA
+pme | engagement | tes employés font-ils vraiment ce que tu crois qu'ils font
+pme | engagement | comment savoir exactement où part l'argent dans ton entreprise
+pme | engagement | dépasser tes concurrents sans augmenter ton budget
+apprenant | engagement | les 3 outils IA gratuits que j'utilise chaque jour
+apprenant | engagement | comment j'ai automatisé une tâche qui me prenait 3h par jour
+apprenant | engagement | commencer avec l'IA quand on n'a ni budget ni formation technique
+tous | engagement | ce que tu peux faire en 1 heure avec l'IA que tu mettais 1 semaine à faire
+
+# ═══════════════════════════════════════════
+# ROADMAP — posts longs hebdomadaires, le chemin complet (kebane_roadmap)
+# ═══════════════════════════════════════════
+
+freelance | roadmap | tu as un téléphone et 500F de connexion — voilà comment tu gagnes 500 000 FCFA
+freelance | roadmap | de zéro client à 200 000 FCFA par mois : le chemin réel avec les vrais obstacles
+apprenant | roadmap | comment apprendre une compétence digitale depuis un quartier africain sans budget
+pme | roadmap | comment ton entreprise peut tourner sans toi en 90 jours avec l'IA
+freelance | roadmap | le premier mois du freelance africain : semaine par semaine, sans mentir
+apprenant | roadmap | de livreur à développeur web en 8 mois — le road map complet
+
+# ═══════════════════════════════════════════
+# AUTORITÉ — posts qui donnent envie de l'expertise de Jean-Marc
+# ═══════════════════════════════════════════
+
+freelance | autorite | comment j'ai aidé un freelance à tripler ses tarifs en 30 jours
+freelance | autorite | le système qui permet d'avoir des clients sans prospecter
+pme | autorite | comment une PME africaine a multiplié sa productivité par 4 avec l'IA
+pme | autorite | le tableau de bord que tout chef d'entreprise devrait avoir
+pme | autorite | automatiser le service client sans perdre la relation humaine
+apprenant | autorite | la méthode que j'utilise pour apprendre un nouvel outil en 48h
+apprenant | autorite | construire un système qui travaille pour toi pendant que tu dors
+tous | autorite | ce que je ferais si je devais repartir de zéro avec 0 euro et l'IA
+
+# ═══════════════════════════════════════════
+# POST COURT — jusqu'à 10x/jour, max 100 mots, 4 formats
+# micro-vérité | stat+réaction | question qui divise | annonce/teaser
+# Format étendu : AUDIENCE | OBJECTIF | SUJET | post_court
+# ═══════════════════════════════════════════
+
+freelance | engagement | un client qui hésite sur le prix n'est pas ton client cible | post_court
+freelance | engagement | la différence entre freelance qui galère et freelance qui choisit ses clients | post_court
+freelance | engagement | tu préfères 1 client à 500 000 FCFA ou 10 clients à 50 000 FCFA | post_court
+pme | engagement | stat sur les PME africaines qui ferment dans les 3 premières années | post_court
+pme | engagement | question : tu surveilles tes chiffres ou tu attends la fin du mois | post_court
+pme | engagement | la vraie raison pour laquelle tes clients ne reviennent pas | post_court
+apprenant | engagement | tu peux apprendre n'importe quelle compétence digitale avec YouTube et 0 budget | post_court
+apprenant | engagement | stat sur le temps perdu à regarder des tutoriels sans jamais pratiquer | post_court
+tous | notoriete | teaser pour le prochain post long du jour | post_court
+tous | notoriete | observation du jour sur le business en Afrique en une phrase | post_court
+tous | engagement | question directe qui force à choisir un camp sur le business digital | post_court
+tous | notoriete | fait ou chiffre sur l'économie numérique africaine + réaction de Jean-Marc | post_court
+freelance | engagement | combien d'heures travailles-tu par jour — et combien sont vraiment productives | post_court
+pme | notoriete | une vérité sur le management que les écoles de commerce n'enseignent pas | post_court
+apprenant | notoriete | ce que l'IA peut faire pour toi aujourd'hui que tu crois réservé aux experts | post_court

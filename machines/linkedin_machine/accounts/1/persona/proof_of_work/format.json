@@ -1,0 +1,11 @@
+{
+  "format_name": "Proof of Work",
+  "variables_requises": [
+    "PROBLEME_CLIENT",
+    "MA_SOLUTION",
+    "ETAPES_CONSTRUCTION",
+    "RESULTAT_OBTENU",
+    "QUESTION_ENGAGEMENT"
+  ],
+  "user_prompt_template": "Rédige un post LinkedIn 'Proof of Work' (Étude de cas) sur :\n\nLe problème de départ du client : {PROBLEME_CLIENT}\nLa solution que j'ai construite (ex: Agent IA) : {MA_SOLUTION}\nComment j'ai fait (étapes clés) : {ETAPES_CONSTRUCTION}\nLe résultat obtenu (temps gagné, CA généré) : {RESULTAT_OBTENU}\nQuestion pour engager la cible à la fin : {QUESTION_ENGAGEMENT}\n\nTexte brut publiable. Pas de markdown. Pas de hashtags."
+}

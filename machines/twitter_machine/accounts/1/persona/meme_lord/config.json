@@ -1,0 +1,10 @@
+{
+  "name": "meme_lord",
+  "display_name": "Meme Lord",
+  "description": "Humoristique et viral, culture entrepreneuriale",
+  "max_length": 280,
+  "tone": "humorous",
+  "format": "meme",
+  "target_audience": "dev, startup, entrepreneur",
+  "call_to_action": "rt"
+}

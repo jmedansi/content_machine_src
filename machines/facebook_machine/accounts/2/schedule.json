@@ -1,0 +1,14 @@
+{
+  "schedule": [
+    {
+      "time": "09:00",
+      "persona": "mini_formation",
+      "type": "post"
+    },
+    {
+      "time": "18:00",
+      "persona": "mini_formation",
+      "type": "post"
+    }
+  ]
+}

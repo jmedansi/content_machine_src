@@ -1,0 +1,14 @@
+{
+  "nom_persona": "Prise de Position (JM)",
+  "display_name": "Prise de Position",
+  "description": "Post LinkedIn qui défend une position forte et tranchée sur l'IA",
+  "min_words": 120,
+  "max_words": 200,
+  "target_words": 160,
+  "tone": "tranché, humoristique, direct",
+  "format": "long",
+  "target_audience": "pme, direction, entrepreneurs",
+  "content_types": ["post"],
+  "call_to_action": "question_debat",
+  "image": true
+}

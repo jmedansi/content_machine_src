@@ -1,0 +1,14 @@
+{
+  "nom_persona": "Ressource Massive (JM)",
+  "display_name": "Ressource Massive",
+  "description": "Post LinkedIn qui annonce une ressource massive sur l'IA",
+  "min_words": 150,
+  "max_words": 220,
+  "target_words": 180,
+  "tone": "généreux, taquin, praticien",
+  "format": "cta",
+  "target_audience": "pme, direction, entrepreneurs",
+  "content_types": ["post"],
+  "call_to_action": "dm_keyword",
+  "image": true
+}

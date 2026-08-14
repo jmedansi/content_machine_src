@@ -1,0 +1,100 @@
+# Submodules embedded (à cloner séparément)
+.agents/skills/oh-my-opencode/
+.agents/skills/ui-ux-pro-max/
+
+# Environnements
+.env
+.env.local
+.credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Node
+node_modules/
+*/node_modules/
+**/node_modules/
+build/
+dist/
+.next/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+errors.log
+nul
+
+# Temporaires
+temp/
+uploads/
+_cache/
+scratch/
+*/temp/
+*/uploads/
+*/scratch/
+
+# Chrome (si usage local)
+User Data/
+Chrome User Data/
+
+# Médias et binaires
+*.mp4
+*.mp3
+*.aac
+*.wav
+*.ogg
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.pdf
+*.onnx
+*.onnx.json
+*.zip
+*.exe
+*.db
+*.mov
+
+# Exclure les récupérables et assets volumineux
+ffmpeg-8.1-full_build/
+ffmpeg.zip
+.archive/
+*/models/piper/*.onnx
+*/models/piper/*.wav
+
+# Exclure les posts et contenus générés
+machines/facebook_machine/accounts/*/content/
+machines/facebook_machine/content/
+machines/linkedin_machine/content/
+machines/linkedin_machine/accounts/*/content/
+machines/twitter_machine/content/
+machines/*/remotion-engine/output/
+machines/*/remotion-engine/public/
+machines/*/accounts/*/content/
+
+# Exclure données et caches
+machines/*/data/*.db
+machines/*/logs/
+machines/*/.cache/
+machines/*/.venv/
+*/.venv/
+.venv/
+# Secrets/sessions
+fb_session.json
+groq_cooldowns.json

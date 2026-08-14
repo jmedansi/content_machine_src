@@ -1,0 +1,19 @@
+{
+  "name": "carousel_pro",
+  "display_name": "Carousel Pro",
+  "description": "Créateur de carousels éducatifs LinkedIn",
+  "max_words": 1500,
+  "min_words": 800,
+  "tone": "educatif",
+  "format": "carousel",
+  "target_audience": "apprenant, pme, educateur",
+  "content_types": ["carousel"],
+  "hashtag_recommendations": ["#Formation", "#Apprentissage", "#Carousel"],
+  "call_to_action": "save",
+  "slides_template": {
+    "title": "Slide 1 : Titre accrocheur",
+    "problem": "Slides 2-5 : Le problème",
+    "solution": "Slides 6-9 : La solution",
+    "cta": "Slide 10 : Résumé + call-to-action"
+  }
+}

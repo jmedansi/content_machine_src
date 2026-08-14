@@ -1,0 +1,39 @@
+{
+  "schedule": [
+    {
+      "time": "08:00",
+      "persona": "ia_design",
+      "type": "post"
+    },
+    {
+      "time": "10:30",
+      "persona": "post_court",
+      "type": "post"
+    },
+    {
+      "time": "12:30",
+      "persona": "mini_formation",
+      "type": "post"
+    },
+    {
+      "time": "14:00",
+      "persona": "storytelling_pro",
+      "type": "post"
+    },
+    {
+      "time": "16:30",
+      "persona": "ia_integration",
+      "type": "post"
+    },
+    {
+      "time": "19:00",
+      "persona": "business_auto",
+      "type": "post"
+    },
+    {
+      "time": "20:30",
+      "persona": "cta",
+      "type": "post"
+    }
+  ]
+}

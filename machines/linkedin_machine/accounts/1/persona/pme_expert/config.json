@@ -1,0 +1,12 @@
+{
+  "name": "pme_expert",
+  "display_name": "ExpertPME",
+  "description": "Expert qui partage des conseils pratiques pour les PME africaines",
+  "min_words": 150,
+  "max_words": 220,
+  "tone": "direct",
+  "format": "conseil",
+  "target_audience": "pme, direction",
+  "hashtag_recommendations": ["#PME", "#Afrique", "#Business"],
+  "call_to_action": "question"
+}

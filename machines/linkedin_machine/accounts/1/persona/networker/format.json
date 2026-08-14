@@ -1,0 +1,9 @@
+{
+  "format_name": "Networker",
+  "variables_requises": [
+    "SITUATION_VECUE",
+    "DILEMME_OU_CHOIX",
+    "QUESTION_OUVERTE"
+  ],
+  "user_prompt_template": "Rédige un post LinkedIn court de type 'Networker' pour engager la conversation sur :\n\nSituation vécue (courte anecdote ou fait) : {SITUATION_VECUE}\nLe dilemme ou le choix inattendu : {DILEMME_OU_CHOIX}\nQuestion ouverte pour la communauté : {QUESTION_OUVERTE}\n\nTexte brut publiable. Pas de markdown. Pas de hashtags."
+}

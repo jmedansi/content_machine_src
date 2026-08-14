@@ -1,0 +1,109 @@
+{
+  "sectors": [
+    "immobilier",
+    "e-commerce",
+    "restauration et hôtellerie",
+    "santé et cliniques privées",
+    "cabinet comptable et juridique",
+    "agence de recrutement",
+    "retail et commerce de détail",
+    "logistique et transport",
+    "formation et coaching en ligne",
+    "finance et assurance",
+    "communication et marketing",
+    "architecture et BTP"
+  ],
+
+  "problems": [
+    "trop de temps perdu sur des tâches répétitives",
+    "difficulté à trouver des clients régulièrement",
+    "site web qui ne convertit pas",
+    "mauvaise visibilité sur Google",
+    "support client chronophage et coûteux",
+    "prospection commerciale inefficace",
+    "absence d'automatisation dans les processus",
+    "difficulté à scaler sans recruter",
+    "présence digitale inexistante ou obsolète",
+    "gestion manuelle des leads et relances"
+  ],
+
+  "formats": [
+    {
+      "id": "signature",
+      "jour": "Lundi",
+      "nom": "Comment je ferais X si j'étais Y",
+      "description": "Tu te mets dans la peau d'un dirigeant d'un secteur précis et tu décris concrètement le système que tu construirais avec l'IA et le digital pour résoudre son problème principal. Chaque étape est actionnable. Tu ne vends pas — tu montres.",
+      "exemples": [
+        "Comment je ferais mon support client si j'avais une clinique privée",
+        "Comment je trouverais mes clients si j'ouvrais une agence immobilière aujourd'hui",
+        "Comment je gérerais mes réservations si j'avais un restaurant"
+      ]
+    },
+    {
+      "id": "conseil",
+      "jour": "Mardi",
+      "nom": "Conseil pratique / tip actionnable",
+      "description": "Un conseil concret, simple, que le lecteur peut appliquer cette semaine. Pas de théorie. Du concret avec des outils réels, des étapes claires. Ton expertise de rédacteur web SEO + digital te donne une vraie légitimité ici.",
+      "exemples": [
+        "3 façons gratuites d'automatiser tes relances clients",
+        "Comment optimiser ta fiche Google Maps en 30 minutes",
+        "Le seul indicateur SEO qui compte vraiment pour une PME"
+      ]
+    },
+    {
+      "id": "mythe",
+      "jour": "Mercredi",
+      "nom": "Mythe vs réalité",
+      "description": "Tu prends une idée reçue très répandue chez les dirigeants de PME sur le digital ou l'IA, tu la démolis avec des arguments concrets. Ton opinion est tranchée. Ce format crée de l'engagement car les gens réagissent quand on remet en question leurs croyances.",
+      "exemples": [
+        "L'IA va remplacer les développeurs web — vrai ou faux",
+        "Un beau site suffit pour avoir des clients — mythe dangereux",
+        "Le SEO est mort avec l'IA — ce que personne ne dit vraiment"
+      ]
+    },
+    {
+      "id": "roadmap",
+      "jour": "Jeudi",
+      "nom": "Roadmap / étapes concrètes",
+      "description": "Tu guides le lecteur étape par étape pour accomplir quelque chose de précis. Format très partagé car utile. Idéal pour montrer ta maîtrise sans prétendre avoir des dizaines de clients.",
+      "exemples": [
+        "Comment créer sa présence digitale de zéro en 4 semaines",
+        "La roadmap pour automatiser son support client sans budget",
+        "Comment refondre son site web sans perdre son référencement"
+      ]
+    },
+    {
+      "id": "opinion",
+      "jour": "Vendredi",
+      "nom": "Opinion tranchée",
+      "description": "Tu prends position sur un sujet digital ou IA qui divise. Tu assumes ton point de vue, tu l'argumentes, tu n'essaies pas de plaire à tout le monde. Ce format te positionne comme quelqu'un qui a une vraie vision, pas juste un prestataire.",
+      "exemples": [
+        "Pourquoi je ne recommande plus WordPress à mes clients",
+        "Les agences web traditionnelles ont un problème existentiel",
+        "Arrêtez de payer des fortunes pour du SEO que vous ne comprenez pas"
+      ]
+    },
+    {
+      "id": "coulisses",
+      "jour": "Samedi",
+      "nom": "Coulisses / ce que je construis",
+      "description": "Tu partages ce sur quoi tu travailles en ce moment — un outil, une automatisation, un système. Tu montres le processus, les défis, les apprentissages. Ce format humanise et crée de la proximité. Les gens s'attachent à ce qu'ils voient naître.",
+      "exemples": [
+        "Je construis un système qui publie automatiquement sur LinkedIn — voici comment",
+        "J'ai passé 3h à automatiser quelque chose qui prenait 2h par semaine",
+        "Ce que j'ai appris en créant mon premier agent IA pour un client"
+      ]
+    },
+    {
+      "id": "question",
+      "jour": "Dimanche",
+      "nom": "Question ouverte / débat",
+      "description": "Tu poses une question qui divise ou qui touche une vraie douleur de ton audience. Pas de bonne ou mauvaise réponse — l'objectif est de lancer une conversation. Ce format booste l'algorithme LinkedIn grâce aux commentaires.",
+      "exemples": [
+        "Est-ce qu'une PME sans présence digitale peut encore survivre en 2026 ?",
+        "L'IA va-t-elle vraiment réduire les coûts ou créer de nouvelles dépendances ?",
+        "Préférez-vous un site rapide et simple ou beau et lent ?"
+      ]
+    }
+  ]
+}

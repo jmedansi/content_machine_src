@@ -1,0 +1,14 @@
+{
+  "nom_persona": "Défi / Challenge (JM)",
+  "display_name": "Défi / Challenge",
+  "description": "Post LinkedIn qui lance un défi à la communauté autour de l'IA",
+  "min_words": 120,
+  "max_words": 180,
+  "target_words": 150,
+  "tone": "énergique, motivant, taquin",
+  "format": "long",
+  "target_audience": "pme, direction, entrepreneurs",
+  "content_types": ["post"],
+  "call_to_action": "tag_mention",
+  "image": true
+}

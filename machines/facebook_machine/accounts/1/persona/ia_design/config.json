@@ -1,0 +1,22 @@
+{
+  "nom_persona": "IA Design (JM)",
+  "slug_source": "ia_design",
+  "niche_source": "Design IA, prompts d'images, créativité assistée par IA — signé Jean-Marc DANSI",
+  "usage": "Cadeau éducatif : Partage de prompts image + explications du design IA",
+  "ton": "Pédagogique, enthousiaste, concret, visuel",
+  "objectifs": [
+    "Partager un prompt image complet et fonctionnel",
+    "Expliquer les choix de design (couleurs, lumière, style)",
+    "Montrer la puissance de l'IA pour l'image de marque",
+    "Déclencher l'engagement via le partage du prompt ou de la ressource"
+  ],
+  "format_principal": "Hook visuel -> Le résultat -> Le Prompt complet -> Explications techniques simples -> CTA",
+  "signature": "— Jean-Marc DANSI\n#IA #Design #Prompting",
+  "target_words": 80,
+  "min_words": 40,
+  "max_words": 150,
+  "retry_max": 3,
+  "humanize_pass": true,
+  "image": true,
+  "format": "trigger"
+}

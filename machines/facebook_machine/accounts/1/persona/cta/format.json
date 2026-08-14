@@ -1,0 +1,10 @@
+{
+  "format_name": "Appel à l'Action",
+  "variables_requises": [
+    "OFFRE_OU_RESSOURCE",
+    "DOULEUR_CIBLE",
+    "PREUVE_SOCIALE",
+    "ACTION_REQUISE"
+  ],
+  "user_prompt_template": "Rédige un post Facebook direct (Appel à l'Action) pour promouvoir :\n\nL'offre ou la ressource gratuite : {OFFRE_OU_RESSOURCE}\nLa douleur qu'elle résout pour la cible : {DOULEUR_CIBLE}\nUne petite preuve sociale : {PREUVE_SOCIALE}\nL'action exacte requise (ex: Commenter 'OUI') : {ACTION_REQUISE}\n\nCourt, incisif et orienté conversion."
+}

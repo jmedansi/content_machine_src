@@ -1,0 +1,13 @@
+{
+  "name": "networker",
+  "display_name": "Networker",
+  "description": "Build relationships et Engagement LinkedIn",
+  "max_words": 500,
+  "min_words": 150,
+  "tone": "conversational",
+  "format": "engagement",
+  "target_audience": "entrepreneurs, reseau",
+  "content_types": ["post"],
+  "hashtag_recommendations": ["#Networking", "#LinkedIn", "#Connexion"],
+  "call_to_action": "comment"
+}

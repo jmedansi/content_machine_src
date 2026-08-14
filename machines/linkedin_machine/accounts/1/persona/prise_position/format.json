@@ -1,0 +1,10 @@
+{
+  "format_name": "Prise de Position",
+  "variables_requises": [
+    "IDEE_RECUE",
+    "REALITE",
+    "ARGUMENT_CLIVANT",
+    "QUESTION_OUVERTE"
+  ],
+  "user_prompt_template": "Rédige un post LinkedIn de type Prise de Position clivante sur :\n\nIdée reçue à détruire : {IDEE_RECUE}\nLa vraie réalité selon toi : {REALITE}\nArgument choc ou clivant : {ARGUMENT_CLIVANT}\nQuestion ouverte pour engager : {QUESTION_OUVERTE}\n\nTexte brut publiable. Pas de markdown. Pas de hashtags."
+}

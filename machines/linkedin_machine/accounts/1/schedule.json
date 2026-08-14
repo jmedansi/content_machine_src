@@ -1,0 +1,9 @@
+{
+  "schedule": [
+    {
+      "time": "09:00",
+      "persona": "poste_routine",
+      "type": "post"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "format_name": "Si j'étais [Métier]",
+  "variables_requises": [
+    "METIER",
+    "OBJECTIF_OU_PROBLEME",
+    "ERREUR_COMMUNE",
+    "MA_METHODE_IA",
+    "RESULTAT_ATTENDU"
+  ],
+  "user_prompt_template": "Rédige un post LinkedIn de type 'Si j'étais [Métier]' sur :\n\nMétier ciblé : {METIER}\nObjectif à atteindre ou problème à résoudre : {OBJECTIF_OU_PROBLEME}\nErreur classique de la profession : {ERREUR_COMMUNE}\nMa méthode ou solution avec l'IA : {MA_METHODE_IA}\nLe résultat ou bénéfice inattendu : {RESULTAT_ATTENDU}\n\nTexte brut publiable. Pas de markdown. Pas de hashtags."
+}

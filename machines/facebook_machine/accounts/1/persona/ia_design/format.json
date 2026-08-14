@@ -1,0 +1,10 @@
+{
+  "format_name": "IA Design",
+  "variables_requises": [
+    "OUTIL_DESIGN",
+    "TECHNIQUE_SECRETE",
+    "AVANT_APRES",
+    "IMPACT_VISUEL"
+  ],
+  "user_prompt_template": "Rédige un post Facebook (IA Design) sur :\n\nL'outil utilisé (Midjourney, Canva IA, etc.) : {OUTIL_DESIGN}\nLa technique secrète ou le prompt astucieux : {TECHNIQUE_SECRETE}\nL'évolution (Avant sans IA / Après avec IA) : {AVANT_APRES}\nL'impact sur l'image de marque : {IMPACT_VISUEL}\n\nAccent sur la beauté et la puissance visuelle de l'IA."
+}

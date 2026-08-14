@@ -1,0 +1,24 @@
+{
+  "name": "remotion-engine",
+  "version": "1.0.0",
+  "description": "High-end automated video engine for IncidenX Facebook Machine",
+  "scripts": {
+    "start": "remotion preview src/index.ts",
+    "render": "remotion render src/index.ts Reel",
+    "export": "python export_high_quality.py"
+  },
+  "dependencies": {
+    "remotion": "latest",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "lucide-react": "^0.300.0",
+    "framer-motion": "^10.0.0",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@remotion/cli": "latest",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
