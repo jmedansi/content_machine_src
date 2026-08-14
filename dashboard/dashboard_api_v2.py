@@ -1912,6 +1912,26 @@ def _get_account_settings(platform: str, account_id: int):
         conn.close()
 
 
+def _get_account_credentials(platform: str, account_id: int) -> dict:
+    """Retourne les credentials (page_id, access_token) d'un compte depuis la DB plateforme."""
+    if not account_id:
+        return {}
+    conn = _get_platform_db(platform)
+    if not conn:
+        return {}
+    try:
+        cursor = conn.execute("SELECT credentials FROM accounts WHERE id=?", (account_id,))
+        acc = cursor.fetchone()
+        if not acc or not acc["credentials"]:
+            return {}
+        try:
+            return json.loads(acc["credentials"])
+        except Exception:
+            return {}
+    finally:
+        conn.close()
+
+
 def _get_publisher(platform: str):
     """Retourne la fonction de publication pour la plateforme."""
     logger.info(f"[_get_publisher] Loading publisher for platform: {platform}")
@@ -3790,22 +3810,171 @@ async def api_token_refresh(req: Request):
 
 
 @router.get("/analytics")
-async def api_analytics():
-    """Mock endpoint for analytics to prevent 404."""
-    total = 0
-    for platform, db_path in PLATFORM_DB.items():
-        if Path(db_path).exists():
-            import sqlite3
-            conn = sqlite3.connect(db_path)
-            cursor = conn.execute("SELECT COUNT(*) FROM posts")
-            total += cursor.fetchone()[0]
-            conn.close()
-    return {"success": True, "total": total, "avg_words": 150, "by_persona": [], "compliance": {"green": 0, "yellow": 0, "red": 0}}
+async def api_analytics(request: Request):
+    """Statistiques réelles des posts générés, selon platform + account_id.
+
+    Source : meta.json des dossiers content (données réelles, pas de mock).
+    """
+    platform = request.query_params.get("platform", "facebook")
+    account_id = request.query_params.get("account_id")
+    try:
+        from agents.analytics.agent import analyze_content, list_posts
+    except Exception as e:
+        logger.exception(f"[analytics] import agent échoué: {e}")
+        return {"success": True, "total": 0, "avg_words": 0, "by_persona": [], "compliance": {"green": 0, "yellow": 0, "red": 0}}
+
+    target_dir = _get_content_dir(platform, int(account_id) if account_id and account_id.isdigit() else None)
+    try:
+        stats = analyze_content(target_dir)
+    except Exception as e:
+        logger.exception(f"[analytics] analyze_content échoué: {e}")
+        stats = {}
+
+    posts = []
+    try:
+        posts = list_posts(target_dir, published_only=False)
+    except Exception as e:
+        logger.warning(f"[analytics] list_posts échoué: {e}")
+
+    compliance = {
+        "green": int(stats.get("compliance", {}).get("green", 0)),
+        "yellow": int(stats.get("compliance", {}).get("yellow", 0)),
+        "red": int(stats.get("compliance", {}).get("red", 0)),
+    }
+
+    return {
+        "success": True,
+        "total": int(stats.get("total", 0)),
+        "published": int(stats.get("published", 0)),
+        "unpublished": int(stats.get("unpublished", 0)),
+        "avg_words": int(stats.get("avg_word_count", 0)),
+        "by_persona": [
+            {"persona": k, "count": int(v)}
+            for k, v in sorted(stats.get("by_persona", {}).items(), key=lambda x: -x[1])
+        ],
+        "by_type": [
+            {"type": k, "count": int(v)}
+            for k, v in sorted(stats.get("by_type", {}).items(), key=lambda x: -x[1])
+        ],
+        "with_images": int(stats.get("with_images", 0)),
+        "with_reels": int(stats.get("with_reels", 0)),
+        "with_resources": int(stats.get("with_resources", 0)),
+        "compliance": compliance,
+        "post_count": len(posts),
+    }
+
+_INSIGHTS_CACHE_FILE = Path(__file__).resolve().parent.parent / "data" / "engagement_cache.json"
+_INSIGHTS_CACHE_TTL = 3600  # 1h
+
+
+def _load_insights_cache() -> dict:
+    try:
+        if _INSIGHTS_CACHE_FILE.exists():
+            return json.loads(_INSIGHTS_CACHE_FILE.read_text(encoding="utf-8"))
+    except Exception as e:
+        logger.warning(f"[insights] cache illisible: {e}")
+    return {}
+
+
+def _save_insights_cache(data: dict):
+    try:
+        _INSIGHTS_CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+        _INSIGHTS_CACHE_FILE.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    except Exception as e:
+        logger.warning(f"[insights] cache non sauvegardé: {e}")
+
 
 @router.get("/facebook/insights")
-async def api_facebook_insights():
-    """Mock endpoint for facebook insights to prevent 404."""
-    return {"success": True, "total_likes": 0, "total_comments": 0, "posts": []}
+async def api_facebook_insights(request: Request):
+    """Engagement réel des posts publiés (Graph API) avec cache 1h.
+
+    Source : post_id + access_token du compte → GET /{post_id}?fields=reactions.summary(true),comments.summary(true),shares.
+    Cache : data/engagement_cache.json (évite les appels répétés).
+    """
+    account_id = request.query_params.get("account_id")
+    try:
+        from agents.analytics.agent import list_posts
+    except Exception as e:
+        logger.exception(f"[insights] import agent échoué: {e}")
+        return {"success": True, "total_likes": 0, "total_comments": 0, "posts": []}
+
+    target_dir = _get_content_dir("facebook", int(account_id) if account_id and account_id.isdigit() else None)
+    try:
+        posts = list_posts(target_dir, published_only=True)
+    except Exception as e:
+        logger.warning(f"[insights] list_posts échoué: {e}")
+        posts = []
+
+    # Pas de post publié → rien à mesurer
+    if not posts:
+        return {"success": True, "total_likes": 0, "total_comments": 0, "posts": [], "message": "Aucun post publié"}
+
+    # Récupérer le token du compte pour les appels Graph (depuis la DB plateforme)
+    token = ""
+    page_id = ""
+    creds = _get_account_credentials("facebook", int(account_id) if account_id and account_id.isdigit() else None)
+    if creds:
+        token = creds.get("access_token", "")
+        page_id = str(creds.get("page_id", ""))
+
+    cache = _load_insights_cache()
+    now = int(__import__("time").time())
+    results = []
+    total_likes, total_comments = 0, 0
+
+    import requests as _requests
+
+    for p in posts:
+        pid = p.get("post_id", "")
+        if not pid:
+            results.append({**p, "likes": 0, "comments": 0, "shares": 0})
+            continue
+        # Normaliser : si pas de "page_post", préfixer par le page_id du compte
+        if "_" not in pid and page_id:
+            graph_id = f"{page_id}_{pid}"
+        else:
+            graph_id = pid
+        cached = cache.get(graph_id)
+        if cached and now - cached.get("ts", 0) < _INSIGHTS_CACHE_TTL:
+            metrics = cached.get("metrics", {"likes": 0, "comments": 0, "shares": 0})
+        else:
+            metrics = {"likes": 0, "comments": 0, "shares": 0}
+            if token:
+                try:
+                    url = f"https://graph.facebook.com/v18.0/{graph_id}"
+                    resp = _requests.get(url, params={
+                        "fields": "reactions.summary(true),comments.summary(true),shares",
+                        "access_token": token,
+                    }, timeout=12)
+                    if resp.status_code == 200:
+                        j = resp.json()
+                        reactions = (j.get("reactions") or {}).get("summary", {})
+                        comments = (j.get("comments") or {}).get("summary", {})
+                        metrics = {
+                            "likes": int(reactions.get("total_count", 0)),
+                            "comments": int(comments.get("total_count", 0)),
+                            "shares": int((j.get("shares") or {}).get("count", 0)),
+                        }
+                    elif resp.status_code == 400 and "access token" in resp.text.lower():
+                        token = ""  # token invalide → on s'arrête, on garde le cache
+                except Exception as e:
+                    logger.warning(f"[insights] erreur post {pid}: {e}")
+            # Cache même les échecs (TTL court) pour éviter les appels répétés
+            cache[graph_id] = {"ts": now, "metrics": metrics}
+        results.append({**p, "likes": metrics["likes"], "comments": metrics["comments"], "shares": metrics["shares"]})
+        total_likes += metrics["likes"]
+        total_comments += metrics["comments"]
+
+    _save_insights_cache(cache)
+
+    return {
+        "success": True,
+        "total_likes": total_likes,
+        "total_comments": total_comments,
+        "posts": results,
+        "account_id": account_id,
+        "page_id": page_id,
+    }
 
 @router.get("/logs")
 async def api_logs(since: int = 0):
