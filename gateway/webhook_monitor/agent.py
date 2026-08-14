@@ -90,19 +90,21 @@ templates_v5 = Jinja2Templates(directory=str(_DASHBOARD / "templates"))
 async def serve_dashboard(request: Request):
     user_id = request.session.get("user_id")
     is_admin = _is_admin(user_id) if user_id else False
+    branding = load_settings().get("branding", {})
     return templates_v5.TemplateResponse(
         name="views/dashboard_v5.html",
         request=request,
-        context={"request": request, "admin_token": _ADMIN_TOKEN, "is_admin": is_admin}
+        context={"request": request, "admin_token": _ADMIN_TOKEN, "is_admin": is_admin, "branding": branding}
     )
 
 # Ancien V5 (backup - depreciated)
 @app.get("/dashboard-v5", response_class=HTMLResponse, tags=["dashboard"])
 async def serve_dashboard_v5(request: Request):
+    branding = load_settings().get("branding", {})
     return templates_v5.TemplateResponse(
         name="views/dashboard_v5.html", 
         request=request, 
-        context={"request": request}
+        context={"request": request, "branding": branding}
     )
 
 # Inclure toutes les routes /api/* du dashboard
@@ -930,11 +932,13 @@ def _init_users_table():
 
 
 @app.get("/login", tags=["auth"])
-async def login_page():
-    login_path = ROOT_DIR / "dashboard" / "templates" / "login.html"
-    if login_path.exists():
-        return HTMLResponse(content=login_path.read_text(encoding="utf-8"))
-    return HTMLResponse(content="<h1>Login page not found</h1>", status_code=404)
+async def login_page(request: Request):
+    branding = load_settings().get("branding", {})
+    return templates_v5.TemplateResponse(
+        name="login.html",
+        request=request,
+        context={"request": request, "branding": branding}
+    )
 
 
 @app.post("/api/auth/login", tags=["auth"])
@@ -1520,6 +1524,7 @@ DEFAULT_SETTINGS = {
     "polling_interval_seconds": 600,
     "dm_polling_interval_seconds": 300,
     "default_llm_model": "llama-3.3-70b-versatile",
+    "branding": {"name": "IncidenX", "logo_url": "", "primary_color": "#0ea5e9", "accent_color": "#0284c7"},
 }
 
 def load_settings():

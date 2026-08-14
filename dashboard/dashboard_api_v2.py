@@ -3998,6 +3998,33 @@ async def api_set_client_accounts(client_id: int, req: Request):
         db.close()
 
 
+@router.post("/branding/logo")
+async def api_upload_branding_logo(file: UploadFile = File(...)):
+    """Upload du logo de marque → sauvegardé dans icons/brand_logo.png, servi sur /icons/."""
+    try:
+        content = await file.read()
+        if not content:
+            return JSONResponse({"success": False, "error": "Fichier vide"}, status_code=400)
+        if file.content_type and not file.content_type.startswith("image/"):
+            return JSONResponse({"success": False, "error": "Format non image"}, status_code=400)
+        icons_dir = BASE_DIR / "icons"
+        icons_dir.mkdir(parents=True, exist_ok=True)
+        dest = icons_dir / "brand_logo.png"
+        dest.write_bytes(content)
+        logger.info(f"[branding] Logo sauvegardé: {dest} ({len(content)} octets)")
+        # Persister logo_url dans settings.json
+        from webhook_monitor.agent import load_settings, save_settings
+        settings = load_settings()
+        branding = dict(settings.get("branding") or {})
+        branding["logo_url"] = "/icons/brand_logo.png"
+        settings["branding"] = branding
+        save_settings(settings)
+        return {"success": True, "logo_url": "/icons/brand_logo.png"}
+    except Exception as e:
+        logger.exception(f"[branding] Erreur upload logo: {e}")
+        return JSONResponse({"success": False, "error": f"Erreur upload: {e}"}, status_code=500)
+
+
 @router.post("/linkedin/update_token")
 async def api_update_linkedin_token(req: Request):
     """Met à jour le token LinkedIn dans la DB et le .env."""
