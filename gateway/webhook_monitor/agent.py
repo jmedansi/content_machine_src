@@ -1873,7 +1873,11 @@ def _is_ai_response_enabled_for_post(post_id):
 
 
 def generate_ai_response(comment_text, post_id, user_name="quelqu'un"):
-    """Génère une réponse IA personnalisée au commentaire."""
+    """Génère une réponse IA personnalisée au commentaire.
+
+    Utilise le routeur LLM unifié (core.llm_router.call_llm) : Ollama en
+    priorité, fallback en cascade sur le modèle par défaut puis Groq.
+    """
     post_info = get_post_info(post_id)
     
     if not post_info:
@@ -1892,29 +1896,30 @@ def generate_ai_response(comment_text, post_id, user_name="quelqu'un"):
     }
     
     system = system_prompts.get(persona, system_prompts["expert_ia"])
-    system += f"\n\nTu répond à un commentaire sur un post Facebook de ta propre page. Le commentaire est de {user_name}. "
+    system += f"\n\nTu réponds à un commentaire sur un post Facebook de ta propre page. Le commentaire est de {user_name}. "
     system += "Sois naturel, concis (1-3 phrases), et engageant. "
-    system += "Si le commentaire pose une question, réponse directement. "
+    system += "Si le commentaire pose une question, réponds directement. "
     system += "Si c'est un compliment, remercie avec sincérité. "
-    system += "Si c'est une critique constructive, ackknowledge et propose des pistes. "
-    system += "Ne soit pas trop formel - le ton est celui des réseaux sociaux."
+    system += "Si c'est une critique constructive, acknowledge et propose des pistes. "
+    system += "Ne sois pas trop formel - le ton est celui des réseaux sociaux."
     
     user_prompt = f"Post original:\n{post_text}\n\nCommentaire auquel répondre:\n{comment_text}\n\nTa réponse (en français, 1-3 phrases max):"
     
     try:
-        response = requests.post(
-            f"{OLLAMA_URL}/api/generate",
-            json={
-                "model": "deepseek-v3.2:cloud",
-                "system": system,
-                "prompt": user_prompt,
-                "stream": False,
-                "options": {"num_predict": 300, "temperature": 0.7}
-            },
-            timeout=60
+        from core.llm_router import call_llm
+        # Groq en priorité (fiable, clé configurée). Fallback cascade auto :
+        # modèle par défaut puis Ollama local, si Groq échoue.
+        text, metadata = call_llm(
+            system,
+            user_prompt,
+            model="groq/llama-3.3-70b-versatile",
+            temperature=0.7,
+            max_tokens=300,
+            fallback=True,
         )
-        if response.status_code == 200:
-            return response.json().get("response", "").strip()
+        if text and str(text).strip():
+            logger.info(f"[AI] Réponse générée via {metadata.get('provider')}/{metadata.get('model')}")
+            return str(text).strip()
     except Exception as e:
         logger.error(f"Erreur génération IA: {e}")
     return None
