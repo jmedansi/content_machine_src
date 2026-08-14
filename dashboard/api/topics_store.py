@@ -60,6 +60,15 @@ def _update_index_entry(topic_id: str, entry: Dict) -> None:
     _save_index(idx)
 
 
+def _update_index_entries(entries: Dict[str, Dict]) -> None:
+    """Batch update several index entries in a single read/write (avoids O(n²) I/O)."""
+    if not entries:
+        return
+    idx = _load_index()
+    idx.update(entries)
+    _save_index(idx)
+
+
 def _remove_index_entry(topic_id: str) -> None:
     idx = _load_index()
     if topic_id in idx:
@@ -169,6 +178,8 @@ def list_topics(platform: str, account_id: int, filters: Dict = None) -> List[Di
     file_data = load_topics_file(fpath)
 
     out = []
+    stale = {}
+    idx = _load_index()
     for t in file_data.get("topics", []):
         tid = t.get("id") or str(uuid.uuid4())
         if "id" not in t:
@@ -189,7 +200,13 @@ def list_topics(platform: str, account_id: int, filters: Dict = None) -> List[Di
             "raw": t,
         }
         out.append(normalized)
-        _update_index_entry(tid, {"platform": platform, "account_id": account_id, "source": str(fpath)})
+        entry = {"platform": platform, "account_id": account_id, "source": str(fpath)}
+        if idx.get(tid) != entry:
+            stale[tid] = entry
+
+    # Reconstruire l'index en un seul écriture (si des entrées sont manquantes/obsolètes)
+    if stale:
+        _update_index_entries(stale)
 
     return out
 
@@ -369,7 +386,9 @@ def import_topics(topics_list: List[Dict], platform: str, account_id: int, mode:
 
     save_topics_file(fpath, file_data)
 
-    for t in file_data["topics"]:
-        _update_index_entry(t["id"], {"platform": platform, "account_id": account_id, "source": str(fpath)})
+    _update_index_entries({
+        t["id"]: {"platform": platform, "account_id": account_id, "source": str(fpath)}
+        for t in file_data["topics"]
+    })
 
     return {"imported": imported, "warnings": warnings, "total": len(file_data["topics"])}
