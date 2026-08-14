@@ -120,6 +120,46 @@ def _resolve_folder(platform: str, account_id, content_id: str, date: str, perso
     return Config.CONTENT_DIR / f"{date}_{persona}"
 
 
+def _post_exists_for(platform: str, account_id, date: str, persona: str) -> bool:
+    """Anti-doublon : vérifie si un post existe déjà pour (date, persona) sur ce compte.
+
+    Les dossiers sont nommés par UUID (content_id), donc on scanne les meta.json
+    pour retrouver un post planifié pour la date/persona donnée qui n'est pas encore
+    publié (on saute aussi les posts déjà publiés).
+    """
+    try:
+        base_dir = PLATFORM_BASES.get(platform, Config.BASE_DIR)
+        if account_id:
+            content_dir = base_dir / "accounts" / str(account_id) / "content"
+        else:
+            content_dir = base_dir / "content"
+        if not content_dir.exists():
+            return False
+
+        date_prefix = (date or "")[:10]
+        for folder in content_dir.iterdir():
+            if not folder.is_dir() or folder.name.startswith("_"):
+                continue
+            meta_file = folder / "meta.json"
+            if not meta_file.exists():
+                continue
+            try:
+                meta = json.loads(meta_file.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            if meta.get("published", False):
+                continue
+            if meta.get("persona", "") != persona:
+                continue
+            sched = meta.get("scheduled_time", "") or meta.get("date_prevue", "")
+            sched_date = str(sched)[:10] if sched else ""
+            if sched_date == date_prefix:
+                return True
+    except Exception as e:
+        logger.warning(f"Erreur anti-doublon pour {platform}/{account_id}: {e}")
+    return False
+
+
 def _run_publisher(platform: str, folder_path, account_id=None):
     """Route vers le bon publisher selon la plateforme."""
     if platform == "linkedin":
@@ -398,6 +438,11 @@ def _run_pipeline_for_account(account_id, platform: str, post_type: str, publish
 
     if post_type == "all" or not post_type:
         for idx, p in enumerate(posts):
+            p_persona = p.get("persona", "")
+            p_date = (p.get("date") or p.get("date_prevue") or date or "")[:10]
+            if _post_exists_for(platform, account_id, p_date, p_persona):
+                logger.info(f"[ANTI-DOUBLON] Post déjà généré pour {p_date} / {p_persona} — skip.")
+                continue
             res = process_single_post(p, date, publish, task_id, idx + 1, total_items, account_id, platform)
             if res.success:
                 generated_folders.append(res.data.get("folder"))

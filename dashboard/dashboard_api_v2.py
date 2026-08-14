@@ -2838,6 +2838,13 @@ async def api_generate_posts_from_validated(req: Request):
         all_topics = topics_store.list_topics(platform, account_id)
         validated = [t for t in all_topics if t.get("validated") and not (t.get("raw") or {}).get("used")]
 
+        # Trier par date croissante (les sujets sans date passent en dernier)
+        def _sort_key(t):
+            raw = t.get("raw") or {}
+            d = t.get("date") or raw.get("date") or (raw.get("date_prevue") or "")[:10] or ""
+            return (1 if not d else 0, d or "", t.get("topic") or "")
+        validated.sort(key=_sort_key)
+
         if not validated:
             return {"success": True, "count": 0, "message": "Aucun sujet validé en attente de génération."}
 
@@ -3884,10 +3891,16 @@ async def startup_event():
                     from agents.scheduler.agent import run_pipeline
                     from core.notifier import notify_batch_completed
                     
+                    # Générer pour le LENDEMAIN (J+1) : les posts d'actualité sont rédigés la veille
+                    # et passent par Validation le matin, puis publication auto à l'heure planifiée.
+                    from datetime import timedelta
+                    target_date = (now + timedelta(days=1)).strftime("%Y-%m-%d")
+                    logger.info(f"Batch auto-generate : génération pour le {target_date}")
+                    
                     # Exécuter le pipeline (non-bloquant via asyncio si possible, mais ici on est dans un thread séparé de facto)
                     # Pour éviter de bloquer, on peut utiliser loop.run_in_executor
                     loop = asyncio.get_event_loop()
-                    res = await loop.run_in_executor(None, run_pipeline, "all", False)
+                    res = await loop.run_in_executor(None, run_pipeline, "all", False, target_date)
                     
                     if res.success:
                         total = res.data.get("total", 7)
