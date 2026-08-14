@@ -3883,6 +3883,25 @@ async def api_get_clients():
         db.close()
 
 
+@router.get("/clients/accounts-all")
+async def api_get_clients_accounts_all():
+    """Liste tous les comptes disponibles (toutes plateformes) pour l'affectation aux clients."""
+    return {"success": True, "accounts": _all_accounts_by_id()}
+
+
+@router.get("/clients/{client_id}")
+async def api_get_client(client_id: int):
+    """Retourne un client par id."""
+    db, Client = _db_client_session()
+    try:
+        c = db.query(Client).filter(Client.id == client_id).first()
+        if not c:
+            return JSONResponse({"success": False, "error": "Client introuvable"}, status_code=404)
+        return {"success": True, "client": _client_to_dict(c)}
+    finally:
+        db.close()
+
+
 @router.post("/clients")
 async def api_create_client(req: Request):
     body = await req.json()
