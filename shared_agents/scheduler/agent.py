@@ -34,6 +34,81 @@ PLATFORM_BASES = {
     "instagram": Path("d:/Content_Machine/machines/facebook_machine"),
 }
 
+_PLATFORM_DB = {
+    "facebook": Path("d:/Content_Machine/machines/facebook_machine/data/leads_station.db"),
+    "linkedin": Path("d:/Content_Machine/machines/linkedin_machine/data/leads_station.db"),
+    "twitter": Path("d:/Content_Machine/machines/twitter_machine/data/leads_station.db"),
+    "instagram": Path("d:/Content_Machine/machines/facebook_machine/data/leads_station.db"),
+}
+
+
+def _upsert_post_db(platform: str, account_id, folder: Path, meta: dict, status: str = None):
+    """Insère ou met à jour le post dans la DB du dashboard (leads_station.db, table posts).
+
+    C'est LA source de vérité lue par /api/pending et l'onglet Validation.
+    """
+    try:
+        db_path = _PLATFORM_DB.get(platform)
+        if not db_path or not db_path.parent.exists():
+            return
+        status = status or meta.get("status", "pending")
+        folder_name = folder.name
+        text_file = None
+        for name in ("facebook_post.txt", "linkedin_post.txt", "twitter_post.txt", "post.txt", "content.txt"):
+            candidate = folder / name
+            if candidate.exists():
+                text_file = candidate
+                break
+        content = text_file.read_text(encoding="utf-8", errors="replace") if text_file else ""
+        conn = sqlite3.connect(str(db_path))
+        cur = conn.cursor()
+        cur.execute(
+            "SELECT id FROM posts WHERE account_id=? AND folder_name=?",
+            (account_id, folder_name),
+        )
+        row = cur.fetchone()
+        if row:
+            cur.execute(
+                """UPDATE posts SET persona=?, topic=?, status=?, published=?, scheduled_time=?,
+                       content_text=?, has_image=?, has_reel=?, updated_at=CURRENT_TIMESTAMP
+                   WHERE account_id=? AND folder_name=?""",
+                (
+                    meta.get("persona", ""),
+                    meta.get("topic", ""),
+                    status,
+                    1 if meta.get("published", False) else 0,
+                    meta.get("scheduled_time", ""),
+                    content,
+                    1 if meta.get("has_image", False) else 0,
+                    1 if meta.get("has_reel", False) else 0,
+                    account_id,
+                    folder_name,
+                ),
+            )
+        else:
+            cur.execute(
+                """INSERT INTO posts (account_id, folder_name, persona, topic, status, published,
+                       scheduled_time, content_text, has_image, has_reel, created_at)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (
+                    account_id,
+                    folder_name,
+                    meta.get("persona", ""),
+                    meta.get("topic", ""),
+                    status,
+                    1 if meta.get("published", False) else 0,
+                    meta.get("scheduled_time", ""),
+                    content,
+                    1 if meta.get("has_image", False) else 0,
+                    1 if meta.get("has_reel", False) else 0,
+                    datetime.now().isoformat(),
+                ),
+            )
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        logger.warning(f"Erreur upsert post DB ({platform}/{account_id}): {e}")
+
 
 def _make_bar(current: int, total: int, width: int = 30) -> str:
     filled = int(width * current / total) if total > 0 else 0
@@ -266,7 +341,7 @@ def process_single_post(plan_entry: dict, date: str, publish: bool, task_id: str
             "platform": platform,
             "persona": persona,
             "topic": plan_entry.get("topic") or plan_entry.get("sujet", ""),
-            "status": "written",
+            "status": "pending",
             "created_at": datetime.now().isoformat(),
             "folder_path": str(folder_path),
             "scheduled_time": plan_entry.get("scheduled_time", "")
@@ -275,15 +350,7 @@ def process_single_post(plan_entry: dict, date: str, publish: bool, task_id: str
         atomic_write_json(folder_path / "meta.json", meta_data)
 
         if account_id:
-            try:
-                from lib.db_utils import init_db, insert_content
-                db_path = Path("d:/Content_Machine/data/content_machine.db")
-                conn = init_db(str(db_path))
-                insert_content(conn, content_id, account_id, platform, "folder",
-                               str(folder_path), meta_data, "written")
-                conn.close()
-            except Exception as e:
-                logger.error(f"Error saving content DB: {e}")
+            _upsert_post_db(platform, account_id, folder_path, meta_data, "pending")
 
     _update_progress(task_id, current, total, f"[INIT] {persona}", "Analyse du persona...")
 
@@ -352,20 +419,6 @@ def process_reel(reel_entry: dict, date: str, publish: bool, task_id: str = None
     folder_path = _resolve_folder(platform, account_id, content_id, date, persona)
     folder_path.mkdir(parents=True, exist_ok=True)
 
-    if account_id:
-        try:
-            from core.db import SessionLocal, Post
-            db = SessionLocal()
-            folder_name = folder_path.name
-            if not db.query(Post).filter(Post.folder_name == folder_name).first():
-                post = Post(account_id=account_id, folder_name=folder_name, persona=persona,
-                            topic=reel_entry.get("topic") or reel_entry.get("sujet", ""), status="pending", has_reel=True)
-                db.add(post)
-                db.commit()
-            db.close()
-        except Exception as e:
-            logger.error(f"Error saving Post DB: {e}")
-
     _update_progress(task_id, current, total, f"[REEL] {persona}", "Génération vidéo...")
 
     brief_content = f"SUJET: {reel_entry.get('topic') or reel_entry.get('sujet', '')}\nPERSONA: {persona}\nCONTEXT: {reel_entry.get('context', '')}"
@@ -382,7 +435,9 @@ def process_reel(reel_entry: dict, date: str, publish: bool, task_id: str = None
         "has_reel": True,
         "published": False,
     }
-    (folder_path / "metadata.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
+    (folder_path / "meta.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
+    if account_id:
+        _upsert_post_db(platform, account_id, folder_path, meta, "pending")
 
     from shared_agents.video_maker.agent import run_video_maker
 
@@ -390,7 +445,9 @@ def process_reel(reel_entry: dict, date: str, publish: bool, task_id: str = None
     if not reel_res.success:
         logger.error(f"Echec Reel Maker pour {folder_path.name}: {getattr(reel_res, 'error_cause', 'Erreur')}")
         meta["image_failed"] = True
-        (folder_path / "metadata.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
+        (folder_path / "meta.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
+        if account_id:
+            _upsert_post_db(platform, account_id, folder_path, meta, "pending")
         return reel_res
 
     logger.info(f"Reel Maker terminé pour {folder_path.name}.")

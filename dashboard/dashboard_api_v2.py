@@ -232,8 +232,13 @@ def _save_planned_topics(topics: dict, platform: str = "facebook", account_id: i
     f.write_text(json.dumps(topics, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def _get_daily_plan_file(date: str, account_id: int = None) -> Path:
-    plans_dir = Config.CONTENT_DIR / 'plans'
+def _get_daily_plan_file(date: str, account_id: int = None, platform: str = "facebook") -> Path:
+    # Unifié avec shared_agents/topic_finder : machines/{platform}_machine/accounts/{id}/content/plans/
+    base = PLATFORM_BASE.get(platform, Path("d:/Content_Machine/machines/facebook_machine"))
+    if account_id:
+        plans_dir = base / "accounts" / str(account_id) / "content" / "plans"
+    else:
+        plans_dir = base / "content" / "plans"
     plans_dir.mkdir(parents=True, exist_ok=True)
     prefix = f"{account_id}_" if account_id else ''
     return plans_dir / f"{date}_{prefix}plan.json"
@@ -355,6 +360,18 @@ def _sync_folders_to_db(platform: str, account_id: int):
             if not folder.is_dir() or folder.name.startswith("_"): continue
             
             meta = _read_post(folder)
+            # Posts "generating" orphelins (génération interrompue) → draft après 24h
+            if meta.get("status") == "generating":
+                created = meta.get("created_at") or ""
+                try:
+                    created_dt = datetime.fromisoformat(str(created).replace("Z", "+00:00"))
+                    if created_dt.tzinfo is not None:
+                        created_dt = created_dt.replace(tzinfo=None)
+                except Exception:
+                    created_dt = None
+                if created_dt is None or (datetime.now() - created_dt).total_seconds() > 86400:
+                    meta["status"] = "draft"
+                    _save_meta(folder, {"status": "draft"})
             cursor = conn.execute("SELECT id FROM posts WHERE account_id=? AND folder_name=?", (account_id, folder.name))
             post = cursor.fetchone()
             
@@ -2605,7 +2622,7 @@ async def api_get_daily_plan(request: Request):
         return {"success": True, "plan": None, "date": "", "error": "Accès non autorisé à ce compte"}
 
     date = request.query_params.get("date") or datetime.now().strftime("%Y-%m-%d")
-    plan_file = _get_daily_plan_file(date, account_id)
+    plan_file = _get_daily_plan_file(date, account_id, platform)
     if plan_file.exists():
         try:
             return {"success": True, "plan": json.loads(plan_file.read_text(encoding="utf-8")), "date": date}
