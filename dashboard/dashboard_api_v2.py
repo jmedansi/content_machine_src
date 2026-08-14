@@ -896,7 +896,15 @@ async def api_update_post(req: Request):
     content = body.get("content")
     target_dir = _get_content_dir(platform, account_id)
     folder = _safe_folder(target_dir, folder_name)
-    
+
+    if not folder.exists():
+        # Fallback : résoudre l'account via la table posts (folder_name) puis re-tenter
+        resolved = _resolve_folder_account(platform, folder_name)
+        if resolved:
+            account_id = resolved.get("account_id")
+            target_dir = _get_content_dir(platform, account_id)
+            folder = _safe_folder(target_dir, folder_name)
+
     if folder.exists():
         if content is not None:
             text_file = _find_file(folder, _TEXT_FILES) or (folder / "post_text.txt")
@@ -1891,6 +1899,25 @@ def _get_platform_db(platform: str):
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
     return conn
+
+
+def _resolve_folder_account(platform: str, folder_name: str) -> dict:
+    """Retrouve l'account d'un folder via la table posts de la plateforme."""
+    if not folder_name:
+        return {}
+    conn = _get_platform_db(platform)
+    if not conn:
+        return {}
+    try:
+        cursor = conn.execute("SELECT account_id FROM posts WHERE folder_name=?", (folder_name,))
+        row = cursor.fetchone()
+        if row and row["account_id"]:
+            return {"account_id": str(row["account_id"])}
+    except Exception:
+        pass
+    finally:
+        conn.close()
+    return {}
 
 
 def _get_account_settings(platform: str, account_id: int):
