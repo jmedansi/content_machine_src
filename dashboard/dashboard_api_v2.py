@@ -47,6 +47,9 @@ import uuid
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import Optional
+import csv
+import io
+from datetime import datetime, date
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parent
@@ -4002,6 +4005,172 @@ async def api_facebook_insights(request: Request):
         "account_id": account_id,
         "page_id": page_id,
     }
+
+
+@router.get("/report/export")
+async def api_report_export(request: Request):
+    """Exporte un rapport client (CSV ou PDF) pour la période + compte choisis."""
+    platform = request.query_params.get("platform", "facebook")
+    account_id = request.query_params.get("account_id")
+    fmt = (request.query_params.get("format", "csv") or "csv").lower()
+    from_str = request.query_params.get("from", "")
+    to_str = request.query_params.get("to", "")
+
+    try:
+        from agents.analytics.agent import analyze_content, list_posts
+    except Exception as e:
+        logger.exception(f"[report] import agent échoué: {e}")
+        return JSONResponse({"success": False, "error": "Agent analytics indisponible"}, status_code=500)
+
+    target_dir = _get_content_dir(platform, int(account_id) if account_id and account_id.isdigit() else None)
+    try:
+        stats = analyze_content(target_dir)
+        posts = list_posts(target_dir, published_only=True)
+    except Exception as e:
+        logger.warning(f"[report] analyse échouée: {e}")
+        stats, posts = {}, []
+
+    # Période
+    def _in_period(p):
+        if not from_str and not to_str:
+            return True
+        pd = (p.get("published_at") or p.get("created_at") or "")[:10]
+        if not pd:
+            return True
+        if from_str and pd < from_str:
+            return False
+        if to_str and pd > to_str:
+            return False
+        return True
+
+    filtered = [p for p in posts if _in_period(p)]
+
+    # Enrichir avec l'engagement en cache (éviter les appels API graphiques)
+    cache = _load_insights_cache()
+    for p in filtered:
+        pid = p.get("post_id", "")
+        if not pid:
+            p["likes"], p["comments"], p["shares"] = 0, 0, 0
+            continue
+        creds = _get_account_credentials("facebook", int(account_id) if account_id and account_id.isdigit() else None)
+        page_id = str(creds.get("page_id", "")) if creds else ""
+        gid = f"{page_id}_{pid}" if ("_" not in pid and page_id) else pid
+        m = (cache.get(gid) or {}).get("metrics", {})
+        p["likes"] = int(m.get("likes", 0))
+        p["comments"] = int(m.get("comments", 0))
+        p["shares"] = int(m.get("shares", 0))
+
+    total_likes = sum(p.get("likes", 0) for p in filtered)
+    total_comments = sum(p.get("comments", 0) for p in filtered)
+
+    acc_label = account_id or "—"
+    generated_at = datetime.now().strftime("%Y-%m-%d %H:%M")
+
+    if fmt == "csv":
+        buf = io.StringIO()
+        writer = csv.writer(buf)
+        writer.writerow(["Rapport Content Machine", platform.upper(), "Compte", acc_label])
+        writer.writerow(["Généré le", generated_at, "Période", f"{from_str or 'début'} → {to_str or 'auj.'}"])
+        writer.writerow([])
+        writer.writerow(["KPIs", "Valeur"])
+        writer.writerow(["Posts publiés (période)", len(filtered)])
+        writer.writerow(["Total posts", int(stats.get("total", 0))])
+        writer.writerow(["Likes (période)", total_likes])
+        writer.writerow(["Commentaires (période)", total_comments])
+        writer.writerow(["Mots moyens", int(stats.get("avg_word_count", 0))])
+        writer.writerow(["Avec image", int(stats.get("with_images", 0))])
+        writer.writerow(["Avec reel", int(stats.get("with_reels", 0))])
+        writer.writerow(["Conforme", int(stats.get("compliance", {}).get("green", 0))])
+        writer.writerow(["Acceptable", int(stats.get("compliance", {}).get("yellow", 0))])
+        writer.writerow(["Non conforme", int(stats.get("compliance", {}).get("red", 0))])
+        writer.writerow([])
+        writer.writerow(["Date", "Persona", "Message", "Likes", "Commentaires", "Partages"])
+        for p in filtered:
+            writer.writerow([
+                p.get("date", ""),
+                p.get("persona", ""),
+                (p.get("message", "") or "").replace("\n", " ")[:120],
+                p.get("likes", 0),
+                p.get("comments", 0),
+                p.get("shares", 0),
+            ])
+        filename = f"rapport_{platform}_{acc_label}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+        data = buf.getvalue().encode("utf-8-sig")
+        headers = {"Content-Disposition": f'attachment; filename="{filename}"'}
+        return Response(content=data, media_type="text/csv; charset=utf-8", headers=headers)
+
+    # PDF via fpdf
+    try:
+        from fpdf import FPDF
+    except Exception as e:
+        logger.warning(f"[report] fpdf absent: {e}")
+        return JSONResponse({"success": False, "error": "Génération PDF indisponible (fpdf manquant)"}, status_code=500)
+
+    pdf = FPDF()
+    pdf.set_auto_page_break(auto=True, margin=15)
+    # Police Unicode (Arial) pour supporter accents, tirets, etc.
+    try:
+        pdf.add_font("Arial", "", r"C:\Windows\Fonts\arial.ttf")
+        pdf.add_font("Arial", "B", r"C:\Windows\Fonts\arialbd.ttf")
+        FONT = "Arial"
+    except Exception:
+        FONT = "Helvetica"
+    pdf.add_page()
+    pdf.set_font(FONT, "B", 16)
+    pdf.cell(0, 10, f"Rapport {platform.upper()} — Compte {acc_label}", new_x="LMARGIN", new_y="NEXT")
+    pdf.set_font(FONT, "", 9)
+    pdf.set_text_color(120, 120, 120)
+    pdf.cell(0, 6, f"Généré le {generated_at}  |  Période : {from_str or 'début'} → {to_str or 'auj.'}",
+             new_x="LMARGIN", new_y="NEXT")
+    pdf.set_text_color(0, 0, 0)
+    pdf.ln(4)
+
+    pdf.set_font(FONT, "B", 12)
+    pdf.cell(0, 8, "Indicateurs clés", new_x="LMARGIN", new_y="NEXT")
+    kpis = [
+        ("Posts publiés (période)", str(len(filtered))),
+        ("Total posts", str(int(stats.get("total", 0)))),
+        ("Likes (période)", str(total_likes)),
+        ("Commentaires (période)", str(total_comments)),
+        ("Mots moyens", str(int(stats.get("avg_word_count", 0)))),
+        ("Avec image", str(int(stats.get("with_images", 0)))),
+        ("Avec reel", str(int(stats.get("with_reels", 0)))),
+        ("Conformité — Conforme / Acceptable / Non conforme",
+         f"{int(stats.get('compliance', {}).get('green', 0))} / "
+         f"{int(stats.get('compliance', {}).get('yellow', 0))} / "
+         f"{int(stats.get('compliance', {}).get('red', 0))}"),
+    ]
+    for label, val in kpis:
+        pdf.set_font(FONT, "", 9)
+        pdf.cell(0, 6, f"{label} : {val}", new_x="LMARGIN", new_y="NEXT")
+
+    pdf.ln(3)
+    pdf.set_font(FONT, "B", 12)
+    pdf.cell(0, 8, f"Posts publiés ({len(filtered)})", new_x="LMARGIN", new_y="NEXT")
+    pdf.set_font(FONT, "B", 8)
+    col_w = {"date": 22, "persona": 28, "msg": 78, "l": 14, "c": 18, "s": 16}
+    pdf.cell(col_w["date"], 6, "Date", border=1)
+    pdf.cell(col_w["persona"], 6, "Persona", border=1)
+    pdf.cell(col_w["msg"], 6, "Message", border=1)
+    pdf.cell(col_w["l"], 6, "Likes", border=1, align="C")
+    pdf.cell(col_w["c"], 6, "Comment.", border=1, align="C")
+    pdf.cell(col_w["s"], 6, "Partages", border=1, align="C")
+    pdf.ln()
+    pdf.set_font(FONT, "", 8)
+    for p in filtered:
+        msg = (p.get("message", "") or "").replace("\n", " ")[:80]
+        pdf.cell(col_w["date"], 6, p.get("date", ""), border=1)
+        pdf.cell(col_w["persona"], 6, p.get("persona", ""), border=1)
+        pdf.cell(col_w["msg"], 6, msg, border=1)
+        pdf.cell(col_w["l"], 6, str(p.get("likes", 0)), border=1, align="C")
+        pdf.cell(col_w["c"], 6, str(p.get("comments", 0)), border=1, align="C")
+        pdf.cell(col_w["s"], 6, str(p.get("shares", 0)), border=1, align="C")
+        pdf.ln()
+
+    filename = f"rapport_{platform}_{acc_label}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+    data = bytes(pdf.output())
+    headers = {"Content-Disposition": f'attachment; filename="{filename}"'}
+    return Response(content=data, media_type="application/pdf", headers=headers)
 
 @router.get("/logs")
 async def api_logs(since: int = 0):
