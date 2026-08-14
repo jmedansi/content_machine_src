@@ -79,11 +79,23 @@ class FBAppInvitation(Base):
     accepted_at = Column(DateTime)
     expires_at = Column(DateTime)  # Expiration (30 jours par défaut)
     
-    def is_expired(self):
-        """Vérifie si l'invitation a expiré."""
+def is_expired(self):
+        """VǸrifie si l'invitation a expirǸ."""
         if not self.expires_at:
             return False
         return datetime.now(timezone.utc) > self.expires_at.replace(tzinfo=timezone.utc)
+
+class Client(Base):
+    __tablename__ = 'clients'
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    name = Column(String(150), nullable=False)
+    email = Column(String(150), default="")
+    plan = Column(String(50), default="starter")  # starter, pro, agence
+    active = Column(Boolean, default=True)
+    # account_ids : liste JSON des comptes rattachés au client (toutes plateformes)
+    account_ids = Column(JSON, default=list)
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
 # Database setup
 DB_PATH = Config.DATA_DIR / "leads_station.db"

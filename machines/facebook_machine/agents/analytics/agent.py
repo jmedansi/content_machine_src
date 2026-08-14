@@ -77,6 +77,64 @@ def analyze_content(content_dir: Path = None) -> dict:
     return stats
 
 
+def analyze_content_multi(content_dirs) -> dict:
+    """Agrège les statistiques sur plusieurs dossiers content (multi-comptes/client).
+
+    Fusionne analyze_content() sur chaque dossier : totaux additionnés,
+    Counter fusionnés, word_counts concaténés.
+    """
+    merged = {
+        "total": 0,
+        "published": 0,
+        "unpublished": 0,
+        "by_persona": Counter(),
+        "by_type": Counter(),
+        "word_counts": [],
+        "with_images": 0,
+        "with_reels": 0,
+        "with_resources": 0,
+        "compliance": Counter(),
+    }
+    for d in (content_dirs or []):
+        s = analyze_content(Path(d)) if d else {}
+        if not s:
+            continue
+        merged["total"] += s.get("total", 0)
+        merged["published"] += s.get("published", 0)
+        merged["unpublished"] += s.get("unpublished", 0)
+        merged["with_images"] += s.get("with_images", 0)
+        merged["with_reels"] += s.get("with_reels", 0)
+        merged["with_resources"] += s.get("with_resources", 0)
+        merged["word_counts"] += s.get("word_counts", [])
+        for k, v in s.get("by_persona", {}).items():
+            merged["by_persona"][k] += v
+        for k, v in s.get("by_type", {}).items():
+            merged["by_type"][k] += v
+        for k, v in s.get("compliance", {}).items():
+            merged["compliance"][k] += v
+    if merged["word_counts"]:
+        merged["avg_word_count"] = round(sum(merged["word_counts"]) / len(merged["word_counts"]))
+        merged["min_word_count"] = min(merged["word_counts"])
+        merged["max_word_count"] = max(merged["word_counts"])
+    merged["by_persona"] = dict(merged["by_persona"])
+    merged["by_type"] = dict(merged["by_type"])
+    merged["compliance"] = dict(merged["compliance"])
+    return merged
+
+
+def list_posts_multi(content_dirs, published_only: bool = True) -> list:
+    """Liste les posts sur plusieurs dossiers content (concatène list_posts)."""
+    result = []
+    for d in (content_dirs or []):
+        if not d:
+            continue
+        try:
+            result.extend(list_posts(Path(d), published_only=published_only))
+        except Exception:
+            continue
+    return result
+
+
 def list_posts(content_dir: Path = None, published_only: bool = True) -> list:
     """Retourne la liste des posts publiés (pour les insights engagement).
 

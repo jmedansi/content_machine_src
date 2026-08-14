@@ -3751,6 +3751,234 @@ async def api_toggle_account(account_id: int, platform: str = "facebook"):
         conn.close()
 
 
+# ══════════════════════════════════════════════════════════════════
+# ROUTES API - CLIENTS
+# ══════════════════════════════════════════════════════════════════
+
+def _db_client_session():
+    from core.db import SessionLocal, Client
+    return SessionLocal(), Client
+
+
+def _client_to_dict(c):
+    return {
+        "id": c.id,
+        "name": c.name,
+        "email": c.email or "",
+        "plan": c.plan or "starter",
+        "active": bool(c.active),
+        "account_ids": c.account_ids or [],
+        "created_at": str(c.created_at) if c.created_at else "",
+    }
+
+
+def _account_key(platform, account_id):
+    return f"{platform}:{account_id}"
+
+
+def _all_accounts_by_id():
+    """Indexe tous les comptes (toutes plateformes) par clé 'platform:id'."""
+    index = {}
+    for plat, db_path in PLATFORM_DB.items():
+        if not Path(db_path).exists():
+            continue
+        try:
+            import sqlite3
+            conn = sqlite3.connect(db_path)
+            conn.row_factory = sqlite3.Row
+            for acc in conn.execute("SELECT id, platform, name, status, credentials FROM accounts"):
+                creds = acc["credentials"]
+                if isinstance(creds, str):
+                    try:
+                        creds = json.loads(creds)
+                    except Exception:
+                        creds = {}
+                key = _account_key(acc["platform"] or plat, acc["id"])
+                index[key] = {
+                    "platform": acc["platform"] or plat,
+                    "id": acc["id"],
+                    "name": acc["name"],
+                    "status": acc["status"],
+                    "page_id": (creds or {}).get("page_id", "") or (creds or {}).get("user_id", ""),
+                }
+            conn.close()
+        except Exception as e:
+            logger.warning(f"[clients] index {plat} échoué: {e}")
+    return index
+
+
+def _resolve_client_accounts(account_ids):
+    """Retourne la liste détaillée des comptes d'un client.
+
+    account_ids accepte deux formats : [1, 6] (déprécié → facebook par défaut)
+    ou [{platform, id}, ...] (recommandé, sans ambiguïté entre plateformes).
+    """
+    index = _all_accounts_by_id()
+    result = []
+    for entry in (account_ids or []):
+        if isinstance(entry, dict):
+            plat = entry.get("platform", "facebook")
+            aid = entry.get("id")
+        else:
+            plat, aid = "facebook", entry
+        key = _account_key(plat, aid)
+        if key in index:
+            result.append(index[key])
+        else:
+            result.append({"platform": plat, "id": aid, "name": f"Compte {aid} ({plat})", "status": "?", "page_id": ""})
+    return result
+
+
+def _client_account_entries(client_id):
+    """Retourne la liste des comptes (dict {platform, id}) rattachés à un client."""
+    db, Client = _db_client_session()
+    try:
+        c = db.query(Client).filter(Client.id == client_id).first()
+        if not c:
+            return []
+        entries = []
+        for entry in (c.account_ids or []):
+            if isinstance(entry, dict):
+                entries.append({"platform": entry.get("platform", "facebook"), "id": entry.get("id")})
+            else:
+                entries.append({"platform": "facebook", "id": entry})
+        return entries
+    finally:
+        db.close()
+
+
+def _client_content_dirs(client_id):
+    """Retourne la liste des content_dir des comptes rattachés à un client."""
+    db, Client = _db_client_session()
+    try:
+        c = db.query(Client).filter(Client.id == client_id).first()
+        if not c:
+            return []
+        dirs = []
+        for entry in (c.account_ids or []):
+            if isinstance(entry, dict):
+                plat = entry.get("platform", "facebook")
+                aid = entry.get("id")
+            else:
+                plat, aid = "facebook", entry
+            try:
+                d = _get_content_dir(plat, int(aid))
+                if d and Path(d).exists():
+                    dirs.append(d)
+            except Exception:
+                continue
+        return dirs
+    finally:
+        db.close()
+
+
+@router.get("/clients")
+async def api_get_clients():
+    """Liste tous les clients (admin)."""
+    db, Client = _db_client_session()
+    try:
+        clients = db.query(Client).order_by(Client.name).all()
+        return {"success": True, "clients": [_client_to_dict(c) for c in clients]}
+    finally:
+        db.close()
+
+
+@router.post("/clients")
+async def api_create_client(req: Request):
+    body = await req.json()
+    name = (body.get("name") or "").strip()
+    if not name:
+        return JSONResponse({"success": False, "error": "Nom requis"}, status_code=400)
+    db, Client = _db_client_session()
+    try:
+        client = Client(
+            name=name,
+            email=body.get("email", ""),
+            plan=body.get("plan", "starter"),
+            active=body.get("active", True),
+            account_ids=body.get("account_ids", []),
+        )
+        db.add(client)
+        db.commit()
+        db.refresh(client)
+        return {"success": True, "client": _client_to_dict(client)}
+    finally:
+        db.close()
+
+
+@router.put("/clients/{client_id}")
+async def api_update_client(client_id: int, req: Request):
+    body = await req.json()
+    db, Client = _db_client_session()
+    try:
+        c = db.query(Client).filter(Client.id == client_id).first()
+        if not c:
+            return JSONResponse({"success": False, "error": "Client introuvable"}, status_code=404)
+        if "name" in body and body["name"]:
+            c.name = body["name"].strip()
+        if "email" in body:
+            c.email = body.get("email", "")
+        if "plan" in body:
+            c.plan = body.get("plan", "starter")
+        if "active" in body:
+            c.active = body.get("active", True)
+        if "account_ids" in body:
+            c.account_ids = body.get("account_ids", [])
+        db.commit()
+        db.refresh(c)
+        return {"success": True, "client": _client_to_dict(c)}
+    finally:
+        db.close()
+
+
+@router.delete("/clients/{client_id}")
+async def api_delete_client(client_id: int):
+    db, Client = _db_client_session()
+    try:
+        c = db.query(Client).filter(Client.id == client_id).first()
+        if not c:
+            return JSONResponse({"success": False, "error": "Client introuvable"}, status_code=404)
+        db.delete(c)
+        db.commit()
+        return {"success": True}
+    finally:
+        db.close()
+
+
+@router.get("/clients/{client_id}/accounts")
+async def api_get_client_accounts(client_id: int):
+    """Retourne les comptes (détaillés) rattachés à un client + tous les comptes disponibles."""
+    db, Client = _db_client_session()
+    try:
+        c = db.query(Client).filter(Client.id == client_id).first()
+        if not c:
+            return JSONResponse({"success": False, "error": "Client introuvable"}, status_code=404)
+        return {
+            "success": True,
+            "client": _client_to_dict(c),
+            "accounts": _resolve_client_accounts(c.account_ids),
+            "available": _all_accounts_by_id(),
+        }
+    finally:
+        db.close()
+
+
+@router.post("/clients/{client_id}/accounts")
+async def api_set_client_accounts(client_id: int, req: Request):
+    body = await req.json()
+    db, Client = _db_client_session()
+    try:
+        c = db.query(Client).filter(Client.id == client_id).first()
+        if not c:
+            return JSONResponse({"success": False, "error": "Client introuvable"}, status_code=404)
+        c.account_ids = body.get("account_ids", [])
+        db.commit()
+        db.refresh(c)
+        return {"success": True, "client": _client_to_dict(c)}
+    finally:
+        db.close()
+
+
 @router.post("/linkedin/update_token")
 async def api_update_linkedin_token(req: Request):
     """Met à jour le token LinkedIn dans la DB et le .env."""
@@ -3841,30 +4069,48 @@ async def api_token_refresh(req: Request):
 
 @router.get("/analytics")
 async def api_analytics(request: Request):
-    """Statistiques réelles des posts générés, selon platform + account_id.
+    """Statistiques réelles des posts générés, selon platform + account_id (ou client_id).
 
     Source : meta.json des dossiers content (données réelles, pas de mock).
     """
     platform = request.query_params.get("platform", "facebook")
     account_id = request.query_params.get("account_id")
+    client_id = request.query_params.get("client_id")
     try:
-        from agents.analytics.agent import analyze_content, list_posts
+        from agents.analytics.agent import analyze_content, analyze_content_multi, list_posts, list_posts_multi
     except Exception as e:
         logger.exception(f"[analytics] import agent échoué: {e}")
         return {"success": True, "total": 0, "avg_words": 0, "by_persona": [], "compliance": {"green": 0, "yellow": 0, "red": 0}}
 
-    target_dir = _get_content_dir(platform, int(account_id) if account_id and account_id.isdigit() else None)
-    try:
-        stats = analyze_content(target_dir)
-    except Exception as e:
-        logger.exception(f"[analytics] analyze_content échoué: {e}")
-        stats = {}
+    client_dirs = []
+    if client_id and client_id.isdigit():
+        client_dirs = _client_content_dirs(int(client_id))
+        if not client_dirs:
+            return {"success": True, "total": 0, "avg_words": 0, "by_persona": [], "compliance": {"green": 0, "yellow": 0, "red": 0}, "client_id": int(client_id)}
 
-    posts = []
-    try:
-        posts = list_posts(target_dir, published_only=False)
-    except Exception as e:
-        logger.warning(f"[analytics] list_posts échoué: {e}")
+    if client_dirs:
+        try:
+            stats = analyze_content_multi(client_dirs)
+        except Exception as e:
+            logger.exception(f"[analytics] analyze_content_multi échoué: {e}")
+            stats = {}
+        posts = []
+        try:
+            posts = list_posts_multi(client_dirs, published_only=False)
+        except Exception as e:
+            logger.warning(f"[analytics] list_posts_multi échoué: {e}")
+    else:
+        target_dir = _get_content_dir(platform, int(account_id) if account_id and account_id.isdigit() else None)
+        try:
+            stats = analyze_content(target_dir)
+        except Exception as e:
+            logger.exception(f"[analytics] analyze_content échoué: {e}")
+            stats = {}
+        posts = []
+        try:
+            posts = list_posts(target_dir, published_only=False)
+        except Exception as e:
+            logger.warning(f"[analytics] list_posts échoué: {e}")
 
     compliance = {
         "green": int(stats.get("compliance", {}).get("green", 0)),
@@ -3872,7 +4118,7 @@ async def api_analytics(request: Request):
         "red": int(stats.get("compliance", {}).get("red", 0)),
     }
 
-    return {
+    resp = {
         "success": True,
         "total": int(stats.get("total", 0)),
         "published": int(stats.get("published", 0)),
@@ -3892,6 +4138,9 @@ async def api_analytics(request: Request):
         "compliance": compliance,
         "post_count": len(posts),
     }
+    if client_id and client_id.isdigit():
+        resp["client_id"] = int(client_id)
+    return resp
 
 _INSIGHTS_CACHE_FILE = Path(__file__).resolve().parent.parent / "data" / "engagement_cache.json"
 _INSIGHTS_CACHE_TTL = 3600  # 1h
@@ -3922,15 +4171,23 @@ async def api_facebook_insights(request: Request):
     Cache : data/engagement_cache.json (évite les appels répétés).
     """
     account_id = request.query_params.get("account_id")
+    client_id = request.query_params.get("client_id")
     try:
-        from agents.analytics.agent import list_posts
+        from agents.analytics.agent import list_posts, list_posts_multi
     except Exception as e:
         logger.exception(f"[insights] import agent échoué: {e}")
         return {"success": True, "total_likes": 0, "total_comments": 0, "posts": []}
 
-    target_dir = _get_content_dir("facebook", int(account_id) if account_id and account_id.isdigit() else None)
+    # Périmètre : client (multi-comptes FB) ou compte unique
+    client_dirs = []
+    if client_id and client_id.isdigit():
+        client_dirs = _client_content_dirs(int(client_id))
     try:
-        posts = list_posts(target_dir, published_only=True)
+        if client_dirs:
+            posts = list_posts_multi(client_dirs, published_only=True)
+        else:
+            target_dir = _get_content_dir("facebook", int(account_id) if account_id and account_id.isdigit() else None)
+            posts = list_posts(target_dir, published_only=True)
     except Exception as e:
         logger.warning(f"[insights] list_posts échoué: {e}")
         posts = []
@@ -3942,7 +4199,14 @@ async def api_facebook_insights(request: Request):
     # Récupérer le token du compte pour les appels Graph (depuis la DB plateforme)
     token = ""
     page_id = ""
-    creds = _get_account_credentials("facebook", int(account_id) if account_id and account_id.isdigit() else None)
+    resolved_account_id = int(account_id) if account_id and account_id.isdigit() else None
+    if client_dirs:
+        # Pour un client : token du 1er compte FB rattaché
+        for entry in (_client_account_entries(int(client_id)) or []):
+            if entry.get("platform") == "facebook":
+                resolved_account_id = entry.get("id")
+                break
+    creds = _get_account_credentials("facebook", resolved_account_id)
     if creds:
         token = creds.get("access_token", "")
         page_id = str(creds.get("page_id", ""))
@@ -4009,23 +4273,32 @@ async def api_facebook_insights(request: Request):
 
 @router.get("/report/export")
 async def api_report_export(request: Request):
-    """Exporte un rapport client (CSV ou PDF) pour la période + compte choisis."""
+    """Exporte un rapport client (CSV ou PDF) pour la période + compte (ou client) choisis."""
     platform = request.query_params.get("platform", "facebook")
     account_id = request.query_params.get("account_id")
+    client_id = request.query_params.get("client_id")
     fmt = (request.query_params.get("format", "csv") or "csv").lower()
     from_str = request.query_params.get("from", "")
     to_str = request.query_params.get("to", "")
 
     try:
-        from agents.analytics.agent import analyze_content, list_posts
+        from agents.analytics.agent import analyze_content, analyze_content_multi, list_posts, list_posts_multi
     except Exception as e:
         logger.exception(f"[report] import agent échoué: {e}")
         return JSONResponse({"success": False, "error": "Agent analytics indisponible"}, status_code=500)
 
-    target_dir = _get_content_dir(platform, int(account_id) if account_id and account_id.isdigit() else None)
+    # Périmètre : client (multi-comptes) ou compte unique
+    client_dirs = []
+    if client_id and client_id.isdigit():
+        client_dirs = _client_content_dirs(int(client_id))
     try:
-        stats = analyze_content(target_dir)
-        posts = list_posts(target_dir, published_only=True)
+        if client_dirs:
+            stats = analyze_content_multi(client_dirs)
+            posts = list_posts_multi(client_dirs, published_only=True)
+        else:
+            target_dir = _get_content_dir(platform, int(account_id) if account_id and account_id.isdigit() else None)
+            stats = analyze_content(target_dir)
+            posts = list_posts(target_dir, published_only=True)
     except Exception as e:
         logger.warning(f"[report] analyse échouée: {e}")
         stats, posts = {}, []
@@ -4047,13 +4320,24 @@ async def api_report_export(request: Request):
 
     # Enrichir avec l'engagement en cache (éviter les appels API graphiques)
     cache = _load_insights_cache()
+    account_index = _all_accounts_by_id()
     for p in filtered:
         pid = p.get("post_id", "")
         if not pid:
             p["likes"], p["comments"], p["shares"] = 0, 0, 0
             continue
-        creds = _get_account_credentials("facebook", int(account_id) if account_id and account_id.isdigit() else None)
-        page_id = str(creds.get("page_id", "")) if creds else ""
+        # Résoudre le page_id : priorité au client (page_id du compte FB correspondant), sinon compte demandé
+        page_id = ""
+        if client_id and client_id.isdigit():
+            for entry in (_client_account_entries(int(client_id)) or []):
+                if entry.get("platform") == "facebook":
+                    key = _account_key("facebook", entry.get("id"))
+                    acc = account_index.get(key) or {}
+                    page_id = str(acc.get("page_id", ""))
+                    break
+        if not page_id:
+            creds = _get_account_credentials("facebook", int(account_id) if account_id and account_id.isdigit() else None)
+            page_id = str(creds.get("page_id", "")) if creds else ""
         gid = f"{page_id}_{pid}" if ("_" not in pid and page_id) else pid
         m = (cache.get(gid) or {}).get("metrics", {})
         p["likes"] = int(m.get("likes", 0))
@@ -4064,6 +4348,8 @@ async def api_report_export(request: Request):
     total_comments = sum(p.get("comments", 0) for p in filtered)
 
     acc_label = account_id or "—"
+    if client_dirs:
+        acc_label = f"Client #{client_id}"
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M")
 
     if fmt == "csv":
