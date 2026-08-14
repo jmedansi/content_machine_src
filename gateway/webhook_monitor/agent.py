@@ -1916,6 +1916,7 @@ def generate_ai_response(comment_text, post_id, user_name="quelqu'un"):
             temperature=0.7,
             max_tokens=300,
             fallback=True,
+            allow_ollama=False,
         )
         if text and str(text).strip():
             logger.info(f"[AI] Réponse générée via {metadata.get('provider')}/{metadata.get('model')}")

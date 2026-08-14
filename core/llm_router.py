@@ -394,8 +394,11 @@ def _call_provider(provider: str, model: str, system: str, prompt: str,
 def call_llm(system_prompt: str, user_prompt: str, model: str = None,
              api_key: str = None, base_url: str = None,
              temperature: float = 0.8, max_tokens: int = None,
-             fallback: bool = True) -> tuple:
+             fallback: bool = True, allow_ollama: bool = True) -> tuple:
     """Appelle le modèle demandé avec fallback en cascade.
+
+    allow_ollama=False : exclut complètement Ollama de l'appel initial et des
+    fallbacks (modèles Ollama retirés/payants → réponse toujours via API cloud).
 
     Retourne (text, metadata). metadata contient provider/model + providers_tried.
     """
@@ -403,15 +406,27 @@ def call_llm(system_prompt: str, user_prompt: str, model: str = None,
     metadata = {"stage": "call_llm", "providers_tried": []}
 
     provider, resolved_model = parse_model(model)
-    logger.info(f"[LLM_ROUTER] Génération via {provider} ({resolved_model}).")
-    result = _call_provider(provider, resolved_model, system_prompt, user_prompt,
-                            api_key=api_key, base_url=base_url,
-                            temperature=temperature, max_tokens=max_tokens)
-    if result:
-        metadata["provider"] = provider
-        metadata["model"] = resolved_model
-        return result, metadata
-    metadata["providers_tried"].append({"provider": provider, "model": resolved_model, "error": "no response"})
+
+    def _tries(p, m):
+        """Vrai si le provider doit être tenté (exclut Ollama si interdit)."""
+        if not allow_ollama and p == "ollama":
+            metadata["providers_tried"].append({"provider": p, "model": m, "error": "ollama disabled"})
+            return False
+        return True
+
+    if not _tries(provider, resolved_model):
+        provider, resolved_model = None, None
+
+    if provider:
+        logger.info(f"[LLM_ROUTER] Génération via {provider} ({resolved_model}).")
+        result = _call_provider(provider, resolved_model, system_prompt, user_prompt,
+                                api_key=api_key, base_url=base_url,
+                                temperature=temperature, max_tokens=max_tokens)
+        if result:
+            metadata["provider"] = provider
+            metadata["model"] = resolved_model
+            return result, metadata
+        metadata["providers_tried"].append({"provider": provider, "model": resolved_model, "error": "no response"})
 
     if not fallback:
         return None, metadata
@@ -420,19 +435,20 @@ def call_llm(system_prompt: str, user_prompt: str, model: str = None,
     default_model = get_default_model()
     if normalize_model_id(default_model) != normalize_model_id(model):
         p2, m2 = parse_model(default_model)
-        logger.warning(f"[LLM_ROUTER] {provider} a échoué, fallback sur modèle par défaut ({p2}/{m2}).")
-        result = _call_provider(p2, m2, system_prompt, user_prompt,
-                                api_key=api_key, base_url=base_url,
-                                temperature=temperature, max_tokens=max_tokens)
-        if result:
-            metadata["provider"] = p2
-            metadata["model"] = m2
-            metadata["fallback_from"] = f"{provider}/{resolved_model}"
-            return result, metadata
-        metadata["providers_tried"].append({"provider": p2, "model": m2, "error": "no response"})
+        if _tries(p2, m2):
+            logger.warning(f"[LLM_ROUTER] {provider or 'provider'} a échoué, fallback sur modèle par défaut ({p2}/{m2}).")
+            result = _call_provider(p2, m2, system_prompt, user_prompt,
+                                    api_key=api_key, base_url=base_url,
+                                    temperature=temperature, max_tokens=max_tokens)
+            if result:
+                metadata["provider"] = p2
+                metadata["model"] = m2
+                metadata["fallback_from"] = f"{provider}/{resolved_model}"
+                return result, metadata
+            metadata["providers_tried"].append({"provider": p2, "model": m2, "error": "no response"})
 
     # Fallback 2 : Groq par défaut (résilience maximale)
-    if provider != "groq" or resolved_model != DEFAULT_GROQ_MODEL:
+    if (provider != "groq" or resolved_model != DEFAULT_GROQ_MODEL) and _tries("groq", DEFAULT_GROQ_MODEL):
         logger.warning("[LLM_ROUTER] Fallback final sur Groq (llama-3.3-70b-versatile).")
         result = _call_groq(DEFAULT_GROQ_MODEL, system_prompt, user_prompt, temperature, 3000)
         if result:
