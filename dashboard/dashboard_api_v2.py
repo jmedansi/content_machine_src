@@ -2654,8 +2654,26 @@ async def api_save_planned_topics(req: Request):
 
     body = await req.json()
     topics = body.get("topics", {})
-    _save_planned_topics(topics, platform, account_id)
-    return {"success": True}
+    mode = body.get("mode", "merge")
+
+    from dashboard.api.topics_store import import_topics
+
+    if isinstance(topics, dict):
+        flat = []
+        for p, items in topics.items():
+            for t in (items or []):
+                if not isinstance(t, dict):
+                    continue
+                entry = dict(t)
+                entry["persona"] = entry.get("persona") or p
+                flat.append(entry)
+        topics = flat
+
+    if not isinstance(topics, list):
+        return {"success": False, "error": "topics doit être une liste ou un dict par persona"}
+
+    res = import_topics(topics, platform, account_id, mode="replace" if mode == "replace" else "merge")
+    return {"success": True, "imported": res.get("imported"), "total": res.get("total")}
 
 @router.post("/planned_topics/suggest")
 async def api_suggest_planned_topics(req: Request):
