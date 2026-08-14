@@ -229,7 +229,8 @@ def process_single_post(plan_entry: dict, date: str, publish: bool, task_id: str
             "status": "written",
             "created_at": datetime.now().isoformat(),
             "folder_path": str(folder_path),
-            "scheduled_time": plan_entry.get("scheduled_time", ""),
+            "scheduled_time": plan_entry.get("scheduled_time", "")
+                              or plan_entry.get("date_prevue", ""),
         }
         atomic_write_json(folder_path / "meta.json", meta_data)
 

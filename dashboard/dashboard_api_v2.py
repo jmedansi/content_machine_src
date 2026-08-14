@@ -445,7 +445,16 @@ async def api_status(request: Request):
         "account_id": account_id,
         "pending_count": pending,
         "published_count": published,
-        "last_update": datetime.now().isoformat()
+        "last_update": datetime.now().isoformat(),
+        "ai_responses": _load_ai_responses_config(),
+        "reel_mode": "music",
+        "webhook":          {"status": True},
+        "tunnel":           {"status": False},
+        "scheduler":        {"status": True},
+        "ollama":           {"status": False},
+        "token_valid":      bool(Config.FB_PAGE_ACCESS_TOKEN),
+        "next_slot":        _compute_next_slot(platform, account_id),
+        "next_publication": _compute_next_slot(platform, account_id),
     }
 
 @router.get("/pending")
@@ -511,6 +520,7 @@ async def api_pending(request: Request):
                     "created_at": p["created_at"],
                     "date": p["created_at"][:10] if p["created_at"] else p["folder_name"][:10],
                     "word_count": meta.get("word_count"),
+                    "ai_responses": meta.get("ai_responses"),
                     "has_image": has_image_physically,
                     "image_url": image_urls[0] if image_urls else None,
                     "image_urls": image_urls,
@@ -706,6 +716,58 @@ async def api_publish_now(req: Request):
         return {"success": False, "error": str(e)}
 
 
+@router.get("/publish")
+async def api_publish_from_query(req: Request):
+    """Publication rapide via query param (compatible content.js)."""
+    platform = req.query_params.get("platform", "facebook")
+    account_id = req.query_params.get("account_id")
+    folder_name = req.query_params.get("folder")
+    if not folder_name:
+        return {"success": False, "error": "Paramètre folder manquant"}
+
+    class _FakeBody:
+        async def json(self):
+            return {"folder": folder_name}
+
+    return await api_publish_now(_FakeBody())
+
+
+@router.get("/delete")
+async def api_delete_content(req: Request):
+    """Supprime un post (dossier + entrée DB)."""
+    platform = req.query_params.get("platform", "facebook")
+    account_id = req.query_params.get("account_id")
+    folder_name = req.query_params.get("folder")
+    if not folder_name:
+        return {"success": False, "error": "Paramètre folder manquant"}
+
+    allowed = _get_user_account_ids(req)
+    if allowed is not None and account_id and account_id.isdigit() and int(account_id) not in allowed:
+        return {"success": False, "error": "Accès non autorisé à ce compte"}
+
+    target_dir = _get_content_dir(platform, account_id)
+    folder = _safe_folder(target_dir, folder_name)
+    if not folder.exists():
+        return {"success": False, "error": "Dossier introuvable"}
+
+    try:
+        import shutil
+        shutil.rmtree(folder, ignore_errors=True)
+        if account_id and account_id.isdigit():
+            conn = _get_platform_db(platform)
+            if conn:
+                try:
+                    conn.execute("DELETE FROM posts WHERE account_id=? AND folder_name=?", (int(account_id), folder_name))
+                    conn.commit()
+                finally:
+                    conn.close()
+        logger.info(f"Post supprimé: {platform}/{folder_name}")
+        return {"success": True}
+    except Exception as e:
+        logger.exception(f"Erreur suppression post: {e}")
+        return {"success": False, "error": str(e)}
+
+
 # ══════════════════════════════════════════════════════════════════
 # ROUTES API - GESTION CONTENU
 # ══════════════════════════════════════════════════════════════════
@@ -765,6 +827,7 @@ async def api_content_list(request: Request):
                     "persona": p["persona"],
                     "status": p["status"],
                     "date": p["created_at"][:10] if p["created_at"] else p["folder_name"][:10],
+                    "ai_responses": meta.get("ai_responses"),
                     "published": bool(p["published"]),
                     "image_url": f"/api/image/{p['folder_name']}{params}" if has_image_physically else None,
                     "reel_url": f"/api/reel/{p['folder_name']}{params}" if has_reel_physically else None
@@ -801,6 +864,7 @@ async def api_content_detail(request: Request, folder: str):
         "folder": folder,
         "content": content,
         "metadata": meta,
+        "ai_responses": meta.get("ai_responses"),
         "image_url": f"/api/image/{folder}{params}" if has_image_physically else None,
         "reel_url": f"/api/reel/{folder}{params}" if has_reel_physically else None
     }
@@ -816,16 +880,19 @@ async def api_update_post(req: Request):
     folder = _safe_folder(target_dir, folder_name)
     
     if folder.exists():
-        text_file = _find_file(folder, _TEXT_FILES) or (folder / "post_text.txt")
-        text_file.write_text(content, encoding="utf-8")
-        if account_id and account_id.isdigit():
-            conn = _get_platform_db(platform)
-            if conn:
-                try:
-                    conn.execute("UPDATE posts SET content_text=? WHERE account_id=? AND folder_name=?", (content, int(account_id), folder_name))
-                    conn.commit()
-                finally:
-                    conn.close()
+        if content is not None:
+            text_file = _find_file(folder, _TEXT_FILES) or (folder / "post_text.txt")
+            text_file.write_text(content, encoding="utf-8")
+            if account_id and account_id.isdigit():
+                conn = _get_platform_db(platform)
+                if conn:
+                    try:
+                        conn.execute("UPDATE posts SET content_text=? WHERE account_id=? AND folder_name=?", (content, int(account_id), folder_name))
+                        conn.commit()
+                    finally:
+                        conn.close()
+        if "ai_responses" in body:
+            _save_meta(folder, {"ai_responses": body.get("ai_responses")})
         return {"success": True}
     return {"success": False, "error": "Dossier introuvable"}
 
@@ -986,6 +1053,30 @@ async def api_generate(request: Request, background_tasks: BackgroundTasks):
     background_tasks.add_task(_background_generate, str(folder), persona, topic, account_id, platform, media, task_id, image_mode)
     
     return {"success": True, "message": "Génération démarrée en arrière-plan", "folder": folder_name, "task_id": task_id}
+
+@router.get("/suggest_image")
+async def api_suggest_image(request: Request):
+    """Propose un concept d'image pour un topic/persona via LLM."""
+    topic = request.query_params.get("topic", "")
+    persona = request.query_params.get("persona", "")
+    platform = request.query_params.get("platform", "facebook")
+    account_id = request.query_params.get("account_id")
+    if not topic:
+        return {"success": False, "error": "Sujet manquant"}
+    try:
+        from core.llm_router import call_llm
+        system = (
+            "Tu es un directeur artistique pour les réseaux sociaux. "
+            "Propose une idée d'image/concept visuel pour un post. "
+            "Réponds en français, en 1-2 phrases concises, sous forme de description utilisable comme prompt image."
+        )
+        prompt = f"Post {platform} sur : {topic}\nPersona: {persona}\nPropose le concept d'image idéal (style, composition, ambiance, texte éventuel) :"
+        text, metadata = call_llm(system, prompt)
+        concept = text if text else "Aucune suggestion générée"
+        return {"success": True, "concept": concept, "provider": (metadata or {}).get("provider")}
+    except Exception as e:
+        logger.exception(f"Erreur suggest_image: {e}")
+        return {"success": False, "error": str(e)}
 
 @router.get("/library_images")
 async def api_library_images():
@@ -2747,13 +2838,22 @@ async def api_generate_posts_from_validated(req: Request):
                 for i, topic in enumerate(validated):
                     raw = topic.get("raw") or {}
                     persona = topic.get("persona") or raw.get("persona", "")
+                    t_date = topic.get("date") or raw.get("date") or raw.get("date_prevue", "")[:10]
+                    t_time = topic.get("time") or raw.get("time") or ""
+                    if t_date and t_time:
+                        scheduled_time = f"{t_date[:10]}T{t_time}:00"
+                    elif raw.get("date_prevue"):
+                        scheduled_time = raw.get("date_prevue")
+                    else:
+                        scheduled_time = raw.get("time") or raw.get("scheduled_time", "")
                     plan_entry = {
                         "persona": persona,
                         "sujet": raw.get("topic") or raw.get("titre") or topic.get("topic", ""),
                         "context": raw.get("context") or topic.get("context", ""),
                         "objectif": raw.get("objectif", "engagement"),
                         "variables": raw.get("variables", {}),
-                        "scheduled_time": raw.get("time") or raw.get("scheduled_time", ""),
+                        "scheduled_time": scheduled_time,
+                        "date_prevue": scheduled_time,
                     }
                     progress = int(((i + 1) / len(validated)) * 90) + 5
                     update_task(task_id, progress=progress, status="running",
@@ -2762,7 +2862,7 @@ async def api_generate_posts_from_validated(req: Request):
                     try:
                         res = process_single_post(
                             plan_entry,
-                            datetime.now().strftime("%Y-%m-%d"),
+                            (t_date or datetime.now().strftime("%Y-%m-%d"))[:10],
                             False,  # Ne pas publier automatiquement
                             task_id=task_id,
                             current=i + 1,
@@ -3028,6 +3128,65 @@ def _save_auto_approve_config(config):
     config_file = DATA_DIR / "auto_approve.json"
     config_file.write_text(json.dumps(config, indent=2, ensure_ascii=False), encoding="utf-8")
 
+
+def _load_ai_responses_config():
+    """Charge la config globale des réponses IA depuis settings.json (partagé avec le webhook)."""
+    settings_file = DATA_DIR / "settings.json"
+    if settings_file.exists():
+        try:
+            data = json.loads(settings_file.read_text(encoding="utf-8"))
+            return {"enabled": bool(data.get("ai_responses_enabled", False))}
+        except Exception:
+            pass
+    return {"enabled": False}
+
+def _save_ai_responses_config(config):
+    settings_file = DATA_DIR / "settings.json"
+    data = {}
+    if settings_file.exists():
+        try:
+            data = json.loads(settings_file.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    data["ai_responses_enabled"] = bool(config.get("enabled", False))
+    settings_file.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+@router.get("/ai_responses")
+async def api_get_ai_responses():
+    return _load_ai_responses_config()
+
+@router.post("/ai_responses")
+async def api_set_ai_responses(req: Request):
+    body = await req.json()
+    enabled = body.get("enabled", False)
+    _save_ai_responses_config({"enabled": enabled})
+    return {"success": True, "enabled": enabled}
+
+
+def _load_reel_mode():
+    reel_file = DATA_DIR / "reel_mode.json"
+    if reel_file.exists():
+        try:
+            return json.loads(reel_file.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {"mode": "music"}
+
+def _save_reel_mode(config):
+    reel_file = DATA_DIR / "reel_mode.json"
+    reel_file.write_text(json.dumps(config, indent=2, ensure_ascii=False), encoding="utf-8")
+
+@router.get("/reel_mode")
+async def api_get_reel_mode():
+    return _load_reel_mode()
+
+@router.post("/reel_mode")
+async def api_set_reel_mode(req: Request):
+    body = await req.json()
+    mode = body.get("mode", "music")
+    _save_reel_mode({"mode": mode})
+    return {"success": True, "mode": mode}
+
 @router.get("/auto_approve")
 async def api_get_auto_approve():
     config = _load_auto_approve_config()
@@ -3062,7 +3221,6 @@ async def api_check_and_publish():
     from datetime import datetime
     now = datetime.now()
     current_time = now.strftime("%H:%M")
-    current_minutes = now.hour * 60 + now.minute
     
     total_published = 0
     published_details = []
@@ -3092,33 +3250,42 @@ async def api_check_and_publish():
             
             if not scheduled_time: continue
             
+            # Comparer date+heure complète si disponible, sinon HH:MM
+            scheduled_dt = None
             try:
-                h, m = map(int, scheduled_time.split(":"))
-                scheduled_minutes = h * 60 + m
-            except: continue
+                if "T" in str(scheduled_time):
+                    scheduled_dt = datetime.fromisoformat(str(scheduled_time).replace("Z", "+00:00"))
+                    if scheduled_dt.tzinfo is not None:
+                        scheduled_dt = scheduled_dt.replace(tzinfo=None)
+                else:
+                    h, m = map(int, str(scheduled_time).split(":"))
+                    scheduled_dt = now.replace(hour=h, minute=m, second=0, microsecond=0)
+            except:
+                continue
             
-            if current_minutes >= scheduled_minutes:
-                if status == "pending":
-                    if auto_approve_enabled:
-                        _save_meta(folder, {"status": "approved"})
-                        status = "approved"
-                    else:
+            if now < scheduled_dt: continue
+            
+            if status == "pending":
+                if auto_approve_enabled:
+                    _save_meta(folder, {"status": "approved"})
+                    status = "approved"
+                else:
+                    continue
+            
+            if status == "approved":
+                try:
+                    run_publisher = _get_publisher(platform)
+                    if not run_publisher:
+                        logger.warning(f"No publisher found for platform {platform}")
                         continue
-                
-                if status == "approved":
-                    try:
-                        run_publisher = _get_publisher(platform)
-                        if not run_publisher:
-                            logger.warning(f"No publisher found for platform {platform}")
-                            continue
-                        res = run_publisher(str(folder), account_id=account_id)
-                        if res.success:
-                            _save_meta(folder, {"status": "published", "published": True})
-                            total_published += 1
-                            published_details.append(f"{acc.name}: {folder.name}")
-                            logger.info(f"Auto-published for {acc.name}: {folder.name}")
-                    except Exception as e:
-                        logger.error(f"Auto-publish failed for {folder.name} (Acc: {acc.name}): {e}")
+                    res = run_publisher(str(folder), account_id=account_id)
+                    if res.success:
+                        _save_meta(folder, {"status": "published", "published": True})
+                        total_published += 1
+                        published_details.append(f"{acc.name}: {folder.name}")
+                        logger.info(f"Auto-published for {acc.name}: {folder.name}")
+                except Exception as e:
+                    logger.error(f"Auto-publish failed for {folder.name} (Acc: {acc.name}): {e}")
 
     return {
         "success": True,
@@ -3126,6 +3293,31 @@ async def api_check_and_publish():
         "published": published_details,
         "current_time": current_time
     }
+
+
+def _compute_next_slot(platform: str = "facebook", account_id=None):
+    """Calcule le prochain créneau de publication (schedule du compte) non passé.
+
+    Retourne None si aucun créneau à venir, sinon dict {time, persona, type, remaining_min}.
+    """
+    try:
+        schedule = _load_schedule(platform, account_id or 1)
+        now = datetime.now()
+        current_minutes = now.hour * 60 + now.minute
+        next_slot = None
+        for slot in schedule:
+            try:
+                h, m = map(int, str(slot.get("time", "")).split(":"))
+            except Exception:
+                continue
+            slot_minutes = h * 60 + m
+            if slot_minutes > current_minutes:
+                next_slot = {**slot, "remaining_min": slot_minutes - current_minutes}
+                break
+        return next_slot
+    except Exception as e:
+        logger.error(f"compute_next_slot error: {e}")
+        return None
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -3509,6 +3701,33 @@ async def api_update_linkedin_token(req: Request):
     return {"success": True, "message": "Token LinkedIn mis à jour (DB + .env). Redémarrez le dashboard."}
 
 
+@router.get("/token/refresh")
+async def api_token_refresh(req: Request):
+    """Vérifie l'état du token LinkedIn (DB) sans le modifier."""
+    db_path = PLATFORM_DB.get("linkedin")
+    if not db_path or not Path(db_path).exists():
+        return {"valid": False, "error": "DB LinkedIn introuvable"}
+    try:
+        import sqlite3
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
+        cursor = conn.execute("SELECT credentials FROM accounts WHERE platform='linkedin' AND status='active' LIMIT 1")
+        row = cursor.fetchone()
+        conn.close()
+        if row and row["credentials"]:
+            creds = json.loads(row["credentials"]) if isinstance(row["credentials"], str) else row["credentials"]
+            token = creds.get("linkedin_token", "")
+            expires = creds.get("expires_at") or creds.get("token_expires_at")
+            return {
+                "valid": bool(token),
+                "expires": expires or (creds.get("expires_in") and "30 jours") or None,
+            }
+        return {"valid": False, "error": "Aucun compte LinkedIn actif"}
+    except Exception as e:
+        logger.exception(f"Erreur token/refresh: {e}")
+        return {"valid": False, "error": str(e)}
+
+
 @router.get("/analytics")
 async def api_analytics():
     """Mock endpoint for analytics to prevent 404."""
@@ -3619,6 +3838,12 @@ async def startup_event():
 
     import asyncio
     async def auto_approve_loop():
+        # Rattrapage immédiat au démarrage: publier les posts dont l'heure planifiée est déjà passée
+        try:
+            catch_up = await api_check_and_publish()
+            logger.info(f"[CATCH-UP] Au démarrage: {getattr(catch_up, 'message', 'OK')}")
+        except Exception as e:
+            logger.error(f"[CATCH-UP] Erreur au démarrage: {e}")
         while True:
             try:
                 await api_check_and_publish()
@@ -3939,6 +4164,118 @@ async def api_generate_topics(req: Request):
         return {"success": True, "count": len(new_topics)}
     except Exception as e:
         return {"success": False, "error": str(e)}
+
+
+# ══════════════════════════════════════════════════════════════════
+# ROUTE CALENDRIER — Vue calendrier des publications planifiées
+# ══════════════════════════════════════════════════════════════════
+
+@router.get("/calendar")
+async def api_calendar(request: Request):
+    """Agrège les publications planifiées (planned_topics + posts générés) sur toutes les plateformes.
+    Paramètres optionnels: platform, account_id, start, end (YYYY-MM-DD).
+    """
+    platform_filter = request.query_params.get("platform")
+    account_filter = request.query_params.get("account_id")
+    start = request.query_params.get("start")
+    end = request.query_params.get("end")
+
+    events = []
+    accounts = []
+    for platform, db_path in PLATFORM_DB.items():
+        if platform_filter and platform != platform_filter:
+            continue
+        if not Path(db_path).exists():
+            continue
+        try:
+            import sqlite3
+            conn = sqlite3.connect(db_path)
+            conn.row_factory = sqlite3.Row
+            cursor = conn.execute("SELECT id, name, status FROM accounts WHERE status='active'")
+            for row in cursor:
+                if account_filter and str(row["id"]) != str(account_filter):
+                    continue
+                accounts.append({"id": row["id"], "name": row["name"], "platform": platform})
+            conn.close()
+        except Exception as e:
+            logger.error(f"Calendar: erreur listage comptes {platform}: {e}")
+
+    for acc in accounts:
+        platform = acc["platform"]
+        account_id = acc["id"]
+
+        # 1. Events depuis planned_topics.json (sujets planifiés)
+        try:
+            topics_data = topics_store.list_topics(platform, account_id)
+            for t in topics_data:
+                t_date = (t.get("date") or "")[:10]
+                t_time = t.get("time") or ""
+                # Fallback: extraire l'heure de date_prevue si time vide (anciens topics)
+                if not t_time:
+                    raw_dp = (t.get("raw") or {}).get("date_prevue") or ""
+                    if "T" in str(raw_dp):
+                        t_time = str(raw_dp).split("T")[1][:5]
+                if not t_date:
+                    continue
+                if start and t_date < start: continue
+                if end and t_date > end: continue
+                events.append({
+                    "id": t.get("id"),
+                    "source": "planned_topic",
+                    "platform": platform,
+                    "account_id": account_id,
+                    "account_name": acc["name"],
+                    "date": t_date,
+                    "time": t_time,
+                    "persona": t.get("persona", ""),
+                    "topic": t.get("topic", ""),
+                    "status": "validated" if t.get("validated") else "draft",
+                    "validated": bool(t.get("validated")),
+                    "used": bool((t.get("raw") or {}).get("used", t.get("used", False))),
+                })
+        except Exception as e:
+            logger.error(f"Calendar: erreur planned_topics {platform}/{account_id}: {e}")
+
+        # 2. Events depuis les posts générés (meta.json scheduled_time)
+        try:
+            folders = _list_post_folders(platform, account_id)
+            for folder in folders:
+                meta = _read_post(folder)
+                sched = meta.get("scheduled_time", "")
+                if not sched:
+                    continue
+                sched_str = str(sched)
+                if "T" in sched_str:
+                    d = sched_str[:10]
+                    tm = sched_str[11:16]
+                else:
+                    parts = sched_str.split(" ")
+                    d = parts[0][:10] if parts and len(parts[0]) > 4 else ""
+                    tm = parts[1][:5] if len(parts) > 1 else sched_str[:5]
+                if not d:
+                    continue
+                if start and d < start: continue
+                if end and d > end: continue
+                events.append({
+                    "id": folder.name,
+                    "source": "post",
+                    "platform": platform,
+                    "account_id": account_id,
+                    "account_name": acc["name"],
+                    "date": d,
+                    "time": tm,
+                    "persona": meta.get("persona", ""),
+                    "topic": meta.get("topic", ""),
+                    "status": meta.get("status", "draft"),
+                    "published": bool(meta.get("published", False)),
+                    "ai_responses": meta.get("ai_responses"),
+                    "folder": folder.name,
+                })
+        except Exception as e:
+            logger.error(f"Calendar: erreur posts {platform}/{account_id}: {e}")
+
+    events.sort(key=lambda e: (e.get("date", ""), e.get("time", "")))
+    return {"events": events, "count": len(events)}
 
 
 # Include the router into the existing app (already created at line 75)

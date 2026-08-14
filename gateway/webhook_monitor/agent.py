@@ -1808,6 +1808,18 @@ def _get_ai_responses_enabled() -> bool:
     return Config.AI_RESPONSES_ENABLED
 
 
+def _is_ai_response_enabled_for_post(post_id):
+    """Détermine si les réponses IA sont actives pour un post donné.
+    Priorité : flag explicite du post (meta.json ai_responses) > réglage global.
+    """
+    post_info = get_post_info(post_id)
+    if post_info:
+        per_post = post_info.get("ai_responses")
+        if per_post is not None:
+            return bool(per_post)
+    return _get_ai_responses_enabled()
+
+
 def generate_ai_response(comment_text, post_id, user_name="quelqu'un"):
     """Génère une réponse IA personnalisée au commentaire."""
     post_info = get_post_info(post_id)
@@ -1879,7 +1891,8 @@ def get_post_info(post_id):
                         return {
                             "persona": meta.get("persona", "expert_ia"),
                             "post_text": post_text,
-                            "folder": folder.name
+                            "folder": folder.name,
+                            "ai_responses": meta.get("ai_responses"),
                         }
                 except:
                     pass
@@ -1890,7 +1903,7 @@ def check_and_send_ai_response(comment_id, message, post_id, user_name="quelqu'u
     Mode: répond automatiquement SI et seulement SI aucune réponse manuelle n'a été postée.
     Appelé uniquement si le commentaire n'a PAS déclenché le flow CTA.
     """
-    if not _get_ai_responses_enabled():
+    if not _is_ai_response_enabled_for_post(post_id):
         return False
     
     # Vérifier si une réponse manuelle a déjà été postée par la page

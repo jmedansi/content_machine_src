@@ -16,12 +16,13 @@ _IMAGE_FILES = ["post_image.jpg", "post_image.webp", "image.jpg", "image.webp", 
 _REEL_FILES  = ["reel/reel.mp4", "reel/video.mp4", "video.mp4"]
 
 DEFAULT_SCHEDULE = [
-    {"time": "07:00", "persona": "kebane_story",       "type": "post"},
-    {"time": "10:30", "persona": "post_court",          "type": "post"},
-    {"time": "12:30", "persona": "reel",                "type": "reel"},
-    {"time": "14:00", "persona": "cerveau_niche_ia1",   "type": "post"},
-    {"time": "18:00", "persona": "cerveau_kebane",      "type": "post"},
-    {"time": "20:30", "persona": "cta",                 "type": "post"},
+    {"time": "08:00", "persona": "ia_design",          "type": "post"},
+    {"time": "10:30", "persona": "post_court",         "type": "post"},
+    {"time": "12:30", "persona": "mini_formation",     "type": "post"},
+    {"time": "14:00", "persona": "storytelling_pro",   "type": "post"},
+    {"time": "16:30", "persona": "ia_integration",     "type": "post"},
+    {"time": "19:00", "persona": "business_auto",      "type": "post"},
+    {"time": "20:30", "persona": "cta",                "type": "post"}
 ]
 
 SCHEDULE = []
