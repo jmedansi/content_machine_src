@@ -1683,8 +1683,60 @@ def poll_all_accounts_dm():
 def save_sent_log(data):
     SENT_LOG_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
-def reply_to_comment(comment_id, message, access_token=None):
-    """Répond à un commentaire via Graph API."""
+
+def _resolve_account_by_page_id(page_id):
+    """Retrouve un compte Facebook actif par son page_id (DB leads_station.db)."""
+    if not page_id:
+        return None
+    page_id = str(page_id)
+    try:
+        import sqlite3
+        db_path = PLATFORM_DB.get("facebook")
+        if not db_path or not Path(db_path).exists():
+            return None
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
+        try:
+            cursor = conn.execute("SELECT * FROM accounts WHERE status='active'")
+            for row in cursor:
+                creds = row["credentials"]
+                if isinstance(creds, str):
+                    try:
+                        creds = json.loads(creds)
+                    except Exception:
+                        creds = {}
+                if str(creds.get("page_id", "")) == page_id:
+                    return {
+                        "id": row["id"],
+                        "name": row["name"],
+                        "page_id": page_id,
+                        "access_token": creds.get("access_token", ""),
+                        "credentials": creds,
+                    }
+        finally:
+            conn.close()
+    except Exception as e:
+        logger.error(f"resolve_account_by_page_id error: {e}")
+    return None
+
+
+def _resolve_account_by_post_id(post_id):
+    """Trouve le compte qui a publié ce post en cherchant facebook_post_id dans tous les dossiers content."""
+    if not post_id:
+        return None
+    try:
+        post_id_short = post_id.split("_")[-1] if "_" in post_id else post_id
+    except Exception:
+        post_id_short = post_id
+
+    for account in _iter_all_content_accounts():
+        found = _find_post_folder(account["content_root"], post_id, post_id_short)
+        if found:
+            return {**account, "folder": found["folder"], "meta": found["meta"]}
+    return None
+
+def reply_to_comment(comment_id, message, access_token=None, page_id=None):
+    """Répond à un commentaire via Graph API (token du compte propriétaire du post si possible)."""
     token = access_token or PAGE_ACCESS_TOKEN
     if not token:
         logger.error("PAGE_ACCESS_TOKEN non configuré")
@@ -1696,7 +1748,7 @@ def reply_to_comment(comment_id, message, access_token=None):
     try:
         response = requests.post(url, params=params, timeout=30)
         if response.status_code == 200:
-            logger.info(f"Réponse au commentaire {comment_id}: {message[:50]}...")
+            logger.info(f"Réponse au commentaire {comment_id} (page {page_id or PAGE_ID}): {message[:50]}...")
             return True
         else:
             logger.error(f"Erreur reply: {response.text}")
@@ -1867,35 +1919,109 @@ def generate_ai_response(comment_text, post_id, user_name="quelqu'un"):
         logger.error(f"Erreur génération IA: {e}")
     return None
 
+def _iter_all_content_accounts():
+    """Itère sur tous les comptes ayant un dossier content (DB + fichiers), y compris le dossier racine."""
+    seen_ids = set()
+
+    # 1. Dossier racine (Config.CONTENT_DIR)
+    root = Path(Config.CONTENT_DIR)
+    if root.exists():
+        yield {"id": None, "name": "root", "page_id": PAGE_ID, "access_token": PAGE_ACCESS_TOKEN, "content_root": root}
+
+    # 2. Comptes depuis les bases de données plateforme
+    for platform, db_path in PLATFORM_DB.items():
+        if not db_path or not Path(db_path).exists():
+            continue
+        try:
+            import sqlite3
+            conn = sqlite3.connect(db_path)
+            conn.row_factory = sqlite3.Row
+            try:
+                cursor = conn.execute("SELECT * FROM accounts WHERE status='active'")
+                for row in cursor:
+                    creds = row["credentials"]
+                    if isinstance(creds, str):
+                        try:
+                            creds = json.loads(creds)
+                        except Exception:
+                            creds = {}
+                    account_id = row["id"]
+                    if account_id in seen_ids:
+                        continue
+                    seen_ids.add(account_id)
+                    base = PLATFORM_BASE.get(platform)
+                    content_root = (base / "accounts" / str(account_id) / "content") if base else None
+                    if content_root and content_root.exists():
+                        yield {
+                            "id": account_id,
+                            "name": row["name"],
+                            "page_id": creds.get("page_id", ""),
+                            "access_token": creds.get("access_token", ""),
+                            "platform": platform,
+                            "content_root": content_root,
+                        }
+            finally:
+                conn.close()
+        except Exception as e:
+            logger.error(f"iter accounts error {platform}: {e}")
+
+
+def _find_post_folder(content_root, post_id, post_id_short):
+    """Cherche dans content_root le dossier dont meta.json facebook_post_id matche post_id ou post_id_short."""
+    try:
+        for folder in content_root.iterdir():
+            if not folder.is_dir():
+                continue
+            meta_file = folder / "meta.json"
+            if not meta_file.exists():
+                continue
+            try:
+                meta = json.loads(meta_file.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            fb_id = str(meta.get("facebook_post_id", ""))
+            if fb_id == post_id or fb_id == post_id_short:
+                return {"folder": folder, "meta": meta}
+    except Exception as e:
+        logger.warning(f"find_post_folder error: {e}")
+    return None
+
+
 def get_post_info(post_id):
-    """Récupère les infos du post (persona, contenu) depuis les fichiers générés."""
-    content_dir = Config.CONTENT_DIR
-    
+    """Récupère les infos du post (persona, contenu, compte) depuis les fichiers générés.
+
+    Cherche dans tous les comptes (racine + machines/*/accounts/*/content), pas seulement Config.CONTENT_DIR.
+    """
     try:
         post_id_short = post_id.split("_")[-1] if "_" in post_id else post_id
-    except:
+    except Exception:
         post_id_short = post_id
-    
-    for folder in content_dir.iterdir():
-        if folder.is_dir():
-            meta_file = folder / "meta.json"
-            if meta_file.exists():
-                try:
-                    meta = json.loads(meta_file.read_text(encoding="utf-8"))
-                    fb_id = str(meta.get("facebook_post_id", ""))
-                    if fb_id == post_id or fb_id == post_id_short:
-                        post_text = ""
-                        post_file = folder / "facebook_post.txt"
-                        if post_file.exists():
-                            post_text = post_file.read_text(encoding="utf-8")
-                        return {
-                            "persona": meta.get("persona", "expert_ia"),
-                            "post_text": post_text,
-                            "folder": folder.name,
-                            "ai_responses": meta.get("ai_responses"),
-                        }
-                except:
-                    pass
+
+    for account in _iter_all_content_accounts():
+        found = _find_post_folder(account["content_root"], post_id, post_id_short)
+        if not found:
+            continue
+        folder = found["folder"]
+        meta = found["meta"]
+        post_text = ""
+        post_file = folder / "facebook_post.txt"
+        if not post_file.exists():
+            post_file = folder / "post.txt"
+        if not post_file.exists():
+            post_file = folder / "content.txt"
+        if post_file.exists():
+            post_text = post_file.read_text(encoding="utf-8")
+        return {
+            "persona": meta.get("persona", "expert_ia"),
+            "post_text": post_text,
+            "folder": folder.name,
+            "ai_responses": meta.get("ai_responses"),
+            "account_id": account.get("id"),
+            "account_name": account.get("name"),
+            "page_id": account.get("page_id"),
+            "access_token": account.get("access_token"),
+            "platform": account.get("platform", "facebook"),
+        }
     return None
 
 def check_and_send_ai_response(comment_id, message, post_id, user_name="quelqu'un"):
@@ -1918,13 +2044,17 @@ def check_and_send_ai_response(comment_id, message, post_id, user_name="quelqu'u
     
     response_text = generate_ai_response(message, post_id, user_name)
     if response_text and len(response_text) > 0:
-        success = reply_to_comment(comment_id, response_text)
+        # Utiliser le token du compte qui a publié le post (fallback global)
+        post_info = get_post_info(post_id)
+        account_token = (post_info or {}).get("access_token") or PAGE_ACCESS_TOKEN
+        account_page_id = (post_info or {}).get("page_id") or PAGE_ID
+        success = reply_to_comment(comment_id, response_text, access_token=account_token, page_id=account_page_id)
         if success:
             if "ai_sent" not in sent_log:
                 sent_log["ai_sent"] = []
             sent_log["ai_sent"].append(sent_key)
             save_sent_log(sent_log)
-            logger.info(f"Réponse IA envoyée au commentaire {comment_id}: {response_text[:50]}...")
+            logger.info(f"Réponse IA envoyée au commentaire {comment_id} (page {account_page_id}): {response_text[:50]}...")
             return True
     return False
 
@@ -1932,7 +2062,9 @@ def check_and_send_ai_response(comment_id, message, post_id, user_name="quelqu'u
 def has_manual_reply(post_id, comment_id, access_token=None):
     """Vérifie si une réponse manuelle a déjà été postée sur ce commentaire."""
     try:
-        token = access_token or PAGE_ACCESS_TOKEN
+        post_info = get_post_info(post_id)
+        token = access_token or (post_info or {}).get("access_token") or PAGE_ACCESS_TOKEN
+        page_id = (post_info or {}).get("page_id") or PAGE_ID
         url = f"{GRAPH_API_URL}/{comment_id}/comments"
         params = {"access_token": token, "fields": "from,id", "limit": 10}
         resp = requests.get(url, params=params, timeout=10)
@@ -1940,7 +2072,7 @@ def has_manual_reply(post_id, comment_id, access_token=None):
             data = resp.json().get("data", [])
             for reply in data:
                 from_info = reply.get("from", {})
-                if from_info.get("id") == PAGE_ID:
+                if from_info.get("id") == page_id:
                     return True
     except Exception as e:
         logger.warning(f"Erreur vérification réponse manuelle: {e}")
@@ -2203,14 +2335,18 @@ async def receive_webhook(request: Request):
                         message = value.get("message", "")
                         post_id = value.get("post_id")
                         user_id = value.get("from", {}).get("id") if isinstance(value.get("from"), dict) else value.get("from")
-                        
-                        if comment_id and message and post_id and user_id != PAGE_ID:
-                            logger.info(f"Commentaire sur {post_id}: {message[:50]}")
+
+                        # Résoudre la page du post (multi-comptes) pour éviter l'auto-réponse à soi-même
+                        post_info = get_post_info(post_id) if post_id else None
+                        owner_page_id = (post_info or {}).get("page_id") or PAGE_ID
+
+                        if comment_id and message and post_id and user_id and str(user_id) != str(owner_page_id):
+                            logger.info(f"Commentaire sur {post_id} (page {owner_page_id}): {message[:50]}")
                             user_name = value.get("from", {}).get("name", "quelqu'un") if isinstance(value.get("from"), dict) else "quelqu'un"
                             # Logique d'exclusion mutuelle CTA vs IA :
                             # Si le post est CTA et que le commentaire contient le trigger
                             # → CTA flow (invite DM). Sinon → IA flow.
-                            handled_as_cta = check_and_send_resource(comment_id, message, post_id, user_id=user_id or "")
+                            handled_as_cta = check_and_send_resource(comment_id, message, post_id, access_token=(post_info or {}).get("access_token") or PAGE_ACCESS_TOKEN, user_id=user_id or "")
                             if not handled_as_cta:
                                 check_and_send_ai_response(comment_id, message, post_id, user_name)
         
