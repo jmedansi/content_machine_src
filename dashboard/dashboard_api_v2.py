@@ -42,6 +42,7 @@ import json
 import shutil
 import asyncio
 import subprocess
+import hashlib
 import uuid
 from pathlib import Path
 from datetime import datetime, timezone
@@ -946,6 +947,24 @@ async def api_reset_published(req: Request):
 # ROUTES API - MÉDIA (IMAGES ET REELS)
 # ══════════════════════════════════════════════════════════════════
 
+# Cache navigateur pour les médias : ETag/Last-Modified déjà envoyés par
+# FileResponse ; le navigateur réutilise le cache 1h (304 si inchangé),
+# et une régénération change le fichier → nouvel ETag → 200 nouvelle image.
+_MEDIA_CACHE_HEADERS = {"Cache-Control": "public, max-age=3600, must-revalidate"}
+
+def _media_response(request: Request, file_path: Path):
+    """FileResponse avec validation conditionnelle (304 si If-None-Match correspond).
+
+    L'ETag reprend le calcul de Starlette (md5 de mtime+size) pour rester cohérent.
+    Une régénération change mtime → nouvel ETag → 200 avec la nouvelle image.
+    """
+    st = file_path.stat()
+    etag = '"%s"' % hashlib.md5(f"{int(st.st_mtime)}-{st.st_size}".encode(), usedforsecurity=False).hexdigest()
+    inm = request.headers.get("if-none-match")
+    if inm and inm == etag:
+        return Response(status_code=304, headers=_MEDIA_CACHE_HEADERS)
+    return FileResponse(str(file_path), headers={**_MEDIA_CACHE_HEADERS, "ETag": etag})
+
 @router.get("/image/{folder}")
 async def api_get_image(request: Request, folder: str):
     platform = request.query_params.get("platform", "facebook")
@@ -970,12 +989,12 @@ async def api_get_image(request: Request, folder: str):
             if not str(image_file.resolve()).startswith(str(f.resolve())):
                 raise HTTPException(status_code=403, detail="Access denied")
             if image_file.exists():
-                return FileResponse(str(image_file), headers={"Cache-Control": "no-cache, no-store, must-revalidate"})
+                return _media_response(request, image_file)
 
     # Recherche récursive pour trouver l'image dans les sous-dossiers
     img = _find_file_recursive(f, _IMAGE_FILES)
     if img:
-        return FileResponse(str(img), headers={"Cache-Control": "no-cache, no-store, must-revalidate"})
+        return _media_response(request, img)
     raise HTTPException(status_code=404)
 
 @router.get("/reel/{folder}")
@@ -993,7 +1012,7 @@ async def api_get_reel(request: Request, folder: str):
     logger.info(f"[reel] found={reel}")
 
     if reel:
-        return FileResponse(str(reel))
+        return _media_response(request, reel)
     raise HTTPException(status_code=404)
 
 
