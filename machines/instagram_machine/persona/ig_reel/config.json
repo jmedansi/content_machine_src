@@ -1,0 +1,9 @@
+{
+  "name": "ig_reel",
+  "display_name": "Reel IG",
+  "description": "Script de reel court avec hook, corps et CTA",
+  "max_chars": 2200,
+  "tone": "energique",
+  "format": "reel",
+  "hashtags": 5
+}

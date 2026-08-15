@@ -3535,7 +3535,7 @@ async def api_get_accounts(request: Request):
                         except (json.JSONDecodeError, TypeError):
                             settings = {}
 
-                    page_id = creds.get("page_id", "") or creds.get("linkedin_user_id", "") or creds.get("twitter_user_id", "") or ""
+                    page_id = creds.get("page_id", "") or creds.get("linkedin_user_id", "") or creds.get("twitter_user_id", "") or creds.get("ig_user_id", "") or ""
 
                     api_key = settings.get("llm_api_key", "") or ""
                     masked_key = ""
@@ -3636,6 +3636,11 @@ async def api_save_account(req: Request):
             creds_json = json.dumps({
                 "linkedin_token": token or existing_creds.get("linkedin_token", ""),
                 "linkedin_user_id": page_id or existing_creds.get("linkedin_user_id", "")
+            })
+        elif platform == "instagram":
+            creds_json = json.dumps({
+                "ig_user_id": page_id or existing_creds.get("ig_user_id", ""),
+                "access_token": token or existing_creds.get("access_token", "")
             })
         else:
             creds_json = json.dumps({

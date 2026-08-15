@@ -31,14 +31,14 @@ PLATFORM_BASES = {
     "facebook": Path("d:/Content_Machine/machines/facebook_machine"),
     "linkedin": Path("d:/Content_Machine/machines/linkedin_machine"),
     "twitter": Path("d:/Content_Machine/machines/twitter_machine"),
-    "instagram": Path("d:/Content_Machine/machines/facebook_machine"),
+    "instagram": Path("d:/Content_Machine/machines/instagram_machine"),
 }
 
 _PLATFORM_DB = {
     "facebook": Path("d:/Content_Machine/machines/facebook_machine/data/leads_station.db"),
     "linkedin": Path("d:/Content_Machine/machines/linkedin_machine/data/leads_station.db"),
     "twitter": Path("d:/Content_Machine/machines/twitter_machine/data/leads_station.db"),
-    "instagram": Path("d:/Content_Machine/machines/facebook_machine/data/leads_station.db"),
+    "instagram": Path("d:/Content_Machine/machines/instagram_machine/data/leads_station.db"),
 }
 
 
@@ -54,7 +54,7 @@ def _upsert_post_db(platform: str, account_id, folder: Path, meta: dict, status:
         status = status or meta.get("status", "pending")
         folder_name = folder.name
         text_file = None
-        for name in ("facebook_post.txt", "linkedin_post.txt", "twitter_post.txt", "post.txt", "content.txt"):
+        for name in ("instagram_post.txt", "facebook_post.txt", "linkedin_post.txt", "twitter_post.txt", "post.txt", "content.txt"):
             candidate = folder / name
             if candidate.exists():
                 text_file = candidate
@@ -249,6 +249,12 @@ def _run_publisher(platform: str, folder_path, account_id=None):
         if bool(result):
             return AgentResult.ok()
         return AgentResult.fail("Publication Twitter échouée")
+    elif platform == "instagram":
+        from machines.instagram_machine.agents.agent_publisher import post_instagram
+        result = post_instagram(str(folder_path), account_id=account_id)
+        if bool(result):
+            return AgentResult.ok()
+        return AgentResult.fail("Publication Instagram échouée")
     else:
         from machines.facebook_machine.agents.publisher.agent import run_publisher
         return run_publisher(str(folder_path), account_id=account_id)

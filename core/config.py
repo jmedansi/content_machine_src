@@ -42,6 +42,8 @@ class Config:
     FB_PAGE_ID = os.getenv("FB_PAGE_ID", "")
     FB_VERIFY_TOKEN = os.getenv("FB_VERIFY_TOKEN", "")
     IG_ACCOUNT_ID = os.getenv("IG_ACCOUNT_ID", "")
+    INSTAGRAM_MAX_CAPTION_CHARS = int(os.getenv("INSTAGRAM_MAX_CAPTION_CHARS", "2200"))
+    INSTAGRAM_MAX_CAPTION_CHARS = int(os.getenv("INSTAGRAM_MAX_CAPTION_CHARS", "2200"))
     
     # --- Telegram Notifications ---
     TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")

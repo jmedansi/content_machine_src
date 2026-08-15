@@ -12,11 +12,13 @@ MACHINES_DIR = ROOT_DIR / "machines"
 FB_MACHINE = MACHINES_DIR / "facebook_machine"
 LI_MACHINE = MACHINES_DIR / "linkedin_machine"
 TW_MACHINE = MACHINES_DIR / "twitter_machine"
+IG_MACHINE = MACHINES_DIR / "instagram_machine"
 
 PLATFORM_BASE = {
     "facebook": FB_MACHINE,
     "linkedin": LI_MACHINE,
     "twitter": TW_MACHINE,
+    "instagram": IG_MACHINE,
 }
 
 # Platform database paths
@@ -24,6 +26,7 @@ PLATFORM_DB = {
     "facebook": str(MACHINES_DIR / "facebook_machine" / "data" / "leads_station.db"),
     "linkedin": str(MACHINES_DIR / "linkedin_machine" / "data" / "leads_station.db"),
     "twitter": str(MACHINES_DIR / "twitter_machine" / "data" / "leads_station.db"),
+    "instagram": str(MACHINES_DIR / "instagram_machine" / "data" / "leads_station.db"),
 }
 
 VALID_PLATFORMS = set(PLATFORM_BASE.keys())

@@ -144,8 +144,8 @@ def _get_platform_dir(platform: str) -> Path:
     platform_key = (platform or "facebook").lower()
     base_dir = Config.BASE_DIR
     bases = {
-        "facebook": base_dir,
-        "instagram": base_dir,
+        "facebook": base_dir / "machines" / "facebook_machine",
+        "instagram": base_dir / "machines" / "instagram_machine",
         "linkedin": base_dir / "machines" / "linkedin_machine",
         "twitter":  base_dir / "machines" / "twitter_machine",
     }

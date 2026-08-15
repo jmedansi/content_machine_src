@@ -1,0 +1,9 @@
+{
+  "name": "ig_feed",
+  "display_name": "Feed IG",
+  "description": "Post visuel Instagram avec legende engageante",
+  "max_chars": 2200,
+  "tone": "direct",
+  "format": "feed",
+  "hashtags": 5
+}

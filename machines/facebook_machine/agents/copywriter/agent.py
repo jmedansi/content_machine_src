@@ -90,7 +90,7 @@ def load_persona(persona_name: str, account_id: int = None, platform: str = "fac
             "facebook": Path("d:/Content_Machine/machines/facebook_machine"),
             "linkedin": Path("d:/Content_Machine/machines/linkedin_machine"),
             "twitter":  Path("d:/Content_Machine/machines/twitter_machine"),
-            "instagram": Path("d:/Content_Machine/machines/facebook_machine")
+            "instagram": Path("d:/Content_Machine/machines/instagram_machine")
         }
         base_dir = platform_bases.get(platform, Config.BASE_DIR)
         persona_dir = base_dir / "accounts" / str(account_id) / "persona" / persona_name
@@ -664,6 +664,10 @@ IMPORTANT: Ta réponse DOIT ÊTRE UN OBJET JSON VALIDE contenant exactement deux
             # Twitter: limiter à 280 caractères
             twitter_text = final_text[:280] if len(final_text) > 280 else final_text
             (content_dir / "tweet_post.txt").write_text(twitter_text, encoding="utf-8")
+        elif platform == "instagram":
+            # Instagram: limiter la légende (2200 caractères max)
+            ig_text = final_text[:2200] if len(final_text) > 2200 else final_text
+            (content_dir / "instagram_post.txt").write_text(ig_text, encoding="utf-8")
         else:
             # Facebook
             (content_dir / "facebook_post.txt").write_text(final_text, encoding="utf-8")
